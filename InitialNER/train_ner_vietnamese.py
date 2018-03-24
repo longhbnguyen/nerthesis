@@ -31,10 +31,13 @@ import plac
 import random
 from pathlib import Path
 import spacy
+from tqdm import tqdm
+from ast import literal_eval
+
 
 
 # new entity label
-LABEL = 'LOC'
+label_list = ['TTL', 'BRN', 'ABB_LOC', 'ABB_TRM', 'PER', 'ORG', 'ABB_ORG', 'ABB_TTL', 'MEA', 'ABB_PER', 'ABB_DES', 'LOC', 'TRM', 'NUM', 'DES', 'ABB', 'DTM', 'ABB_BRN']
 
 
 # training data
@@ -43,31 +46,31 @@ LABEL = 'LOC'
 # model might learn the new type, but "forget" what it previously knew.
 # https://explosion.ai/blog/pseudo-rehearsal-catastrophic-forgetting
 
-TRAIN_DATA = [
-    ("Trường đại học KHTN ở Việt Nam", {
-        'entities': [(22, 30 , 'LOC')]
-    }),
+# TRAIN_DATA = [
+#     ("Trường đại học KHTN ở Việt Nam", {
+#         'entities': [(22, 30 , 'LOC')]
+#     }),
 
-    ("Trường đại học KHTN ở Anh", {
-        'entities': [(22,25, 'LOC')]
-    }),
+#     ("Trường đại học KHTN ở Anh", {
+#         'entities': [(22,25, 'LOC')]
+#     }),
 
-    ("Obama là tổng thống Mỹ", {
-        'entities': [(20, 22, 'LOC')]
-    }),
+#     ("Obama là tổng thống Mỹ", {
+#         'entities': [(20, 22, 'LOC')]
+#     }),
 
-    ("Việt Nam là quê hương tôi", {
-        'entities': [(0, 8, 'LOC')]
-    }),
+#     ("Việt Nam là quê hương tôi", {
+#         'entities': [(0, 8, 'LOC')]
+#     }),
 
-    ("Việt nam là một nước nằm ở châu Á", {
-        'entities': [(0, 8, 'LOC')]
-    }),
+#     ("Việt nam là một nước nằm ở châu Á", {
+#         'entities': [(0, 8, 'LOC')]
+#     }),
 
-    ("Việt Nam?", {
-        'entities': [(0, 8, 'LOC')]
-    })
-]
+#     ("Việt Nam?", {
+#         'entities': [(0, 8, 'LOC')]
+#     })
+# ]
 
 
 @plac.annotations(
@@ -83,7 +86,15 @@ def main(model=None, new_model_name='animal', output_dir=None, n_iter=20):
     else:
         nlp = spacy.blank('vi')  # create blank Language class
         print("Created blank 'vi' model")
-
+    print('Loading data...')
+    train_data = []
+    with open('/NER_Spacy.out','r',encoding = 'utf-8') as f:
+        for line in f:
+            tp = literal_eval(line)
+            # print(tp)
+            train_data.append(tp)
+    print('Loaded data!')
+    
     # Add entity recognizer to model if it's not in the pipeline
     # nlp.create_pipe works for built-ins that are registered with spaCy
     if 'ner' not in nlp.pipe_names:
@@ -92,17 +103,17 @@ def main(model=None, new_model_name='animal', output_dir=None, n_iter=20):
     # otherwise, get it, so we can add labels to it
     else:
         ner = nlp.get_pipe('ner')
-
-    ner.add_label(LABEL)   # add new entity label to entity recognizer
+    for label in label_list:
+        ner.add_label(label)   # add new entity label to entity recognizer
 
     # get names of other pipes to disable them during training
     other_pipes = [pipe for pipe in nlp.pipe_names if pipe != 'ner']
     with nlp.disable_pipes(*other_pipes):  # only train NER
         optimizer = nlp.begin_training()
         for itn in range(n_iter):
-            random.shuffle(TRAIN_DATA)
+            random.shuffle(train_data)
             losses = {}
-            for text, annotations in TRAIN_DATA:
+            for text, annotations in tqdm(train_data):
                 nlp.update([text], [annotations], sgd=optimizer, drop=0.35,losses=losses)
             print(losses)
 
