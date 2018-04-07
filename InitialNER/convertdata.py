@@ -1,6 +1,6 @@
 
 inputfile = 'NER.5000.txt'
-outputfile = 'NER_Spacy.out'
+outputfile = 'NER_Spacy_new.out'
 
 def process(line):
     '''process to raw line'''
@@ -47,6 +47,7 @@ def getlen(ent):
 
 def getEnt(ent):
     ''' return entity label PER LOC'''
+    # print(ent)
     pos = ent.rfind('/')
     # print('Pos:', pos)
     tmp = []
@@ -64,7 +65,7 @@ def getEnt(ent):
     tmp2.append(tmp[1][pos+1:])
     # print('GetEnt tmp2: ',tmp2)
     if len(tmp) < 2: return ''
-    return tmp2[0]
+    return tmp2[0].replace('ABB_','')
 
 def getEntString(ent):
     pos = ent.rfind('/')
@@ -101,7 +102,8 @@ def listents(ents,line):
             
             #end entity
             start_ent = org_line.find(cur_ent,start_ent)
-            res = res + '(' + str(start_ent) + ',' +str(start_ent + len(cur_ent)) + ', \'' + getEnt(ents[i-1]) + '\')' + ','
+            if (getEnt(ents[i-1]) in ['PER','LOC','ORG']):
+                res = res + '(' + str(start_ent) + ',' +str(start_ent + len(cur_ent)) + ', \'' + getEnt(ents[i-1]) + '\')' + ','
         else: 
             #Begin O
             # end = end + getlen(ents[i])
@@ -115,6 +117,7 @@ def convertspacy(line):
     result = '('
     ents = line.split()
     org_line = process(line)
+    org_line = org_line.replace('"','\\"')
     # print('ORG: ',org_line)
     result = result + '"' + org_line + '"' + ','+ '{ \'entities\':' + '[' + listents(ents,line) + ']' + '})'
     return result

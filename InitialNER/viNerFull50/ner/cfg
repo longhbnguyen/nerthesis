@@ -1,0 +1,27 @@
+{
+  "hidden_depth":1,
+  "extra_labels":[
+    "PER",
+    "PER",
+    "PER",
+    "PER",
+    "ORG",
+    "ORG",
+    "ORG",
+    "ORG",
+    "LOC",
+    "LOC",
+    "LOC",
+    "LOC"
+  ],
+  "cnn_maxout_pieces":3,
+  "nr_class":13,
+  "beam_density":0.0,
+  "maxout_pieces":2,
+  "hidden_width":200,
+  "beam_width":1,
+  "token_vector_width":128,
+  "hist_size":0,
+  "pretrained_dims":0,
+  "hist_width":0
+}
