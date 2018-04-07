@@ -37,7 +37,7 @@ from ast import literal_eval
 
 
 # new entity label
-label_list = ['TTL', 'BRN', 'ABB_LOC', 'ABB_TRM', 'PER', 'ORG', 'ABB_ORG', 'ABB_TTL', 'MEA', 'ABB_PER', 'ABB_DES', 'LOC', 'TRM', 'NUM', 'DES', 'ABB', 'DTM', 'ABB_BRN']
+label_list = ['PER', 'ORG', 'LOC']
 
 
 # training data
@@ -83,16 +83,21 @@ def main(model=None, new_model_name='animal', output_dir=None, n_iter=20):
     if model is not None:
         nlp = spacy.load(model)  # load existing spaCy model
         print("Loaded model '%s'" % model)
+
     else:
         nlp = spacy.blank('vi')  # create blank Language class
         print("Created blank 'vi' model")
     print('Loading data...')
     train_data = []
-    with open('/NER_Spacy.out','r',encoding = 'utf-8') as f:
+    # i = 0
+    with open('./NER_Spacy_new.out','r',encoding = 'utf-8') as f:
         for line in f:
             tp = literal_eval(line)
             # print(tp)
             train_data.append(tp)
+            # i += 1
+            # if i > 10:
+            #     break
     print('Loaded data!')
     
     # Add entity recognizer to model if it's not in the pipeline
@@ -118,7 +123,7 @@ def main(model=None, new_model_name='animal', output_dir=None, n_iter=20):
             print(losses)
 
     # test the trained model
-    test_text = 'Tôi sống ở Việt Nam'
+    test_text = 'Tôi sống ở Việt Nam 2 năm trước'
     doc = nlp(test_text)
     print("Entities in '%s'" % test_text)
     for ent in doc.ents:
