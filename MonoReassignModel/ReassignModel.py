@@ -21,7 +21,7 @@ stanford_e = StanfordNERTagger(path_to_eng_model, path_to_jar)
 stanford_v = StanfordNERTagger(path_to_vie_model, path_to_jar)
 
 def writeToFile(tmp_file,v_sent):
-    w = open('tmp.txt','w',encoding='utf-8')
+    w = open(tmp_file,'w',encoding='utf-8')
     for tok in v_sent.split():
         w.write(tok)
         w.write('\t')
@@ -51,13 +51,38 @@ def getScore_Stanford(ent, org_scores, per_scores, loc_scores):
         per_score *= getProb_Stanford(idx, org_scores, per_scores, loc_scores)[1]
         loc_score *= getProb_Stanford(idx, org_scores, per_scores, loc_scores)[2]
     
-    n = 1 / len(ent[0])
-    org_score = pow(org_score,n)
+    # n = 1 / len(ent[0])
+    # org_score = pow(org_score,n)
     
-    per_score = pow(per_score,n)
-    loc_score = pow(loc_score,n)
+    # per_score = pow(per_score,n)
+    # loc_score = pow(loc_score,n)
     return org_score, per_score, loc_score
 
+
+
+def tag_count(sent,tmp):
+    writeToFile(tmp,sent)
+    stanfordner_command = 'java -cp ' + path_to_jar +  ' edu.stanford.nlp.ie.crf.CRFClassifier -loadClassifier ' + path_to_vie_model + ' -testFile ' + tmp + ' -printProbs > tmp.tsv' 
+    os.system(stanfordner_command)
+    df = pd.read_csv('tmp.tsv',sep = '\t',encoding='utf-8',header = None, names=['Word','O','ORGANIZATION','PERSON','LOCATION','X'])
+    words = list(df.Word.astype(str))
+    org_scores = list(df.ORGANIZATION.astype(str))
+    per_scores = list(df.PERSON.astype(str))
+    loc_scores = list(df.LOCATION.astype(str))
+    org = 1.0
+    per = 1.0
+    loc = 1.0
+    for i in range(len(words)):
+        org *= float(org_scores[i][org_scores[i].find('=')+1:])
+        per *= float(per_scores[i][per_scores[i].find('=')+1:])
+        loc *= float(loc_scores[i][loc_scores[i].find('=')+1:])
+    if org == max(org,per,loc):
+        res = 'ORGANIZATION'
+    elif loc == max(org,per,loc):
+        res = 'LOCATION'
+    elif per == max(org,per,loc):
+        res = 'PERSON'
+    return res
 
 
 def main():
@@ -83,6 +108,7 @@ def main():
         tok = tok.strip()
         print(tok) 
         print(getScore_Stanford(ent,org_scores,per_scores,loc_scores))
+
 
 
 if __name__ == '__main__':
