@@ -1,0 +1,19 @@
+{
+  "spacy_version":">=2.0.9",
+  "version":"0.0.0",
+  "vectors":{
+    "vectors":0,
+    "keys":0,
+    "width":0
+  },
+  "author":"",
+  "description":"",
+  "email":"",
+  "url":"",
+  "name":"animal",
+  "license":"",
+  "pipeline":[
+    "ner"
+  ],
+  "lang":"vi"
+}
