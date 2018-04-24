@@ -1,10 +1,10 @@
 
 from nltk.tag.stanford import StanfordNERTagger
 
-path_to_e_model = './InitialNER/stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
-path_to_v_model = './InitialNER/stanford-ner-2018-02-27/vietnamese_new.gz'
+path_to_e_model = './stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
+path_to_v_model = './stanford-ner-2018-02-27/vietnamese_new.gz'
 
-path_to_jar = './InitialNER/stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
+path_to_jar = './stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 
 e_ner = StanfordNERTagger(path_to_e_model, path_to_jar)
 v_ner = StanfordNERTagger(path_to_v_model, path_to_jar)

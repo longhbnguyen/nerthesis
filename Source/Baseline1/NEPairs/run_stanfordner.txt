@@ -1,3 +1,0 @@
-java -cp "../InitialNER/stanford-ner-2018-02-27/stanford-ner-3.9.1.jar" edu.stanford.nlp.ie.crf.CRFClassifier -loadClassifier "../InitialNER/stanford-ner-2018-02-27/vietnamese_new.gz" -testFile v_prob.LOC -printProbs > v_prob.LOC.out
-
-java -cp "../InitialNER/stanford-ner-2018-02-27/stanford-ner-3.9.1.jar" edu.stanford.nlp.ie.crf.CRFClassifier -loadClassifier "../InitialNER/stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz" -testFile e_prob.PER -printProbs  > e_prob.PER.out

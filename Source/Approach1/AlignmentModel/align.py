@@ -2,7 +2,7 @@ import spacy
 import sys
 from collections import defaultdict
 from nltk.tag.stanford import StanfordNERTagger
-
+import MonoReassignModel.ReassignModel as mono_re
 
 path_to_model = '../InitialNER/stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
 path_to_jar = '../InitialNER/stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
@@ -132,6 +132,12 @@ def getCombineNER(tuple_list):
     return spacy_list + stanfordner_list
 
 def HardAlign(v_sent, e_sent):
+    '''
+    Implement the hard alignment rule (based on the paper 
+    Generating Chinese Named Entity Data from a Parallel Corpus)
+    Input: plain text sentence, sentence with alignment
+    Output: list of entity pair
+    '''
     ent_set = getEntSet(v_sent,e_sent)
     for i in range(len(ent_set)):
         for ent in ent_set[i]:
@@ -142,11 +148,13 @@ def HardAlign(v_sent, e_sent):
                     return []
     return ent_set
 
-
-
-
-
 def SoftAlign(v_sent,e_sent):
+    '''
+    Implement the soft alignment rule (based on the paper 
+    Generating Chinese Named Entity Data from a Parallel Corpus)
+    Input: plain text sentence, sentence with alignment
+    Output: list of entity pair
+    '''
     ent_set = getEntSet(v_sent,e_sent)
     for i in range(len(ent_set)):
         for ent in ent_set[i]:
@@ -160,6 +168,16 @@ def SoftAlign(v_sent,e_sent):
 
 
 
+
+def getAlignmentScore(ne_source, ne_target):
+    '''
+    Implement the alignment score (based on the paper 
+    Generating Chinese Named Entity Data from a Parallel Corpus)
+    Input: English NE, Vietnamese NE
+    Output: Score of that pair
+    '''
+    label = ne_source[1]
+    score = mono_re.get
             
 
 

@@ -1,5 +1,6 @@
 import InitialNER.tag as tag
 import pandas as pd 
+from tqdm import tqdm
 
 En_file_path = './corpora/0_DATA/1_Training/1_WordAlignment/nlp.vi-en.tok.clean.en'
 Vn_file_path = './corpora/0_DATA/1_Training/1_WordAlignment/nlp.vi-en.tok.clean.vi'
@@ -14,10 +15,10 @@ def getCrossProduct(e_sent,v_sent):
     
 
 res = []
-for i in range(len(En_file)):
-    if i== 5:
-        break
-    # print(En_file[i])
+for i in tqdm(range(len(En_file))):
+    # if i== 5:
+    #     break
+    # # print(En_file[i])
     en_vi_list = getCrossProduct(En_file[i],Vn_file[i])
     for tp in en_vi_list:
         res.append(tp)
@@ -31,7 +32,9 @@ res_vi.append('Việt Nam')
 df = pd.DataFrame({'NEE': res_en, 'NEV': res_vi})
 
 df_count = pd.DataFrame({'Count' : df.groupby( [ "NEE", "NEV"] ).size()}).reset_index()
-tmp = df_count[(df_count.NEV == 'Việt Nam') & (df_count.NEE == 'Siemens Company')].Count
-print(df_count[df_count.NEE == 'Siemens Company'].Count.sum())
+df_count.to_csv('count_occ.csv',sep = ',', index = False)
+
+# tmp = df_count[(df_count.NEV == 'Việt Nam') & (df_count.NEE == 'Siemens Company')].Count
+# print(df_count[df_count.NEE == 'Siemens Company'].Count.sum())
 
 # print(df_count)
