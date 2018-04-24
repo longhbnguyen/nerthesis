@@ -7,14 +7,6 @@ df_true = pd.read_csv('test_stanfordner_eng.txt',sep = '\t', encoding = 'utf-8',
 
 df = pd.read_csv('stanfordner_eng_res.txt',sep = '\t', encoding = 'utf-8',header  = None, names= ['Word','Label','Predict'])
 
-x_pred = list(df_pred.Word.astype(str))
-x_true = list(df_true.Word.astype(str))
-for i in range(len(x_pred)):
-    if x_pred[i] != x_true[i]:
-        print(i)
-
-
-'''
 y_pred = list(df.Predict.astype(str))
 y_true = list(df.Label.astype(str))
 target_names = ['LOCATION','O','ORGANIZATION','PERSON',]
@@ -38,4 +30,3 @@ print(classification_report(y_true, y_pred, target_names=target_names))
 # target_names = ['LOCATION','O','ORGANIZATION','PERSON',]
 
 # print(classification_report(y_true, y_pred, target_names=target_names))
-'''
