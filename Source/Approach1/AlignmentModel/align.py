@@ -7,3 +7,4 @@ def getCandidateSet(v_sent,e_sent):
     e_set = vtoe.getEntSet(v_sent,e_sent)
     cand_set = set(v_set+e_set)
     return cand_set
+

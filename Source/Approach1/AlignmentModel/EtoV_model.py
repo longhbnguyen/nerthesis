@@ -19,7 +19,7 @@ def sentToTuple(source_sent):
     '''
     Tokenize the Source sentence into tuple
     Input: English sentence (output of Giza++)
-    Output: tp_list = [ (word, ({idx idx})) ,]
+    Output: tp_list = [ (word, (idx idx)) ,]
     '''
     source_sent_tokens = source_sent.split()
     # print(sent_tokens)
@@ -151,6 +151,45 @@ def SoftAlign(v_sent,e_sent):
                     break
     return ent_set
 
+def expandWindow(ent,sent,left,right):
+    '''
+    Expand entity by a left, right window
+    Input: Entity, sentence, left, right
+    Output: Expanded entity
+    '''
+    idx_seq = ent[0]
+    left_bound = 0
+    right_bound = len(sent.split()) - 1
+    start = idx_seq[0] - left
+    if start < 0:
+        start = 0
+    end = idx_seq[-1] + right
+    if end >  right_bound:
+        end = right_bound
+    for i in range(start,idx_seq[0]):
+        idx_seq.append(i)
+    for i in range(idx_seq[-1]+1,end):
+        idx_seq.append(i)
+    idx_seq = sorted(idx_seq, key = int)
+    return (idx_seq,ent[1])
+
+def getExpandEntList(sent, left, right):
+    '''
+    get Expand Window Entity List of a sentence:
+    Input: sentence, left, right
+    '''
+    source_tuple_list = sentToTuple(sent)
+    ent_list = getCombineNER(source_tuple_list)
+    for i in range(len(ent_list)):
+        ent_list[i] = expandWindow(ent_list[i], sent, left, right)
+    return ent_list
+
+def expandNP(ent, sent):
+    '''
+    get Expanded entity based on POS Tag
+    Input: Entity, Sentence
+    Output: Expanded Entity
+    '''
 
 def getTargetEntList(tuple_list, target_sent, source_ent_list):
     '''
@@ -179,8 +218,11 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
     return target_ent_list
 
 def getEntSet(source_sent,target_sent):
-    # e_tuple_list = sentToTuple(e_sent)
-    # e_ent_list = getEntList_StanfordNER(e_tuple_list)
+    '''
+    Get the Entity Pairs List of Source and Target Sentence
+    Input: Source sentence, Target Sentence
+    Output: Entity Pairs List
+    '''
     source_tuple_list = sentToTuple(source_sent)
     source_ent_list = getEntList_StanfordNER(source_tuple_list)
     target_ent_list = getTargetEntList(source_tuple_list,target_sent,source_ent_list)
