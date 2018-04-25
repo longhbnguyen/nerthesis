@@ -38,19 +38,13 @@ def getNETranslationProb(align_index, NEPair):
 ]
     '''
     res = 0.0
-    enNE = NEPair[0]
-    vnNE = NEPair[1]
-    cur_align_sent = align_list[align_index]
-    for index in enNE:
-        cur_en_dict = cur_align_sent['Target'][index]
-        cur_word = cur_en_dict['Word']
-        vn_align_list = cur_en_dict['Align']
-        mau = len(vn_align_list)
-        if mau == 0:
-            return 0.0
-        tsum = 0
-        for vn_word in vn_align_list:
-            tsum += getWordTranslationProb(vn_word,cur_word) 
-
-        res = res * tsum/mau
+    enNE = NEPair[3]
+    vnNE = NEPair[4]
+    # cur_align_sent = a lign_list[align_index]
+    for enWord in enNE:
+        sum = 0
+        for vnWord in vnNE:
+            sum += getWordTranslationProb(vnWord,enWord)
+        res *= sum
+    res = res / (len(enNE)**len(vnWord))
     return res
