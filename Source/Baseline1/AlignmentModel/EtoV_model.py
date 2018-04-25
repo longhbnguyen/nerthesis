@@ -181,7 +181,9 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
 def getEntSet(source_sent,target_sent):
     # e_tuple_list = sentToTuple(e_sent)
     # e_ent_list = getEntList_StanfordNER(e_tuple_list)
-    source_tuple_list = sentToTuple(source_sent)
+    target_sent = (' '.join(target_sent)).strip()
+    
+    source_tuple_list = source_sent
     source_ent_list = getEntList_StanfordNER(source_tuple_list)
     target_ent_list = getTargetEntList(source_tuple_list,target_sent,source_ent_list)
     ent_set = []

@@ -95,7 +95,10 @@ def getEntList_StanfordNER(source_tuple_list):
         if tag_list[i][1] != 'O':
             #ent of different type
             if cur_type != tag_list[i][1] and ent_flag == True:
-                ent = (idx_seq,cur_type)
+                for idx in idx_seq:
+                    word += tag_list[idx] + ' '
+                word = word.strip()
+                ent = (idx_seq,cur_type,word)
                 # idx_seq = str(i)
                 idx_seq.append(i)
                 ent_list.append(ent)
@@ -112,9 +115,11 @@ def getEntList_StanfordNER(source_tuple_list):
                 idx_seq.append(i)
         else:
             if ent_flag == True:
-                ent = (idx_seq, cur_type)
+                for idx in idx_seq:
+                    word += tag_list[idx] + ' '
+                word = word.strip()
+                ent = (idx_seq, cur_type, word)
                 ent_list.append(ent)
-                idx_seq = ''
                 idx_seq = []
                 ent_flag = False
             else:
@@ -171,23 +176,31 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
                 target_ent_idx.append(int(index))
 
         target_ent_idx = sorted(target_ent_idx, key = int)
+            
+        for idx in v_ent_idx:
+            res += v_tokens[idx-1] + ' '
+        res = res.strip()
         
-        # for idx in v_ent_idx:
-        #     res += v_tokens[idx-1] + ' '
-        # res = res.strip()
-        target_ent_list.append((target_ent_idx,source_ent[1]))
+        target_ent_list.append((target_ent_idx,source_ent[1],res))
+
+    
     return target_ent_list
 
 def getEntSet(source_sent,target_sent):
-    # e_tuple_list = sentToTuple(e_sent)
-    # e_ent_list = getEntList_StanfordNER(e_tuple_list)
-    source_tuple_list = sentToTuple(source_sent)
+    '''
+    [([idx]_en,[idx]_vi,'type',[word_en],[word_vi])]
+    '''
+    target_sent = ' '.join(target_sent).strip()
+    
+    source_tuple_list = source_sent
     source_ent_list = getEntList_StanfordNER(source_tuple_list)
     target_ent_list = getTargetEntList(source_tuple_list,target_sent,source_ent_list)
     ent_set = []
     for i in range(len(source_ent_list)):
-        tp = (source_ent_list[i][0],target_ent_list[i][0])
+
+        tp = (source_ent_list[i][0],target_ent_list[i][0],source_ent_list[i][1],source_ent_list[i][2],target_ent_list[i][2])
         ent_set.append(tp)
+        
     return ent_set
     
 

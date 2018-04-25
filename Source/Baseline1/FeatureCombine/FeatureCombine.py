@@ -42,8 +42,6 @@ def better_than(res,best_res):
 def update_list_lambda(list_lambda,step,number_of_lambda):
     res = list_lambda
 
-    
-
     return res
 
 #Main
