@@ -80,9 +80,9 @@ def getEntList_StanfordNER(source_tuple_list):
     '''
     source_sent = ''
     for tp in source_tuple_list:
-        if tp[0] == 'NULL':
+        if tp['Word'] == 'NULL':
             continue
-        source_sent += tp[0]+ ' '
+        source_sent += tp['Word']+ ' '
     source_sent = source_sent.strip()
     tag_list = nertagger.tag(source_sent.split())
     ent = ()

@@ -37,5 +37,19 @@ def evaluate(predict_set,true_set,type_mode):
     for i in range(len(predict_set)):
         tp = tp + evaluateSentencePair(predict_set[i],true_set[i],type_mode,tp)
     
+
     return tp, total_predict_pairs, total_true_pairs
-    
+
+def getMetrics(predict_set,true_set,type_mode):
+    '''
+    get Metrics Evaluation
+    '''
+    tp, total_predict_pairs,total_true_pairs = evaluate(predict_set,true_set,type_mode)
+    recall = tp / (total_true_pairs)
+    precision = tp / (total_predict_pairs)
+    f1 = 2*recall*precision/(recall+precision)
+    res = {}
+    res['R'] = recall
+    res['P'] = precision
+    res['F1'] = f1
+    return res

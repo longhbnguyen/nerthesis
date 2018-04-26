@@ -56,6 +56,3 @@ def main():
             best_lambda = list_lambda
             best_res = cur_res
         list_lambda = update_list_lambda(list_lambda,step)
-
-
-        
