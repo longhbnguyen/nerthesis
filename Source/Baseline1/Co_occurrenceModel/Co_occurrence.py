@@ -17,7 +17,10 @@ def getMau(enNE,vnNE):
     tmp = data[(data.NEE == enNE)].Count.sum()
     return tmp
     
-def get_CoOccurrence_Prob(enNE,vnNE):
+def getCoocurenceProb(NEPair):
+    enNE = NEPair[3]
+    vnNE = NEPair[4]
+
     mau = getMau(enNE,vnNE)
     if mau == 0:
         return 0

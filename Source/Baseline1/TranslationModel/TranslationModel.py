@@ -1,12 +1,11 @@
 import pandas as pd
 from util import read_align_file
 inputfile = 'Result.actual.ti.final'
-align_file = ''
 
 data = pd.read_csv(inputfile, sep = ' ', encoding = 'utf-8')
 data = data.fillna('NaN')
 
-align_list = read_align_file(align_file)
+# align_list = read_align_file(align_file)
 
 def getWordTranslationProb(vnword, enword):
     result = data[(data.VN == vnword) & (data.EN == enword)].Prob
@@ -16,7 +15,7 @@ def getWordTranslationProb(vnword, enword):
     else:
         return tmp[0]
 
-def getNETranslationProb(align_index, NEPair):
+def getNETranslationProb(NEPair,VtoE_sent):
     '''
     NEPair: ([index],[index])
 

@@ -1,5 +1,7 @@
 
-def getTransliterationProb(enNE, vnNE):
+def getTransliterationProb(NEPair,VtoE_sent):
+    enNE = NEPair[3]
+    vnNE = NEPair[4]
     n = len(enNE.split())
     word_count = 0
     enNE = enNE.lower()

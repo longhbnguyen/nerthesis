@@ -1,0 +1,600 @@
+# Sentence pair (61210) source length 35 target length 49 alignment score : 5.45972e-65
+Dịch vụ Thời tiết Quốc gia nói với chúng tôi chiều nay nó là El Nino gây ra những con sóng khổng lồ trên bờ biển California , và mặc dù có đê cát , một số căn nhà phía trước đại dương đã bị lũ lụt nhỏ . 
+NULL ({ 32 }) The ({ }) National ({ 5 6 }) Weather ({ 1 3 4 }) Service ({ 2 }) told ({ 7 8 }) us ({ 9 10 }) this ({ }) afternoon ({ 11 12 }) it ({ 13 }) is ({ 14 }) El ({ 15 }) Nino ({ 16 }) causing ({ 17 18 }) these ({ 19 }) huge ({ 22 23 }) waves ({ 20 21 }) on ({ 24 }) the ({ }) California ({ 27 }) coast ({ 25 26 }) , ({ 28 }) and ({ 29 }) despite ({ 30 31 }) the ({ }) sand ({ 34 }) berms ({ 33 38 }) , ({ 35 }) some ({ 36 37 }) ocean ({ 42 43 }) front ({ 40 41 }) homes ({ 39 }) suffered ({ 44 45 }) minor ({ 48 }) flooding ({ 46 47 }) . ({ 49 }) 
+# Sentence pair (61211) source length 16 target length 16 alignment score : 3.97815e-19
+Trong gần ba ngày , họ chỉ thực hiện nó như ở Địa Trung Hải . 
+NULL ({ }) In ({ 1 }) nearly ({ 2 }) three ({ 3 }) days ({ 4 }) , ({ 5 }) they ({ 6 }) have ({ }) only ({ 7 }) made ({ 8 9 }) it ({ 10 }) as ({ 11 }) far ({ }) as ({ }) the ({ }) Mediterranean ({ 12 13 14 15 }) . ({ 16 }) 
+# Sentence pair (61212) source length 4 target length 4 alignment score : 0.000805059
+Bạn nhớ Cuba . 
+NULL ({ }) You ({ 1 }) remember ({ 2 }) Cuba ({ 3 }) . ({ 4 }) 
+# Sentence pair (61213) source length 41 target length 47 alignment score : 6.24586e-53
+Đêm nay , một trong những lý do mà đến Cuba là một kinh nghiệm đặc biệt thời điểm này , bởi vì nó là một cơ hội để dành một ít thời gian với Antonio Mora của ABC tại nơi mà anh được sinh ra . 
+NULL ({ 5 12 25 38 44 }) Tonight ({ 1 2 }) , ({ 3 }) one ({ 4 }) of ({ }) the ({ }) reasons ({ 6 7 8 }) that ({ 9 }) going ({ }) to ({ 10 }) Cuba ({ 11 }) was ({ }) a ({ 13 }) special ({ 16 17 }) experience ({ 14 15 }) this ({ 20 }) time ({ 18 19 }) , ({ 21 }) because ({ 22 23 }) it ({ 24 }) was ({ }) a ({ 26 }) chance ({ 27 28 }) to ({ 29 }) spend ({ 30 }) a ({ 31 }) little ({ 32 }) time ({ 33 34 }) with ({ 35 }) ABC ({ 39 }) 's ({ }) Antonio ({ 36 }) Mora ({ 37 }) in ({ 40 }) the ({ }) very ({ }) place ({ 41 }) where ({ 42 }) he ({ 43 }) was ({ }) born ({ 45 46 }) . ({ 47 }) 
+# Sentence pair (61214) source length 17 target length 19 alignment score : 1.27036e-20
+Maria Louisa de la Toriente Sendawal tên của ông nội tôi , và , oh , cậu bé . 
+NULL ({ 8 }) Maria ({ 1 }) Louisa ({ 2 }) de ({ 3 }) la ({ }) Toriente ({ 4 5 }) Sendawal ({ 6 10 }) my ({ 11 }) grandfather ({ 9 }) 's ({ }) name ({ 7 }) , ({ 12 }) and ({ 13 }) , ({ 14 }) oh ({ 15 }) , ({ 16 }) boy ({ 17 18 }) . ({ 19 }) 
+# Sentence pair (61215) source length 20 target length 28 alignment score : 5.03065e-40
+Người ông tuyệt vời của Antonio , Cosme de la Toriente , là một chính trị gia rất được yêu thích và nhà ngoại giao ở Cuba . 
+NULL ({ 5 7 19 }) Antonio ({ 1 6 }) 's ({ }) great ({ }) grandfather ({ 2 }) , ({ }) Cosme ({ 3 4 8 }) de ({ 9 }) la ({ }) Toriente ({ 10 11 }) , ({ 12 }) was ({ 13 }) a ({ 14 }) much ({ }) loved ({ 18 20 21 }) politician ({ 15 16 17 }) and ({ 22 }) diplomat ({ 23 24 25 }) in ({ 26 }) Cuba ({ 27 }) . ({ 28 }) 
+# Sentence pair (61216) source length 24 target length 28 alignment score : 1.25125e-38
+Cha của Antonio đã đi đến trường giống như Castro trong suốt những năm bốn mươi , và ban đầu , cha của Antonio hỗ trợ Castro . 
+NULL ({ 2 4 13 23 }) Antonio ({ 3 24 }) 's ({ }) father ({ 1 }) went ({ 5 }) to ({ }) the ({ }) same ({ 8 }) schools ({ 6 7 }) as ({ 9 }) Castro ({ 10 }) throughout ({ 11 12 }) the ({ }) nineteen ({ 14 }) forties ({ 15 16 }) , ({ 17 }) and ({ 18 }) initially ({ 19 20 }) , ({ 21 }) Antonio ({ }) 's ({ }) father ({ 22 }) supported ({ 25 26 }) Castro ({ 27 }) . ({ 28 }) 
+# Sentence pair (61217) source length 22 target length 36 alignment score : 1.87272e-42
+Họ đã không bao giờ quay trở lại Cuba , để lại đằng sau một cuộc sống rất thoải mái của những ngôi nhà rộng lớn , công chức và một trang trại cả nước . 
+NULL ({ 2 21 22 }) They ({ 1 }) never ({ 3 4 5 }) returned ({ 6 7 8 }) to ({ }) Cuba ({ 9 }) , ({ 10 }) leaving ({ 11 12 }) behind ({ 13 14 }) a ({ 15 }) very ({ 18 }) comfortable ({ 19 20 }) life ({ 16 17 }) of ({ }) large ({ 25 26 }) houses ({ 23 24 }) , ({ 27 }) servants ({ 28 29 }) and ({ 30 }) a ({ 31 }) country ({ 34 35 }) farm ({ 32 33 }) . ({ 36 }) 
+# Sentence pair (61218) source length 12 target length 15 alignment score : 7.89993e-19
+Và nhà trang nghiêm của John bây giờ là một tòa nhà chung cư . 
+NULL ({ 5 9 }) And ({ 1 }) the ({ }) stately ({ 3 4 13 14 }) home ({ 2 }) of ({ }) John ({ 6 }) is ({ }) now ({ 7 8 }) an ({ 10 }) apartment ({ }) building ({ 11 12 }) . ({ 15 }) 
+# Sentence pair (61219) source length 13 target length 14 alignment score : 5.62378e-19
+Và Antonio cũng hiểu rằng nơi đây bây giờ nơi của người khác . 
+NULL ({ 11 }) And ({ 1 }) Antonio ({ 2 }) also ({ 3 }) understands ({ 4 6 }) that ({ 5 }) this ({ 7 }) is ({ }) now ({ 8 9 }) someone ({ 12 }) else ({ 13 }) 's ({ }) place ({ 10 }) . ({ 14 }) 
+# Sentence pair (61220) source length 15 target length 20 alignment score : 5.06565e-21
+Tối hôm đó , hai mươi hai mươi , một cuộc phỏng vấn với luật sư của Monica Lewinsky . 
+NULL ({ 3 17 }) Later ({ 1 2 }) this ({ }) evening ({ }) , ({ 4 }) twenty ({ 5 6 }) twenty ({ 7 8 }) , ({ 9 }) an ({ 10 }) interview ({ 11 12 13 }) with ({ 14 }) Monica ({ 18 }) Lewinsky ({ 19 }) 's ({ }) lawyer ({ 15 16 }) . ({ 20 }) 
+# Sentence pair (61221) source length 19 target length 30 alignment score : 5.38976e-44
+Nó là một chiến lược để gây áp lực lên các nhà tư vấn độc lập để thực hiện một thỏa thuận trên bãi biển ở miền Nam California . 
+NULL ({ 11 }) It ({ 1 }) is ({ 2 }) a ({ 3 }) strategy ({ 4 5 }) to ({ 6 }) put ({ }) pressure ({ 7 8 9 }) on ({ 10 }) the ({ }) independent ({ 15 16 }) counsel ({ 12 13 14 }) to ({ 17 }) make ({ 18 19 }) a ({ 20 }) deal ({ 21 22 }) in ({ }) Southern ({ 23 24 25 26 27 28 }) California ({ 29 }) . ({ 30 }) 
+# Sentence pair (61222) source length 5 target length 6 alignment score : 3.53529e-08
+Dưới đây là Elizabeth Vargas . 
+NULL ({ 3 }) Here ({ 1 2 }) 's ({ }) Elizabeth ({ }) Vargas ({ 4 5 }) . ({ 6 }) 
+# Sentence pair (61223) source length 22 target length 30 alignment score : 2.29973e-34
+Nhưng Cohen nhấn mạnh rằng cuộc đình công sẽ không thể để loại bỏ Saddam Hussein khỏi quyền lực hoặc loại bỏ kho vũ khí chết người của hắn . 
+NULL ({ 28 }) But ({ 1 }) Cohen ({ 2 }) stressed ({ 3 4 }) that ({ 5 }) the ({ }) strike ({ 6 7 8 }) would ({ 9 }) not ({ 10 }) be ({ }) able ({ 11 }) to ({ 12 }) remove ({ 13 14 }) Saddam ({ 15 }) Hussein ({ 16 }) from ({ 17 }) power ({ 18 19 }) or ({ 20 }) eliminate ({ 21 22 }) his ({ }) deadly ({ }) arsenal ({ 23 24 25 26 27 29 }) . ({ 30 }) 
+# Sentence pair (61224) source length 6 target length 7 alignment score : 3.58699e-06
+John McWethy của ABC báo cáo . 
+NULL ({ 3 }) ABC ({ 4 }) 's ({ }) John ({ 1 }) McWethy ({ 2 }) reports ({ 5 6 }) . ({ 7 }) 
+# Sentence pair (61225) source length 24 target length 39 alignment score : 8.03666e-56
+Với hỏa lực Mỹ mạnh hơn được xem xét cho Vịnh Ba Tư , Bộ trưởng Quốc phòng Cohen hôm nay do đã đưa ra những lời chỉ trích khó khăn nhất của Hội đồng Bảo an LHQ . 
+NULL ({ 10 23 33 }) With ({ 1 }) more ({ }) American ({ 4 }) firepower ({ 2 3 5 6 }) being ({ }) considered ({ 7 8 9 }) for ({ }) the ({ }) Persian ({ 12 13 }) Gulf ({ 11 }) , ({ 14 }) Defense ({ 17 18 }) Secretary ({ 15 16 }) Cohen ({ 19 }) today ({ 20 21 }) issued ({ 22 24 25 }) toughest ({ 26 30 31 32 }) criticism ({ 27 28 29 }) of ({ }) the ({ }) UN ({ 38 }) Security ({ 36 37 }) Council ({ 34 35 }) . ({ 39 }) 
+# Sentence pair (61226) source length 46 target length 67 alignment score : 1.50109e-91
+Thành thật mà nói , tôi thấy vô cùng khó khăn để chấp nhận các đề xuất rằng , khi đối mặt với hành động của Saddam , các thành viên của Hội đồng Bảo an không thể mang lại cho chính họ quyền tự tuyên bố rằng đây là một vi phạm cơ bản hoặc các tài liệu về hành vi về phía ông ta . 
+NULL ({ 15 20 23 26 32 41 57 60 66 }) Frankly ({ 1 2 3 4 }) , ({ 5 }) I ({ 6 }) find ({ 7 }) it ({ }) incredibly ({ 8 9 }) hard ({ 10 11 }) to ({ 12 }) accept ({ 13 14 }) the ({ }) proposition ({ 16 17 }) that ({ 18 }) , ({ 19 }) in ({ }) the ({ }) face ({ 21 22 }) of ({ }) Saddam ({ 27 }) 's ({ }) actions ({ 24 25 }) , ({ 28 }) that ({ }) members ({ 29 30 31 }) of ({ }) the ({ }) Security ({ 35 36 }) Council ({ 33 34 }) cannot ({ 37 38 }) bring ({ 39 40 }) themselves ({ 42 43 44 45 }) to ({ }) declare ({ 46 47 }) that ({ 48 }) this ({ 49 }) is ({ 50 }) a ({ 51 }) fundamental ({ 54 55 }) or ({ 56 }) material ({ 58 59 }) breach ({ 52 53 }) of ({ }) conduct ({ 61 62 }) on ({ 63 }) his ({ 65 }) part ({ 64 }) . ({ 67 }) 
+# Sentence pair (61227) source length 48 target length 68 alignment score : 1.02885e-87
+Tại Châu Âu hôm nay , Bộ trưởng Bộ ngoại giao Albright , cố gắng để thu thập sự đồng tình cho các biện pháp cứng rắn hơn , đã nói với người Anh và Pháp rằng trước khi họ sẽ tham gia vào Mỹ trong việc sử dụng vũ lực , họ nhấn mạnh rằng Hội đồng Bảo an thông qua thêm một độ nghị quyết . 
+NULL ({ 22 23 30 44 47 }) In ({ 1 }) Europe ({ 2 3 }) today ({ 4 5 }) , ({ 6 }) Secretary ({ 7 8 }) of ({ }) State ({ }) for ({ }) Foreign ({ 10 11 }) Affrais ({ 9 }) Albright ({ 12 }) , ({ 13 }) trying ({ 14 15 }) to ({ 16 }) gather ({ 17 18 }) support ({ 19 }) for ({ }) tougher ({ 20 21 26 27 28 }) measures ({ 24 25 }) , ({ 29 }) was ({ }) told ({ 31 32 }) by ({ }) the ({ }) British ({ 33 34 }) and ({ 35 }) French ({ 36 }) that ({ 37 }) before ({ 38 39 }) they ({ 40 }) will ({ 41 }) join ({ 42 43 }) the ({ }) US ({ 45 }) in ({ 46 }) using ({ 48 49 }) force ({ 50 51 }) , ({ 52 }) they ({ 53 }) insist ({ 54 55 }) the ({ }) Security ({ 56 59 60 }) Council ({ 57 58 }) pass ({ 61 62 }) yet ({ }) another ({ 63 64 }) resolution ({ 65 66 67 }) . ({ 68 }) 
+# Sentence pair (61228) source length 26 target length 37 alignment score : 4.40108e-50
+Thủ tướng Anh Blair nói rằng nếu Saddam Hussein sau đó không thực hiện theo các lựa chọn duy nhất để thực thi các quyết định của Hội đồng Bảo an là hành động quân sự . 
+NULL ({ 16 24 27 32 }) British ({ 3 }) Prime ({ 1 2 }) Minister ({ }) Blair ({ 4 25 26 }) said ({ 5 6 }) if ({ 7 }) Saddam ({ 8 }) Hussein ({ 9 }) then ({ 10 11 }) does ({ }) not ({ 12 }) comply ({ 13 14 15 }) The ({ }) only ({ 19 20 }) option ({ 17 18 }) to ({ 21 }) enforce ({ 22 23 }) the ({ }) Security ({ 30 31 }) Council ({ 28 29 }) 's ({ }) will ({ }) is ({ }) military ({ 35 36 }) action ({ 33 34 }) . ({ 37 }) 
+# Sentence pair (61229) source length 16 target length 24 alignment score : 4.16376e-32
+Nhưng ngay cả một chiến dịch không quân lớn mạnh cũng có giới hạn đối với một nhà lãnh đạo như Saddam Hussein . 
+NULL ({ 12 }) But ({ 1 }) even ({ 2 3 }) a ({ 4 }) massive ({ 9 10 11 }) air ({ 7 8 }) campaign ({ 5 6 }) has ({ }) sharp ({ }) limits ({ 13 14 }) against ({ 15 16 }) a ({ 17 }) leader ({ 18 19 20 }) like ({ 21 }) Saddam ({ 22 }) Hussein ({ 23 }) . ({ 24 }) 
+# Sentence pair (61230) source length 9 target length 10 alignment score : 1.42449e-06
+John McWethy , ABC News , Lầu Năm Góc . 
+NULL ({ }) John ({ 1 }) McWethy ({ 2 }) , ({ 3 }) ABC ({ 4 }) News ({ 5 }) , ({ 6 }) the ({ }) Pentagon ({ 7 8 9 }) . ({ 10 }) 
+# Sentence pair (61231) source length 11 target length 10 alignment score : 1.0173e-12
+Sheila MacVicar của ABC cũng ở thủ đô Iraq . 
+NULL ({ 3 }) ABC ({ 4 }) 's ({ }) Sheila ({ 1 }) MacVicar ({ 2 }) is ({ }) also ({ 5 }) in ({ 6 }) the ({ }) Iraqi ({ 9 }) capital ({ 7 8 }) . ({ 10 }) 
+# Sentence pair (61232) source length 21 target length 25 alignment score : 7.43922e-29
+Chúng tôi biết rất ít về những gì ở trên bàn thảo luận với Nga , ngoại trừ những gì chính Posuvalyuk đã nói . 
+NULL ({ 9 }) We ({ 1 2 }) know ({ 3 }) very ({ 4 }) little ({ 5 }) about ({ 6 }) what ({ 7 8 }) is ({ }) on ({ 10 }) the ({ }) table ({ 11 }) with ({ 14 }) the ({ }) Russians ({ 15 16 }) except ({ 17 18 }) for ({ }) what ({ 19 20 }) Posuvalyuk ({ 12 13 21 22 }) himself ({ }) has ({ 23 }) said ({ 24 }) . ({ 25 }) 
+# Sentence pair (61233) source length 31 target length 38 alignment score : 2.01138e-49
+Bạn nói về những nhượng bộ , Sheila , là có bất kỳ cơ hội , hoặc có thể là những gì , trên thực tế rằng điều này sẽ được giải quyết trong những ngày tới ? 
+NULL ({ 11 18 19 20 35 }) You ({ 1 }) talk ({ 2 }) about ({ 3 }) concessions ({ 4 5 6 }) , ({ 7 }) Sheila ({ 8 }) , ({ 9 }) is ({ 10 }) there ({ }) any ({ 12 13 }) chance ({ 14 15 }) , ({ 16 }) or ({ 17 }) what ({ 21 22 }) are ({ }) the ({ }) chances ({ }) , ({ 23 }) in ({ 24 }) fact ({ 25 26 }) that ({ 27 }) that ({ 28 }) this ({ 29 }) will ({ 30 }) be ({ 31 }) settled ({ 32 33 }) in ({ 34 }) the ({ }) coming ({ 37 }) days ({ 36 }) ? ({ 38 }) 
+# Sentence pair (61234) source length 64 target length 78 alignment score : 2.16328e-93
+Chúng tôi biết có một số báo cáo ở Baghdad tối nay , và tôi phải nhấn mạnh đây là những báo cáo chưa được xác nhận , đó là nói rằng trong một phiên họp khẩn cấp của quốc hội Iraq vào sáng thứ Hai sẽ có một số đề nghị bình chọn mà các thành viên quốc hội yêu cầu Tổng thống Iraq , Saddam Hussein , mở cung điện cho Các thanh tra viên . 
+NULL ({ 4 20 25 30 39 48 73 }) We ({ 1 2 }) do ({ }) know ({ 3 }) there ({ }) are ({ }) some ({ 5 6 }) reports ({ 7 8 }) in ({ 9 }) Baghdad ({ 10 }) tonight ({ 11 12 }) , ({ 13 }) and ({ 14 }) I ({ 15 }) must ({ 16 }) emphasize ({ 17 18 19 }) these ({ 21 }) are ({ }) unconfirmed ({ 24 26 27 }) reports ({ 22 23 }) , ({ 28 }) that ({ 29 }) say ({ 31 }) that ({ 32 }) in ({ 33 }) an ({ 34 }) emergency ({ 37 38 }) session ({ 35 36 }) of ({ }) Iraq ({ 42 }) 's ({ }) national ({ }) assembly ({ 40 41 }) on ({ 43 }) Monday ({ 45 46 }) morning ({ 44 }) there ({ }) will ({ 47 }) be ({ }) some ({ 49 50 }) kind ({ }) of ({ }) proposal ({ 51 52 }) voted ({ 53 54 }) where ({ 55 }) the ({ }) national ({ }) assembly ({ 59 60 }) members ({ 56 57 58 }) ask ({ 61 62 }) Iraq ({ 65 }) 's ({ }) President ({ 63 64 }) , ({ 66 }) Saddam ({ 67 }) Hussein ({ 68 }) , ({ 69 }) to ({ }) open ({ 70 }) the ({ }) palace ({ 71 72 }) to ({ }) the ({ }) inspectors ({ 74 75 76 77 }) . ({ 78 }) 
+# Sentence pair (61235) source length 17 target length 20 alignment score : 2.59031e-24
+Tại Trung Đông , người Palestine hôm nay chuyển sang thực hiện một lời hứa với Tổng thống Clinton . 
+NULL ({ 16 }) In ({ 1 }) the ({ }) Middle ({ 2 }) East ({ 3 }) , ({ 4 }) the ({ }) Palestinians ({ 5 6 9 10 11 }) today ({ 7 8 }) moved ({ }) to ({ }) fulfill ({ 12 }) a ({ 13 }) promise ({ 14 15 }) to ({ }) President ({ 17 18 }) Clinton ({ 19 }) . ({ 20 }) 
+# Sentence pair (61236) source length 20 target length 22 alignment score : 3.55375e-31
+Các tin tức được đưa ra khi Bộ trưởng Bộ ngoại giao Madeleine Albright đã gặp Thủ tướng Israel Benjamin Netanyahu . 
+NULL ({ 4 6 15 }) The ({ 1 }) news ({ 2 3 }) came ({ }) as ({ 7 }) Secretary ({ 8 9 10 }) of ({ }) State ({ }) for ({ }) Foreign ({ 11 12 }) Affrais ({ 5 }) Madeleine ({ }) Albright ({ 13 14 }) met ({ 16 }) with ({ }) Israeli ({ }) Prime ({ 17 18 }) Minister ({ }) Benjamin ({ 19 20 }) Netanyahu ({ 21 }) . ({ 22 }) 
+# Sentence pair (61237) source length 18 target length 23 alignment score : 2.88666e-27
+Hiện vẫn chưa có thỏa thuận với luật sư độc lập của Kenneth Starr mà sẽ cho phép Monica Lewinsky làm chứng . 
+NULL ({ 4 12 }) There ({ 1 }) is ({ }) still ({ 2 }) no ({ 3 }) deal ({ 5 6 }) with ({ 7 }) independent ({ 10 11 }) counsel ({ 8 9 }) Kenneth ({ 13 }) Starr ({ 14 15 }) that ({ }) would ({ 16 }) allow ({ 17 18 }) Monica ({ 19 }) Lewinsky ({ 20 }) to ({ }) testify ({ 21 22 }) . ({ 23 }) 
+# Sentence pair (61238) source length 25 target length 32 alignment score : 2.81705e-43
+Đối với Chủ tịch , đó là thời gian để nghỉ ngơi rất cần thiết , một chuyến đi đến Trang trại David với gia đình , bạn bè và golf . 
+NULL ({ 7 20 }) For ({ 1 2 }) the ({ }) President ({ }) , ({ 5 }) it ({ 6 }) was ({ }) time ({ 8 9 }) for ({ 10 }) a ({ }) much ({ }) needed ({ 14 15 }) break ({ }) , ({ 16 }) a ({ 17 }) trip ({ 18 19 }) to ({ }) Camp ({ 3 4 11 12 13 21 22 }) David ({ 23 }) with ({ 24 }) family ({ 25 26 }) , ({ 27 }) friends ({ 28 29 }) and ({ 30 }) golf ({ 31 }) . ({ 32 }) 
+# Sentence pair (61239) source length 26 target length 36 alignment score : 8.89681e-45
+Các cuộc thăm dò mới nhất của ABC News cho thấy Clinton không chỉ bao gồm các thiệt hại từ vụ bê bối Lewinsky , anh ta thực sự đạt được một số lý lẽ . 
+NULL ({ 7 17 27 31 }) The ({ 1 }) latest ({ 5 6 }) ABC ({ 8 }) News ({ 9 }) poll ({ 2 3 4 }) shows ({ 10 11 }) that ({ }) Clinton ({ 12 }) is ({ }) not ({ 13 }) only ({ 14 }) containing ({ 15 16 }) the ({ }) damage ({ 18 19 }) from ({ 20 }) the ({ }) Lewinsky ({ 24 }) scandal ({ 21 22 23 }) , ({ 25 }) he ({ 26 }) is ({ }) actually ({ 28 29 }) gaining ({ 30 34 35 }) some ({ 32 33 }) ground ({ }) . ({ 36 }) 
+# Sentence pair (61240) source length 27 target length 42 alignment score : 3.55562e-54
+Lucianne Goldberg , người đã khuyến khích Linda Tripp ghi âm các cuộc gọi điện thoại của mình với Monica Lewinsky , thực hiện các mối đe dọa mơ hồ đối với các luật sư của Lewinsky vì chỉ trích Tripp . 
+NULL ({ 5 17 25 36 }) Lucianne ({ 1 2 }) Goldberg ({ 11 12 }) , ({ 3 }) who ({ 4 }) encouraged ({ 6 7 }) Linda ({ 8 }) Tripp ({ 9 10 }) to ({ }) tape ({ }) her ({ 18 }) phone ({ 15 16 }) calls ({ 13 14 }) with ({ 19 }) Monica ({ 20 }) Lewinsky ({ 21 }) , ({ 22 }) made ({ 23 24 }) vague ({ 29 30 }) threats ({ 26 27 28 }) toward ({ 31 32 }) Lewinsky ({ 37 }) 's ({ }) lawyers ({ 33 34 35 }) for ({ 38 }) criticizing ({ 39 40 }) Tripp ({ 41 }) . ({ 42 }) 
+# Sentence pair (61241) source length 13 target length 18 alignment score : 8.72072e-19
+Và các luật sư của Lewinsky đề nghị cô ấy có thể về nhà đến Los Angeles . 
+NULL ({ 5 }) And ({ 1 }) Lewinsky ({ 6 }) 's ({ }) lawyers ({ 2 3 4 }) suggested ({ 7 8 }) she ({ 9 10 }) might ({ 11 12 }) go ({ }) home ({ 13 14 }) to ({ 15 }) Los ({ 16 }) Angeles ({ 17 }) . ({ 18 }) 
+# Sentence pair (61242) source length 8 target length 8 alignment score : 0.000150133
+Michel McQueen , ABC News , Washington . 
+NULL ({ }) Michel ({ 1 }) McQueen ({ 2 }) , ({ 3 }) ABC ({ 4 }) News ({ 5 }) , ({ 6 }) Washington ({ 7 }) . ({ 8 }) 
+# Sentence pair (61243) source length 35 target length 46 alignment score : 2.368e-54
+Đệ nhất phu nhân Hillary Clinton ở Thụy Sĩ ngày hôm nay , và bà ấy đang mang theo một thông điệp , rằng cuộc khủng hoảng tại Nhà Trắng là không có gì mà phần còn lại của thế giới cần phải lo lắng . 
+NULL ({ 32 33 35 39 }) First ({ }) Lady ({ 1 }) Hillary ({ 2 3 4 5 }) Clinton ({ 6 }) is ({ }) in ({ 7 }) Switzerland ({ 8 9 }) today ({ 10 11 12 }) , ({ 13 }) and ({ 14 }) she ({ 15 16 }) 's ({ }) carrying ({ 17 18 19 }) a ({ 20 }) message ({ 21 22 }) , ({ 23 }) that ({ 24 }) the ({ }) crisis ({ 25 26 27 }) in ({ }) the ({ }) White ({ 28 29 }) House ({ 30 }) is ({ 31 }) nothing ({ 34 }) the ({ }) rest ({ 36 37 38 }) of ({ }) the ({ }) world ({ 40 41 }) needs ({ 42 43 }) to ({ }) worry ({ 44 45 }) about ({ }) . ({ 46 }) 
+# Sentence pair (61244) source length 14 target length 18 alignment score : 1.34118e-25
+Đó không phải là mối quan tâm của tôi , những gì đang diễn ra ở Washington . 
+NULL ({ 3 4 8 15 }) It ({ 1 }) 's ({ }) not ({ 2 }) in ({ }) my ({ 9 }) interest ({ 5 6 7 }) , ({ 10 }) what ({ 11 12 }) 's ({ }) going ({ 13 14 }) on ({ }) in ({ 16 }) Washington ({ 17 }) . ({ 18 }) 
+# Sentence pair (61245) source length 30 target length 46 alignment score : 4.7892e-58
+Một vài giờ về phía bắc tại Davos , Thụy Sĩ , các nhà lãnh đạo quốc tế đang tập trung cho Diễn đàn Kinh tế Thế giới và một số lo ngại rằng vụ bê bối đang mất tập trung vào Tổng thống Clinton . 
+NULL ({ 4 13 22 }) A ({ 1 }) few ({ 2 }) hours ({ 3 }) north ({ 5 6 }) in ({ }) Davos ({ 7 8 19 20 21 }) , ({ 9 }) Switzerland ({ 10 11 }) , ({ 12 }) international ({ 17 18 }) leaders ({ 14 15 16 }) are ({ }) gathering ({ }) for ({ }) the ({ }) World ({ 27 28 }) Economic ({ 26 }) Forum ({ 23 24 25 }) and ({ 29 }) some ({ 30 31 }) are ({ }) worried ({ 32 33 }) that ({ 34 }) the ({ }) scandal ({ 35 36 37 }) is ({ 38 }) distracting ({ 39 40 41 42 }) President ({ 43 44 }) Clinton ({ 45 }) . ({ 46 }) 
+# Sentence pair (61246) source length 8 target length 8 alignment score : 3.66939e-05
+Michele Norris , ABC News , Zurich . 
+NULL ({ }) Michele ({ 1 }) Norris ({ 2 }) , ({ 3 }) ABC ({ 4 }) News ({ 5 }) , ({ 6 }) Zurich ({ 7 }) . ({ 8 }) 
+# Sentence pair (61247) source length 14 target length 18 alignment score : 9.64652e-20
+Theo Karla Davis của ABC báo cáo , đảng Cộng hòa khác đã được chỉ thẳng thắn . 
+NULL ({ 4 13 14 }) As ({ 1 }) ABC ({ 5 }) 's ({ }) Karla ({ 2 }) Davis ({ 3 }) reports ({ 6 7 }) , ({ 8 }) other ({ 12 }) Republicans ({ 9 10 11 }) were ({ }) just ({ 15 }) as ({ }) forthright ({ 16 17 }) . ({ 18 }) 
+# Sentence pair (61248) source length 26 target length 47 alignment score : 5.13768e-65
+Ủy ban hàng năm của Ủy ban Hành động Chính trị Bảo thủ , hoặc hội nghị C PAC , là nơi mà các ứng cử viên tổng thống , quá khứ và có thể trong tương lai , thử nước tiểu trước cuộc bầu cử . 
+NULL ({ 5 36 }) The ({ }) annual ({ 3 4 }) Conservative ({ 12 13 }) Political ({ }) Action ({ }) Committee ({ 1 2 6 7 }) , ({ 14 }) or ({ 15 }) C ({ }) PAC ({ 8 9 10 11 18 19 }) conference ({ 16 17 }) , ({ 20 }) is ({ 21 }) where ({ 22 23 }) presidential ({ 28 29 }) candidates ({ 24 25 26 27 }) , ({ 30 }) past ({ 31 32 }) and ({ 33 }) possibly ({ 34 35 }) future ({ 37 38 }) , ({ 39 }) test ({ 40 }) pre-election ({ 42 43 44 45 46 }) waters ({ 41 }) . ({ 47 }) 
+# Sentence pair (61249) source length 26 target length 32 alignment score : 1.85399e-30
+Tôi tin rằng ông đã có một số loại mối quan hệ với Monica Lewinsky , và tôi không nghĩ rằng anh ta cho chúng tôi biết sự thật về nó . 
+NULL ({ 6 23 24 }) I ({ 1 }) believe ({ 2 3 }) he ({ 4 }) had ({ 5 }) some ({ 7 8 }) kind ({ 9 }) of ({ }) relationship ({ 10 11 12 }) with ({ 13 }) Monica ({ 14 }) Lewinsky ({ 15 }) , ({ 16 }) and ({ 17 }) I ({ 18 }) don ({ 19 }) 't ({ }) think ({ 20 21 }) he ({ 22 }) 's ({ }) telling ({ }) us ({ 25 26 }) the ({ }) truth ({ 27 28 29 }) about ({ 30 }) it ({ 31 }) . ({ 32 }) 
+# Sentence pair (61250) source length 8 target length 8 alignment score : 0.000192284
+Karla Davis , ABC News , Washington . 
+NULL ({ }) Karla ({ 1 }) Davis ({ 2 }) , ({ 3 }) ABC ({ 4 }) News ({ 5 }) , ({ 6 }) Washington ({ 7 }) . ({ 8 }) 
+# Sentence pair (61251) source length 22 target length 25 alignment score : 3.9703e-31
+Và ABC News sẽ có thêm nhiều về cuộc khủng hoảng trong tương lai của Nhà Trắng vào tuần này với Sam và Cokie . 
+NULL ({ 15 }) And ({ 1 }) ABC ({ 2 }) News ({ 3 }) will ({ 4 }) have ({ 5 }) more ({ 6 7 }) on ({ 8 }) the ({ }) crisis ({ 9 10 11 }) in ({ 12 }) the ({ }) White ({ 16 17 }) House ({ }) tomorrow ({ 18 }) on ({ }) This ({ 20 }) Week ({ 13 14 19 }) with ({ 21 }) Sam ({ 22 }) and ({ 23 }) Cokie ({ 24 }) . ({ 25 }) 
+# Sentence pair (61252) source length 11 target length 15 alignment score : 5.58487e-19
+Khi chúng tôi quay trở lại bờ biển California có một sự va đập . 
+NULL ({ 10 }) When ({ 1 }) we ({ 2 3 }) come ({ }) back ({ 4 5 6 }) the ({ }) California ({ 9 }) coast ({ 7 8 }) takes ({ }) a ({ 11 }) beating ({ 12 13 14 }) . ({ 15 }) 
+# Sentence pair (61253) source length 22 target length 36 alignment score : 2.04519e-47
+Các nhà sản xuất của Tylenol , Các sản phẩm Tiêu dùng McNeil , thừa nhận sự cần thiết phải đưa ra khuyến cáo dùng thuốc ghi trên nhãn mác của họ rõ ràng hơn . 
+NULL ({ 5 31 }) The ({ 1 }) makers ({ 2 }) of ({ }) Tylenol ({ 3 4 6 }) , ({ 7 }) McNeil ({ 8 9 }) Consumer ({ 10 }) Products ({ 11 12 13 }) , ({ 14 }) acknowledge ({ 15 16 17 }) the ({ }) need ({ 18 }) to ({ }) make ({ }) their ({ }) dosing ({ 19 20 21 22 23 24 25 26 27 }) recommendations ({ }) on ({ 28 }) their ({ 32 }) labels ({ 29 30 }) clearer ({ 33 34 35 }) . ({ 36 }) 
+# Sentence pair (61254) source length 10 target length 17 alignment score : 8.39373e-20
+Tim , cảm ơn rất nhiều tham gia vì gia nhập với chúng tôi tối nay . 
+NULL ({ 12 }) Tim ({ 1 }) , ({ 2 }) thanks ({ 3 4 }) so ({ 5 }) much ({ 6 }) joining ({ 7 8 9 10 11 }) us ({ 13 14 }) this ({ }) evening ({ 15 16 }) . ({ 17 }) 
+# Sentence pair (61255) source length 8 target length 9 alignment score : 1.16049e-10
+Jane Clayson của ABC có một câu chuyện . 
+NULL ({ 3 5 6 }) ABC ({ 4 }) 's ({ }) Jane ({ 1 }) Clayson ({ 2 }) has ({ }) the ({ }) story ({ 7 8 }) . ({ 9 }) 
+# Sentence pair (61256) source length 16 target length 16 alignment score : 4.75904e-17
+Chúng tôi sẽ được đo tuyết ở chân trên độ cao cao nhất tại Sierra . 
+NULL ({ }) We ({ 1 2 }) 'll ({ 3 }) be ({ }) measuring ({ 4 5 }) the ({ }) snow ({ 6 }) in ({ 7 }) feet ({ 8 }) across ({ }) the ({ }) highest ({ 11 12 13 }) elevations ({ 9 10 }) in ({ }) the ({ }) Sierra ({ 14 15 }) . ({ 16 }) 
+# Sentence pair (61257) source length 10 target length 10 alignment score : 3.97559e-06
+Jane Clayson , ABC News , Ventura , California . 
+NULL ({ }) Jane ({ 1 }) Clayson ({ 2 }) , ({ 3 }) ABC ({ 4 }) News ({ 5 }) , ({ 6 }) Ventura ({ 7 }) , ({ 8 }) California ({ 9 }) . ({ 10 }) 
+# Sentence pair (61258) source length 16 target length 21 alignment score : 6.97579e-27
+Phi hành gia David Wolf ở nhà tối nay sau bốn tháng trên trạm không gian Mir của người Nga . 
+NULL ({ 15 18 }) Astronaut ({ 1 2 3 }) David ({ 4 }) Wolf ({ 5 6 }) is ({ }) home ({ 7 }) tonight ({ 8 9 }) after ({ 10 }) four ({ 11 }) months ({ 12 }) on ({ 13 }) the ({ }) Russian ({ 19 20 }) space ({ 16 }) station ({ 14 }) Mir ({ 17 }) . ({ 21 }) 
+# Sentence pair (61259) source length 6 target length 10 alignment score : 3.78871e-15
+Hai trăm năm mươi dặm phía trên Tây Âu . 
+NULL ({ }) Fifty ({ 1 2 3 4 }) miles ({ 5 }) above ({ 6 7 }) Western ({ 8 }) Europe ({ 9 }) . ({ 10 }) 
+# Sentence pair (61260) source length 10 target length 14 alignment score : 7.12943e-17
+Ủy ban ân xá và Lời hứa danh dự họp vào thứ Hai . 
+NULL ({ }) The ({ }) Board ({ }) of ({ }) Pardons ({ 1 2 3 4 }) and ({ 5 }) Paroles ({ 6 7 8 9 }) meets ({ 10 }) on ({ 11 }) Monday ({ 12 13 }) . ({ 14 }) 
+# Sentence pair (61261) source length 11 target length 10 alignment score : 5.50605e-12
+Nó là một tuần xấu cho Karla Faye Tucker . 
+NULL ({ 2 }) It ({ 1 }) 's ({ }) been ({ }) a ({ 3 }) bad ({ 5 }) week ({ 4 }) for ({ 6 }) Karla ({ 7 }) Faye ({ 8 }) Tucker ({ 9 }) . ({ 10 }) 
+# Sentence pair (61262) source length 9 target length 9 alignment score : 3.19577e-06
+Johnson , ABC News , Gatesville , Texas . 
+NULL ({ }) Johnson ({ 1 }) , ({ 2 }) ABC ({ 3 }) News ({ 4 }) , ({ 5 }) Gatesville ({ 6 7 }) , ({ }) Texas ({ 8 }) . ({ 9 }) 
+# Sentence pair (61263) source length 25 target length 34 alignment score : 4.18089e-44
+Một năm 1983 sau vụ dùng rìu sát hại một cặp vợ chồng ở Houston , Karla Faye đã cứu bản thân và không còn là một mối đe dọa cho xã hội . 
+NULL ({ 26 31 }) A ({ 1 }) nineteen ({ }) eighty-three ({ 2 3 }) pick ({ }) ax ({ 4 5 6 7 }) murder ({ 8 9 }) of ({ }) a ({ 10 }) Houston ({ 14 15 }) couple ({ 11 12 13 }) , ({ 16 }) Karla ({ 17 }) Faye ({ 18 }) has ({ 19 }) redeemed ({ 20 21 22 }) herself ({ }) and ({ 23 }) is ({ }) no ({ 24 }) longer ({ 25 }) a ({ 27 }) threat ({ 28 29 30 }) to ({ }) society ({ 32 33 }) . ({ 34 }) 
+# Sentence pair (61264) source length 38 target length 53 alignment score : 1.07868e-74
+Tuy nhiên , do các quan chức nhấn mạnh rằng không phải giới của Karla Faye cũng không cống hiến mình cho Chúa mà sẽ là một yếu tố quyết định của họ , hầu hết ở đây tin rằng cô sẽ thực hiện đi trước đúng vào lịch đêm thứ Ba . 
+NULL ({ 3 12 14 18 22 26 32 }) But ({ 1 2 }) because ({ 4 }) officials ({ 5 6 7 }) insist ({ 8 9 }) that ({ 10 }) neither ({ 11 }) Karla ({ 13 15 }) Faye ({ 16 }) 's ({ }) gender ({ }) nor ({ 17 }) her ({ 21 }) devotion ({ 19 20 }) to ({ }) the ({ }) Lord ({ 23 24 }) will ({ 25 }) be ({ }) a ({ 27 }) factor ({ 28 29 }) in ({ }) their ({ 33 }) decision ({ 30 31 }) , ({ 34 }) most ({ 35 36 }) here ({ 37 38 }) believe ({ 39 40 }) her ({ 41 }) execution ({ 43 44 }) will ({ 42 }) go ({ 45 }) ahead ({ 46 }) right ({ 47 }) on ({ 48 }) schedule ({ 49 }) Tuesday ({ 51 52 }) night ({ 50 }) . ({ 53 }) 
+# Sentence pair (61265) source length 10 target length 10 alignment score : 1.28104e-06
+Dean Reynolds , ABC News , Gatesville , Texas . 
+NULL ({ }) Dean ({ 1 }) Reynolds ({ 2 }) , ({ 3 }) ABC ({ 4 }) News ({ 5 }) , ({ 6 }) Gatesville ({ 7 8 }) , ({ }) Texas ({ 9 }) . ({ 10 }) 
+# Sentence pair (61266) source length 25 target length 40 alignment score : 7.83096e-52
+Trong các môn thể thao thứ bảy này , người đầu bảng xếp hạng Martina Hingis bảo vệ danh hiệu đơn Úc mở rộng của cô hôm nay ở Melbourne , đánh bại Conchita Martinez trong những set trắng . 
+NULL ({ 2 25 36 37 }) In ({ 1 }) sports ({ 3 4 5 }) this ({ 8 }) Saturday ({ 6 7 }) , ({ 9 }) top-ranked ({ 10 11 }) Martina ({ 12 13 14 }) Hingis ({ 15 16 }) defended ({ 17 18 }) her ({ 26 }) Australian ({ 22 }) Open ({ }) Singles ({ 21 23 24 }) title ({ 19 20 }) today ({ 27 28 }) in ({ }) Melbourne ({ 29 30 }) , ({ 31 }) beating ({ 32 33 }) Conchita ({ 34 }) Martinez ({ 35 39 }) in ({ }) straight ({ }) sets ({ 38 }) . ({ 40 }) 
+# Sentence pair (61267) source length 20 target length 28 alignment score : 2.02539e-44
+Và một trong những niềm hy vọng sáng giá cho vàng Olympic của nước Mỹ ở Nagano , Nhật Bản đã có một ngày khó khăn hôm nay. 
+NULL ({ 3 4 13 22 }) And ({ 1 }) one ({ 2 }) of ({ }) America ({ 14 15 }) 's ({ }) brightest ({ 5 8 9 }) hopes ({ 6 7 }) for ({ 10 }) Olympic ({ 12 }) gold ({ 11 }) in ({ 16 }) Nagano ({ 17 25 26 28 }) , ({ 18 }) Japan ({ 19 20 }) had ({ 21 }) a ({ 23 }) rough ({ }) day ({ 24 }) today ({ 27 }) . ({ }) 
+# Sentence pair (61268) source length 15 target length 24 alignment score : 5.08733e-30
+Tổ chức Close Up phi lợi nhuận tổ chức những chuyến du lịch cho hơn hai mươi hai ngàn sinh viên mỗi năm . 
+NULL ({ 14 }) The ({ }) nonprofit ({ 1 2 3 4 5 }) Close ({ }) Up ({ }) Foundation ({ 6 7 }) organizes ({ 8 9 }) tours ({ 10 11 }) for ({ }) over ({ }) twenty-two ({ 12 13 15 16 17 18 }) thousand ({ 19 }) students ({ 20 21 }) every ({ 22 }) year ({ 23 }) . ({ 24 }) 
+# Sentence pair (61269) source length 15 target length 21 alignment score : 3.17979e-30
+Đối với thanh thiếu niên đến thăm Washington trong tuần này , đó là khó khăn không phải là hoài nghi. 
+NULL ({ 9 18 19 }) For ({ 1 2 }) teenagers ({ 3 4 5 }) visiting ({ 6 7 }) Washington ({ 8 }) this ({ 11 }) week ({ 10 }) , ({ 12 }) it ({ 13 }) was ({ 14 }) hard ({ 15 16 }) not ({ 17 }) to ({ }) be ({ }) cynical ({ 20 21 }) . ({ }) 
+# Sentence pair (61270) source length 14 target length 24 alignment score : 3.15697e-34
+Ashley Sinclair mười lăm tuổi thực sự tìm thấy hành động được cho là vô ý của Tổng thống đang gây cảm hứng . 
+NULL ({ 12 13 14 17 }) Fifteen ({ 1 2 3 4 }) year ({ }) old ({ }) Ashley ({ 10 11 15 16 }) Sinclair ({ 5 }) actually ({ 6 7 }) found ({ 8 9 }) the ({ }) President ({ 18 19 }) 's ({ }) alleged ({ }) indiscretions ({ }) inspiring ({ 20 21 22 23 }) . ({ 24 }) 
+# Sentence pair (61271) source length 37 target length 46 alignment score : 1.35521e-52
+Trong khi cuộc khủng hoảng ở Washington có thể thêm vào những đứa trẻ hoài nghi , nó cũng làm cho chính phủ thực tế hơn , một cái gì đó đáng chú ý đến , tốt , ít nhất là trong một vài ngày . 
+NULL ({ 21 35 41 }) While ({ 1 2 }) the ({ }) crisis ({ 3 4 5 }) in ({ 6 }) Washington ({ 7 }) may ({ 8 9 }) have ({ }) added ({ 10 11 }) to ({ }) these ({ 12 }) kids ({ 13 14 }) cynicism ({ 15 16 }) , ({ 17 }) it ({ 18 }) 's ({ }) also ({ 19 }) made ({ 20 }) government ({ 22 23 }) more ({ 26 }) real ({ 24 25 }) , ({ 27 }) something ({ 28 29 30 31 }) worth ({ 32 }) paying ({ }) attention ({ 33 34 }) to ({ }) , ({ 36 }) well ({ 37 }) , ({ 38 }) at ({ }) least ({ 39 40 }) for ({ 42 }) a ({ 43 }) couple ({ 44 }) of ({ }) days ({ 45 }) . ({ 46 }) 
+# Sentence pair (61272) source length 21 target length 20 alignment score : 1.22833e-19
+Đi xem Monica Lewinsky , cô có thể tìm đến với tôi Anderson Cooper , ABC News , Washington . 
+NULL ({ 7 }) Going ({ 1 }) to ({ }) watch ({ 2 }) Monica ({ 3 }) Lewinsky ({ 4 }) , ({ 5 }) she ({ 6 }) might ({ 8 }) try ({ 9 }) to ({ 10 }) get ({ }) with ({ 11 }) me ({ 12 }) Anderson ({ 13 14 }) Cooper ({ }) , ({ 15 }) ABC ({ 16 }) News ({ 17 }) , ({ 18 }) Washington ({ 19 }) . ({ 20 }) 
+# Sentence pair (61273) source length 5 target length 5 alignment score : 5.65619e-06
+Tôi là Elizabeth Vargas . 
+NULL ({ 2 }) I ({ 1 }) 'm ({ }) Elizabeth ({ }) Vargas ({ 3 4 }) . ({ 5 }) 
+# Sentence pair (61274) source length 18 target length 19 alignment score : 2.41264e-23
+Ngọn lửa bắt đầu sáng sớm hôm nay tại công ty Cargill ở Maysville , gần Sông Ohio . 
+NULL ({ }) The ({ }) fire ({ 1 2 }) started ({ 3 4 }) early ({ 5 6 }) this ({ }) morning ({ 7 8 }) at ({ }) the ({ }) Cargill ({ 9 }) company ({ 10 11 }) in ({ }) Maysville ({ 12 13 14 }) , ({ 15 }) near ({ 16 }) the ({ }) Ohio ({ 17 18 }) River ({ }) . ({ 19 }) 
+# Sentence pair (61275) source length 13 target length 14 alignment score : 4.44014e-15
+Bốn người đã được đưa đến bệnh viện ở Adams County , Kentucky . 
+NULL ({ }) Four ({ 1 }) people ({ 2 }) have ({ 3 }) been ({ 4 }) taken ({ 5 }) to ({ 6 }) hospitals ({ 7 8 }) in ({ 9 }) Adams ({ 10 }) County ({ 11 }) , ({ 12 }) Kentucky ({ 13 }) . ({ 14 }) 
+# Sentence pair (61276) source length 15 target length 21 alignment score : 2.08508e-31
+Điều kiện thời tiết bất ngờ là những quy tắc trên nhiều nơi của Hoa Kỳ vào cuối tuần này . 
+NULL ({ 7 8 14 17 }) Unexpected ({ 5 6 13 }) weather ({ 3 4 }) conditions ({ 1 2 }) are ({ }) the ({ }) rule ({ 9 10 }) across ({ 11 }) much ({ 12 }) of ({ }) the ({ }) United ({ 15 16 }) States ({ }) this ({ 20 }) weekend ({ 18 19 }) . ({ 21 }) 
+# Sentence pair (61277) source length 11 target length 17 alignment score : 5.64245e-24
+Nhiệt độ cao kỷ lục đã được thiết lập ngày hôm qua từ Minnesota đến Massachusetts . 
+NULL ({ 6 7 }) Record ({ 4 5 8 9 }) high ({ 3 }) temperatures ({ 1 2 }) were ({ }) set ({ }) yesterday ({ 10 11 12 }) from ({ 13 }) Minnesota ({ 14 }) to ({ }) Massachusetts ({ 15 16 }) . ({ 17 }) 
+# Sentence pair (61278) source length 9 target length 11 alignment score : 6.37559e-12
+Các cảnh tương tự trong Sierras của trung tâm California . 
+NULL ({ }) Similar ({ 1 2 3 4 }) scenes ({ }) in ({ 5 }) the ({ }) Sierras ({ 6 7 }) of ({ }) central ({ 8 9 }) California ({ 10 }) . ({ 11 }) 
+# Sentence pair (61279) source length 18 target length 23 alignment score : 5.13184e-29
+Mưa ở miền Nam California đang bị đổ lỗi cho tai nạn nghiêm trọng này ở phía Bắc thung lũng San Fernando . 
+NULL ({ 10 }) Rain ({ 1 }) in ({ 2 }) Southern ({ 3 4 }) California ({ 5 }) is ({ }) being ({ 6 7 }) blamed ({ 8 9 13 }) for ({ }) this ({ 15 }) major ({ 14 }) accident ({ 11 12 }) in ({ 16 }) the ({ }) northern ({ 17 18 }) San ({ 21 }) Fernando ({ 22 }) valley ({ 19 20 }) . ({ 23 }) 
+# Sentence pair (61280) source length 7 target length 8 alignment score : 7.20499e-07
+Angela Astore , CNN , báo cáo . 
+NULL ({ }) Angela ({ }) Astore ({ 1 2 }) , ({ 3 }) CNN ({ 4 }) , ({ 5 }) reporting ({ 6 7 }) . ({ 8 }) 
+# Sentence pair (61281) source length 17 target length 24 alignment score : 2.95411e-27
+Tại Montana , một nhà leo núi và một snowmobiler đã thiệt mạng ngày hôm qua trong hai vụ tuyết lở riêng biệt . 
+NULL ({ 11 }) In ({ }) Montana ({ 1 2 }) , ({ 3 }) a ({ 4 }) mountain ({ 7 }) climber ({ 5 6 }) and ({ 8 }) a ({ 9 }) snowmobiler ({ 10 12 13 14 }) were ({ }) killed ({ }) yesterday ({ 15 16 }) in ({ 17 }) two ({ 18 }) separate ({ 22 23 }) avalanches ({ 19 20 21 }) . ({ 24 }) 
+# Sentence pair (61282) source length 13 target length 16 alignment score : 3.20527e-19
+Ông ấy ở Đông Âu và hy vọng sẽ đến Thổ Nhĩ Kỳ tối nay . 
+NULL ({ 9 }) He ({ 1 2 }) 's ({ }) over ({ }) Eastern ({ 3 4 }) Europe ({ 5 }) and ({ 6 }) hopes ({ 7 8 }) to ({ }) reach ({ 10 }) Turkey ({ 11 12 13 }) by ({ }) tonight ({ 14 15 }) . ({ 16 }) 
+# Sentence pair (61283) source length 19 target length 21 alignment score : 9.65811e-24
+Fossett đã rời Saint Louis , Missouri , thứ Tư và hy vọng chuyến đi mất khoảng hai tuần nữa . 
+NULL ({ }) Fossett ({ 1 2 }) left ({ 3 }) Saint ({ 4 }) Louis ({ 5 }) , ({ 6 }) Missouri ({ 7 }) , ({ 8 }) Wednesday ({ 9 10 }) and ({ 11 }) expects ({ 12 13 }) the ({ }) trip ({ 14 15 }) to ({ }) take ({ 16 }) about ({ 17 }) two ({ 18 }) more ({ 20 }) weeks ({ 19 }) . ({ 21 }) 
+# Sentence pair (61284) source length 15 target length 19 alignment score : 5.90158e-23
+Gia đình đầu tiên đã được đi nghỉ mát ở Saint Thomas tại Quần đảo Virgin nước Mỹ . 
+NULL ({ }) The ({ }) first ({ 3 4 }) family ({ 1 2 }) has ({ 5 }) been ({ 6 }) vacationing ({ 7 8 9 10 }) on ({ }) Saint ({ 11 }) Thomas ({ 12 13 }) in ({ }) the ({ }) US ({ 18 }) Virgin ({ 16 17 }) Islands ({ 14 15 }) . ({ 19 }) 
+# Sentence pair (61285) source length 20 target length 29 alignment score : 4.62585e-37
+David Levy nói rằng lời đề nghị mới nhất từ ​​bỏ tiến trình hòa bình và bỏ qua những vấn đề gắn kết của người nghèo ở Israel . 
+NULL ({ 19 24 }) David ({ 1 }) Levy ({ 2 }) says ({ 3 4 }) the ({ }) latest ({ 8 9 }) proposal ({ 5 6 7 }) abandons ({ 10 11 }) the ({ }) peace ({ 14 15 }) process ({ 12 13 }) and ({ 16 }) ignores ({ 17 18 }) the ({ }) mounting ({ 22 23 }) problems ({ 20 21 }) of ({ }) Israel ({ 27 28 }) 's ({ }) poor ({ 25 26 }) . ({ 29 }) 
+# Sentence pair (61286) source length 13 target length 17 alignment score : 6.89451e-25
+Sự từ chức của Levy để lại liên minh của Netanyahu một ghế trong Quốc hội . 
+NULL ({ 4 10 }) Levy ({ 1 5 }) 's ({ }) resignation ({ 2 3 }) leaves ({ 6 7 }) Netanyahu ({ 11 }) 's ({ }) coalition ({ 8 9 }) one ({ 12 }) seat ({ 13 }) majority ({ }) in ({ 14 }) Parliament ({ 15 16 }) . ({ 17 }) 
+# Sentence pair (61287) source length 17 target length 23 alignment score : 4.79411e-33
+Strasbourg , Pháp , đã bị ảnh hưởng bởi một đêm bạo lực liên quan đến tình trạng bất ổn sắc tộc . 
+NULL ({ }) Strasbourg ({ 1 15 16 }) , ({ 2 }) France ({ 3 }) , ({ 4 }) has ({ 5 }) been ({ 6 }) hit ({ 7 8 }) by ({ 9 }) another ({ 10 }) night ({ 11 }) of ({ }) violence ({ 12 13 }) linked ({ 14 }) to ({ }) racial ({ 21 22 }) unrest ({ 17 18 19 20 }) . ({ 23 }) 
+# Sentence pair (61288) source length 10 target length 13 alignment score : 3.22094e-16
+Đã có mười sáu trường hợp được xác nhận ở Hồng Kông . 
+NULL ({ 7 }) There ({ 1 }) have ({ 2 }) been ({ }) sixteen ({ 3 4 }) confirmed ({ 8 9 }) cases ({ 5 6 }) in ({ 10 }) Hong ({ 11 }) Kong ({ 12 }) . ({ 13 }) 
+# Sentence pair (61289) source length 19 target length 27 alignment score : 1.18689e-37
+Các cuộc tranh luận đóng bắt đầu ngày mai trong giai đoạn kết án vụ thử bom tại Thành phố Oklahoma của Terry Nichols tại Denver . 
+NULL ({ 22 }) Closing ({ 1 5 }) arguments ({ 2 3 4 }) begin ({ 6 7 }) tomorrow ({ 8 9 }) in ({ 10 }) the ({ }) sentencing ({ 13 14 }) phase ({ 11 12 }) of ({ }) Terry ({ 23 }) Nichols ({ 24 }) ' ({ }) Oklahoma ({ 18 21 }) City ({ 19 20 }) bombing ({ 17 }) trial ({ 15 16 }) in ({ }) Denver ({ 25 26 }) . ({ 27 }) 
+# Sentence pair (61290) source length 19 target length 23 alignment score : 4.34778e-31
+Và ở Sacramento , California , phát biểu khai mạc được thiết lập cho ngày mai trong phiên tòa của Theodore Kaczynski . 
+NULL ({ 11 20 }) And ({ 1 }) in ({ }) Sacramento ({ 2 3 }) , ({ 4 }) California ({ 5 }) , ({ 6 }) opening ({ 9 10 }) statements ({ }) are ({ }) set ({ }) for ({ 14 }) tomorrow ({ 15 16 }) in ({ 17 }) the ({ }) trial ({ 18 19 }) of ({ }) Theodore ({ 7 8 12 13 21 }) Kaczynski ({ 22 }) . ({ 23 }) 
+# Sentence pair (61291) source length 14 target length 19 alignment score : 2.30544e-21
+Đây là Orelon Sidney từ trung tâm thời tiết CNN với bản cập nhật thời tiết của bạn . 
+NULL ({ 11 17 }) This ({ 1 }) is ({ }) Orelon ({ 2 3 }) Sidney ({ 4 5 }) from ({ }) the ({ }) CNN ({ 10 }) weather ({ 8 9 }) center ({ 6 7 }) with ({ }) your ({ 18 }) weather ({ 15 16 }) update ({ 12 13 14 }) . ({ 19 }) 
+# Sentence pair (61292) source length 18 target length 24 alignment score : 3.23688e-38
+Một cơn mưa rào và dông tiếp tục qua các đồng bằng phía nam thông qua các quốc gia phía tây Gulf Coast . 
+NULL ({ }) A ({ 1 }) chance ({ }) of ({ }) showers ({ 2 3 4 }) and ({ 5 }) thunderstorms ({ 6 15 22 23 }) continues ({ 7 8 }) through ({ 9 }) the ({ 10 17 }) southern ({ 13 14 }) plains ({ 11 12 }) through ({ 16 }) the ({ }) western ({ 20 21 }) Gulf ({ }) Coast ({ }) states ({ 18 19 }) . ({ 24 }) 
+# Sentence pair (61293) source length 9 target length 9 alignment score : 1.84437e-09
+Anh ta đang đi đến Texas và Oklahoma . 
+NULL ({ }) He ({ 1 2 }) is ({ 3 }) going ({ 4 }) to ({ 5 }) the ({ }) Texas ({ 6 }) and ({ 7 }) Oklahoma ({ 8 }) . ({ 9 }) 
+# Sentence pair (61294) source length 26 target length 32 alignment score : 4.46404e-42
+Một đợt không khí lạnh di chuyển vào vùng đồng bằng phía bắc vào thứ năm với nhiệt độ rất thấp từ ​​trung tâm Canada vào phần phía bắc của Montana . 
+NULL ({ 30 }) A ({ 1 }) shot ({ 2 }) of ({ }) very ({ }) cold ({ 5 }) air ({ 3 4 }) moves ({ 6 7 }) into ({ 8 }) the ({ }) northern ({ 9 12 13 }) plains ({ 10 11 }) on ({ 14 }) Thursday ({ 15 16 }) with ({ 17 }) very ({ 20 }) low ({ 21 }) temperatures ({ 18 19 }) from ({ 22 }) central ({ 23 24 }) Canada ({ 25 }) into ({ 26 }) northern ({ 28 29 }) portions ({ 27 }) of ({ }) Montana ({ 31 }) . ({ 32 }) 
+# Sentence pair (61295) source length 17 target length 23 alignment score : 7.05265e-30
+Nhà thám hiểm Mặt trăng sẽ cất cánh từ Cape Canaveral vào khoảng tám giờ ba mươi tối theo giờ miền đông . 
+NULL ({ }) The ({ }) Lunar ({ }) Prospector ({ 1 2 3 4 5 }) will ({ 6 }) lift ({ }) off ({ 7 8 }) from ({ 9 }) Cape ({ }) Canaveral ({ 10 11 }) at ({ 12 }) about ({ 13 }) eight ({ 14 15 }) thirty ({ 16 17 }) PM ({ 18 19 20 }) eastern ({ 21 22 }) time ({ }) . ({ 23 }) 
+# Sentence pair (61296) source length 13 target length 15 alignment score : 8.89631e-22
+Nhà ông là một nhà thuyền trên bến cảng Vancouver phía trước ở Canada . 
+NULL ({ }) His ({ 2 }) home ({ }) is ({ 3 }) a ({ 4 }) houseboat ({ 1 5 6 }) on ({ 7 }) the ({ }) Vancouver ({ 10 }) harbor ({ 8 9 }) front ({ 11 12 }) in ({ 13 }) Canada ({ 14 }) . ({ 15 }) 
+# Sentence pair (61297) source length 20 target length 24 alignment score : 6.22899e-29
+Trong những thập kỷ qua , Ogden đã làm việc bán hàng , bất động sản , và tại một ban nhạc rock . 
+NULL ({ }) Over ({ 1 }) the ({ }) decades ({ 2 3 4 5 }) , ({ 6 }) Ogden ({ 7 }) has ({ 8 }) worked ({ 9 10 }) in ({ }) sales ({ 11 12 }) , ({ 13 }) real ({ }) estate ({ 14 15 16 }) , ({ 17 }) and ({ 18 }) at ({ 19 }) a ({ 20 }) rock ({ 21 22 23 }) music ({ }) station ({ }) . ({ 24 }) 
+# Sentence pair (61298) source length 15 target length 21 alignment score : 1.75048e-29
+John có những đơn đặt hàng vào năm 2000 , chủ yếu là nói chuyện với các nhóm kinh doanh . 
+NULL ({ 2 13 16 }) John ({ 1 }) has ({ }) bookings ({ 3 4 5 6 9 }) into ({ 7 }) the ({ }) year ({ 8 }) two ({ }) thousand ({ }) , ({ 10 }) talking ({ 14 15 }) mainly ({ 11 12 }) to ({ }) business ({ 19 20 }) groups ({ 17 18 }) . ({ 21 }) 
+# Sentence pair (61299) source length 10 target length 10 alignment score : 4.83122e-09
+Dick Wilson , CNN , Vancouver , British Columbia . 
+NULL ({ }) Dick ({ 1 }) Wilson ({ 2 }) , ({ 3 }) CNN ({ 4 }) , ({ 5 }) Vancouver ({ 6 }) , ({ 7 }) British ({ }) Columbia ({ 8 9 }) . ({ 10 }) 
+# Sentence pair (61300) source length 25 target length 34 alignment score : 1.13536e-42
+Và công nhân chăn nuôi gia cầm ở Hồng Kông đang phản đối sau khi chính phủ ra lệnh tàn sát hơn một triệu con gà để chống lại dịch cúm gia cầm . 
+NULL ({ 29 }) And ({ 1 }) poultry ({ 4 5 6 7 32 33 }) workers ({ 2 3 }) in ({ 8 }) Hong ({ 9 }) Kong ({ 10 }) are ({ 11 }) protesting ({ 12 13 }) after ({ 14 15 }) government ({ 16 17 }) ordered ({ 18 19 }) the ({ }) slaughter ({ 20 21 }) of ({ }) more ({ }) than ({ 22 }) a ({ 23 }) million ({ 24 }) chickens ({ 25 26 }) to ({ 27 }) fight ({ 28 }) the ({ }) bird ({ }) flu ({ 30 31 }) . ({ 34 }) 
+# Sentence pair (61301) source length 22 target length 36 alignment score : 2.17744e-44
+Một số lượng ngày càng tăng của các công ty công nghệ cao ở miền Bắc California đang cho phép những máy tính kết hợp với chó , mèo , và thậm chí cả thỏ . 
+NULL ({ 7 21 26 }) A ({ 1 }) growing ({ 4 5 6 }) number ({ 2 3 }) of ({ }) high-tech ({ 12 13 }) companies ({ 8 9 10 11 }) in ({ 14 }) northern ({ 15 16 }) California ({ 17 }) are ({ 18 }) letting ({ 19 20 }) computers ({ 22 23 }) mix ({ }) with ({ }) canines ({ 24 25 27 }) , ({ 28 }) cats ({ 29 }) , ({ 30 }) and ({ 31 }) even ({ 32 33 }) rabbits ({ 34 35 }) . ({ 36 }) 
+# Sentence pair (61302) source length 9 target length 10 alignment score : 6.42989e-11
+Tại Netscape , chính sách này được đưa ra . 
+NULL ({ 6 }) At ({ }) Netscape ({ 1 2 }) , ({ 3 }) the ({ }) policy ({ 4 5 }) is ({ }) spelled ({ 7 8 }) out ({ 9 }) . ({ 10 }) 
+# Sentence pair (61303) source length 8 target length 8 alignment score : 1.40235e-06
+Rusty Dornin , CNN , San Francisco . 
+NULL ({ }) Rusty ({ 1 }) Dornin ({ 2 }) , ({ 3 }) CNN ({ 4 }) , ({ 5 }) San ({ 6 }) Francisco ({ 7 }) . ({ 8 }) 
+# Sentence pair (61304) source length 13 target length 15 alignment score : 6.04078e-16
+Tôi là Anthony Keith James , và đây là Thể thao Đầu đề CNN . 
+NULL ({ 2 }) I ({ 1 }) 'm ({ }) Anthony ({ 3 }) Keith ({ 4 }) James ({ 5 }) , ({ 6 }) and ({ 7 }) this ({ 8 }) is ({ 9 }) CNN ({ 14 }) Headline ({ 12 13 }) Sports ({ 10 11 }) . ({ 15 }) 
+# Sentence pair (61305) source length 19 target length 26 alignment score : 1.5044e-38
+Packers đưa hai mươi sáu trò chơi trong nhà của họ giành chiến thắng tuyệt đối trong việc chống lại Tampa Bay tại Lambeau Field . 
+NULL ({ 10 }) The ({ }) Packers ({ 1 2 }) put ({ }) their ({ }) twenty-six ({ 3 4 5 6 7 8 11 12 13 }) game ({ }) home ({ 9 }) win ({ 14 }) streak ({ }) on ({ }) the ({ }) line ({ }) against ({ }) Tampa ({ 15 16 17 18 19 20 21 }) Bay ({ 22 }) at ({ }) Lambeau ({ 23 }) Field ({ 24 25 }) . ({ 26 }) 
+# Sentence pair (61306) source length 14 target length 17 alignment score : 7.84485e-23
+Chiefs có lợi thế sân nhà trước Denver trong ngày hôm nay của trận đấu AFC . 
+NULL ({ 2 13 }) The ({ }) Chiefs ({ 1 5 }) have ({ }) home ({ 6 }) field ({ }) advantage ({ 3 4 }) against ({ }) Denver ({ 7 8 }) in ({ 9 }) today ({ 10 11 12 }) 's ({ }) AFC ({ 16 }) match ({ 14 15 }) . ({ 17 }) 
+# Sentence pair (61307) source length 27 target length 29 alignment score : 1.07263e-40
+Và nói về Pittsburgh , nó được tổ chức ngoài khơi New England trong trận playoff AFC hôm thứ Bảy , Kordell Stewart ghi bốn mươi bàn thắng . 
+NULL ({ 7 }) And ({ 1 }) speaking ({ 2 }) of ({ }) Pittsburgh ({ 3 4 10 11 }) , ({ 5 }) it ({ 6 }) held ({ 8 9 }) off ({ }) New ({ 12 }) England ({ 13 }) in ({ 14 }) Saturday ({ }) 's ({ }) AFC ({ 15 }) playoff ({ 16 17 18 19 20 }) game ({ }) , ({ 21 }) Kordell ({ 22 23 }) Stewart ({ 27 28 }) scoring ({ 24 }) on ({ }) a ({ }) forty ({ 25 26 }) yard ({ }) option ({ }) play ({ }) . ({ 29 }) 
+# Sentence pair (61308) source length 8 target length 9 alignment score : 1.3371e-13
+Steve Young đang chuẩn bị rời khỏi Úc . 
+NULL ({ }) Steve ({ 1 2 3 4 }) Young ({ 5 }) is ({ }) going ({ }) to ({ }) leave ({ 6 7 }) Australia ({ 8 }) . ({ 9 }) 
+# Sentence pair (61309) source length 20 target length 39 alignment score : 4.81733e-52
+Những vị trí đứng đầu Bắc Carolina được cải thiện đến mười lăm và bằng việc đánh bại xếp hạng hai mươi mốt Clemson bảy mươi ba bảy mươi , Shammond Williams ghi được hai mươi lăm điểm . 
+NULL ({ 8 34 }) Top-ranked ({ 1 2 3 4 5 }) North ({ 6 }) Carolina ({ 7 }) improved ({ 9 10 }) to ({ 11 }) fifteen ({ 12 13 }) and ({ 14 }) by ({ 15 }) beating ({ }) twenty-first ({ 16 17 18 }) ranked ({ 19 20 }) Clemson ({ 21 23 }) seventy-three ({ 24 27 }) seventy ({ 22 25 26 28 29 }) , ({ 30 }) Shammond ({ 31 32 33 }) Williams ({ }) scoring ({ 35 }) twenty-five ({ 36 37 38 }) . ({ 39 }) 
+# Sentence pair (61310) source length 19 target length 28 alignment score : 1.64177e-40
+Miles Simon đã có hai mươi bảy cho vị trí thứ tám xếp hạng bởi Wildcats , mà đã mất vị trí thứ ba khi đến Bruins . 
+NULL ({ 4 }) Miles ({ 1 }) Simon ({ 2 }) had ({ 3 }) twenty-seven ({ 5 6 7 }) for ({ 8 }) the ({ }) eighth ({ }) ranked ({ 9 13 14 }) Wildcats ({ 10 11 12 15 16 }) , ({ 17 }) which ({ 18 }) had ({ 19 }) lost ({ 20 }) three ({ 24 }) straight ({ }) to ({ }) the ({ }) Bruins ({ 21 22 23 25 26 27 }) . ({ 28 }) 
+# Sentence pair (61311) source length 21 target length 25 alignment score : 5.71419e-27
+Trong NBA , Bulls đã ghi ba mươi bốn điểm bỏi Michael Jordan , đánh bại Detroit một - năm , chín mươi sáu . 
+NULL ({ 5 }) In ({ 1 }) the ({ }) NBA ({ 2 }) , ({ 3 }) the ({ }) Bulls ({ 4 }) got ({ }) thirty-four ({ 6 7 8 9 11 }) points ({ 10 }) from ({ }) Michael ({ 12 }) Jordan ({ 13 }) , ({ 14 }) beating ({ 15 16 }) Detroit ({ 17 }) one ({ 18 }) - ({ 19 }) five ({ 20 }) , ({ 21 }) ninety-six ({ 22 23 24 }) . ({ 25 }) 
+# Sentence pair (61312) source length 8 target length 9 alignment score : 3.98089e-10
+Karl Malone có hai mươi cho đội Jazz . 
+NULL ({ }) Karl ({ 1 }) Malone ({ 2 3 }) had ({ }) twenty ({ 4 5 }) for ({ 6 }) the ({ }) Jazz ({ 7 8 }) . ({ 9 }) 
+# Sentence pair (61313) source length 10 target length 14 alignment score : 1.97197e-19
+Avalanche đã bất bại trong mười môn thi đấu cuối cùng của họ . 
+NULL ({ 12 }) The ({ }) Avalanche ({ 1 2 3 4 }) are ({ }) unbeaten ({ }) in ({ 5 }) their ({ 13 }) last ({ 10 11 }) ten ({ 6 }) games ({ 7 8 9 }) . ({ 14 }) 
+# Sentence pair (61314) source length 4 target length 5 alignment score : 8.25533e-07
+Dallas đánh bại Carolina . 
+NULL ({ }) Dallas ({ 1 2 }) beat ({ }) Carolina ({ 3 4 }) . ({ 5 }) 
+# Sentence pair (61315) source length 5 target length 6 alignment score : 7.33098e-06
+New Jersey đánh bại Toronto . 
+NULL ({ }) New ({ 1 }) Jersey ({ 2 }) beat ({ 3 }) Toronto ({ 4 5 }) . ({ 6 }) 
+# Sentence pair (61316) source length 9 target length 11 alignment score : 4.48413e-10
+Philadelphia bắn rơi Ottawa , Saint Louis vượt qua Calgary . 
+NULL ({ }) Philadelphia ({ 1 2 }) downing ({ }) Ottawa ({ 3 4 }) , ({ 5 }) Saint ({ 6 }) Louis ({ 7 8 }) over ({ }) Calgary ({ 9 10 }) . ({ 11 }) 
+# Sentence pair (61317) source length 8 target length 9 alignment score : 1.4291e-11
+Indiana là người chiến thắng , Miami thua . 
+NULL ({ 2 }) Indiana ({ 1 }) was ({ }) a ({ }) winner ({ 3 4 5 }) , ({ 6 }) Miami ({ 7 8 }) fell ({ }) . ({ 9 }) 
+# Sentence pair (61318) source length 14 target length 17 alignment score : 4.44979e-16
+Cleveland đứng đầu New Jersey , New York vượt qua Orlando , Minnesota đánh bại Denver . 
+NULL ({ }) Cleveland ({ 1 }) topping ({ 2 3 }) New ({ 4 }) Jersey ({ 5 }) , ({ 6 }) New ({ 7 }) York ({ 8 }) over ({ }) Orlando ({ 9 10 11 }) , ({ 12 }) Minnesota ({ 13 14 }) beat ({ 15 }) Denver ({ 16 }) . ({ 17 }) 
+# Sentence pair (61319) source length 12 target length 14 alignment score : 1.33128e-17
+Portland đánh bại Houston , Boston vượt qua Milwaukee và Clippers giành chiến thắng. 
+NULL ({ }) Portland ({ 1 }) downing ({ 2 3 }) Houston ({ 4 }) , ({ 5 }) Boston ({ 6 }) over ({ }) Milwaukee ({ 7 8 9 }) and ({ 10 }) the ({ }) Clippers ({ 11 12 13 14 }) won ({ }) . ({ }) 
+# Sentence pair (61320) source length 18 target length 22 alignment score : 3.62553e-27
+Hai mươi lăm người chiến thắng đứng đầu là Kansas , Duke , Utah , Kentucky , Stanford và U Conn . 
+NULL ({ 4 9 }) Your ({ }) top ({ }) twenty-five ({ 1 2 3 7 }) winners ({ 5 6 }) were ({ }) Kansas ({ 8 10 }) , ({ 11 }) Duke ({ 12 }) , ({ 13 }) Utah ({ 14 }) , ({ 15 }) Kentucky ({ 16 }) , ({ 17 }) Stanford ({ 18 }) and ({ 19 }) U ({ 20 }) Conn ({ 21 }) . ({ 22 }) 
+# Sentence pair (61321) source length 4 target length 5 alignment score : 1.40704e-05
+Marquette đối đầu Louisville . 
+NULL ({ }) Marquette ({ 1 2 }) versus ({ }) Louisville ({ 3 4 }) . ({ 5 }) 
+# Sentence pair (61322) source length 7 target length 7 alignment score : 5.35898e-08
+Ông đưa nó cho Jarrod Lovette . 
+NULL ({ }) He ({ 1 }) gives ({ 2 }) it ({ 3 }) to ({ }) Jarrod ({ 4 }) Lovette ({ 5 6 }) . ({ 7 }) 
+# Sentence pair (61323) source length 30 target length 33 alignment score : 4.43918e-48
+Tại cái chuông , Đại bàng vàng cải thiện thành tích của họ đến 10 và 0 , là huấn luyện viên trưởng Mike Deane được bầu là lối chơi của ngày . 
+NULL ({ 12 19 26 31 }) At ({ 1 }) the ({ }) buzzer ({ 2 3 }) , ({ 4 }) the ({ }) Golden ({ 7 }) Eagles ({ 5 6 }) improve ({ 8 9 }) their ({ 13 }) record ({ 10 11 }) to ({ 14 }) ten ({ 15 }) and ({ 16 }) oh ({ 17 }) , ({ 18 }) as ({ }) head ({ }) coach ({ 20 21 22 }) Mike ({ 24 }) Deane ({ 23 25 27 }) is ({ 28 }) pumped ({ }) up ({ }) for ({ }) the ({ }) Play ({ 29 30 }) of ({ }) the ({ }) Day ({ 32 }) . ({ 33 }) 
+# Sentence pair (61324) source length 44 target length 56 alignment score : 2.0235e-71
+Với thăm dò này , Bennett sẽ loại bỏ chất béo từ bụng , hông , đùi và cánh tay của Linda , nhưng Bennett nói hút mỡ không phải là một biện pháp giảm cân , mặc dù một số bệnh nhân sử dụng nó để bắt đầu chương trình giảm cân của mình . 
+NULL ({ 21 30 31 54 }) With ({ 1 }) this ({ 4 }) probe ({ 2 3 }) , ({ 5 }) Bennett ({ 6 }) will ({ 7 }) remove ({ 8 9 }) fat ({ 10 11 }) from ({ 12 }) Linda ({ 22 }) 's ({ }) abdomen ({ 13 }) , ({ 14 }) hips ({ 15 }) , ({ 16 }) thighs ({ 17 33 34 35 36 52 53 55 }) and ({ 18 }) upper ({ }) arms ({ 19 20 }) , ({ 23 }) but ({ 24 }) Bennett ({ 25 }) says ({ 26 }) liposuction ({ 27 28 }) is ({ }) not ({ 29 }) a ({ 32 }) weight ({ }) loss ({ }) procedure ({ }) , ({ 37 }) though ({ 38 39 }) some ({ 40 41 }) patients ({ 42 43 }) use ({ 44 45 }) it ({ 46 }) to ({ 47 }) jump ({ }) start ({ 48 49 }) their ({ }) weight ({ }) loss ({ }) programs ({ 50 51 }) . ({ 56 }) 
+# Sentence pair (61325) source length 21 target length 27 alignment score : 1.81675e-39
+Nhưng không phải tất cả bác sĩ phẫu thuật thẩm mỹ được bán trên UAL, bao gồm Chủ tịch của Viện Phẫu thuật thẩm mỹ Mỹ . 
+NULL ({ 3 12 20 }) But ({ 1 }) not ({ 2 }) all ({ 4 5 }) cosmetic ({ }) surgeons ({ 6 7 8 9 }) are ({ }) sold ({ 13 }) on ({ 14 }) UAL ({ 15 16 17 18 19 }) , ({ }) including ({ }) the ({ }) president ({ }) of ({ }) the ({ }) American ({ 26 }) Academy ({ }) of ({ }) Cosmetic ({ 10 11 21 22 23 24 25 }) Surgery ({ }) . ({ 27 }) 
+# Sentence pair (61326) source length 7 target length 7 alignment score : 4.20538e-05
+Rhonda Rowland , CNN , Atlanta . 
+NULL ({ }) Rhonda ({ 1 }) Rowland ({ 2 }) , ({ 3 }) CNN ({ 4 }) , ({ 5 }) Atlanta ({ 6 }) . ({ 7 }) 
+# Sentence pair (61327) source length 5 target length 5 alignment score : 0.000173481
+Tôi là Sachi Koto . 
+NULL ({ }) I ({ 1 }) 'm ({ }) Sachi ({ 2 3 }) Koto ({ 4 }) . ({ 5 }) 
+# Sentence pair (61328) source length 6 target length 8 alignment score : 2.4986e-11
+Đây là Tin tức Trang đầu CNN . 
+NULL ({ }) This ({ 1 }) is ({ 2 }) CNN ({ 7 }) Headline ({ 3 4 5 6 }) News ({ }) . ({ 8 }) 
+# Sentence pair (61329) source length 9 target length 10 alignment score : 2.67463e-14
+Greg và Lyn , những gì đang xảy ra ? 
+NULL ({ 9 }) Greg ({ 1 8 }) and ({ 2 }) Lyn ({ 3 }) , ({ 4 }) what ({ 5 6 }) 's ({ }) going ({ 7 }) on ({ }) ? ({ 10 }) 
+# Sentence pair (61330) source length 14 target length 15 alignment score : 7.66384e-18
+Đây có thể là lần thứ hai Kaczynski và thẩm phán đã hội ý . 
+NULL ({ 4 }) This ({ 1 }) may ({ 2 3 }) be ({ }) the ({ }) second ({ 5 6 7 }) time ({ }) that ({ }) Kaczynski ({ 8 }) and ({ 9 }) the ({ }) judge ({ 10 11 }) have ({ 12 }) conferred ({ 13 14 }) . ({ 15 }) 
+# Sentence pair (61331) source length 10 target length 16 alignment score : 7.55365e-23
+Tạp chí Liên hiệp cho biết Kaczynski đã vào phòng xử án ngày hôm nay . 
+NULL ({ 8 }) Associated ({ 1 2 3 4 5 6 }) Press ({ }) reported ({ }) that ({ }) Kaczynski ({ 7 }) entered ({ 9 }) the ({ }) courtroom ({ 10 11 12 }) today ({ 13 14 15 }) . ({ 16 }) 
+# Sentence pair (61332) source length 38 target length 49 alignment score : 9.73784e-54
+Ngoài ra trong phòng xử án là hai trong số các nạn nhân bị cáo buộc của Kaczynski , David Gelertner , người đã bị thương bởi một trong những vụ nổ Unabomb , và Charles Epstein , cũng bị thương bởi một trong những vụ nổ Unabomb . 
+NULL ({ 7 9 17 24 29 44 }) Also ({ 1 2 }) in ({ 3 }) the ({ }) courtroom ({ 4 5 6 }) were ({ }) two ({ 8 }) of ({ }) Kaczynski ({ 18 }) 's ({ }) alleged ({ 14 15 16 }) victims ({ 11 12 13 }) , ({ 19 }) David ({ 20 }) Gelertner ({ 10 21 }) , ({ 22 }) who ({ 23 }) was ({ }) injured ({ 25 26 }) by ({ 27 }) one ({ 28 }) of ({ }) the ({ }) Unabomb ({ 30 31 }) explosions ({ 32 33 }) , ({ 34 }) and ({ 35 }) Charles ({ 36 }) Epstein ({ 37 }) , ({ 38 }) also ({ 39 }) injured ({ 40 41 }) by ({ 42 }) one ({ 43 }) of ({ }) those ({ 45 }) Unabomb ({ 46 }) explosions ({ 47 48 }) . ({ 49 }) 
+# Sentence pair (61333) source length 48 target length 60 alignment score : 9.44381e-79
+Tuy nhiên như chúng tôi đã nói , khi bắt đầu Lyn , trường hợp này vừa có một bước ngoặt kỳ lạ và đó là Theodore Kaczynski đã yêu cầu thẩm phán ra một tuyên bố , và thẩm phán đã đột ngột dừng thủ tục tố tụng lại và đưa các luật sư vào phòng của mình . 
+NULL ({ 6 13 18 34 50 58 }) But ({ 1 2 }) as ({ 3 }) we ({ 4 5 }) said ({ 7 }) , ({ 8 }) at ({ 9 }) the ({ }) beginning ({ 10 11 }) Lyn ({ 12 20 21 }) , ({ }) this ({ 16 }) case ({ 14 15 }) has ({ }) just ({ 17 }) taken ({ }) another ({ 19 }) odd ({ 22 23 }) twist ({ }) and ({ 24 }) that ({ 25 }) is ({ 26 }) that ({ }) Theodore ({ 27 }) Kaczynski ({ 28 }) has ({ 29 }) asked ({ 30 31 }) the ({ }) judge ({ 32 33 }) to ({ }) make ({ }) a ({ 35 }) statement ({ 36 37 }) , ({ 38 }) and ({ 39 }) the ({ }) judge ({ 40 41 }) has ({ 42 }) abruptly ({ 43 44 }) halted ({ 45 }) proceedings ({ 46 47 48 49 }) and ({ 51 }) brought ({ 52 }) the ({ }) lawyers ({ 53 54 55 }) into ({ 56 }) his ({ 59 }) chambers ({ 57 }) . ({ 60 }) 
+# Sentence pair (61334) source length 19 target length 28 alignment score : 1.16989e-48
+Ông phải đối mặt với án tù chung thân hoặc tử hình đối với âm mưu làm nổ tung tòa nhà liên bang ở thành phố Oklahoma . 
+NULL ({ 2 5 14 17 }) He ({ 1 }) faces ({ 3 4 }) life ({ }) in ({ }) prison ({ 7 }) or ({ 10 }) death ({ }) for ({ }) conspiring ({ 6 8 9 11 12 13 15 16 18 }) to ({ }) blow ({ }) up ({ }) the ({ }) federal ({ 19 22 23 }) building ({ 20 21 }) in ({ 24 }) Oklahoma ({ 27 }) city ({ 25 26 }) . ({ 28 }) 
+# Sentence pair (61335) source length 17 target length 19 alignment score : 1.54707e-23
+Cô công bố hôm nay cô ấy sẽ chạy đua vào Thượng viện Mỹ ở bang New York . 
+NULL ({ }) She ({ 1 }) announced ({ 2 3 }) today ({ 4 5 }) she ({ 6 7 }) will ({ 8 }) run ({ 9 }) for ({ }) the ({ }) US ({ 14 }) senate ({ 10 11 12 13 }) in ({ 15 }) the ({ }) state ({ 16 }) of ({ }) New ({ 17 }) York ({ 18 }) . ({ 19 }) 
+# Sentence pair (61336) source length 29 target length 40 alignment score : 4.75895e-54
+Tôi đã ở trong ngọn lửa thánh giá , và các chiến thuật của Amato không bao giờ có thể ngăn cản tôi chạy hoặc đứng lên cho những mối quan tâm thực sự của người dân New York . 
+NULL ({ 4 11 14 29 35 }) I ({ 1 }) 've ({ 2 }) been ({ }) in ({ 3 }) the ({ }) cross ({ 7 8 }) fire ({ 5 6 }) , ({ 9 }) and ({ 10 }) the ({ }) Amato ({ 15 }) tactics ({ 12 13 }) could ({ 19 20 }) never ({ 16 17 18 }) deter ({ 21 22 }) me ({ 23 }) from ({ }) running ({ 24 }) or ({ 25 }) standing ({ 26 }) up ({ 27 }) for ({ 28 }) the ({ }) real ({ 33 34 }) concerns ({ 30 31 32 }) of ({ }) New ({ 38 }) Yorkers ({ 36 37 39 }) . ({ 40 }) 
+# Sentence pair (61337) source length 13 target length 21 alignment score : 4.67283e-30
+Steve Fossett đã kết thúc nỗ lực thứ tư của ông để lên bằng khí cầu trên toàn thế giới . 
+NULL ({ 10 }) Steve ({ 1 }) Fossett ({ 2 }) has ({ 3 }) ended ({ 4 5 }) his ({ 11 }) fourth ({ 8 9 }) attempt ({ 6 7 }) to ({ 12 }) balloon ({ 13 14 15 16 }) around ({ }) the ({ }) world ({ 17 18 19 20 }) . ({ 21 }) 
+# Sentence pair (61338) source length 11 target length 12 alignment score : 1.15835e-15
+Steve Fossett đã hạ cánh gần Biển Đen sáng sớm nay . 
+NULL ({ }) Steve ({ 1 }) Fossett ({ 2 3 }) landed ({ 4 5 }) near ({ 6 }) the ({ }) Black ({ }) Sea ({ 7 8 }) early ({ 10 }) this ({ }) morning ({ 9 11 }) . ({ 12 }) 
+# Sentence pair (61339) source length 16 target length 27 alignment score : 4.27509e-39
+Phi công Dick Rutan cất cánh vào sáng ngày mai trong nhiệm vụ của mình để bay lên bằng khinh khí cầu trên toàn thế giới . 
+NULL ({ 14 }) Aviator ({ 1 2 }) Dick ({ 3 }) Rutan ({ 4 }) takes ({ }) off ({ 5 6 }) tomorrow ({ 7 9 10 }) morning ({ 8 }) in ({ 11 }) his ({ }) quest ({ 12 13 15 16 17 18 19 }) to ({ }) balloon ({ 20 21 22 }) around ({ }) the ({ }) world ({ 23 24 25 26 }) . ({ 27 }) 
+# Sentence pair (61340) source length 25 target length 35 alignment score : 3.65102e-52
+Nhà thám hiểm mặt trăng của NASA dự kiến ​​sẽ được giới thiệu đêm nay , đánh dấu chuyến đi đầu tiên cơ quan không gian lên Mặt trăng trong hai mươi lăm năm . 
+NULL ({ 6 11 }) NASA ({ 1 }) 's ({ }) lunar ({ 4 5 }) prospector ({ 2 3 7 10 12 13 }) is ({ }) scheduled ({ 8 9 }) to ({ }) be ({ }) launched ({ }) tonight ({ 14 15 }) , ({ 16 }) marking ({ 17 18 }) the ({ }) space ({ 25 26 }) agency ({ 23 24 }) 's ({ }) first ({ 21 22 }) trip ({ 19 20 }) to ({ }) the ({ }) Moon ({ 27 28 29 }) in ({ 30 }) twenty-five ({ 31 32 33 }) years ({ 34 }) . ({ 35 }) 
+# Sentence pair (61341) source length 16 target length 24 alignment score : 8.42307e-38
+Tòa án Tối cao California , ngày hôm nay , nghe những thách thức đối với hai nguyên tắc do thám lâu dài . 
+NULL ({ 12 16 }) The ({ }) California ({ 5 }) Supreme ({ 1 2 3 4 }) Court ({ }) , ({ 6 }) today ({ 7 8 9 }) , ({ 10 }) hears ({ 11 }) challenges ({ 13 14 15 }) to ({ }) two ({ 17 }) long ({ 22 23 }) standing ({ }) scout ({ 18 19 20 21 }) rules ({ }) . ({ 24 }) 
+# Sentence pair (61342) source length 12 target length 15 alignment score : 1.3532e-18
+Lợi nhuận sẽ đi Diana , Công nương của Quỹ Tưởng niệm xứ Wales . 
+NULL ({ 9 }) Profits ({ 1 2 }) will ({ 3 }) go ({ 4 }) the ({ }) Diana ({ 5 7 8 }) , ({ 6 }) Princess ({ }) of ({ }) Wales ({ 13 14 }) Memorial ({ 11 12 }) fund ({ 10 }) . ({ 15 }) 
+# Sentence pair (61343) source length 15 target length 22 alignment score : 3.54642e-27
+Tôi là Orelon Sidney từ trung tâm thời tiết của CNN với bản cập nhật tin tức thời tiết của bạn . 
+NULL ({ 10 20 }) I ({ 1 }) 'm ({ }) Orelon ({ 2 3 }) Sidney ({ 4 5 }) from ({ }) the ({ }) CNN ({ 11 }) weather ({ 8 9 }) center ({ 6 7 }) with ({ 12 }) your ({ 21 }) news ({ 16 17 }) weather ({ 18 19 }) update ({ 13 14 15 }) . ({ 22 }) 
+# Sentence pair (61344) source length 30 target length 36 alignment score : 3.36288e-46
+Một cơ hội để tuyết rơi vẫn tiếp tục cho hầu hết Great Lakes và vào New England như một hệ thống áp suất thấp và di chuyển không khí lạnh trên Thung lũng Mississippi . 
+NULL ({ 10 }) A ({ 1 }) chance ({ 2 3 }) of ({ }) snowfall ({ 4 5 6 }) continues ({ 7 8 9 }) for ({ }) most ({ 11 12 }) of ({ }) the ({ }) Great ({ }) Lakes ({ 13 14 }) and ({ 15 }) into ({ 16 }) New ({ 17 }) England ({ 18 }) as ({ 19 }) a ({ 20 }) low ({ 25 }) pressure ({ 23 24 }) system ({ 21 22 }) and ({ 26 }) a ({ }) cold ({ }) front ({ }) move ({ 27 28 }) across ({ }) the ({ }) Mississippi ({ 29 30 31 32 }) Valley ({ 33 34 35 }) . ({ 36 }) 
+# Sentence pair (61345) source length 15 target length 20 alignment score : 7.8084e-24
+Vẫn còn lạnh tại Rockies với bài đọc chủ yếu ở độ tuổi ba mươi và tuổi đôi mươi . 
+NULL ({ }) Still ({ 1 2 }) cold ({ 3 }) in ({ }) the ({ }) Rockies ({ 4 5 }) with ({ 6 }) readings ({ 7 8 }) mainly ({ 9 10 }) in ({ 11 }) the ({ }) thirties ({ 12 13 14 15 }) and ({ 16 }) the ({ }) twenties ({ 17 18 19 }) . ({ 20 }) 
+# Sentence pair (61346) source length 13 target length 16 alignment score : 4.8732e-20
+Có một buổi triển lãm xe hơi quốc tế Bắc Mỹ ở Detroit tuần này . 
+NULL ({ }) There ({ 1 }) is ({ }) a ({ 2 }) North ({ 10 }) American ({ 11 }) International ({ 8 9 }) Auto ({ 3 4 5 6 7 }) Show ({ }) in ({ 12 }) Detroit ({ 13 }) this ({ 15 }) week ({ 14 }) . ({ 16 }) 
+# Sentence pair (61347) source length 10 target length 10 alignment score : 1.36784e-09
+Chào buổi sáng , Jeff chào bạn , Lyn . 
+NULL ({ }) Good ({ 1 }) morning ({ 2 3 }) , ({ 4 }) Jeff ({ 5 }) hello ({ 6 }) to ({ }) you ({ 7 }) , ({ 8 }) Lyn ({ 9 }) . ({ 10 }) 
+# Sentence pair (61348) source length 19 target length 19 alignment score : 9.11869e-25
+Và người đàn ông có trách nhiệm bán những chiếc xe mới sang Bắc Mỹ , Steve Wilhite . 
+NULL ({ 5 }) And ({ 1 }) the ({ }) man ({ 2 3 4 }) who ({ }) is ({ }) in ({ }) charge ({ 6 7 }) of ({ }) selling ({ 8 }) these ({ 9 }) new ({ 12 }) cars ({ 10 11 }) to ({ }) North ({ 14 }) America ({ 15 }) , ({ 16 }) Steve ({ 17 }) Wilhite ({ 13 18 }) . ({ 19 }) 
+# Sentence pair (61349) source length 19 target length 24 alignment score : 4.25381e-43
+Đó thực sự là một tình yêu đáng kinh ngạc và thân tình đối với Volkswagen và đặt biệt là kiểu dáng này . 
+NULL ({ 4 20 }) There ({ 1 }) really ({ 2 3 }) is ({ }) an ({ 5 }) incredible ({ }) love ({ 6 7 }) affair ({ }) and ({ 11 }) reservoir ({ }) of ({ }) goodwill ({ }) towards ({ 14 15 }) Volkswagen ({ 8 9 10 12 13 16 18 21 22 }) and ({ 17 }) this ({ 23 }) style ({ }) in ({ }) particular ({ 19 }) . ({ 24 }) 
+# Sentence pair (61350) source length 33 target length 41 alignment score : 4.68778e-59
+Chỉ cần một trong bốn mươi lăm ô tô và xe concept sẽ được giới thiệu trong tuần này tại một trong những gì được gọi là triển lãm ôtô tại Detroit hiện nay tại triển lãm ôtô Bắc Mỹ . 
+NULL ({ 4 17 21 22 23 }) Just ({ 1 2 }) one ({ 3 }) of ({ }) forty-five ({ 5 6 7 }) cars ({ 8 9 }) and ({ 10 }) concept ({ 12 }) cars ({ 11 }) that ({ }) will ({ 13 }) be ({ }) introduced ({ 14 15 16 }) this ({ 19 }) week ({ 18 }) at ({ 20 }) the ({ }) what ({ 24 }) use ({ }) to ({ }) be ({ 25 }) called ({ 26 27 }) the ({ }) Detroit ({ 28 29 31 32 33 34 35 36 37 }) auto ({ 30 }) show ({ }) now ({ }) the ({ }) North ({ 39 }) American ({ 40 }) International ({ }) auto ({ 38 }) show ({ }) . ({ 41 }) 
+# Sentence pair (61351) source length 15 target length 22 alignment score : 9.99452e-34
+Kiểm tra câu chuyện hàng đầu của thời gian , một sự phát triển bất ngờ trong vụ xét xử Unabomber . 
+NULL ({ 7 }) Checking ({ 1 2 8 9 }) the ({ }) hour ({ }) 's ({ }) top ({ 5 6 }) stories ({ 3 4 }) , ({ 10 }) a ({ 11 }) surprise ({ 15 16 }) development ({ 12 13 14 }) in ({ 17 }) the ({ }) Unabomber ({ 18 21 }) trial ({ 19 20 }) . ({ 22 }) 
+# Sentence pair (61352) source length 18 target length 26 alignment score : 6.06514e-33
+Đây sẽ là cố gắng thứ hai của Geraldine Ferraro để trở thành người phụ nữ Thượng nghị sĩ Mỹ đầu tiên của New York . 
+NULL ({ 3 8 14 23 }) This ({ 1 }) will ({ 2 }) be ({ }) Geraldine ({ 4 5 }) Ferraro ({ 9 10 }) 's ({ }) second ({ 6 7 }) try ({ }) to ({ 11 }) become ({ 12 13 }) New ({ 24 }) York ({ 25 }) 's ({ }) first ({ 21 22 }) female ({ 15 16 }) US ({ 20 }) Senator ({ 17 18 19 }) . ({ 26 }) 
+# Sentence pair (61353) source length 7 target length 6 alignment score : 2.03964e-05
+Myron Kandel ở New York . 
+NULL ({ }) Myron ({ 1 }) Kandel ({ 2 }) is ({ }) in ({ 3 }) New ({ 4 }) York ({ 5 }) . ({ 6 }) 
+# Sentence pair (61354) source length 16 target length 24 alignment score : 1.32985e-34
+Nhưng một bài phát biểu cuối tuần của Chủ tịch Cục Dự trữ Liên bang Alan Greenspan sẽ giúp thúc đẩy trái phiếu . 
+NULL ({ 8 }) But ({ 1 }) a ({ 2 }) weekend ({ 6 7 }) speech ({ 3 4 5 }) by ({ }) Federal ({ 14 15 }) Reserve ({ 9 10 11 12 13 }) chairman ({ }) Alan ({ 16 }) Greenspan ({ 17 18 20 21 22 23 }) helps ({ 19 }) spur ({ }) the ({ }) bond ({ }) rally ({ }) . ({ 24 }) 
+# Sentence pair (61355) source length 31 target length 32 alignment score : 5.51596e-55
+Chỉ số công nghiệp Dow Jones tăng bốn mươi ba điểm tại 8008 , với cổ phiếu của JP Morgan lên ba điểm và đứng thứ tám tại 115 trong quý . 
+NULL ({ 18 }) The ({ }) Dow ({ 1 2 3 4 5 }) Jones ({ 6 }) industrials ({ 7 8 }) gaining ({ }) forty-three ({ 9 10 12 13 25 26 28 29 }) points ({ 11 }) at ({ }) eight ({ }) thousand ({ }) and ({ }) eight ({ }) , ({ 14 }) with ({ 15 }) shares ({ 16 17 }) of ({ }) JP ({ 19 }) Morgan ({ 20 23 }) up ({ 21 }) three ({ 22 }) and ({ 24 }) an ({ }) eighth ({ 27 }) at ({ }) hundred ({ }) and ({ }) fifteen ({ }) in ({ 30 }) the ({ }) quarter ({ 31 }) . ({ 32 }) 
+# Sentence pair (61356) source length 30 target length 45 alignment score : 1.54975e-70
+San Antonio đã căn cứ trên công ty điện thoại khu vực đang mua lại Hãng điện thoại Nam New England với bốn phẩy bốn tỉ đô la mà có đến sáu mươi lăm đô la và tám mươi ba cent một cổ phiếu . 
+NULL ({ 3 15 22 30 }) The ({ }) San ({ 1 }) Antonio ({ 2 }) based ({ 4 5 6 }) regional ({ 11 12 }) phone ({ 9 10 }) company ({ 7 8 }) is ({ 13 }) buying ({ 14 }) Southern ({ 19 }) New ({ 20 }) England ({ 21 }) Telephone ({ 16 17 18 }) for ({ }) four ({ 25 }) point ({ }) four ({ 23 }) billion ({ 24 26 }) dollars ({ 27 28 }) that ({ 29 }) comes ({ 31 }) to ({ }) sixty-five ({ 32 34 }) dollars ({ 35 36 }) and ({ 37 }) eighty-three ({ 33 38 39 40 41 }) cents ({ }) a ({ 42 }) share ({ 43 44 }) . ({ 45 }) 
+# Sentence pair (61357) source length 26 target length 35 alignment score : 6.9265e-46
+SBC , nhà thống trị các thị trường California và Texas bây giờ mở rộng để bao gồm một phần lớn của Connecticut , bang Miền Nam New England phục vụ tại địa phương . 
+NULL ({ 6 22 }) SBC ({ 1 3 4 5 }) , ({ 2 }) which ({ }) dominates ({ }) the ({ }) California ({ 9 }) and ({ 10 }) Texas ({ 11 }) markets ({ 7 8 }) now ({ 12 13 }) expands ({ 14 15 }) to ({ 16 }) include ({ 17 18 }) a ({ 19 }) majority ({ }) of ({ }) Connecticut ({ 20 21 23 }) , ({ 24 }) the ({ }) state ({ 25 }) Southern ({ 26 27 }) New ({ 28 }) England ({ 29 }) serves ({ 30 31 }) locally ({ 32 33 34 }) . ({ 35 }) 
+# Sentence pair (61358) source length 11 target length 14 alignment score : 7.29698e-15
+Cổ phiếu của Miền Nam New England tăng mười và một phần tư . 
+NULL ({ 3 }) Shares ({ 1 2 }) of ({ }) Southern ({ 4 5 }) New ({ 6 }) England ({ }) soaring ({ 7 8 }) ten ({ 9 }) and ({ 10 }) a ({ 11 }) quarter ({ 12 13 }) . ({ 14 }) 
+# Sentence pair (61359) source length 14 target length 18 alignment score : 2.08169e-18
+Cổ phiếu của Netscape giảm bốn và năm Tám ở mức mười tám và ba phần tư . 
+NULL ({ 3 }) Shares ({ 1 2 }) of ({ }) Netscape ({ }) plunging ({ 4 5 }) four ({ 6 }) and ({ 7 }) five ({ 8 }) eights ({ 9 10 11 }) at ({ }) eighteen ({ 12 13 }) and ({ 14 }) three ({ 15 }) quarters ({ 16 17 }) . ({ 18 }) 
+# Sentence pair (61360) source length 15 target length 18 alignment score : 1.16218e-21
+Packers trong tiêu đề trò chơiNFC , một lần nữa chi tiết tiếp theo trong thể thao . 
+NULL ({ }) The ({ }) Packers ({ 1 }) in ({ 2 }) the ({ }) NFC ({ 3 4 5 6 }) title ({ }) game ({ }) , ({ 7 }) one ({ 8 }) again ({ 9 10 }) details ({ 11 12 }) next ({ 13 14 }) in ({ 15 }) sports ({ 16 17 }) . ({ 18 }) 
+# Sentence pair (61361) source length 22 target length 21 alignment score : 2.9324e-21
+Đó là xuống trận chung kết bốn trong NFL , tôi Antony Keith James và đây là CNN thể thao . 
+NULL ({ 2 }) It ({ 1 }) 's ({ }) down ({ 3 }) the ({ }) the ({ }) final ({ 4 5 6 }) four ({ 7 }) in ({ 8 }) the ({ }) NFL ({ 9 }) , ({ 10 }) I ({ 11 }) 'm ({ }) Antony ({ 12 }) Keith ({ 13 }) James ({ 14 }) and ({ 15 }) this ({ 16 }) is ({ 17 }) CNN ({ 18 }) Sports ({ 19 20 }) . ({ 21 }) 
+# Sentence pair (61362) source length 10 target length 8 alignment score : 7.26951e-15
+Broncos đã tách ra khỏi Chiefs , 1410. 
+NULL ({ 2 }) The ({ }) Broncos ({ 1 3 }) held ({ }) off ({ 4 }) the ({ }) Chiefs ({ 5 6 }) , ({ 7 }) fourteen ({ 8 }) ten ({ }) . ({ }) 
+# Sentence pair (61363) source length 17 target length 17 alignment score : 1.65671e-21
+Bảo vệ chức vô địch super bowl , Packers , hai trò chơi được nhắc lại . 
+NULL ({ 14 }) The ({ }) defending ({ 1 2 }) super ({ }) bowl ({ }) champs ({ 3 4 5 6 7 }) , ({ 8 }) the ({ }) Packers ({ 9 }) , ({ 10 }) are ({ }) two ({ 11 }) games ({ 12 13 }) away ({ }) from ({ }) a ({ }) repeat ({ 15 16 }) . ({ 17 }) 
+# Sentence pair (61364) source length 17 target length 19 alignment score : 3.6549e-21
+Chủ nhật , nó sẽ là Pack và Niners Bốn mươi trong danh hiệu trò chơi của NFC . 
+NULL ({ 6 17 }) Sunday ({ 1 2 }) , ({ 3 }) it ({ 4 }) 'll ({ 5 }) be ({ }) the ({ }) Pack ({ 7 }) and ({ 8 }) the ({ }) Forty ({ 9 10 }) Niners ({ 11 18 }) in ({ 12 }) the ({ }) NFC ({ }) title ({ 13 14 }) game ({ 15 16 }) . ({ 19 }) 
+# Sentence pair (61365) source length 11 target length 16 alignment score : 1.26407e-21
+Allen Iverson vứt bỏ ba mươi mốt điểm cùng với mười một sự trợ giúp . 
+NULL ({ 13 }) Allen ({ 1 }) Iverson ({ 2 3 4 5 }) tossed ({ }) in ({ }) thirty-one ({ 6 7 }) points ({ 8 }) along ({ 9 }) with ({ 10 }) eleven ({ 11 12 }) assists ({ 14 15 }) . ({ 16 }) 
+# Sentence pair (61366) source length 13 target length 15 alignment score : 1.89762e-18
+Don Sutton là ứng cử viên hàng đầu được bình chọn vào hội trường . 
+NULL ({ 3 9 }) Don ({ }) Sutton ({ 1 2 }) is ({ }) the ({ }) leading ({ 7 8 }) candidate ({ 4 5 6 }) to ({ }) be ({ }) voted ({ 10 11 }) into ({ 12 }) the ({ }) hall ({ 13 14 }) . ({ 15 }) 
+# Sentence pair (61367) source length 37 target length 45 alignment score : 2.7463e-50
+New Jersey gửi cầu thủ chạy cánh Bill Gared và Valarie Zelaputon đến trung tâm thứ tư Edmonton Jason Arnott và người đàn ông quốc phòng Brian Muir trên bảng điểm LA vượt qua Edmonton , Florida và Anaheim trong trận hòa và Chicago . 
+NULL ({ 13 40 }) New ({ 1 }) Jersey ({ 2 }) sent ({ 3 }) wingers ({ 4 5 6 7 }) Bill ({ 8 }) Gared ({ 9 }) and ({ 10 }) Valarie ({ }) Zelaputon ({ 11 12 }) to ({ }) Edmonton ({ 18 }) fourth ({ 16 17 }) center ({ 14 15 }) Jason ({ 19 }) Arnott ({ 20 }) and ({ 21 }) defense ({ 25 26 }) man ({ 22 23 24 }) Brian ({ 27 }) Muir ({ 28 }) on ({ 29 }) the ({ }) scoreboard ({ 30 31 }) LA ({ 32 33 }) over ({ }) Edmonton ({ 34 35 }) , ({ 36 }) Florida ({ 37 }) and ({ 38 }) Anaheim ({ 39 41 }) in ({ }) a ({ }) draw ({ 42 }) and ({ 43 }) the ({ }) Chicago ({ 44 }) . ({ 45 }) 
+# Sentence pair (61368) source length 6 target length 7 alignment score : 1.08371e-06
+NBA , Washington vượt qua Phoenix . 
+NULL ({ }) NBA ({ 1 }) , ({ 2 }) Washington ({ 3 }) over ({ }) Phoenix ({ 4 5 6 }) . ({ 7 }) 
+# Sentence pair (61369) source length 7 target length 8 alignment score : 6.00259e-08
+Seattle đang gạt bỏ Vancouver và Sacramento . 
+NULL ({ }) Seattle ({ 1 2 }) is ({ }) dumping ({ 3 4 }) Vancouver ({ 5 }) and ({ 6 }) Sacramento ({ 7 }) . ({ 8 }) 
+# Sentence pair (61370) source length 6 target length 6 alignment score : 0.000154372
+Rex Barnett , New Delhi . 
+NULL ({ }) Rex ({ }) Barnett ({ 1 2 }) , ({ 3 }) New ({ 4 }) Delhi ({ 5 }) . ({ 6 }) 
+# Sentence pair (61371) source length 24 target length 26 alignment score : 2.34493e-34
+John Ashcroft , Larry Craig , James Jeffords và trưởng nhóm Trent Lott đã ghi một đĩa CD tại Nashville , Tennessee , vào tháng trước. 
+NULL ({ 14 }) John ({ 1 }) Ashcroft ({ 2 }) , ({ 3 }) Larry ({ 4 }) Craig ({ 5 }) , ({ 6 }) James ({ 7 }) Jeffords ({ 8 }) and ({ 9 }) majority ({ }) leader ({ }) Trent ({ 10 11 12 }) Lott ({ 13 }) recorded ({ 15 }) a ({ 16 }) CD ({ 17 18 }) in ({ }) Nashville ({ 19 20 26 }) , ({ 23 }) Tennessee ({ 22 24 }) , ({ 21 }) last ({ }) month ({ 25 }) . ({ }) 
+# Sentence pair (61372) source length 5 target length 7 alignment score : 1.39735e-08
+Bạn là Ấn Độ của tôi . 
+NULL ({ 2 5 }) You ({ 1 }) are ({ }) my ({ 6 }) India ({ 3 4 }) . ({ 7 }) 
+# Sentence pair (61373) source length 4 target length 5 alignment score : 0.000818128
+Prakash , Ấn Độ . 
+NULL ({ }) Prakash ({ 1 }) , ({ 2 }) India ({ 3 4 }) . ({ 5 }) 
+# Sentence pair (61374) source length 6 target length 6 alignment score : 0.000352694
+Anita Pratap , New Delhi . 
+NULL ({ }) Anita ({ 1 }) Pratap ({ 2 }) , ({ 3 }) New ({ 4 }) Delhi ({ 5 }) . ({ 6 }) 
+# Sentence pair (61375) source length 11 target length 12 alignment score : 3.3394e-13
+Và Mỹ vẫn còn tình yêu với tình yêu điên cuồng . 
+NULL ({ }) And ({ 1 }) America ({ 2 }) is ({ }) still ({ 3 4 }) in ({ }) love ({ 5 6 }) with ({ 7 }) the ({ }) love ({ 8 9 }) bug ({ 10 11 }) . ({ 12 }) 
+# Sentence pair (61376) source length 12 target length 19 alignment score : 4.3947e-27
+Và NASA chuẩn bị để đi một cách mạnh mẽ nơi mà con người đã ra đi trước . 
+NULL ({ 6 7 16 }) And ({ 1 }) NASA ({ 2 }) prepares ({ 3 4 }) to ({ 5 }) boldly ({ 8 9 10 }) go ({ }) where ({ 11 12 }) man ({ 13 14 }) has ({ 15 }) gone ({ 17 }) before ({ 18 }) . ({ 19 }) 
+# Sentence pair (61377) source length 11 target length 12 alignment score : 1.92406e-16
+Tôi là Toria Tolley , tham gia thay cho Lyn Vaughn . 
+NULL ({ 5 }) I ({ 1 }) 'm ({ }) Toria ({ 2 3 }) Tolley ({ 4 6 7 8 }) , ({ }) sitting ({ }) in ({ }) for ({ 9 }) Lyn ({ }) Vaughn ({ 10 11 }) . ({ 12 }) 
+# Sentence pair (61378) source length 26 target length 37 alignment score : 7.23977e-52
+Cơ thể của Bono sáu mươi hai tuổi đã được tìm thấy đêm qua ra một đường mòn chính tại một khu nghỉ mát trượt tuyết California năm mươi lăm dặm về phía nam của Reno . 
+NULL ({ 3 9 10 35 }) The ({ }) body ({ 1 2 }) of ({ }) sixty-two ({ 4 5 6 7 }) year ({ }) old ({ 8 }) Bono ({ }) was ({ }) found ({ 11 12 }) last ({ }) night ({ 13 14 }) off ({ 15 }) a ({ 16 }) main ({ 19 }) trail ({ 17 18 }) at ({ 20 }) a ({ 21 }) California ({ 27 }) ski ({ 25 26 }) resort ({ 22 23 24 }) fifty-five ({ 28 29 30 32 }) miles ({ 31 }) south ({ 33 34 }) of ({ }) Reno ({ 36 }) . ({ 37 }) 
+# Sentence pair (61379) source length 12 target length 14 alignment score : 4.09614e-21
+Don Knapp đang đứng ở Phía nam Lake Tahoe với nhiều hơn thế . 
+NULL ({ 13 }) Don ({ }) Knapp ({ 1 2 }) is ({ }) standing ({ 3 4 }) by ({ }) in ({ 5 }) South ({ 7 }) Lake ({ 8 }) Tahoe ({ 6 9 }) with ({ 10 }) more ({ 11 12 }) . ({ 14 }) 
+# Sentence pair (61380) source length 24 target length 25 alignment score : 4.79791e-36
+Cơ thể nghị sĩ Sonny Bono bây giờ nằm ​​tạm trong một nhà tang lễ ở thành phố Minden , Nevada cách đây không xa. 
+NULL ({ }) Congressman ({ 1 2 3 4 }) Sonny ({ 5 }) Bono ({ 6 }) 's ({ }) body ({ }) now ({ 7 8 }) lies ({ 9 }) temporarily ({ 10 }) in ({ 11 }) a ({ 12 }) funeral ({ 14 15 }) home ({ 13 }) in ({ 16 }) the ({ }) town ({ 17 18 }) of ({ }) Minden ({ 19 }) , ({ 20 }) Nevada ({ 21 22 25 }) not ({ 24 }) far ({ }) from ({ }) here ({ 23 }) . ({ }) 
+# Sentence pair (61381) source length 21 target length 34 alignment score : 4.58846e-45
+Nghị sĩ Bono là một vận động viên trượt tuyết thường xuyên tại Khu nghỉ mát Trượt tuyết Thiên đường , và đã trượt tuyết tại Thiên đường trong hơn hai mươi năm . 
+NULL ({ 4 29 }) Congressman ({ 1 2 }) Bono ({ 3 }) was ({ }) a ({ 5 }) frequent ({ 11 12 }) skier ({ 9 10 }) at ({ }) Heavenly ({ 13 18 19 20 }) Ski ({ 6 14 15 }) Resort ({ 7 8 16 17 }) , ({ 21 }) and ({ 22 }) had ({ 23 }) been ({ }) skiing ({ 24 25 }) Heavenly ({ 26 27 28 }) for ({ }) over ({ 30 }) twenty ({ 31 32 }) years ({ 33 }) . ({ 34 }) 
+# Sentence pair (61382) source length 5 target length 8 alignment score : 1.34373e-09
+Bạn đã trượt tuyết tại Thiên đường ? 
+NULL ({ 2 }) Have ({ 1 }) you ({ }) skied ({ 3 4 }) Heavenly ({ 5 6 7 }) ? ({ 8 }) 
+# Sentence pair (61383) source length 14 target length 15 alignment score : 1.71064e-12
+Nhưng tôi biết rằng Sonny Bono đã trượt tuyết ở đây một thời gian . 
+NULL ({ }) But ({ 1 }) I ({ 2 }) know ({ 3 }) that ({ 4 }) Sonny ({ 5 }) Bono ({ 6 }) has ({ 7 }) been ({ }) skiing ({ 8 9 }) here ({ 10 11 }) a ({ 12 }) long ({ }) time ({ 13 14 }) . ({ 15 }) 
+# Sentence pair (61384) source length 9 target length 11 alignment score : 9.71109e-12
+Cảm ơn , Don Knapp sinh sống ở Lake Tahoe . 
+NULL ({ }) Thanks ({ 1 2 }) , ({ 3 }) Don ({ }) Knapp ({ 4 5 6 }) live ({ 7 }) at ({ 8 }) Lake ({ 9 }) Tahoe ({ 10 }) . ({ 11 }) 
+# Sentence pair (61385) source length 11 target length 20 alignment score : 1.85671e-28
+Người phát ngôn Hạ viện thuộc đảng cộng hòa Newt Gingrich nói Bono là người đàn ông hài hước . 
+NULL ({ 14 }) Republican ({ }) House ({ }) Speaker ({ 1 2 3 4 5 }) Newt ({ 6 7 8 9 10 19 }) Gingrich ({ 11 }) says ({ 12 }) Bono ({ 13 }) was ({ }) funny ({ 18 }) man ({ 15 16 17 }) . ({ 20 }) 
+# Sentence pair (61386) source length 20 target length 22 alignment score : 9.03489e-27
+Cô hủy bỏ sự xuất hiện ở London sau khi nghe tin này , và đang bay trở lại Hoa Kỳ . 
+NULL ({ 13 }) She ({ 1 }) canceled ({ 2 3 }) an ({ }) appearance ({ 4 5 6 }) in ({ 7 }) London ({ 8 }) after ({ 9 }) hearing ({ 10 11 }) the ({ }) news ({ 12 }) , ({ 14 }) and ({ 15 }) is ({ }) flying ({ 16 17 }) back ({ 18 19 }) to ({ }) the ({ }) United ({ 20 21 }) States ({ }) . ({ 22 }) 
+# Sentence pair (61387) source length 9 target length 13 alignment score : 1.65939e-14
+Đảng Cộng hòa đã chỉ trích đề xuất của Tổng thống Clinton . 
+NULL ({ 9 }) Republicans ({ 1 2 3 }) are ({ }) already ({ 4 }) criticizing ({ 5 6 }) President ({ 10 11 }) Clinton ({ 12 }) 's ({ }) proposal ({ 7 8 }) . ({ 13 }) 
+# Sentence pair (61388) source length 20 target length 29 alignment score : 5.05284e-38
+Hội thẩm tại phiên tòa Denver về vụ đánh bom ở Thành phố Oklahoma , bị cáo Terry Nichols tiếp tục thảo luận khoảng một giờ trước đây . 
+NULL ({ 7 }) Jurors ({ 1 2 3 4 5 }) at ({ }) the ({ }) Denver ({ 6 }) trial ({ 8 }) of ({ }) Oklahoma ({ 11 14 }) City ({ 12 13 }) bombing ({ 9 10 }) , ({ 15 }) defendant ({ 16 17 }) Terry ({ 18 }) Nichols ({ 19 }) resumed ({ 20 21 }) deliberations ({ 22 23 }) about ({ 24 }) an ({ 25 }) hour ({ 26 }) ago ({ 27 28 }) . ({ 29 }) 
+# Sentence pair (61389) source length 23 target length 34 alignment score : 1.30972e-43
+Báo cáo mở là về để bắt đầu ngày hôm qua , khi ông Kaczynski một lần nữa yêu cầu có thể đưa ra một tuyên bố về các luật sư của mình . 
+NULL ({ 4 16 21 24 32 }) Opening ({ 1 2 3 }) statements ({ }) were ({ }) about ({ 5 }) to ({ 6 }) begin ({ 7 8 }) yesterday ({ 9 10 11 }) , ({ 12 }) when ({ 13 }) Kaczynski ({ 14 15 }) again ({ 17 18 }) demanded ({ 19 20 }) he ({ }) be ({ }) able ({ 22 }) to ({ }) make ({ 23 }) a ({ 25 }) statement ({ 26 27 }) about ({ 28 }) his ({ 33 }) attorneys ({ 29 30 31 }) . ({ 34 }) 
+# Sentence pair (61390) source length 19 target length 23 alignment score : 1.17961e-33
+Quân đội đã được yêu cầu từ bỏ quấy rối tình dục đối với cựu trung sĩ quân đội chính Gene McKinney . 
+NULL ({ 3 4 }) The ({ }) army ({ 1 2 }) is ({ }) being ({ }) asked ({ 5 6 }) to ({ }) dismiss ({ }) the ({ }) sexual ({ 11 12 }) harassment ({ 7 8 9 10 }) charge ({ }) against ({ 13 14 }) former ({ 15 }) army ({ 18 19 }) sergeant ({ 16 17 }) major ({ }) Gene ({ 20 21 }) McKinney ({ 22 }) . ({ 23 }) 
+# Sentence pair (61391) source length 7 target length 13 alignment score : 3.4002e-17
+McKinney phải đối mặt với tòa án quân sự vào tháng tới . 
+NULL ({ 5 10 }) McKinney ({ 1 2 }) faces ({ 3 4 }) court ({ 6 7 }) martial ({ 8 9 }) next ({ 12 }) month ({ 11 }) . ({ 13 }) 
+# Sentence pair (61392) source length 17 target length 18 alignment score : 1.59758e-23
+Dick Rutan và Dave Melton đã lên kế hoạch cất cánh từ New Mexico sáng sớm nay . 
+NULL ({ }) Dick ({ 1 }) Rutan ({ 2 }) and ({ 3 }) Dave ({ 4 }) Melton ({ 5 }) had ({ 6 }) planned ({ 7 8 9 }) to ({ }) lift ({ }) off ({ 10 11 }) from ({ 12 }) New ({ 13 }) Mexico ({ 14 }) early ({ 15 16 }) this ({ }) morning ({ 17 }) . ({ 18 }) 
+# Sentence pair (61393) source length 11 target length 16 alignment score : 1.99851e-23
+Tiếp theo trên Tin tức đầu đề của CNN , thời tiết của quốc gia . 
+NULL ({ 8 13 }) Next ({ 1 }) on ({ 3 }) CNN ({ 9 }) Headline ({ 2 4 5 6 7 }) News ({ }) , ({ 10 }) the ({ }) nation ({ 14 15 }) 's ({ }) weather ({ 11 12 }) . ({ 16 }) 
+# Sentence pair (61394) source length 16 target length 20 alignment score : 4.07935e-26
+Điều đó sẽ có nghĩa là mưa lớn tại Texas , Louisiana , và vào bờ biển vùng Vịnh . 
+NULL ({ 4 6 }) That ({ 1 2 }) will ({ 3 }) mean ({ 5 }) heavy ({ 8 }) rain ({ 7 }) for ({ }) Texas ({ 9 10 }) , ({ 11 }) Louisiana ({ 12 }) , ({ 13 }) and ({ 14 }) into ({ 15 }) the ({ }) Gulf ({ 18 19 }) coast ({ 16 17 }) . ({ 20 }) 
+# Sentence pair (61395) source length 28 target length 33 alignment score : 4.74636e-41
+Khả năng có mưa tiếp tục kéo dài xuyên qua Vịnh Mexico , và vào bờ biển Đại Tây Dương thấp hơn , bao gồm từ Maine , phía nam đến Florida . 
+NULL ({ 3 }) A ({ }) chance ({ 1 2 }) of ({ }) rain ({ 4 }) continues ({ 5 6 7 }) to ({ }) stretch ({ 8 9 }) across ({ 10 }) the ({ }) Gulf ({ 11 }) of ({ }) Mexico ({ 12 }) , ({ 13 }) and ({ 14 }) into ({ 15 }) the ({ }) lower ({ 21 22 }) Atlantic ({ 18 19 20 }) coast ({ 16 17 }) , ({ 23 }) covering ({ 24 25 }) from ({ 26 }) Maine ({ 27 }) , ({ 28 }) southward ({ 29 30 }) to ({ }) Florida ({ 31 32 }) . ({ 33 }) 
+# Sentence pair (61396) source length 16 target length 22 alignment score : 1.81904e-24
+Nhiệt độ lạnh tiếp tục tại Fairbanks , ở mức cao khoảng ba mươi lăm dưới không trong băng sương mù . 
+NULL ({ }) Cold ({ 3 }) temperatures ({ 1 2 }) continue ({ 4 5 }) for ({ }) Fairbanks ({ 6 7 }) , ({ 8 }) with ({ }) highs ({ 9 10 11 }) around ({ 12 }) thirty-five ({ 13 14 15 }) below ({ 16 }) zero ({ 17 }) in ({ 18 }) ice ({ 19 }) fog ({ 20 21 }) . ({ 22 }) 
+# Sentence pair (61397) source length 19 target length 21 alignment score : 8.21259e-27
+The New York City Borough of Queens được đặt theo tên một nữ hoàng đặc biệt , Catherine của Braganza . 
+NULL ({ 8 }) The ({ }) New ({ 2 }) York ({ 3 }) City ({ }) Borough ({ 1 4 5 }) of ({ }) Queens ({ 6 7 }) was ({ }) named ({ 9 10 11 }) after ({ }) one ({ 12 }) queen ({ 13 14 }) in ({ }) particular ({ 15 16 }) , ({ 17 }) Catherine ({ 18 }) of ({ }) Braganza ({ 19 20 }) . ({ 21 }) 
+# Sentence pair (61398) source length 22 target length 30 alignment score : 4.42249e-37
+Catherine của Braganza , một công chúa Bồ Đào Nha thế kỷ XVII , đã trở thành nữ hoàng Anh khi bà kết hôn với vua Charles đệ nhị . 
+NULL ({ 15 25 }) Catherine ({ 1 }) of ({ }) Braganza ({ 2 3 }) , ({ 4 }) a ({ 5 }) seventeenth ({ 13 }) century ({ 11 12 }) Portuguese ({ 8 9 10 }) princess ({ 6 7 }) , ({ 14 }) became ({ 16 17 }) queen ({ 18 19 }) of ({ }) England ({ 20 }) when ({ 21 }) she ({ 22 }) married ({ 23 24 }) King ({ 26 }) Charles ({ 27 28 29 }) the ({ }) second ({ }) . ({ 30 }) 
+# Sentence pair (61399) source length 17 target length 18 alignment score : 5.8029e-26
+Trong năm 1683 , thực dân Anh ở New Yorkđặt tên cô ấy cho Borough of Queens . 
+NULL ({ 14 }) In ({ 1 }) sixteen ({ }) eighty-three ({ 2 3 }) , ({ 4 }) English ({ 7 }) colonists ({ 5 6 }) in ({ 8 }) New ({ 9 }) York ({ }) named ({ 11 }) the ({ }) Borough ({ 10 }) of ({ }) Queens ({ 15 16 17 }) after ({ }) her ({ 12 13 }) . ({ 18 }) 
+# Sentence pair (61400) source length 21 target length 30 alignment score : 1.20505e-40
+Không có mối liên hệ giữa Catherine của Braganza và và chế độ nô lệ nào ngoại trừ việc cô trả lại tiền để các nô lệ tự do . 
+NULL ({ 2 19 24 25 }) There ({ 1 }) is ({ }) no ({ }) connection ({ 3 4 5 }) between ({ 6 }) Catherine ({ 7 }) of ({ }) Braganza ({ 8 9 }) and ({ 10 }) and ({ 11 }) slavery ({ 12 13 14 15 }) whatsoever ({ 16 21 }) except ({ 17 18 }) that ({ }) she ({ 20 }) left ({ 22 }) money ({ 23 }) to ({ }) free ({ 28 29 }) slaves ({ 26 27 }) . ({ 30 }) 
+# Sentence pair (61401) source length 22 target length 26 alignment score : 5.63788e-34
+Ông ta là nhà điêu khắc Audrey Flack , người đã làm việc trên chân dung lớn của Nữ hoàng Catherine trong hơn sáu năm . 
+NULL ({ 18 22 }) He ({ 1 2 }) is ({ 3 }) sculptor ({ 4 5 6 }) Audrey ({ 7 15 }) Flack ({ 8 16 }) , ({ 9 }) who ({ 10 }) 's ({ }) been ({ 11 }) working ({ 12 13 }) on ({ 14 }) Queen ({ 19 20 }) Catherine ({ 21 }) 's ({ }) large ({ 17 }) likeness ({ }) for ({ }) more ({ }) than ({ 23 }) six ({ 24 }) years ({ 25 }) . ({ 26 }) 
+# Sentence pair (61402) source length 11 target length 16 alignment score : 1.44539e-20
+Nhóm khuyết tật mong muốn Franklin Roosevelt được thể hiện trong một chiếc xe lăn . 
+NULL ({ 8 }) Disabled ({ 1 2 3 4 }) groups ({ }) demanded ({ }) Franklin ({ 5 6 }) Roosevelt ({ 7 9 }) be ({ }) shown ({ 10 }) in ({ 11 }) a ({ 12 }) wheelchair ({ 13 14 15 }) . ({ 16 }) 
+# Sentence pair (61403) source length 30 target length 31 alignment score : 2.08578e-33
+Nó là ở đây , tại Hunters Point ở Queens , ngang qua Sông Đông của Liên Hiệp Quốc , bức tượng của Nữ hoàng Catherine đã được dựng lên . 
+NULL ({ 16 23 27 28 }) It ({ 1 }) is ({ 2 }) here ({ 3 4 }) , ({ 5 }) at ({ }) Hunters ({ 6 7 }) Point ({ 8 }) in ({ 9 }) Queens ({ 10 }) , ({ 11 }) across ({ 12 13 }) the ({ }) East ({ 15 }) River ({ 14 }) from ({ }) the ({ }) United ({ }) Nations ({ 17 18 19 }) , ({ 20 }) that ({ }) the ({ }) statue ({ 21 22 }) of ({ }) Queen ({ 24 25 }) Catherine ({ 26 }) was ({ }) to ({ }) be ({ }) erected ({ 29 30 }) . ({ 31 }) 
+# Sentence pair (61404) source length 24 target length 28 alignment score : 3.27062e-28
+Nhưng Betty Dopson và các thành viên khác của cái gọi là bạn bè chống lại Nữ hoàng Catherine nói rằng bức tượng không thuộc Hoa Kỳ . 
+NULL ({ 9 12 }) But ({ 1 }) Betty ({ 2 }) Dopson ({ 3 }) and ({ 4 }) other ({ 8 }) members ({ 5 6 7 }) of ({ }) the ({ }) so-called ({ 10 11 }) friends ({ 13 14 }) against ({ 15 16 }) Queen ({ 17 18 }) Catherine ({ 19 }) say ({ 20 21 }) the ({ }) statue ({ 22 23 }) doesn ({ 24 }) 't ({ }) belong ({ 25 }) in ({ }) the ({ }) United ({ 26 27 }) States ({ }) . ({ 28 }) 
+# Sentence pair (61405) source length 9 target length 9 alignment score : 1.66869e-05
+Mary Ann McGann , CNN , New York . 
+NULL ({ }) Mary ({ 1 }) Ann ({ 2 }) McGann ({ 3 }) , ({ 4 }) CNN ({ 5 }) , ({ 6 }) New ({ 7 }) York ({ 8 }) . ({ 9 }) 
+# Sentence pair (61406) source length 13 target length 18 alignment score : 5.30609e-19
+Dân biểu của California là Sonny Bono đã chết sau một tai nạn trượt tuyết ở California . 
+NULL ({ 3 5 }) California ({ 4 }) Congressman ({ 1 2 }) Sonny ({ 6 }) Bono ({ 7 }) is ({ }) dead ({ 8 9 }) after ({ 10 }) a ({ 11 }) skiing ({ 14 15 }) accident ({ 12 13 }) in ({ 16 }) California ({ 17 }) . ({ 18 }) 
+# Sentence pair (61407) source length 12 target length 14 alignment score : 6.99047e-17
+Tổng thống Clinton kêu gọi mở rộng điều kiện cho chương trình Medicare . 
+NULL ({ }) President ({ 1 2 }) Clinton ({ 3 }) is ({ }) calling ({ 4 5 }) for ({ }) expanded ({ 6 7 }) eligibility ({ 8 9 }) for ({ 10 }) the ({ }) Medicare ({ 13 }) program ({ 11 12 }) . ({ 14 }) 
+# Sentence pair (61408) source length 25 target length 32 alignment score : 2.89498e-37
+Hãy đi đến với Myron Kandel tại bàn thông tin tài chính của CNN ở New York , cho điều đó và tất cả các tin tức kinh doanh mới nhất . 
+NULL ({ 13 21 25 }) Let ({ 1 }) 's ({ }) go ({ 2 }) to ({ 3 }) Myron ({ 4 5 }) Kandel ({ 6 7 8 9 }) at ({ }) the ({ }) CNN ({ 14 }) financial ({ 11 12 }) news ({ 10 }) desk ({ }) in ({ 15 }) New ({ 16 }) York ({ 17 }) , ({ 18 }) for ({ 19 }) that ({ 20 }) and ({ 22 }) all ({ 23 24 }) the ({ }) latest ({ 30 31 }) business ({ 28 29 }) news ({ 26 27 }) . ({ 32 }) 
+# Sentence pair (61409) source length 24 target length 34 alignment score : 8.88673e-43
+Cổ phiếu của JP Morgan dẫn đầu chỉ số thấp hơn Dow , nó xuống ba và một phần tư phản ánh sự yếu kém hiện nay của các cổ phiếu ngân hàng . 
+NULL ({ 3 28 29 }) Shares ({ 1 2 }) of ({ }) JP ({ 4 }) Morgan ({ 5 }) leading ({ 6 7 }) the ({ }) Dow ({ 8 9 12 }) lower ({ 10 11 }) , ({ 13 }) it ({ 14 }) 's ({ }) down ({ 15 }) three ({ 16 }) and ({ 17 }) a ({ 18 }) quarter ({ 19 }) reflecting ({ 20 21 22 23 24 25 26 }) today ({ 27 }) 's ({ }) weakness ({ }) in ({ }) bank ({ 32 33 }) stocks ({ 30 31 }) . ({ 34 }) 

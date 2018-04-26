@@ -4,11 +4,19 @@
 import numpy as np
 import config
 import ScoreTable
+import utilities
+import TranslationModel.TranslationModel as TranslationProb
+import TransliterationModel.Transliteration as TransliterationProb
+import Co_occurrenceModel.Co_occurrence as CoocurenceProb
+import DistortionModel.Distortion as DistortionProb
+import MonoReassignModel.MonoFromFile as MonoProb
+import BiReassignModel.ReassignModel as BiProb
+import CandidateSet
 
 def getWeightDict():
     '''
     '''
-    weight_dict = config.getWeightDict()
+    weight_dict = config.getWeight()
     return weight_dict
 
 def getDictDot(score_dict,weight_dict):
@@ -22,7 +30,7 @@ def getDictDot(score_dict,weight_dict):
 def getScoreDict(cur_candidate,EtoV_sent,VtoE_sent):
     '''
     '''
-    translation_score = TranslationProb.getTranslationProb(cur_candidate, VtoE_sent)
+    translation_score = TranslationProb.getNETranslationProb(cur_candidate, VtoE_sent)
     transliteration_score = TransliterationProb.getTransliterationProb(cur_candidate,VtoE_sent)
     coocurence_score = CoocurenceProb.getCoocurenceProb(cur_candidate)
     distortion_score = DistortionProb.getDistortionprob(cur_candidate,EtoV_sent,VtoE_sent)
@@ -43,7 +51,7 @@ def getScoreDictForSet(CandidateSet,EtoV_sent,VtoE_sent):
         res.append(getScoreDict(candidate,EtoV_sent,VtoE_sent))
     return res
 
-def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent, train_mode = False,weight_dict,sent_index,candidate_index):
+def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_index,candidate_index,train_mode = False):
     '''
 
     '''
@@ -55,7 +63,7 @@ def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent, train_mode = Fal
     score = getDictDot(score_dict,weight_dict)
     return score
 
-def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,train_mode = False,list_lambda,sent_index):
+def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,list_lambda,sent_index,train_mode = False):
     '''
     '''
     if train_mode:
@@ -68,3 +76,14 @@ def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,train_mode = False,list_lam
         score_cur_candidate = getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_index,i)
         res.append(score_cur_candidate)
     return res
+
+
+
+EtoV_file = '../../Alignment_Split/EtoV_Dev.txt'
+VtoE_file = '../../Alignment_Split/VtoE_Dev.txt'
+EtoV_sent =  utilities.read_align_file(EtoV_file)[0]
+VtoE_sent =  utilities.read_align_file(VtoE_file)[0]
+cur_candidate = CandidateSet.getCandidateSet(EtoV_sent,VtoE_sent)[0]
+print(cur_candidate)
+tmp = getScoreDict(cur_candidate,EtoV_sent,VtoE_sent)
+print(tmp)
