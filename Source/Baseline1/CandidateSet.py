@@ -46,12 +46,19 @@ def getCandidateSet(EtoV_sent,VtoE_sent):
     VtoE_set = VtoE_model.getEntSet(VtoE_sent['Source'],VtoE_sent['Target'])
     V_Ent_List = []
     E_Ent_List = []
+    # print('EtoVSet')
     for pair in EtoV_set:
+        # print('Pair ' ,pair)
         V_Ent_List.append((pair[1],pair[2],pair[4]))
         E_Ent_List.append((pair[0],pair[2],pair[3]))
+    # print('VtoESet')
     for pair in VtoE_set:
-        V_Ent_List.append((pair[1],pair[2],pair[4]))
-        E_Ent_List.append((pair[0],pair[2],pair[3]))
+        # print('Pair ' ,pair)        
+        E_Ent_List.append((pair[1],pair[2],pair[4]))
+        V_Ent_List.append((pair[0],pair[2],pair[3]))
+    # print('E_Ent_List ',E_Ent_List)
+    # print('V_Ent_List ',V_Ent_List)
+
     res = []
     for en_ent in E_Ent_List:
         for vn_ent in V_Ent_List:
@@ -61,3 +68,11 @@ def getCandidateSet(EtoV_sent,VtoE_sent):
 
 def getCandidateSetFromFile(sent_index):
     return Candidate_Set_Table[sent_index]
+
+
+# EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Dev.txt')
+# VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Dev.txt')
+
+# tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0])
+# print(tmp)
+# print(len(tmp))

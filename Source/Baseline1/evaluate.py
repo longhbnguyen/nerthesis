@@ -7,23 +7,23 @@ def evaluateSentencePair(predict,label,type_mode,tp):
     '''
     tp = 0
     predict = sorted(predict, key=lambda tmp: tmp[0][0])
-    print(predict)
-    print(label)
+    print('Predict Set ', predict)
+    print('True Set ', label)
     for i in range(len(label)):
         true_en_begin = label[i][0][0]
         # print('True_en_begin ',true_en_begin)
         true_en_end = label[i][0][-1]
         # print('True_en_end ',true_en_end)
         sub_predict = []
-        for i in range(len(predict)):
-            predict_en_begin = predict[i][0][0][0]
+        for j in range(len(predict)):
+            predict_en_begin = predict[j][0][0][0]
             # print('PredictEnBegin ', predict_en_begin)
             if predict_en_begin == true_en_begin:
-                sub_predict.append(predict[i])
-        print('SubPredict ',sub_predict)
+                sub_predict.append(predict[j])
+        # print('SubPredict ',sub_predict)
         if(len(sub_predict)) > 0:
             for pair in sub_predict:
-                print(pair)
+                # print(pair)
                 predict_en_end = pair[0][0][-1]
                 if predict_en_end == true_en_end:
                     predict_vi_begin = pair[0][1][0]
@@ -32,7 +32,7 @@ def evaluateSentencePair(predict,label,type_mode,tp):
                     true_vi_end = label[i][1][-1]
                     if true_vi_begin == predict_vi_begin and true_vi_end == predict_vi_end:
                         tp += 1
-
+    print('TP ', tp)
     return tp
 
 def evaluate(predict_set,true_set,type_mode):
@@ -58,9 +58,9 @@ def getMetrics(predict_set,true_set,type_mode):
     type_mode: 0:Insensitive , 1:Type-Sensitive
     '''
     tp, total_predict_pairs,total_true_pairs = evaluate(predict_set,true_set,type_mode)
-    print('TP ', tp)
-    print('TotalPredictPair ', total_predict_pairs)
-    print('TotalTruePair ',total_true_pairs)
+    # print('True Set ',true_set)
+    # print('Predict Set ', predict_set)
+    # print('TP ', tp)
     recall = tp / (total_true_pairs)
     precision = tp / (total_predict_pairs)
     if recall == 0 and precision == 0:
@@ -71,4 +71,5 @@ def getMetrics(predict_set,true_set,type_mode):
     res['R'] = recall
     res['P'] = precision
     res['F1'] = f1
+    print(res)
     return res

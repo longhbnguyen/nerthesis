@@ -21,6 +21,7 @@ dev_file_en = '../../Data/corpora/0_DATA/2_Development/dev_eng'
 dev_file_vn = '../../Data/corpora/0_DATA/2_Development/dev_viet'
 dev_list_EtoV = read_align_file(dev_file_EtoV)
 dev_list_VtoE = read_align_file(dev_file_VtoE)
+config_file = 'config.ini'
 
 trueSet = TrueSet.getFileTrueSet(dev_file_en,dev_file_vn)
 
@@ -52,7 +53,7 @@ def init_lambda(number_of_lambda):
     res = config.getWeight()
     # print(res)
     for key,value in res.items():
-        res[key] = 0.0
+        res[key] = 0.5
     return res
 
 def init_result():
@@ -71,13 +72,14 @@ def update_list_lambda(list_lambda,step,number_of_lambda):
     '''
     global cur_Count
     cur_Count += 1
+    print('Cur Count ', cur_Count)
     tmp = cur_Count
     res = list_lambda
     for key,value in res.items():
-        res[key] = (tmp % 10) / 10
-        tmp = tmp / 10
+        res[key] = int(tmp % 10) / 10
+        tmp = int(tmp / 10)
 
-    if (cur_Count > number_of_lambda**10):
+    if (cur_Count > 2 ):
         return None
     return res
 
@@ -97,7 +99,8 @@ def main():
             best_res = cur_res
 
         list_lambda = update_list_lambda(list_lambda,step,4)
-
+    config.WriteBestLambda(best_lambda)
+    
 
 if __name__ == '__main__':
     main()
