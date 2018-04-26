@@ -56,7 +56,7 @@ def getEntList_Spacy(source_tuple_list):
     for tp in source_tuple_list:
         if tp['Word'] == 'NULL':
             continue
-        e_sent += tp['Word']+ ' '
+        source_sent += tp['Word']+ ' '
     source_sent = source_sent.strip()
     # print(e_sent)
     
