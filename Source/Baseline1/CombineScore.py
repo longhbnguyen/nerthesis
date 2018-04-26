@@ -3,17 +3,13 @@
 '''
 import numpy as np
 import config
-
+import ScoreTable
 
 def getWeightDict():
     '''
     '''
     weight_dict = config.getWeightDict()
     return weight_dict
-
-
-weight_dict = getWeightDict(config_file)
-
 
 def getDictDot(score_dict,weight_dict):
     '''
@@ -41,24 +37,34 @@ def getScoreDict(cur_candidate,EtoV_sent,VtoE_sent):
     score_dict['Bi'] = bi_score
     return score_dict
 
+def getScoreDictForSet(CandidateSet,EtoV_sent,VtoE_sent):
+    res = []
+    for candidate in CandidateSet:
+        res.append(getScoreDict(candidate,EtoV_sent,VtoE_sent))
+    return res
 
-
-def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent, weight_dict):
+def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent, train_mode = False,weight_dict,sent_index,candidate_index):
     '''
 
     '''
     score = 0.0
-    score_dict = getScoreDict(cur_candidate, EtoV_sent, VtoE_sent)
+    if train_mode:
+        score_dict = ScoreTable.getScoreforOneCandidate(sent_index,candidate_index)
+    else:
+        score_dict = getScoreDict(cur_candidate, EtoV_sent, VtoE_sent)
     score = getDictDot(score_dict,weight_dict)
-    
     return score
 
-def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent):
+def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,train_mode = False,list_lambda,sent_index):
     '''
     '''
+    if train_mode:
+        weight_dict = list_lambda
+    else: 
+        weight_dict = getWeightDict()
     res = []
     for i in range(len(CandidateSet)):
         cur_candidate = CandidateSet[i]
-        score_cur_candidate = getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict)
+        score_cur_candidate = getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_index,i)
         res.append(score_cur_candidate)
     return res

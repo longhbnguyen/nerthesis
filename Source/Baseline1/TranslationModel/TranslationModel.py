@@ -26,8 +26,8 @@ def getNETranslationProb(align_index, NEPair):
      'Source_length':15,
      'Target_length':14,
      'Score':7.84741e-23,
-     'Source':[words],
-     'Target':
+     'Target':[words],
+     'Source':
      [
                {
                     'Word':''
