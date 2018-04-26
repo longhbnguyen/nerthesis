@@ -77,13 +77,3 @@ def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,list_lambda,sent_index,trai
         res.append(score_cur_candidate)
     return res
 
-
-
-EtoV_file = '../../Alignment_Split/EtoV_Dev.txt'
-VtoE_file = '../../Alignment_Split/VtoE_Dev.txt'
-EtoV_sent =  utilities.read_align_file(EtoV_file)[0]
-VtoE_sent =  utilities.read_align_file(VtoE_file)[0]
-cur_candidate = CandidateSet.getCandidateSet(EtoV_sent,VtoE_sent)[0]
-print('Cur candidate ', cur_candidate)
-tmp = getScoreDict(cur_candidate,EtoV_sent,VtoE_sent)
-print('Score Dict ', tmp)
