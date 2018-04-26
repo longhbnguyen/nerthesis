@@ -43,6 +43,7 @@ def evaluate(predict_set,true_set,type_mode):
 def getMetrics(predict_set,true_set,type_mode):
     '''
     get Metrics Evaluation
+    type_mode: 0:Insensitive , 1:Type-Sensitive
     '''
     tp, total_predict_pairs,total_true_pairs = evaluate(predict_set,true_set,type_mode)
     recall = tp / (total_true_pairs)
