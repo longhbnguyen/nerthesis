@@ -76,6 +76,3 @@ def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,list_lambda,sent_index,trai
         score_cur_candidate = getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_index,i)
         res.append(score_cur_candidate)
     return res
-
-
-
