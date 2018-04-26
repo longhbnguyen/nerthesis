@@ -4,8 +4,8 @@ from collections import defaultdict
 from nltk.tag.stanford import StanfordNERTagger
 
 
-path_to_model = '../stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
-path_to_jar = '../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
+path_to_model = '../../stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
+path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 nertagger=StanfordNERTagger(path_to_model, path_to_jar)
 
 nlp = spacy.load('en')
@@ -54,9 +54,9 @@ def getEntList_Spacy(source_tuple_list):
     '''
     source_sent = ''
     for tp in source_tuple_list:
-        if tp[0] == 'NULL':
+        if tp['Word'] == 'NULL':
             continue
-        e_sent += tp[0]+ ' '
+        e_sent += tp['Word']+ ' '
     source_sent = source_sent.strip()
     # print(e_sent)
     
@@ -91,15 +91,21 @@ def getEntList_StanfordNER(source_tuple_list):
     ent_flag = False
     # idx_seq = ''
     idx_seq = []
+    word =''
+    print(tag_list)
     for i in range(len(tag_list)):
         if tag_list[i][1] != 'O':
             #ent of different type
             if cur_type != tag_list[i][1] and ent_flag == True:
-                ent = (idx_seq,cur_type)
+                for idx in idx_seq:
+                    word += tag_list[idx][0] + ' '
+                word = word.strip()
+                ent = (idx_seq,cur_type,word)
                 # idx_seq = str(i)
                 idx_seq.append(i)
                 ent_list.append(ent)
                 cur_type = tag_list[i][1]
+                word = ''
             #continue of ent
             elif cur_type == tag_list[i][1] and ent_flag == True:
                 # idx_seq +=  ' ' + str(i) 
@@ -112,11 +118,14 @@ def getEntList_StanfordNER(source_tuple_list):
                 idx_seq.append(i)
         else:
             if ent_flag == True:
-                ent = (idx_seq, cur_type)
+                for idx in idx_seq:
+                    word += tag_list[idx][0] + ' '
+                word = word.strip()
+                ent = (idx_seq, cur_type, word)
                 ent_list.append(ent)
-                idx_seq = ''
                 idx_seq = []
                 ent_flag = False
+                word = ''
             else:
                 continue
         # print(ent_list)
@@ -161,35 +170,42 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
     target_tokens = target_sent.split()
     target_ent_list = []
     # print(tuple_list[8])
-
     for source_ent in source_ent_list:
         res = ''
         target_ent_idx = []
         for idx in source_ent[0]:
-            list_idx = tuple_list[int(idx)][1].split()
+            idx = idx + 1
+            list_idx = tuple_list[int(idx)]['Index']
             for index in list_idx:
                 target_ent_idx.append(int(index))
 
         target_ent_idx = sorted(target_ent_idx, key = int)
+            
+        for idx in target_ent_idx:
+            res += target_tokens[idx-1] + ' '
+        res = res.strip()
         
-        # for idx in v_ent_idx:
-        #     res += v_tokens[idx-1] + ' '
-        # res = res.strip()
-        target_ent_list.append((target_ent_idx,source_ent[1]))
+        target_ent_list.append((target_ent_idx,source_ent[1],res))
+
+    
     return target_ent_list
 
 def getEntSet(source_sent,target_sent):
-    # e_tuple_list = sentToTuple(e_sent)
-    # e_ent_list = getEntList_StanfordNER(e_tuple_list)
-    target_sent = (' '.join(target_sent)).strip()
+    '''
+    [([idx]_en,[idx]_vi,'type',[word_en],[word_vi])]
+    '''
+    target_sent = ' '.join(target_sent).strip()
     
     source_tuple_list = source_sent
     source_ent_list = getEntList_StanfordNER(source_tuple_list)
     target_ent_list = getTargetEntList(source_tuple_list,target_sent,source_ent_list)
     ent_set = []
     for i in range(len(source_ent_list)):
-        tp = (source_ent_list[i][0],target_ent_list[i][0])
+
+        tp = (source_ent_list[i][0],target_ent_list[i][0],source_ent_list[i][1],source_ent_list[i][2],target_ent_list[i][2])
+
         ent_set.append(tp)
+    
     return ent_set
     
 

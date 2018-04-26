@@ -3,7 +3,9 @@ import numpy as np
 
 df = pd.read_csv('count_result.tsv',sep = '\t',encoding='utf-8')
 
-def getScore(df, v_ent, e_ent):
+def getScore(cur_candidate):
+    e_ent = cur_candidate[]
+    v_ent =
     v_type = v_ent[1]
     e_type = e_ent[1]
     e_cond = df['Eng'] == e_type
