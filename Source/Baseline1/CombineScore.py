@@ -9,8 +9,8 @@ import TranslationModel.TranslationModel as TranslationProb
 import TransliterationModel.Transliteration as TransliterationProb
 import Co_occurrenceModel.Co_occurrence as CoocurenceProb
 import DistortionModel.Distortion as DistortionProb
-import MonoReassignModel.MonoFromFile as MonoProb
-import BiReassignModel.ReassignModel as BiProb
+# import MonoReassignModel.MonoFromFile as MonoProb
+# import BiReassignModel.ReassignModel as BiProb
 import CandidateSet
 
 def getWeightDict():
@@ -34,15 +34,15 @@ def getScoreDict(cur_candidate,EtoV_sent,VtoE_sent):
     transliteration_score = TransliterationProb.getTransliterationProb(cur_candidate,VtoE_sent)
     coocurence_score = CoocurenceProb.getCoocurenceProb(cur_candidate)
     distortion_score = DistortionProb.getDistortionprob(cur_candidate,EtoV_sent,VtoE_sent)
-    mono_score = MonoProb.getMonoProb(cur_candidate,EtoV_sent,VtoE_sent)
-    bi_score = BiProb.getBiProb(cur_candidate)
+    # mono_score = MonoProb.getMonoProb(cur_candidate,EtoV_sent,VtoE_sent)
+    # bi_score = BiProb.getBiProb(cur_candidate)
     score_dict= {}
     score_dict['Translation'] = translation_score
     score_dict['Transliteration'] = transliteration_score
     score_dict['Coocurence'] = coocurence_score
     score_dict['Distortion'] = distortion_score
-    score_dict['Mono'] = mono_score
-    score_dict['Bi'] = bi_score
+    # score_dict['Mono'] = mono_score
+    # score_dict['Bi'] = bi_score
     return score_dict
 
 def getScoreDictForSet(CandidateSet,EtoV_sent,VtoE_sent):
@@ -84,6 +84,6 @@ VtoE_file = '../../Alignment_Split/VtoE_Dev.txt'
 EtoV_sent =  utilities.read_align_file(EtoV_file)[0]
 VtoE_sent =  utilities.read_align_file(VtoE_file)[0]
 cur_candidate = CandidateSet.getCandidateSet(EtoV_sent,VtoE_sent)[0]
-print(cur_candidate)
+print('Cur candidate ', cur_candidate)
 tmp = getScoreDict(cur_candidate,EtoV_sent,VtoE_sent)
-print(tmp)
+print('Score Dict ', tmp)

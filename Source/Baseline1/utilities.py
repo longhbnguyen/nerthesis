@@ -96,12 +96,3 @@ def read_align_file(align_file):
         item['Source'] = source
         res.append(item)
     return res
-
-# source_line = 'NULL ({ 10 18 24 }) Dịch ({ }) vụ ({ }) Thời ({ 1 }) tiết ({ }) Quốc ({ }) gia ({ }) nói ({ 5 }) với ({ }) chúng ({ 6 }) tôi ({ }) chiều ({ 8 }) nay ({ 7 }) nó ({ 9 }) là ({ }) El ({ 2 4 11 29 31 33 }) Nino ({ 3 12 32 }) gây ({ 13 }) ra ({ }) những ({ 14 }) con ({ }) sóng ({ 16 }) khổng ({ 15 }) lồ ({ }) trên ({ 17 }) bờ ({ 20 }) biển ({ }) California ({ 19 }) , ({ 21 }) và ({ 22 }) mặc ({ 23 }) dù ({ }) có ({ }) đê ({ 26 }) cát ({ 25 }) , ({ 27 }) một ({ }) số ({ 28 }) căn ({ }) nhà ({ }) phía ({ }) trước ({ 30 }) đại ({ }) dương ({ }) đã ({ }) bị ({ }) lũ ({ }) lụt ({ 34 }) nhỏ ({ }) . ({ 35 }) '
-
-# source = getSourceList(source_line)
-# print(source)
-
-res = read_align_file('../../Alignment_Split/EtoV_Dev.txt')
-print(res[0])
-

@@ -26,4 +26,3 @@ def getCoocurenceProb(NEPair):
         return 0
     return getTu(enNE,vnNE) / mau
 
-tmp = get_CoOccurrence_Prob('ABC','ABC')

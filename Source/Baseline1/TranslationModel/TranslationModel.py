@@ -1,6 +1,6 @@
 import pandas as pd
-from util import read_align_file
-inputfile = 'Result.actual.ti.final'
+from utilities import read_align_file
+inputfile = './TranslationModel/Result.actual.ti.final'
 
 data = pd.read_csv(inputfile, sep = ' ', encoding = 'utf-8')
 data = data.fillna('NaN')
@@ -36,13 +36,14 @@ def getNETranslationProb(NEPair,VtoE_sent):
 }
 ]
     '''
-    res = 0.0
-    enNE = NEPair[3]
-    vnNE = NEPair[4]
+    res = 1.0
+    enNE = NEPair[3].split()
+    vnNE = NEPair[4].split()
     # cur_align_sent = a lign_list[align_index]
     for enWord in enNE:
         sum = 0
         for vnWord in vnNE:
+            print()
             sum += getWordTranslationProb(vnWord,enWord)
         res *= sum
     res = res / (len(enNE)**len(vnWord))

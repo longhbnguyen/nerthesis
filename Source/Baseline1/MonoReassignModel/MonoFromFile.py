@@ -1,9 +1,9 @@
-import getScoreTable
+import MonoReassignModel.getScoreTable
 
 en_table = getScoreTable.getScoreTableEn()
 vi_table = getScoreTable.getScoreTableVi()
 
-def getMonoScore(ent, idx, mode):
+def getMonoScore(ent, idx,mode):
     if mode == 'en':
         table = en_table
     elif mode == 'vi':
@@ -20,6 +20,13 @@ def getMonoScore(ent, idx, mode):
     score['PERSON']  = per_score
     score['LOCATION'] = loc_score
     return score
+
+def getMonoProb(cur_candidate, sent_idx):
+    e_ent_idx = cur_candidate[0]
+    v_ent_idx = cur_candidate[1]
+    e_ent_score = getMonoScore(e_ent_idx,sent_idx,'en')
+    v_ent_score = getMonoScore(v_ent_idx,sent_idx,'vi')
+    return e_ent_score, v_ent_score
 
 def main():
     ent = ([10,11],'PERSON')

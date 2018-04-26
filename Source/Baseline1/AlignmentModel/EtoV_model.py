@@ -92,7 +92,7 @@ def getEntList_StanfordNER(source_tuple_list):
     # idx_seq = ''
     idx_seq = []
     word =''
-    print(tag_list)
+    # print(tag_list)
     for i in range(len(tag_list)):
         if tag_list[i][1] != 'O':
             #ent of different type
