@@ -1,5 +1,5 @@
 import pandas as pd 
-inputfile = 'count_occ.csv'
+inputfile = './Co_occurrenceModel/count_occ.csv'
 
 data = pd.read_csv(inputfile, sep = ',', encoding = 'utf-8')
 # data = data.fillna('NaN')

@@ -37,10 +37,10 @@ def getScoreDict(cur_candidate,EtoV_sent,VtoE_sent):
     # mono_score = MonoProb.getMonoProb(cur_candidate,EtoV_sent,VtoE_sent)
     # bi_score = BiProb.getBiProb(cur_candidate)
     score_dict= {}
-    score_dict['Translation'] = translation_score
-    score_dict['Transliteration'] = transliteration_score
-    score_dict['Coocurence'] = coocurence_score
-    score_dict['Distortion'] = distortion_score
+    score_dict['translation'] = translation_score
+    score_dict['transliteration'] = transliteration_score
+    score_dict['coocurence'] = coocurence_score
+    score_dict['distortion'] = distortion_score
     # score_dict['Mono'] = mono_score
     # score_dict['Bi'] = bi_score
     return score_dict
@@ -79,11 +79,3 @@ def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,list_lambda,sent_index,trai
 
 
 
-EtoV_file = '../../Alignment_Split/EtoV_Dev.txt'
-VtoE_file = '../../Alignment_Split/VtoE_Dev.txt'
-EtoV_sent =  utilities.read_align_file(EtoV_file)[0]
-VtoE_sent =  utilities.read_align_file(VtoE_file)[0]
-cur_candidate = CandidateSet.getCandidateSet(EtoV_sent,VtoE_sent)[0]
-print('Cur candidate ', cur_candidate)
-tmp = getScoreDict(cur_candidate,EtoV_sent,VtoE_sent)
-print('Score Dict ', tmp)

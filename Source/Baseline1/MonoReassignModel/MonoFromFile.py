@@ -15,18 +15,21 @@ def getMonoScore(ent, idx,mode):
         org_score *= table[idx][i-1][2]
         per_score *= table[idx][i-1][3]
         loc_score *= table[idx][i-1][4]
-    score = {}
-    score['ORGANIZATION'] = org_score
-    score['PERSON']  = per_score
-    score['LOCATION'] = loc_score
-    return score
+    org_tp = ('ORGANIZATION',org_score)
+    per_tp = ('PERSON', per_score)
+    loc_tp = ('LOCATION', loc_score)
+    scores = [org_tp,per_tp,loc_tp]
+    scores = sorted(scores, key = lambda score: score[1], reverse = True)
+
+    max_label = scores[0][0]
+    return max_label
 
 def getMonoProb(cur_candidate, sent_idx):
     e_ent_idx = cur_candidate[0]
     v_ent_idx = cur_candidate[1]
-    e_ent_score = getMonoScore(e_ent_idx,sent_idx,'en')
-    v_ent_score = getMonoScore(v_ent_idx,sent_idx,'vi')
-    return e_ent_score, v_ent_score
+    e_ent_label = getMonoScore(e_ent_idx,sent_idx,'en')
+    v_ent_label = getMonoScore(v_ent_idx,sent_idx,'vi')
+    return e_ent_label, v_ent_label
 
 def main():
     ent = ([10,11],'PERSON')

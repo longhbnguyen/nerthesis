@@ -15,7 +15,7 @@ def get_index(ent,sent):
     # print(cur_ent_word)
     for i in range(len(word_list)):
         if ent.group(1) in word_list[i]:
-            index = list(range(i,i+len(cur_ent_word.split())))
+            index = list(range(i+1,i+len(cur_ent_word.split())+1))
             break
     return index
 
@@ -59,8 +59,3 @@ def getFileTrueSet(en_file,vn_file):
 
 
     return res
-
-res = getFileTrueSet(en_file,vn_file)
-for sent in res:
-    print(sent)
-    print('=========')

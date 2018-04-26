@@ -1,25 +1,21 @@
-
-
-'''
-Return Predict Set for Test Set
-Input: Alignment Result of Test Set
-Output: [[([en_idx],[vi_idx],'type')],]
-'''
-
-
-
-
-    pass
-
-align_file_EtoV = ''
-align_file_VtoE = ''
+import utilities
+import predict as getPredict
+import TrueSet as getLabel
+import config
+align_file_EtoV = '../../Alignment_Split/EtoV_test.txt'
+align_file_VtoE = '../../Alignment_Split/VtoE_test.txt'
 
 outputfile = ''
+list_lambda = config.getWeight()
+for key,value in list_lambda.items():
+    list_lambda[key] = float(list_lambda[key])
 
-align_list_EtoV = read_align_file(align_file_EtoV)
-align_file_VtoE = read_align_file(align_file_VtoE)
 
-predict = getPredict.getFinalPredictNEPair(align_list_EtoV,align_list_VtoE)
+
+align_list_EtoV = utilities.read_align_file(align_file_EtoV)
+align_file_VtoE = utilities.read_align_file(align_file_VtoE)
+
+predict = getPredict.getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,train_mode = False)
 label = getLabel.getNEPair(en_test_file,vn_test_file)
 
 # EvaluationRes = {'TP':,'TN':,}

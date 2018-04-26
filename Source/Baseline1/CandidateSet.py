@@ -19,6 +19,25 @@ output Candidate set of that sent
 
 from AlignmentModel import EtoV_model, VtoE_model
 import utilities
+import json
+import os.path
+
+candidate_set_file = 'Candidate_Set_dev.json'
+Candidate_Set_Table = None
+def createCandidateSetForTraining(EtoV_List,VtoE_List):
+    global Candidate_Set_Table
+    if os.path.isfile(candidate_set_file):
+        json_data=open(candidate_set_file).read()
+        Candidate_Set_Table = json.loads(json_data)
+    else:
+        Candidate_Set_Table = []
+        for i in range(len(EtoV_List)):
+            Candidate_Set_Table.append(getCandidateSet(EtoV_List[i],VtoE_List[i]))
+        with open(candidate_set_file,'w',encoding='utf-8') as f:
+            json.dump(Candidate_Set_Table,f)
+
+    
+
 def getCandidateSet(EtoV_sent,VtoE_sent):
     '''
     '''
@@ -39,3 +58,6 @@ def getCandidateSet(EtoV_sent,VtoE_sent):
             res.append((en_ent[0],vn_ent[0],en_ent[1],en_ent[2],vn_ent[2],vn_ent[1]))
     # res = EtoV_set + VtoE_set
     return res
+
+def getCandidateSetFromFile(sent_index):
+    return Candidate_Set_Table[sent_index]
