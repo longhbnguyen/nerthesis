@@ -22,7 +22,7 @@ import utilities
 import json
 import os.path
 
-candidate_set_file = 'Candidate_Set_dev.json'
+candidate_set_file = 'Candidate_Set_Test.json'
 Candidate_Set_Table = None
 def createCandidateSetForTraining(EtoV_List,VtoE_List):
     global Candidate_Set_Table

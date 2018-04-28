@@ -11,6 +11,8 @@ def getOverLapMatrix(CandidateSet):
         for j in range(i+1,len(CandidateSet)):
             candidate_i = CandidateSet[i]
             candidate_j = CandidateSet[j]
+            if len(candidate_i[0][0]) < 1 or len(candidate_j[0][0]) < 1:
+                continue
             # print('Candidate I ',candidate_i)
             # print('Candidate J ',candidate_j)
             candidate_i_begin = candidate_i[0][0][0]
@@ -20,6 +22,7 @@ def getOverLapMatrix(CandidateSet):
             if is_overlapping(candidate_i_begin,candidate_i_end,candidate_j_begin,candidate_j_end):
                 res[i][j] = True
     return res
+
 def getFinalNEPair(CombineScore,CandidateSet):
     '''
     '''
@@ -32,11 +35,14 @@ def getFinalNEPair(CombineScore,CandidateSet):
     i = 0
     free = [True] * len(CandidateSet)
     for i in range(len(CandidateSet)):
+        # print('CurCandidateSet ', CandidateSet[i])
         if (free[i]):
             cur = CandidateSet[i]
+            # print('CurPredictSet ', cur)
             # Remove Overlap with Candidate i
             for j in range(i,len(CandidateSet)):
                 if checkOverLap[i][j]:
-                    free[i] = False
+                    free[j] = False
             res.append(cur)
+        
     return res

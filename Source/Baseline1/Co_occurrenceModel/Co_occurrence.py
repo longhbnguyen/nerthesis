@@ -23,6 +23,6 @@ def getCoocurenceProb(NEPair):
 
     mau = getMau(enNE,vnNE)
     if mau == 0:
-        return 0
+        return 0.0
     return getTu(enNE,vnNE) / mau
 

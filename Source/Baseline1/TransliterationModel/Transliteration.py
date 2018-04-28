@@ -12,5 +12,6 @@ def getTransliterationProb(NEPair,VtoE_sent):
             if (enword == vnword):
                 word_count += 1
                 break
-
+    if n == 0:
+        return 0.0
     return word_count / n

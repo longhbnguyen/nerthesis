@@ -20,9 +20,9 @@ def getMonoScore(ent, idx,mode):
     loc_tp = ('LOCATION', loc_score)
     scores = [org_tp,per_tp,loc_tp]
     scores = sorted(scores, key = lambda score: score[1], reverse = True)
-
     max_label = scores[0][0]
-    return max_label
+    max_score = scores[0][1]
+    return max_label, max_score
 
 def getMonoProb(cur_candidate, sent_idx):
     e_ent_idx = cur_candidate[0]

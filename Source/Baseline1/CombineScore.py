@@ -24,7 +24,7 @@ def getDictDot(score_dict,weight_dict):
     '''
     res = 0.0
     for key,value in score_dict.items():
-        res = res + score_dict[key]*weight_dict[key]
+        res = res + (score_dict[key]) * (weight_dict[key])
     return res 
 
 def getScoreDict(cur_candidate,EtoV_sent,VtoE_sent):

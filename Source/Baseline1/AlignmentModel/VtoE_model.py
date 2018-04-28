@@ -97,28 +97,28 @@ def getEntList_StanfordNER(source_tuple_list):
             #ent of different type
             if cur_type != tag_list[i][1] and ent_flag == True:
                 for idx in idx_seq:
-                    word += tag_list[idx][0] + ' '
+                    word += tag_list[idx-1][0] + ' '
                 word = word.strip()
                 ent = (idx_seq,cur_type,word)
                 # idx_seq = str(i)
-                idx_seq.append(i)
+                idx_seq.append(i+1)
                 ent_list.append(ent)
                 cur_type = tag_list[i][1]
                 word = ''
             #continue of ent
             elif cur_type == tag_list[i][1] and ent_flag == True:
                 # idx_seq +=  ' ' + str(i) 
-                idx_seq.append(i)
+                idx_seq.append(i+1)
             #begin of ent
             else:
                 ent_flag = True
                 cur_type = tag_list[i][1]
                 # idx_seq = str(i)
-                idx_seq.append(i)
+                idx_seq.append(i+1)
         else:
             if ent_flag == True:
                 for idx in idx_seq:
-                    word += tag_list[idx][0] + ' '
+                    word += tag_list[idx-1][0] + ' '
                 word = word.strip()
                 ent = (idx_seq, cur_type, word)
                 ent_list.append(ent)
@@ -173,7 +173,7 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
         res = ''
         target_ent_idx = []
         for idx in source_ent[0]:
-            idx = idx + 1
+            # idx = idx + 1
             list_idx = tuple_list[int(idx)]['Index']
             for index in list_idx:
                 target_ent_idx.append(int(index))
@@ -197,6 +197,7 @@ def getEntSet(source_sent,target_sent):
     
     source_tuple_list = source_sent
     source_ent_list = getEntList_StanfordNER(source_tuple_list)
+    # print('Source Ent List', source_ent_list)
     target_ent_list = getTargetEntList(source_tuple_list,target_sent,source_ent_list)
     ent_set = []
     for i in range(len(source_ent_list)):

@@ -12,6 +12,8 @@ def getDistortionprob(NEPair, enSent, vnSent):
     enPOS = NEPair[0][0]
     vnPOS = NEPair[1][0]
     
+    if len(enSent['Target'])==0 or len(vnSent['Target']) == 0:
+        return 0.0
     posE = enPOS / len(enSent['Target'])
     posV = vnPOS / len(vnSent['Target'])
     result = absProb(posE,posV)

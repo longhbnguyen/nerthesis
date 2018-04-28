@@ -53,7 +53,7 @@ def init_lambda(number_of_lambda):
     res = config.getWeight()
     # print(res)
     for key,value in res.items():
-        res[key] = 0.5
+        res[key] = 0.0
     return res
 
 def init_result():
@@ -65,22 +65,25 @@ def init_result():
     return res
 
 def better_than(res,best_res):
-    return res['F1'] > best_res['F1']
+    return (res['F1'] > best_res['F1'])
 
 def update_list_lambda(list_lambda,step,number_of_lambda):
     ''' 
     '''
     global cur_Count
     cur_Count += 1
+    
     print('Cur Count ', cur_Count)
     tmp = cur_Count
     res = list_lambda
     for key,value in res.items():
         res[key] = int(tmp % 10) / 10
         tmp = int(tmp / 10)
-
-    if (cur_Count > 2 ):
+    if (cur_Count > (10**number_of_lambda) ):
         return None
+    # if (cur_Count > 10):
+    #     return None
+    
     return res
 
 #Main
@@ -95,10 +98,13 @@ def main():
         print('List Lambda ', list_lambda)
         cur_res = train_dev(list_lambda)
         if (better_than(cur_res,best_res)):
-            best_lambda = list_lambda
+            best_lambda = dict((k,v) for k,v in list_lambda.items())
             best_res = cur_res
-
         list_lambda = update_list_lambda(list_lambda,step,4)
+        
+        
+    print('BestRes ' ,best_res)
+    print('BestLambda ', best_lambda)
     config.WriteBestLambda(best_lambda)
     
 

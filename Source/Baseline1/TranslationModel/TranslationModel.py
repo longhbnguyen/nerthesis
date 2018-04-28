@@ -45,5 +45,7 @@ def getNETranslationProb(NEPair,VtoE_sent):
         for vnWord in vnNE:
             sum += getWordTranslationProb(vnWord,enWord)
         res *= sum
+    if len(enNE) == 0:
+        return 0.0
     res = res / (len(enNE)**len(vnNE))
     return res
