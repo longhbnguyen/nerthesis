@@ -24,8 +24,10 @@ import os.path
 
 candidate_set_file = 'Candidate_Set_Test.json'
 Candidate_Set_Table = None
-EtoV_model.createEntListTable()
-VtoE_model.createEntListTable()
+EtoV_model.createEntListTable_Stanford()
+VtoE_model.createEntListTable_Stanford()
+EtoV_model.createEntListTable_Spacy()
+VtoE_model.createEntListTable_Spacy()
 
 def createCandidateSetForTraining(EtoV_List,VtoE_List):
     global Candidate_Set_Table

@@ -2,13 +2,16 @@ import spacy
 import sys
 from collections import defaultdict
 from nltk.tag.stanford import StanfordNERTagger
-
+import json
 
 path_to_model = '../../stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
 path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 
-initial_ent_list_file = './AlignmentModel/ner_eng_dev.tsv'
-initial_ent_list = []
+initial_ent_list_file_stanford = './AlignmentModel/ner_eng_dev.tsv'
+initial_ent_list_file_spacy = './AlignmentModel/en_ent_list_spacy_dev.txt'
+
+initial_ent_list_stanford = []
+initial_ent_list_spacy = []
 
 nertagger=StanfordNERTagger(path_to_model, path_to_jar)
 
@@ -76,6 +79,13 @@ def getEntList_Spacy(source_tuple_list):
     # print(ent_list)
     return ent_list
 
+def getEntList_Spacy_FromFile(sent_index):
+    return initial_ent_list_spacy[sent_index]
+
+def createEntListTable_Spacy():
+    json_data=open(initial_ent_list_file_spacy).read()
+    initial_ent_list_spacy = json.loads(json_data)
+
 def getEntList_StanfordNER(source_tuple_list):
     '''
     Get the entity list of Source sentence
@@ -135,10 +145,10 @@ def getEntList_StanfordNER(source_tuple_list):
     return ent_list
 
 
-def createEntListTable():
+def createEntListTable_Stanford():
     line_list = []
     word_list_sent = []
-    with open(initial_ent_list_file,'r',encoding='utf-8') as f:
+    with open(initial_ent_list_file_stanford,'r',encoding='utf-8') as f:
         for line in f:
             if line == '\n':
                 line_list.append(word_list_sent)
@@ -195,6 +205,11 @@ def getCombineNER(tuple_list):
     spacy_list = getEntList_Spacy(tuple_list)
     stanfordner_list = getEntList_StanfordNER(tuple_list)
     return spacy_list + stanfordner_list
+
+def getCombineNERFromFile(sent_index):
+    stanfordner_list = getEntList_StanfordNER_FromFile(sent_index)
+    spacy_list = getEntList_Spacy_FromFile(sent_index)
+    return stanfordner_list + spacy_list
 
 def HardAlign(v_sent, e_sent):
     ent_set = getEntSet(v_sent,e_sent)
@@ -267,7 +282,7 @@ def getEntSet(source_sent,target_sent):
     return ent_set
 
 def getEntSetFromFile(source_sent, target_sent, sent_index):
-    source_ent_list = getEntList_StanfordNER_FromFile(sent_index)
+    source_ent_list = getCombineNERFromFile(sent_index)
     target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
     ent_set = []
     for i in range(len(source_ent_list)):

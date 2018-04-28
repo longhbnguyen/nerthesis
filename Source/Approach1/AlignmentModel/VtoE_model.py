@@ -7,12 +7,15 @@ from nltk.tag.stanford import StanfordNERTagger
 path_to_model = '../../stanford-ner-2018-02-27/vietnamese_new.gz'
 path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 
-initial_ent_list_file = './AlignmentModel/ner_viet_dev.tsv'
-initial_ent_list = []
+initial_ent_list_file_stanford = './AlignmentModel/ner_viet_dev.tsv'
+initial_ent_list_file_spacy = './AlignmentModel/vi_ent_list_spacy_dev.txt'
+
+initial_ent_list_stanford = []
+initial_ent_list_spacy = []
 
 nertagger=StanfordNERTagger(path_to_model, path_to_jar)
 
-nlp = spacy.load('./InitialNER/viNerFull50')
+nlp = spacy.load('./InitialNer/viNerFull50')
 
 v_sent = None
 e_sent = None
@@ -76,6 +79,13 @@ def getEntList_Spacy(source_tuple_list):
     # print(ent_list)
     return ent_list
 
+def getEntList_Spacy_FromFile(sent_index):
+    return initial_ent_list_spacy[sent_index]
+
+def createEntListTable_Spacy():
+    json_data=open(initial_ent_list_file_spacy).read()
+    initial_ent_list_spacy = json.loads(json_data)
+
 def getEntList_StanfordNER(source_tuple_list):
     '''
     Get the entity list of Source sentence
@@ -135,10 +145,10 @@ def getEntList_StanfordNER(source_tuple_list):
     return ent_list
 
 
-def createEntListTable():
+def createEntListTable_Stanford():
     line_list = []
     word_list_sent = []
-    with open(initial_ent_list_file,'r',encoding='utf-8') as f:
+    with open(initial_ent_list_file_stanford,'r',encoding='utf-8') as f:
         for line in f:
             if line == '\n':
                 line_list.append(word_list_sent)
@@ -196,8 +206,13 @@ def getCombineNER(tuple_list):
     stanfordner_list = getEntList_StanfordNER(tuple_list)
     return spacy_list + stanfordner_list
 
-def HardAlign(v_sent, e_sent):
-    ent_set = getEntSet(v_sent,e_sent)
+def getCombineNERFromFile(sent_index):
+    stanfordner_list = getEntList_StanfordNER_FromFile(sent_index)
+    spacy_list = getEntList_Spacy_FromFile(sent_index)
+    return stanfordner_list + spacy_list
+
+def HardAlign(v_sent, e_sent, sent_index):
+    ent_set = getEntSetFromFile(v_sent,e_sent, sent_index)
     for i in range(len(ent_set)):
         for ent in ent_set[i]:
             for j in range(len(ent)):
@@ -207,9 +222,8 @@ def HardAlign(v_sent, e_sent):
                     return []
     return ent_set
 
-
-def SoftAlign(v_sent,e_sent):
-    ent_set = getEntSet(v_sent,e_sent)
+def SoftAlign(v_sent,e_sent, sent_index):
+    ent_set = getEntSetFromFile(v_sent,e_sent, sent_index)
     for i in range(len(ent_set)):
         for ent in ent_set[i]:
             for j in range(len(ent)):
@@ -219,7 +233,6 @@ def SoftAlign(v_sent,e_sent):
                     del ent_set[i]
                     break
     return ent_set
-
 
 def getTargetEntList(tuple_list, target_sent, source_ent_list):
     '''
@@ -252,9 +265,7 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
 def getEntSet(source_sent,target_sent):
     '''
     [([idx]_en,[idx]_vi,'type',[word_en],[word_vi])]
-    '''
-    target_sent = ' '.join(target_sent).strip()
-    
+    '''    
     source_tuple_list = source_sent
     source_ent_list = getEntList_StanfordNER(source_tuple_list)
     # print("Source Ent List", source_ent_list)
@@ -269,7 +280,7 @@ def getEntSet(source_sent,target_sent):
     return ent_set
 
 def getEntSetFromFile(source_sent, target_sent, sent_index):
-    source_ent_list = getEntList_StanfordNER_FromFile(sent_index)
+    source_ent_list = getCombineNERFromFile(sent_index)
     target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
     ent_set = []
     for i in range(len(source_ent_list)):

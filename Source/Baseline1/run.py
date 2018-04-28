@@ -46,5 +46,6 @@ def main():
 
     print('Type-insensitive ', EvaluationRes_type_insen)
     print('Type-sensitive ', EvaluationRes_type_sen)
+
 if __name__ == '__main__':
     main()
