@@ -45,6 +45,8 @@ def getScoreDict(cur_candidate,EtoV_sent,VtoE_sent):
     # score_dict['Bi'] = bi_score
     return score_dict
 
+
+
 def getScoreDictForSet(CandidateSet,EtoV_sent,VtoE_sent):
     res = []
     for candidate in CandidateSet:

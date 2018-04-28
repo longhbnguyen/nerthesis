@@ -211,30 +211,36 @@ def getCombineNERFromFile(sent_index):
     spacy_list = getEntList_Spacy_FromFile(sent_index)
     return stanfordner_list + spacy_list
 
-def HardAlign(v_sent, e_sent):
-    ent_set = getEntSet(v_sent,e_sent)
-    for i in range(len(ent_set)):
-        for ent in ent_set[i]:
-            for j in range(len(ent)):
-                if j == len(ent) - 1:
-                    break
+def HardAlign(v_sent, e_sent, sent_index):
+    source_ent_list = getCombineNERFromFile(sent_index)
+    target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
+
+    for i in range(len(target_ent_list)):
+        for ent in target_ent_list[i]:
+            for j in range(len(ent)-1):
                 if (ent[j] + 1) != (ent[j+1]):
-                    return []
-    return ent_set
+                    return [], []
+                    
+    return source_ent_list,target_ent_list
 
-
-def SoftAlign(v_sent,e_sent):
-    ent_set = getEntSet(v_sent,e_sent)
-    for i in range(len(ent_set)):
-        for ent in ent_set[i]:
-            for j in range(len(ent)):
-                if j == len(ent) - 1:
-                    break
+def SoftAlign(v_sent,e_sent,sent_index):
+    # ent_set = getEntSet(v_sent,e_sent)
+    source_ent_list = getCombineNERFromFile(sent_index)
+    target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
+    res_source_ent_list = []
+    res_target_ent_list = []
+    for i in range(len(target_ent_list)):
+        for ent in target_ent_list[i]:
+            continuous_flag = True
+            for j in range(len(ent)-1):
                 if (ent[j] + 1) != (ent[j+1]):
-                    del ent_set[i]
+                    continuous_flag = False
                     break
-    return ent_set
-
+            if continuous_flag:
+                res_source_ent_list.append(source_ent_list[i])
+                res_target_ent_list.append(target_ent_list[i])
+    
+    return source_ent_list, target_ent_list
 
 def getTargetEntList(tuple_list, target_sent, source_ent_list):
     '''
