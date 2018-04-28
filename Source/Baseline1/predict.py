@@ -10,7 +10,7 @@ def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index, train_mode  = False)
     if train_mode:
         CandidateSet = getCandidateSet.getCandidateSetFromFile(sent_index)
     else:
-        CandidateSet = getCandidateSet.getCandidateSet(EtoV_sent,VtoE_sent)
+        CandidateSet = getCandidateSet.getCandidateSet(EtoV_sent,VtoE_sent, sent_index)
     CombineScore = getCombineScore.getCombineScore(CandidateSet,EtoV_sent,VtoE_sent, list_lambda,sent_index,train_mode = train_mode)
     res = getFinalRes.getFinalNEPair(CombineScore,CandidateSet)
     return res

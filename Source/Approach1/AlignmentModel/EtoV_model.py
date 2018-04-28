@@ -4,8 +4,12 @@ from collections import defaultdict
 from nltk.tag.stanford import StanfordNERTagger
 
 
-path_to_model = '../stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
-path_to_jar = '../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
+path_to_model = '../../stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
+path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
+
+initial_ent_list_file = './AlignmentModel/ner_eng_dev.tsv'
+initial_ent_list = []
+
 nertagger=StanfordNERTagger(path_to_model, path_to_jar)
 
 nlp = spacy.load('en')
@@ -19,7 +23,7 @@ def sentToTuple(source_sent):
     '''
     Tokenize the Source sentence into tuple
     Input: English sentence (output of Giza++)
-    Output: tp_list = [ (word, (idx idx)) ,]
+    Output: tp_list = [ (word, ({idx idx})) ,]
     '''
     source_sent_tokens = source_sent.split()
     # print(sent_tokens)
@@ -54,9 +58,9 @@ def getEntList_Spacy(source_tuple_list):
     '''
     source_sent = ''
     for tp in source_tuple_list:
-        if tp[0] == 'NULL':
+        if tp['Word'] == 'NULL':
             continue
-        e_sent += tp[0]+ ' '
+        source_sent += tp['Word']+ ' '
     source_sent = source_sent.strip()
     # print(e_sent)
     
@@ -80,9 +84,9 @@ def getEntList_StanfordNER(source_tuple_list):
     '''
     source_sent = ''
     for tp in source_tuple_list:
-        if tp[0] == 'NULL':
+        if tp['Word'] == 'NULL':
             continue
-        source_sent += tp[0]+ ' '
+        source_sent += tp['Word']+ ' '
     source_sent = source_sent.strip()
     tag_list = nertagger.tag(source_sent.split())
     ent = ()
@@ -91,36 +95,101 @@ def getEntList_StanfordNER(source_tuple_list):
     ent_flag = False
     # idx_seq = ''
     idx_seq = []
+    word =''
     for i in range(len(tag_list)):
         if tag_list[i][1] != 'O':
             #ent of different type
             if cur_type != tag_list[i][1] and ent_flag == True:
-                ent = (idx_seq,cur_type)
+                for idx in idx_seq:
+                    word += tag_list[idx-1][0] + ' '
+                word = word.strip()
+                ent = (idx_seq,cur_type,word)
                 # idx_seq = str(i)
-                idx_seq.append(i)
+                idx_seq.append(i+1)
                 ent_list.append(ent)
                 cur_type = tag_list[i][1]
+                word = ''
             #continue of ent
             elif cur_type == tag_list[i][1] and ent_flag == True:
                 # idx_seq +=  ' ' + str(i) 
-                idx_seq.append(i)
+                idx_seq.append(i+1)
             #begin of ent
             else:
                 ent_flag = True
                 cur_type = tag_list[i][1]
                 # idx_seq = str(i)
-                idx_seq.append(i)
+                idx_seq.append(i+1)
         else:
             if ent_flag == True:
-                ent = (idx_seq, cur_type)
+                for idx in idx_seq:
+                    word += tag_list[idx-1][0] + ' '
+                word = word.strip()
+                ent = (idx_seq, cur_type, word)
                 ent_list.append(ent)
-                idx_seq = ''
                 idx_seq = []
                 ent_flag = False
+                word = ''
             else:
                 continue
         # print(ent_list)
     return ent_list
+
+
+def createEntListTable():
+    line_list = []
+    word_list_sent = []
+    with open(initial_ent_list_file,'r',encoding='utf-8') as f:
+        for line in f:
+            if line == '\n':
+                line_list.append(word_list_sent)
+                word_list_sent = []
+            else:
+                word_list_sent.append((line.split()[0], line.split()[2]))
+    
+    for line in line_list:
+        ent_flag = False
+        cur_label = ''
+        ent_word = ''
+        idx_seq = []
+        ent_list_sent = []
+        for i in range(len(line)):
+            word = line[i][0]
+            label = line[i][1]
+            if label == 'O':
+                if ent_flag == False:
+                    continue
+                else:
+                    ent_word = ent_word.strip()
+                    ent = (idx_seq,cur_label,ent_word)
+                    ent_list_sent.append(ent)
+                    ent_word = ''
+                    cur_label = label
+                    idx_seq = []
+                    ent_flag = False
+            else:
+                if ent_flag == True:
+                    if cur_label == label:
+                        ent_word += ' ' + word
+                        idx_seq.append(i+1)
+                        cur_label = label
+                    else:
+                        ent_word = ent_word.strip()
+                        ent = (idx_seq,cur_label,ent_word)
+                        ent_list_sent.append(ent)
+                        ent_word = ''
+                        cur_label = label
+                        idx_seq = []
+                        idx_seq.append(i+1)
+                else:
+                    ent_flag = True
+                    ent_word += ' ' + word
+                    idx_seq.append(i+1)
+                    cur_label = label
+        initial_ent_list.append(ent_list_sent)
+
+
+def getEntList_StanfordNER_FromFile(sent_index):
+    return initial_ent_list[sent_index]
 
 def getCombineNER(tuple_list):
     spacy_list = getEntList_Spacy(tuple_list)
@@ -151,45 +220,6 @@ def SoftAlign(v_sent,e_sent):
                     break
     return ent_set
 
-def expandWindow(ent,sent,left,right):
-    '''
-    Expand entity by a left, right window
-    Input: Entity, sentence, left, right
-    Output: Expanded entity
-    '''
-    idx_seq = ent[0]
-    left_bound = 0
-    right_bound = len(sent.split()) - 1
-    start = idx_seq[0] - left
-    if start < 0:
-        start = 0
-    end = idx_seq[-1] + right
-    if end >  right_bound:
-        end = right_bound
-    for i in range(start,idx_seq[0]):
-        idx_seq.append(i)
-    for i in range(idx_seq[-1]+1,end):
-        idx_seq.append(i)
-    idx_seq = sorted(idx_seq, key = int)
-    return (idx_seq,ent[1])
-
-def getExpandEntList(sent, left, right):
-    '''
-    get Expand Window Entity List of a sentence:
-    Input: sentence, left, right
-    '''
-    source_tuple_list = sentToTuple(sent)
-    ent_list = getCombineNER(source_tuple_list)
-    for i in range(len(ent_list)):
-        ent_list[i] = expandWindow(ent_list[i], sent, left, right)
-    return ent_list
-
-def expandNP(ent, sent):
-    '''
-    get Expanded entity based on POS Tag
-    Input: Entity, Sentence
-    Output: Expanded Entity
-    '''
 
 def getTargetEntList(tuple_list, target_sent, source_ent_list):
     '''
@@ -197,46 +227,58 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
     Input: Alignment List, Source entity list, Target Sent
     Output: Target entity list
     '''
-    target_tokens = target_sent.split()
     target_ent_list = []
     # print(tuple_list[8])
-
     for source_ent in source_ent_list:
         res = ''
         target_ent_idx = []
         for idx in source_ent[0]:
-            list_idx = tuple_list[int(idx)][1].split()
+            # idx = idx + 1
+            list_idx = tuple_list[int(idx)]['Index']
             for index in list_idx:
                 target_ent_idx.append(int(index))
 
         target_ent_idx = sorted(target_ent_idx, key = int)
+            
+        for idx in target_ent_idx:
+            res += target_sent[idx-1] + ' '
+        res = res.strip()
         
-        # for idx in v_ent_idx:
-        #     res += v_tokens[idx-1] + ' '
-        # res = res.strip()
-        target_ent_list.append((target_ent_idx,source_ent[1]))
+        target_ent_list.append((target_ent_idx,source_ent[1],res))
+
+    
     return target_ent_list
 
 def getEntSet(source_sent,target_sent):
     '''
-    Get the Entity Pairs List of Source and Target Sentence
-    Input: Source sentence, Target Sentence
-    Output: Entity Pairs List
-    '''
-    source_tuple_list = sentToTuple(source_sent)
+    [([idx]_en,[idx]_vi,'type',[word_en],[word_vi])]
+    '''    
+    source_tuple_list = source_sent
     source_ent_list = getEntList_StanfordNER(source_tuple_list)
+    # print("Source Ent List", source_ent_list)
     target_ent_list = getTargetEntList(source_tuple_list,target_sent,source_ent_list)
     ent_set = []
     for i in range(len(source_ent_list)):
-        tp = (source_ent_list[i][0],target_ent_list[i][0])
+
+        tp = (source_ent_list[i][0],target_ent_list[i][0],source_ent_list[i][1],source_ent_list[i][2],target_ent_list[i][2])
+
+        ent_set.append(tp)
+    
+    return ent_set
+
+def getEntSetFromFile(source_sent, target_sent, sent_index):
+    source_ent_list = getEntList_StanfordNER_FromFile(sent_index)
+    target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
+    ent_set = []
+    for i in range(len(source_ent_list)):
+        tp = (source_ent_list[i][0],target_ent_list[i][0],source_ent_list[i][1],source_ent_list[i][2],target_ent_list[i][2])
         ent_set.append(tp)
     return ent_set
-    
+
+
 
 def main():
-    target_sent = 'Theo ông John Rockhold thì thị trường Việt Nam ẩn chứa nhiều thách thức .'
-    source_sent = 'NULL ({ }) The ({ }) Vietnamese ({ 8 9 }) market ({ 6 7 }) has ({ }) several ({ 12 }) challenges ({ 13 14 }) according ({ }) to ({ }) HCMC ({ 10 11 }) director ({ }) John ({ 3 }) Rockhold ({ 1 2 4 5 }) . ({ 15 })'
-    print(getEntSet(source_sent,target_sent))
-
+    createEntListTable()
+    print(initial_ent_list[0])
 if __name__ == '__main__':
     main()
