@@ -2,6 +2,10 @@ import spacy
 import sys
 from collections import defaultdict
 from nltk.tag.stanford import StanfordNERTagger
+import os.path, sys
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
+import MonoReassignModel.MonoFromFile as Mono
+import pandas as pd 
 
 
 path_to_model = '../../stanford-ner-2018-02-27/vietnamese_new.gz'
@@ -9,13 +13,18 @@ path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 
 initial_ent_list_file_stanford = './AlignmentModel/ner_viet_dev.tsv'
 initial_ent_list_file_spacy = './AlignmentModel/vi_ent_list_spacy_dev.txt'
+alignment_table_file = './AlignmentModel/Result.actual.ti.final'
 
 initial_ent_list_stanford = []
 initial_ent_list_spacy = []
 
+alignment_table = pd.read_csv(alignment_table_file, sep = ' ', encoding = 'utf-8')
+alignment_table = alignment_table.fillna('NaN')
+
+
 nertagger=StanfordNERTagger(path_to_model, path_to_jar)
 
-nlp = spacy.load('./InitialNer/viNerFull50')
+nlp = spacy.load('./InitialNER/viNerFull50')
 
 v_sent = None
 e_sent = None
@@ -242,6 +251,35 @@ def SoftAlign(source_sent,target_sent,sent_index):
     
     return source_ent_list, target_ent_list
 
+
+def getAlignScore(source_ent, target_ent, idx):
+    '''
+    '''
+    final_score = 0.0
+    print(source_ent[1])
+    source_ent_score = Mono.getMonoScore(source_ent,idx,'vi')[source_ent[1]]
+    align_score = 1.0
+    target_ent_words = target_ent[2].split()
+    print(target_ent[0])
+    print(target_ent_words)
+    for i in target_ent[0]:
+        word_score = 0
+        # print(i)
+        word = target_ent_words[i-1]
+        tmp = alignment_table[alignment_table.VN == word].Prob
+        # print('Tmp ', tmp)
+        tmp_sum = tmp.sum()
+        # print('Tmp_sum ', tmp_sum)
+        if (tmp_sum):
+            word_score = tmp_sum / tmp.size
+        else:
+            word_score = 0
+        print(word, word_score)
+        align_score*= word_score
+
+    final_score = source_ent_score * align_score
+    return final_score
+
 def getTargetEntList(tuple_list, target_sent, source_ent_list):
     '''
     Get the entity list of Target sentence based on word alignment
@@ -295,6 +333,7 @@ def getEntSetFromFile(source_sent, target_sent, sent_index):
         tp = (source_ent_list[i][0],target_ent_list[i][0],source_ent_list[i][1],source_ent_list[i][2],target_ent_list[i][2])
         ent_set.append(tp)
     return ent_set
+
 
 
 
