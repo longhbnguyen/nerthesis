@@ -1,4 +1,4 @@
-import MonoReassignModel.getScoreTable
+import MonoReassignModel.getScoreTable as getScoreTable
 
 en_table = getScoreTable.getScoreTableEn()
 vi_table = getScoreTable.getScoreTableVi()
@@ -15,21 +15,26 @@ def getMonoScore(ent, idx,mode):
         org_score *= table[idx][i-1][2]
         per_score *= table[idx][i-1][3]
         loc_score *= table[idx][i-1][4]
-    org_tp = ('ORGANIZATION',org_score)
-    per_tp = ('PERSON', per_score)
-    loc_tp = ('LOCATION', loc_score)
-    scores = [org_tp,per_tp,loc_tp]
-    scores = sorted(scores, key = lambda score: score[1], reverse = True)
-    max_label = scores[0][0]
-    max_score = scores[0][1]
-    return max_label, max_score
+    scores = {}
+    scores['ORGANIZATION'] = org_score
+    scores['PERSON'] = per_score
+    scores['LOCATION'] = loc_score
+
+    # scores = sorted(scores, key = lambda score: score[1], reverse = True)
+    # max_label = scores[0][0]
+    # max_score = scores[0][1]
+    return scores
+    
 
 def getMonoProb(cur_candidate, sent_idx):
     e_ent_idx = cur_candidate[0]
     v_ent_idx = cur_candidate[1]
-    e_ent_label = getMonoScore(e_ent_idx,sent_idx,'en')
-    v_ent_label = getMonoScore(v_ent_idx,sent_idx,'vi')
-    return e_ent_label, v_ent_label
+    e_ent_scores = getMonoScore(e_ent_idx,sent_idx,'en')
+    v_ent_scores = getMonoScore(v_ent_idx,sent_idx,'vi')
+    pair_score = {}
+    for key,value in e_ent_scores.items():
+        pair_score[key] = e_ent_scores[key] + v_ent_scores[key]
+    return pair_score    
 
 def main():
     ent = ([10,11],'PERSON')

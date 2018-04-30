@@ -1,4 +1,4 @@
-import MonoReassignModel.getScoreTable
+import MonoReassignModel.getScoreTable as getScoreTable
 
 en_table = getScoreTable.getScoreTableEn()
 vi_table = getScoreTable.getScoreTableVi()

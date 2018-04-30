@@ -25,5 +25,11 @@ def createScoreTable(dev_list_EtoV,dev_list_VtoE):
 
 
 def getScoreforOneCandidate(sent_index,candidate_index):
-
-    return ScoreTable[sent_index][candidate_index]
+    full_score = ScoreTable[sent_index][candidate_index]
+    # score = {}
+    # score['coocurence'] = full_score['coocurence']
+    # score['translation'] = full_score['translation']
+    # score['distortion'] = full_score['distortion']
+    # score['transliteration'] = full_score['transliteration']
+    
+    return full_score

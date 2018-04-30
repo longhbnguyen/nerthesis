@@ -44,8 +44,8 @@ def main():
     EvaluationRes_type_insen = evaluate.getMetrics(predict_set,true_set,0)
     EvaluationRes_type_sen = evaluate.getMetrics(predict_set,true_set,1)
 
-    print('Type-insensitive ', EvaluationRes_type_insen)
-    print('Type-sensitive ', EvaluationRes_type_sen)
+    print('Type-insensitive (Translation+Transliteration+Coocurence+Distortion) ', EvaluationRes_type_insen)
+    # print('Type-sensitive (Translation+Transliteration) ', EvaluationRes_type_sen)
 
 if __name__ == '__main__':
     main()

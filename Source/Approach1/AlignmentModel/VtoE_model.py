@@ -195,11 +195,11 @@ def createEntListTable_Stanford():
                     ent_word += ' ' + word
                     idx_seq.append(i+1)
                     cur_label = label
-        initial_ent_list.append(ent_list_sent)
+        initial_ent_list_stanford.append(ent_list_sent)
 
 
 def getEntList_StanfordNER_FromFile(sent_index):
-    return initial_ent_list[sent_index]
+    return initial_ent_list_stanford[sent_index]
 
 def getCombineNER(tuple_list):
     spacy_list = getEntList_Spacy(tuple_list)
@@ -211,28 +211,36 @@ def getCombineNERFromFile(sent_index):
     spacy_list = getEntList_Spacy_FromFile(sent_index)
     return stanfordner_list + spacy_list
 
-def HardAlign(v_sent, e_sent, sent_index):
-    ent_set = getEntSetFromFile(v_sent,e_sent, sent_index)
-    for i in range(len(ent_set)):
-        for ent in ent_set[i]:
-            for j in range(len(ent)):
-                if j == len(ent) - 1:
-                    break
-                if (ent[j] + 1) != (ent[j+1]):
-                    return []
-    return ent_set
+def HardAlign(source_sent, target_sent, sent_index):
+    source_ent_list = getCombineNERFromFile(sent_index)
+    target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
 
-def SoftAlign(v_sent,e_sent, sent_index):
-    ent_set = getEntSetFromFile(v_sent,e_sent, sent_index)
-    for i in range(len(ent_set)):
-        for ent in ent_set[i]:
-            for j in range(len(ent)):
-                if j == len(ent) - 1:
-                    break
+    for i in range(len(target_ent_list)):
+        for ent in target_ent_list[i]:
+            for j in range(len(ent)-1):
                 if (ent[j] + 1) != (ent[j+1]):
-                    del ent_set[i]
+                    return [], []
+                    
+    return source_ent_list,target_ent_list
+
+def SoftAlign(source_sent,target_sent,sent_index):
+    # ent_set = getEntSet(v_sent,e_sent)
+    source_ent_list = getCombineNERFromFile(sent_index)
+    target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
+    res_source_ent_list = []
+    res_target_ent_list = []
+    for i in range(len(target_ent_list)):
+        for ent in target_ent_list[i]:
+            continuous_flag = True
+            for j in range(len(ent)-1):
+                if (ent[j] + 1) != (ent[j+1]):
+                    continuous_flag = False
                     break
-    return ent_set
+            if continuous_flag:
+                res_source_ent_list.append(source_ent_list[i])
+                res_target_ent_list.append(target_ent_list[i])
+    
+    return source_ent_list, target_ent_list
 
 def getTargetEntList(tuple_list, target_sent, source_ent_list):
     '''
@@ -287,6 +295,7 @@ def getEntSetFromFile(source_sent, target_sent, sent_index):
         tp = (source_ent_list[i][0],target_ent_list[i][0],source_ent_list[i][1],source_ent_list[i][2],target_ent_list[i][2])
         ent_set.append(tp)
     return ent_set
+
 
 
 

@@ -3,15 +3,26 @@ import sys
 from collections import defaultdict
 from nltk.tag.stanford import StanfordNERTagger
 import json
+import os.path, sys
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
+import MonoReassignModel.MonoFromFile as Mono
+import pandas as pd 
+
+import utilities
 
 path_to_model = '../../stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
 path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 
 initial_ent_list_file_stanford = './AlignmentModel/ner_eng_dev.tsv'
 initial_ent_list_file_spacy = './AlignmentModel/en_ent_list_spacy_dev.txt'
+alignment_table_file = './AlignmentModel/Result.actual.ti.final'
 
 initial_ent_list_stanford = []
 initial_ent_list_spacy = []
+
+alignment_table = pd.read_csv(alignment_table_file, sep = ' ', encoding = 'utf-8')
+alignment_table = alignment_table.fillna('NaN')
+
 
 nertagger=StanfordNERTagger(path_to_model, path_to_jar)
 
@@ -195,11 +206,11 @@ def createEntListTable_Stanford():
                     ent_word += ' ' + word
                     idx_seq.append(i+1)
                     cur_label = label
-        initial_ent_list.append(ent_list_sent)
+        initial_ent_list_stanford.append(ent_list_sent)
 
 
 def getEntList_StanfordNER_FromFile(sent_index):
-    return initial_ent_list[sent_index]
+    return initial_ent_list_stanford[sent_index]
 
 def getCombineNER(tuple_list):
     spacy_list = getEntList_Spacy(tuple_list)
@@ -211,7 +222,7 @@ def getCombineNERFromFile(sent_index):
     spacy_list = getEntList_Spacy_FromFile(sent_index)
     return stanfordner_list + spacy_list
 
-def HardAlign(v_sent, e_sent, sent_index):
+def HardAlign(source_sent, target_sent, sent_index):
     source_ent_list = getCombineNERFromFile(sent_index)
     target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
 
@@ -223,7 +234,7 @@ def HardAlign(v_sent, e_sent, sent_index):
                     
     return source_ent_list,target_ent_list
 
-def SoftAlign(v_sent,e_sent,sent_index):
+def SoftAlign(source_sent,target_sent,sent_index):
     # ent_set = getEntSet(v_sent,e_sent)
     source_ent_list = getCombineNERFromFile(sent_index)
     target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
@@ -241,6 +252,35 @@ def SoftAlign(v_sent,e_sent,sent_index):
                 res_target_ent_list.append(target_ent_list[i])
     
     return source_ent_list, target_ent_list
+
+
+def getAlignScore(source_ent, target_ent, idx):
+    '''
+    '''
+    final_score = 0.0
+    print(source_ent[1])
+    source_ent_score = Mono.getMonoScore(source_ent,idx,'en')[source_ent[1]]
+    align_score = 1.0
+    target_ent_words = target_ent[2].split()
+    print(target_ent[0])
+    print(target_ent_words)
+    for i in target_ent[0]:
+        word_score = 0
+        # print(i)
+        word = target_ent_words[i-1]
+        tmp = alignment_table[alignment_table.VN == word].Prob
+        # print('Tmp ', tmp)
+        tmp_sum = tmp.sum()
+        # print('Tmp_sum ', tmp_sum)
+        if (tmp_sum):
+            word_score = tmp_sum / tmp.size
+        else:
+            word_score = 0
+        print(word, word_score)
+        align_score*= word_score
+
+    final_score = source_ent_score * align_score
+    return final_score
 
 def getTargetEntList(tuple_list, target_sent, source_ent_list):
     '''
@@ -299,7 +339,15 @@ def getEntSetFromFile(source_sent, target_sent, sent_index):
 
 
 def main():
-    createEntListTable()
-    print(initial_ent_list[0])
+    createEntListTable_Stanford()
+    EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Dev.txt')
+    # pair = getEntSetFromFile(EtoV_dev_list[0]['Source'],EtoV_dev_list[0]['Target'],0)
+    source_sent = EtoV_dev_list[0]['Source']
+    target_sent = EtoV_dev_list[0]['Target']
+    source_ent_list = getEntList_StanfordNER_FromFile(0)
+    target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
+    align_score = getAlignScore(source_ent_list[0],target_ent_list[0],0)
+    print(align_score)
+
 if __name__ == '__main__':
     main()
