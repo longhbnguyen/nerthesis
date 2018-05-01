@@ -8,14 +8,14 @@ ent_pattern_end = re.compile(r"(</[A-Z]+\_\d+>)")
 en_model = spacy.load('en')
 vi_model = spacy.load('viNerFull50')
 
-en_file = '../../../Data/corpora/0_DATA/3_Test/test_eng'
-vi_file = '../../../Data/corpora/0_DATA/3_Test/test_viet'
+en_file = '../../../Data/corpora/0_DATA/2_Development/dev_eng'
+vi_file = '../../../Data/corpora/0_DATA/2_Development/dev_viet'
 
 en_list = open(en_file,'r',encoding='utf-8').read().split('\n')
 vi_list = open(vi_file,'r',encoding='utf-8').read().split('\n')
 
-output_en = './en_ent_list_spacy_test.txt'
-output_vi = './vi_ent_list_spacy_test.txt'
+output_en = './en_ent_list_spacy_dev.txt'
+output_vi = './vi_ent_list_spacy_dev.txt'
 
 en_ent_list = []
 vi_ent_list = []
@@ -58,8 +58,18 @@ for i in range(len(en_list)):
         entity = (idx_seq,label,word)
         en_ent_list_sent.append(entity)
     for ent in vi_doc.ents:
-        idx_seq = list(range(ent.start+1, ent.end+1))
         label = ent.label_
+        if label in ['GPE','FAC']:
+            label = 'LOCATION'
+        elif label == 'LOC':
+            label = 'LOCATION'
+        elif label == 'ORG':
+            label = 'ORGANIZATION'
+        elif label == 'PER':
+            label = 'PERSON'
+        else:
+            continue
+        idx_seq = list(range(ent.start+1, ent.end+1))
         word = ent.text
         entity = (idx_seq,label,word)
         vi_ent_list_sent.append(entity)

@@ -6,8 +6,8 @@ import os.path, sys
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
 import MonoReassignModel.MonoFromFile as Mono
 import pandas as pd 
-
-
+import utilities
+import json
 path_to_model = '../../stanford-ner-2018-02-27/vietnamese_new.gz'
 path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 
@@ -92,6 +92,7 @@ def getEntList_Spacy_FromFile(sent_index):
     return initial_ent_list_spacy[sent_index]
 
 def createEntListTable_Spacy():
+    global initial_ent_list_spacy
     json_data=open(initial_ent_list_file_spacy).read()
     initial_ent_list_spacy = json.loads(json_data)
 
@@ -155,6 +156,7 @@ def getEntList_StanfordNER(source_tuple_list):
 
 
 def createEntListTable_Stanford():
+    global initial_ent_list_stanford
     line_list = []
     word_list_sent = []
     with open(initial_ent_list_file_stanford,'r',encoding='utf-8') as f:
@@ -226,8 +228,8 @@ def HardAlign(source_sent, target_sent, sent_index):
 
     for i in range(len(target_ent_list)):
         for ent in target_ent_list[i]:
-            for j in range(len(ent)-1):
-                if (ent[j] + 1) != (ent[j+1]):
+            for j in range(len(ent[0])-1):
+                if (ent[0][j] + 1) != (ent[0][j+1]):
                     return [], []
                     
     return source_ent_list,target_ent_list
@@ -239,10 +241,10 @@ def SoftAlign(source_sent,target_sent,sent_index):
     res_source_ent_list = []
     res_target_ent_list = []
     for i in range(len(target_ent_list)):
-        for ent in target_ent_list[i]:
+        for ent in target_ent_list:
             continuous_flag = True
-            for j in range(len(ent)-1):
-                if (ent[j] + 1) != (ent[j+1]):
+            for j in range(len(ent[0])-1):
+                if ent[0][j] + 1 != ent[0][j+1]:
                     continuous_flag = False
                     break
             if continuous_flag:
@@ -256,17 +258,18 @@ def getAlignScore(source_ent, target_ent, idx):
     '''
     '''
     final_score = 0.0
-    print(source_ent[1])
+    # print(source_ent[1])
     source_ent_score = Mono.getMonoScore(source_ent,idx,'vi')[source_ent[1]]
     align_score = 1.0
     target_ent_words = target_ent[2].split()
-    print(target_ent[0])
-    print(target_ent_words)
-    for i in target_ent[0]:
+    # print(target_ent[0])
+    # print(target_ent_words)
+    for tok in target_ent_words:
         word_score = 0
         # print(i)
-        word = target_ent_words[i-1]
-        tmp = alignment_table[alignment_table.VN == word].Prob
+        if tok == 'ocean':
+            print(alignment_table[alignment_table.EN == tok])
+        tmp = alignment_table[alignment_table.EN == tok].Prob
         # print('Tmp ', tmp)
         tmp_sum = tmp.sum()
         # print('Tmp_sum ', tmp_sum)
@@ -274,7 +277,7 @@ def getAlignScore(source_ent, target_ent, idx):
             word_score = tmp_sum / tmp.size
         else:
             word_score = 0
-        print(word, word_score)
+        # print(tok, word_score)
         align_score*= word_score
 
     final_score = source_ent_score * align_score
@@ -326,8 +329,9 @@ def getEntSet(source_sent,target_sent):
     return ent_set
 
 def getEntSetFromFile(source_sent, target_sent, sent_index):
-    source_ent_list = getCombineNERFromFile(sent_index)
-    target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
+    # source_ent_list = getCombineNERFromFile(sent_index)
+    # target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
+    source_ent_list, target_ent_list = SoftAlign(source_sent,target_sent,sent_index)
     ent_set = []
     for i in range(len(source_ent_list)):
         tp = (source_ent_list[i][0],target_ent_list[i][0],source_ent_list[i][1],source_ent_list[i][2],target_ent_list[i][2])
@@ -339,7 +343,15 @@ def getEntSetFromFile(source_sent, target_sent, sent_index):
 
 
 def main():
-    createEntListTable()
-    print(initial_ent_list[0])
+    createEntListTable_Stanford()
+    VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Dev.txt')
+    # pair = getEntSetFromFile(EtoV_dev_list[0]['Source'],EtoV_dev_list[0]['Target'],0)
+    source_sent = VtoE_dev_list[0]['Source']
+    target_sent = VtoE_dev_list[0]['Target']
+    source_ent_list = getEntList_StanfordNER_FromFile(0)
+    target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
+    align_score = getAlignScore(source_ent_list[0],target_ent_list[0],0)
+    print(align_score)
+
 if __name__ == '__main__':
     main()
