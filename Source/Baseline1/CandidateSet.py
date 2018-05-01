@@ -35,7 +35,7 @@ def createCandidateSetForTraining(EtoV_List,VtoE_List):
     else:
         Candidate_Set_Table = []
         for i in range(len(EtoV_List)):
-            Candidate_Set_Table.append(getCandidateSet(EtoV_List[i],VtoE_List[i]))
+            Candidate_Set_Table.append(getCandidateSet(EtoV_List[i],VtoE_List[i],i))
         with open(candidate_set_file,'w',encoding='utf-8') as f:
             json.dump(Candidate_Set_Table,f)
 

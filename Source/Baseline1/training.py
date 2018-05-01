@@ -90,7 +90,7 @@ def update_list_lambda(list_lambda,step,number_of_lambda):
 def main():
     ScoreTable.createScoreTable(dev_list_EtoV,dev_list_VtoE)
     CandidateSet.createCandidateSetForTraining(dev_list_EtoV,dev_list_VtoE)
-    list_lambda = init_lambda(4)
+    list_lambda = init_lambda(3)
     best_lambda = list_lambda
     best_res = init_result()
     step = 0.1
@@ -100,7 +100,7 @@ def main():
         if (better_than(cur_res,best_res)):
             best_lambda = dict((k,v) for k,v in list_lambda.items())
             best_res = cur_res
-        list_lambda = update_list_lambda(list_lambda,step,4)
+        list_lambda = update_list_lambda(list_lambda,step,3)
         
         
     print('BestRes ' ,best_res)

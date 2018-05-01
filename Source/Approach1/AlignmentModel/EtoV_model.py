@@ -13,8 +13,8 @@ import utilities
 path_to_model = '../../stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
 path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 
-initial_ent_list_file_stanford = './AlignmentModel/ner_eng_dev.tsv'
-initial_ent_list_file_spacy = './AlignmentModel/en_ent_list_spacy_dev.txt'
+initial_ent_list_file_stanford = './AlignmentModel/ner_eng_test.tsv'
+initial_ent_list_file_spacy = './AlignmentModel/en_ent_list_spacy_test.txt'
 alignment_table_file = './AlignmentModel/Result.actual.ti.final'
 
 initial_ent_list_stanford = []
@@ -242,22 +242,24 @@ def HardAlign(source_sent, target_sent, sent_index):
 
 def SoftAlign(source_sent,target_sent,sent_index):
     # ent_set = getEntSet(v_sent,e_sent)
-    source_ent_list = getCombineNERFromFile(sent_index)
+    source_ent_list = getEntList_StanfordNER_FromFile(sent_index)
     target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
     res_source_ent_list = []
     res_target_ent_list = []
     for i in range(len(target_ent_list)):
-        for ent in target_ent_list:
-            continuous_flag = True
-            for j in range(len(ent[0])-1):
-                if ent[0][j] + 1 != ent[0][j+1]:
-                    continuous_flag = False
-                    break
-            if continuous_flag:
-                res_source_ent_list.append(source_ent_list[i])
-                res_target_ent_list.append(target_ent_list[i])
-    
-    return source_ent_list, target_ent_list
+        ent = target_ent_list[i]
+        continuous_flag = True
+        # print(ent[0])
+        for j in range(len(ent[0])-1):
+            # print(ent[0][j]+1, ent[0][j+1])
+            if ent[0][j] + 1 != ent[0][j+1]:
+                continuous_flag = False
+                break
+        if continuous_flag:
+            res_source_ent_list.append(source_ent_list[i])
+            res_target_ent_list.append(target_ent_list[i])
+        
+    return res_source_ent_list, res_target_ent_list
 
 
 def getAlignScore(source_ent, target_ent, idx):
@@ -299,7 +301,10 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
     for source_ent in source_ent_list:
         res = ''
         target_ent_idx = []
+        print(source_ent)
+        # print(tuple_list)
         for idx in source_ent[0]:
+            print(idx)
             # idx = idx + 1
             list_idx = tuple_list[int(idx)]['Index']
             for index in list_idx:
@@ -346,17 +351,18 @@ def getEntSetFromFile(source_sent, target_sent, sent_index):
 
 
 def main():
-    # createEntListTable_Stanford()
-    # EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Dev.txt')
-    # # pair = getEntSetFromFile(EtoV_dev_list[0]['Source'],EtoV_dev_list[0]['Target'],0)
+    createEntListTable_Stanford()
+    createEntListTable_Spacy()
+    EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Dev.txt')
+    pair = getEntSetFromFile(EtoV_dev_list[0]['Source'],EtoV_dev_list[0]['Target'],0)
+    print(pair)
     # source_sent = EtoV_dev_list[0]['Source']
     # target_sent = EtoV_dev_list[0]['Target']
     # source_ent_list = getEntList_StanfordNER_FromFile(0)
     # target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
     # align_score = getAlignScore(source_ent_list[0],target_ent_list[0],0)
     # print(align_score)
-    createEntListTable_Spacy()
-    print(initial_ent_list_spacy)
+    # print(initial_ent_list_spacy)
 
 if __name__ == '__main__':
     main()
