@@ -1,6 +1,7 @@
 
 import CandidateSet
-import CombineScore
+import CombineScore_TypeSens
+import CombineScore_InSens
 import json
 import os.path
 ScoreTable_TypeInSens = []
@@ -20,7 +21,7 @@ def createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE):
             EtoV_sent = dev_list_EtoV[i]
             VtoE_sent = dev_list_VtoE[i]
             candidateSet = CandidateSet.getCandidateSet(EtoV_sent,VtoE_sent,i)
-            score = CombineScore.getScoreDictForSet_TypeInSens(candidateSet,EtoV_sent,VtoE_sent)
+            score = CombineScore_InSens.getScoreDictForSet_TypeInSens(candidateSet,EtoV_sent,VtoE_sent)
             ScoreTable_TypeInSens.append(score)
         with open(score_table_TypeInSens_file,'w',encoding='utf-8') as f:
             json.dump(ScoreTable_TypeInSens,f)
@@ -36,7 +37,7 @@ def createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE):
             EtoV_sent = dev_list_EtoV[i]
             VtoE_sent = dev_list_VtoE[i]
             candidateSet = CandidateSet.getCandidateSet(EtoV_sent,VtoE_sent,i)
-            score = CombineScore.getScoreDictForSet_TypeSens(candidateSet,EtoV_sent,VtoE_sent,i)
+            score = CombineScore_TypeSens.getScoreDictForSet_TypeSens(candidateSet,EtoV_sent,VtoE_sent,i)
             ScoreTable_TypeSens.append(score)
         with open(score_table_TypeSens_file,'w',encoding='utf-8') as f:
             json.dump(ScoreTable_TypeSens,f)
@@ -53,6 +54,6 @@ def getScoreforOneCandidate(sent_index,candidate_index):
     score['coocurence'] = full_score['coocurence']
     score['translation'] = full_score['translation']
     score['distortion'] = full_score['distortion']
-    # score['transliteration'] = full_score['transliteration']
+    score['transliteration'] = full_score['transliteration']
     
     return score

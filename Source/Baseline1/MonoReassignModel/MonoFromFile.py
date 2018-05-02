@@ -11,7 +11,8 @@ def getMonoScore(ent, idx,mode):
     per_score = 1.0
     org_score = 1.0
     loc_score = 1.0
-    for i in ent[0]:
+    # print(ent)
+    for i in ent:
         org_score *= table[idx][i-1][2]
         per_score *= table[idx][i-1][3]
         loc_score *= table[idx][i-1][4]
@@ -27,6 +28,7 @@ def getMonoScore(ent, idx,mode):
     
 
 def getMonoProb(cur_candidate, sent_idx):
+    # print(cur_candidate)
     e_ent_idx = cur_candidate[0]
     v_ent_idx = cur_candidate[1]
     e_ent_scores = getMonoScore(e_ent_idx,sent_idx,'en')

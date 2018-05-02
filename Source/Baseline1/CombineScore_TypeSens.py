@@ -23,6 +23,7 @@ def getDictDot(score_dict,weight_dict):
     '''
     '''
     res = 0.0
+    print(score_dict)
     for key,value in score_dict.items():
         res = res + (score_dict[key]) * (weight_dict[key])
     return res
@@ -37,8 +38,8 @@ def getScoreDict(cur_candidate,EtoV_sent,VtoE_sent,sent_index):
     mono_score = MonoProb.getMonoProb(cur_candidate,sent_index)
     bi_score = BiProb.getBiProb(cur_candidate)
     score_dict= {}
-    score_dict['Mono'] = mono_score
-    score_dict['Bi'] = bi_score
+    score_dict['mono'] = mono_score
+    score_dict['bi'] = bi_score
     return score_dict
 
 def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_index,candidate_index,train_mode = False):
