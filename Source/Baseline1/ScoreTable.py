@@ -6,12 +6,8 @@ import os.path
 ScoreTable_TypeInSens = []
 ScoreTable_TypeSens = []
 
-<<<<<<< HEAD
 score_table_TypeInSens_file = 'ScoreTable_TypeInSens_Dev.json'
 score_table_TypeSens_file = 'ScoreTable_TypeSens_Dev.json'
-=======
-score_table_file = 'ScoreTable_Dev.json'
->>>>>>> a3b95f1b517983fb881ab584d055814202847665
 
 def createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE):
     global ScoreTable_TypeInSens
@@ -51,11 +47,6 @@ def createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE):
 def getScoreforOneCandidate_TypeInSens(sent_index,candidate_index):
     return ScoreTable_TypeInSens[sent_index][candidate_index]
 
-<<<<<<< HEAD
-
-def getScoreforOneCandidate_TypeSens(sent_index,candidate_index):
-    return ScoreTable_TypeSens[sent_index][candidate_index]
-=======
 def getScoreforOneCandidate(sent_index,candidate_index):
     full_score = ScoreTable[sent_index][candidate_index]
     score = {}
@@ -65,4 +56,3 @@ def getScoreforOneCandidate(sent_index,candidate_index):
     # score['transliteration'] = full_score['transliteration']
     
     return score
->>>>>>> a3b95f1b517983fb881ab584d055814202847665

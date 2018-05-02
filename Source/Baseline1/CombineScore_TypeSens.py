@@ -47,7 +47,7 @@ def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_
     '''
     score = 0.0
     if train_mode:
-        score_dict = ScoreTable.getScoreforOneCandidate_TypeInSens(sent_index,candidate_index)
+        score_dict = ScoreTable.getScoreforOneCandidate_TypeSens(sent_index,candidate_index)
     else:
         score_dict = getScoreDict(cur_candidate, EtoV_sent, VtoE_sent,sent_index)
     score = getDictDot(score_dict,weight_dict)
