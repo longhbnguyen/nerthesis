@@ -7,20 +7,21 @@ import os.path, sys
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
 import MonoReassignModel.MonoFromFile as Mono
 import pandas as pd 
-
+import csv
 import utilities
 
 path_to_model = '../../stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
 path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 
-initial_ent_list_file_stanford = './AlignmentModel/ner_eng_test.tsv'
-initial_ent_list_file_spacy = './AlignmentModel/en_ent_list_spacy_test.txt'
+initial_ent_list_file_stanford = './AlignmentModel/ner_eng_dev.tsv'
+initial_ent_list_file_spacy = './AlignmentModel/en_ent_list_spacy_dev.txt'
 alignment_table_file = './AlignmentModel/Result.actual.ti.final'
 
 initial_ent_list_stanford = []
 initial_ent_list_spacy = []
 
-alignment_table = pd.read_csv(alignment_table_file, sep = ' ', encoding = 'utf-8')
+alignment_table = pd.read_csv(alignment_table_file, sep = '\t', encoding = 'utf-8',quoting=csv.QUOTE_NONE, error_bad_lines=False)
+
 alignment_table = alignment_table.fillna('NaN')
 
 
@@ -266,27 +267,21 @@ def getAlignScore(source_ent, target_ent, idx):
     '''
     '''
     final_score = 0.0
-    # print(source_ent[1])
     source_ent_score = Mono.getMonoScore(source_ent,idx,'en')[source_ent[1]]
     align_score = 1.0
     target_ent_words = target_ent[2].split()
-    # print(target_ent[0])
-    # print(target_ent_words)
     for tok in target_ent_words:
+        print('Tok', tok)
         word_score = 0
-        # print(i)
-        # print(alignment_table[alignment_table.VN == tok])
         tmp = alignment_table[alignment_table.VN == tok].Prob
-        # print('Tmp ', tmp)
+        print('tmp',tmp)
         tmp_sum = tmp.sum()
-        # print('Tmp_sum ', tmp_sum)
+        print('sum',tmp_sum)
         if (tmp_sum):
             word_score = tmp_sum / tmp.size
         else:
             word_score = 0
-        # print(tok, word_score)
         align_score*= word_score
-
     final_score = source_ent_score * align_score
     return final_score
 
@@ -301,10 +296,10 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
     for source_ent in source_ent_list:
         res = ''
         target_ent_idx = []
-        print(source_ent)
+        # print(source_ent)
         # print(tuple_list)
         for idx in source_ent[0]:
-            print(idx)
+            # print(idx)
             # idx = idx + 1
             list_idx = tuple_list[int(idx)]['Index']
             for index in list_idx:
@@ -354,15 +349,31 @@ def main():
     createEntListTable_Stanford()
     createEntListTable_Spacy()
     EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Dev.txt')
-    pair = getEntSetFromFile(EtoV_dev_list[0]['Source'],EtoV_dev_list[0]['Target'],0)
-    print(pair)
-    # source_sent = EtoV_dev_list[0]['Source']
-    # target_sent = EtoV_dev_list[0]['Target']
-    # source_ent_list = getEntList_StanfordNER_FromFile(0)
-    # target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
-    # align_score = getAlignScore(source_ent_list[0],target_ent_list[0],0)
-    # print(align_score)
-    # print(initial_ent_list_spacy)
+    # pairs = getEntSetFromFile(EtoV_dev_list[0]['Source'],EtoV_dev_list[0]['Target'],0)
+    # print(pairs)
+
+    source_sent = EtoV_dev_list[0]['Source']
+    target_sent = EtoV_dev_list[0]['Target']
+    source_ent_list = getEntList_StanfordNER_FromFile(0)
+    target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
+    for i in range(len(source_ent_list)):
+        print('Pair', source_ent_list[i],target_ent_list[i])
+        align_score = getAlignScore(source_ent_list[i],target_ent_list[i],0)
+        print('Score', align_score)
+    vn_list = list(alignment_table.VN)
+    en_list = list(alignment_table.EN)
+    prob = list(alignment_table.Prob)
+    # print(len(alignment_table.index))
+    # print(len(en_list))
+    # print(len(vn_list))
+    # print(len(prob))
+    # for i in range(6465):
+    #     print(vn_list[i],en_list[i],prob[i])
+    # print(len(alignment_table.index))
+    # print(vn_list[153610],en_list[153610],prob[153610])
+    print(alignment_table.shape)
+    # alignment_table.to_csv('./AlignmentModel/tmp.tsv',sep = ' ', index = False)
+
 
 if __name__ == '__main__':
     main()

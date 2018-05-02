@@ -3,7 +3,7 @@ import MonoReassignModel.getScoreTable as getScoreTable
 en_table = getScoreTable.getScoreTableEn()
 vi_table = getScoreTable.getScoreTableVi()
 
-def getMonoScore(ent, idx,mode):
+def getMonoScore(ent, idx, mode):
     if mode == 'en':
         table = en_table
     elif mode == 'vi':

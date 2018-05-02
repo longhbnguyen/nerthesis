@@ -6,7 +6,7 @@ config = configparser.ConfigParser()
 config.read(config_file)
 
 def getWeight():
-    weight = config['Best Weight (Translation+Coocurence+Distortion)']
+    weight = config['Weight']
     res = {}
     for key,value in weight.items():
         # print('Key ',key)
@@ -17,7 +17,7 @@ def getWeight():
 
 def WriteBestLambda(best_lambda):
     w = open(config_file,'a',encoding='utf-8')
-    w.write('\n[Best Weight (Translation+Coocurence+Distortion)]\n')
+    w.write('\n[Best Weight]\n')
     for key,value in best_lambda.items():
         w.write(key)
         w.write('=')

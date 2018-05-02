@@ -1,8 +1,9 @@
 import pandas as pd
 from utilities import read_align_file
+import csv
 inputfile = './TranslationModel/Result.actual.ti.final'
 
-data = pd.read_csv(inputfile, sep = ' ', encoding = 'utf-8')
+data = pd.read_csv(inputfile, sep = ' ', encoding = 'utf-8',quoting=csv.QUOTE_NONE, error_bad_lines=False)
 data = data.fillna('NaN')
 
 # align_list = read_align_file(align_file)

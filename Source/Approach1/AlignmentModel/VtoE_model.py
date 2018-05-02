@@ -262,28 +262,18 @@ def getAlignScore(source_ent, target_ent, idx):
     '''
     '''
     final_score = 0.0
-    # print(source_ent[1])
     source_ent_score = Mono.getMonoScore(source_ent,idx,'vi')[source_ent[1]]
     align_score = 1.0
     target_ent_words = target_ent[2].split()
-    # print(target_ent[0])
-    # print(target_ent_words)
     for tok in target_ent_words:
         word_score = 0
-        # print(i)
-        if tok == 'ocean':
-            print(alignment_table[alignment_table.EN == tok])
         tmp = alignment_table[alignment_table.EN == tok].Prob
-        # print('Tmp ', tmp)
         tmp_sum = tmp.sum()
-        # print('Tmp_sum ', tmp_sum)
         if (tmp_sum):
             word_score = tmp_sum / tmp.size
         else:
             word_score = 0
-        # print(tok, word_score)
         align_score*= word_score
-
     final_score = source_ent_score * align_score
     return final_score
 

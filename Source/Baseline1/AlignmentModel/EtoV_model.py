@@ -7,7 +7,7 @@ from nltk.tag.stanford import StanfordNERTagger
 path_to_model = '../../stanford-ner-2018-02-27/english.all.3class.distsim.crf.ser.gz'
 path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 
-initial_ent_list_file = './AlignmentModel/ner_eng_test.tsv'
+initial_ent_list_file = './AlignmentModel/ner_eng_dev.tsv'
 initial_ent_list = []
 
 nertagger=StanfordNERTagger(path_to_model, path_to_jar)

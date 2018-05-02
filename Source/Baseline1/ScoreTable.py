@@ -5,7 +5,7 @@ import json
 import os.path
 ScoreTable = []
 
-score_table_file = 'ScoreTable_Test.json'
+score_table_file = 'ScoreTable_Dev.json'
 
 def createScoreTable(dev_list_EtoV,dev_list_VtoE):
     global ScoreTable
