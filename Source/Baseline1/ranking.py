@@ -37,12 +37,14 @@ def getFinalNEPair(CombineScore,CandidateSet):
     for i in range(len(CandidateSet)):
         # print('CurCandidateSet ', CandidateSet[i])
         if (free[i]):
-            cur = CandidateSet[i]
+            cur = [CandidateSet[i]]
             # print('CurPredictSet ', cur)
             # Remove Overlap with Candidate i
             for j in range(i,len(CandidateSet)):
+                if CandidateSet[j][1] == cur[0][1]:
+                    cur.append(CandidateSet[j])
                 if checkOverLap[i][j]:
                     free[j] = False
-            res.append(cur)
+            res = res + cur
         
     return res
