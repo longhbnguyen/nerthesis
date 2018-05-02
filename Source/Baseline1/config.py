@@ -6,7 +6,7 @@ config = configparser.ConfigParser()
 config.read(config_file)
 
 def getWeight():
-    weight = config['Weight']
+    weight = config['Best Weight']
     res = {}
     for key,value in weight.items():
         # print('Key ',key)

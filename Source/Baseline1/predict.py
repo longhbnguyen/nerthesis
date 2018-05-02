@@ -2,6 +2,9 @@ import CombineScore_InSens as getCombineScore_InSens
 import CombineScore_TypeSens as getCombineScore_TypeSens
 import CandidateSet as getCandidateSet
 import ranking as getFinalRes
+import config
+import utilities
+import ScoreTable
 def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index, train_mode_InSens  = False, train_mode_Sens = False):
     '''
     Input: EtoV_sent, VtoE_sent
@@ -18,7 +21,7 @@ def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index, train_mode_InSens  =
     CombineScore['TypeSens'] = getCombineScore_TypeSens.getCombineScore(CandidateSet,EtoV_sent,VtoE_sent, list_lambda,sent_index,train_mode = train_mode_Sens)
 
     CombineScore['TypeInSens'] = getCombineScore_InSens.getCombineScore(CandidateSet,EtoV_sent,VtoE_sent, list_lambda,sent_index,train_mode = train_mode_InSens)
-
+    print(CombineScore)
     
     res = getFinalRes.getFinalNEPair(CombineScore,CandidateSet)
     return res
@@ -36,3 +39,13 @@ def getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,train
 
         res.append(ne_pairs)
     return res
+
+
+EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Dev.txt')
+VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Dev.txt')
+ScoreTable.createScoreTable_TypeSens(EtoV_dev_list,VtoE_dev_list)
+# tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0],0)
+list_lambda = config.getWeight()
+res = getNEPair(EtoV_dev_list[0],VtoE_dev_list[0],list_lambda,0)
+print(res)
+# print(len(tmp))
