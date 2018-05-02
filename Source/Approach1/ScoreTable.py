@@ -6,8 +6,12 @@ import os.path
 ScoreTable_TypeInSens = []
 ScoreTable_TypeSens = []
 
+<<<<<<< HEAD
 score_table_TypeInSens_file = 'ScoreTable_TypeInSens_Dev.json'
 score_table_TypeSens_file = 'ScoreTable_TypeSens_Dev.json'
+=======
+score_table_file = 'ScoreTable_Test_Stanford.json'
+>>>>>>> a3b95f1b517983fb881ab584d055814202847665
 
 def createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE):
     global ScoreTable_TypeInSens

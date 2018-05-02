@@ -1,0 +1,11 @@
+Type-insensitive (Translation+Transliteration)  {'R': 0.6871476888387824, 'P': 0.6392239119035134, 'F1': 0.6623200217332246}
+Type-insensitive (Translation+Coocurence)  {'R': 0.7711386696730552, 'P': 0.7040658775090067, 'F1': 0.7360774818401937}
+Type-insensitive (Translation+Distortion)  {'R': 0.5918827508455468, 'P': 0.5465903175429464, 'F1': 0.5683355886332881}
+Type-insensitive (Transliteration+Coocurence)  {'R': 0.8207440811724915, 'P': 0.7643044619422572, 'F1': 0.7915194346289752}
+Type-insensitive (Transliteration+Distortion)  {'R': 0.6674182638105975, 'P': 0.6244725738396625, 'F1': 0.6452316076294279}
+Type-insensitive (Coocurence+Distortion)  {'R': 0.7795941375422774, 'P': 0.712152420185376, 'F1': 0.7443487621097955}
+Type-insensitive (Translation+Transliteration+Coocurence)  {'R': 0.8139797068771139, 'P': 0.75721027792344, 'F1': 0.7845694104862809}
+Type-insensitive (Translation+Transliteration+Distortion)  {'R': 0.6871476888387824, 'P': 0.6392239119035134, 'F1': 0.6623200217332246}
+Type-insensitive (Transliteration+Coocurence+Distortion)  {'R': 0.8280721533258174, 'P': 0.7703198741478763, 'F1':0.7981526759032873}
+Type-insensitive (Translation+Coocurence+Distortion)  {'R': 0.7857948139797069, 'P': 0.7174472465259908, 'F1': 0.750067258541835}
+Type-insensitive (Translation+Transliteration+Coocurence+Distortion)  {'R': 0.8139797068771139, 'P': 0.75721027792344, 'F1': 0.7845694104862809}

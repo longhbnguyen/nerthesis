@@ -1,0 +1,4 @@
+Type-insensitive (Translation+Transliteration+Coocurence+Distortion)  {'R': 0.48759864712514095, 'P': 0.4456465739309634, 'F1': 0.46567967698519513}
+Type-insensitive (Transliteration)  {'R': 0.6471251409244645, 'P': 0.6045286993154292, 'F1': 0.6251020963789817}
+Type-insensitive (Coocurence)  {'R': 0.7497181510710259, 'P': 0.6848609680741503, 'F1': 0.7158234660925726}
+Type-insensitive (Distortion)  {'R': 0.4633596392333709, 'P': 0.4301412872841444, 'F1': 0.44613297150610587}

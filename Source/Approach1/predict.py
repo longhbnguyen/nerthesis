@@ -25,6 +25,6 @@ def getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,train
     res = []
     for i in range(len(align_list_EtoV)):
         ne_pairs = getNEPair(align_list_EtoV[i],align_list_VtoE[i], list_lambda,i,train_mode = train_mode)
-
+        
         res.append(ne_pairs)
     return res

@@ -22,7 +22,7 @@ import utilities
 import json
 import os.path
 
-candidate_set_file = 'Candidate_Set_Test.json'
+candidate_set_file = 'Candidate_Set_Dev.json'
 Candidate_Set_Table = None
 EtoV_model.createEntListTable()
 VtoE_model.createEntListTable()

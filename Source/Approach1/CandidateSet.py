@@ -22,12 +22,16 @@ import utilities
 import json
 import os.path
 
-candidate_set_file = 'Candidate_Set_Test.json'
+candidate_set_file = 'Candidate_Set_Stanford_Test.json'
 Candidate_Set_Table = None
+
 EtoV_model.createEntListTable_Stanford()
 VtoE_model.createEntListTable_Stanford()
 EtoV_model.createEntListTable_Spacy()
 VtoE_model.createEntListTable_Spacy()
+
+# print(EtoV_model.initial_ent_list_spacy)
+# print(VtoE_model.initial_ent_list_spacy)
 
 def createCandidateSetForTraining(EtoV_List,VtoE_List):
     global Candidate_Set_Table
@@ -37,7 +41,7 @@ def createCandidateSetForTraining(EtoV_List,VtoE_List):
     else:
         Candidate_Set_Table = []
         for i in range(len(EtoV_List)):
-            Candidate_Set_Table.append(getCandidateSet(EtoV_List[i],VtoE_List[i]))
+            Candidate_Set_Table.append(getCandidateSet(EtoV_List[i],VtoE_List[i],i))
         with open(candidate_set_file,'w',encoding='utf-8') as f:
             json.dump(Candidate_Set_Table,f)
 
@@ -55,21 +59,29 @@ def getCandidateSet(EtoV_sent,VtoE_sent, sent_index):
     # print('EtoVSet')
     for pair in EtoV_set:
         # print('Pair ' ,pair)
-        V_Ent_List.append((pair[1],pair[2],pair[4]))
-        E_Ent_List.append((pair[0],pair[2],pair[3]))
+        v_ent = (pair[1],pair[2],pair[4])
+        e_ent = (pair[0],pair[2],pair[3])
+        if e_ent not in E_Ent_List:
+            E_Ent_List.append(e_ent)
+        if v_ent not in V_Ent_List:
+            V_Ent_List.append(v_ent)
     # print('VtoESet')
     for pair in VtoE_set:
         # print('Pair ' ,pair)        
-        E_Ent_List.append((pair[1],pair[2],pair[4]))
-        V_Ent_List.append((pair[0],pair[2],pair[3]))
+        e_ent = (pair[1],pair[2],pair[4])
+        v_ent = (pair[0],pair[2],pair[3])
+        if e_ent not in E_Ent_List:
+            E_Ent_List.append(e_ent)
+        if v_ent not in V_Ent_List:
+            V_Ent_List.append(v_ent)
+    # V_Ent_List = (set(V_Ent_List))
+    # E_Ent_List = (set(E_Ent_List))
     # print('E_Ent_List ',E_Ent_List)
     # print('V_Ent_List ',V_Ent_List)
-
     res = []
     for en_ent in E_Ent_List:
         for vn_ent in V_Ent_List:
             res.append((en_ent[0],vn_ent[0],en_ent[1],en_ent[2],vn_ent[2],vn_ent[1]))
-    # res = EtoV_set + VtoE_set
     return res
 
 def getCandidateSetFromFile(sent_index):
