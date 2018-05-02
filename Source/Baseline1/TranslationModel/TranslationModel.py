@@ -1,10 +1,6 @@
 import pandas as pd
 from utilities import read_align_file
 import csv
-<<<<<<< HEAD
-
-=======
->>>>>>> a3b95f1b517983fb881ab584d055814202847665
 inputfile = './TranslationModel/Result.actual.ti.final'
 
 data = pd.read_csv(inputfile, sep = ' ', encoding = 'utf-8',quoting=csv.QUOTE_NONE, error_bad_lines=False)

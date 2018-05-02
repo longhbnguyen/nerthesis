@@ -24,17 +24,10 @@ def createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE):
             EtoV_sent = dev_list_EtoV[i]
             VtoE_sent = dev_list_VtoE[i]
             candidateSet = CandidateSet.getCandidateSet(EtoV_sent,VtoE_sent,i)
-<<<<<<< HEAD
             score = CombineScore.getScoreDictForSet_TypeInSens(candidateSet,EtoV_sent,VtoE_sent)
             ScoreTable_TypeInSens.append(score)
         with open(score_table_TypeInSens_file,'w',encoding='utf-8') as f:
             json.dump(ScoreTable_TypeInSens,f)
-=======
-            score = CombineScore.getScoreDictForSet(candidateSet,EtoV_sent,VtoE_sent)
-            ScoreTable.append(score)
-        with open(score_table_file,'w',encoding='utf-8') as f:
-            json.dump(ScoreTable,f)
->>>>>>> a3b95f1b517983fb881ab584d055814202847665
 
 def createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE):
     global ScoreTable_TypeSens
