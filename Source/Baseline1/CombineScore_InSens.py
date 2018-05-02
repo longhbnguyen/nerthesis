@@ -1,5 +1,5 @@
 '''
-
+Type Insensitive
 '''
 import numpy as np
 import config
@@ -9,8 +9,8 @@ import TranslationModel.TranslationModel as TranslationProb
 import TransliterationModel.Transliteration as TransliterationProb
 import Co_occurrenceModel.Co_occurrence as CoocurenceProb
 import DistortionModel.Distortion as DistortionProb
-# import MonoReassignModel.MonoFromFile as MonoProb
-# import BiReassignModel.ReassignModel as BiProb
+import MonoReassignModel.MonoFromFile as MonoProb
+import BiReassignModel.ReassignModel as BiProb
 import CandidateSet
 
 def getWeightDict():
@@ -45,18 +45,12 @@ def getScoreDict_TypeInSens(cur_candidate,EtoV_sent,VtoE_sent):
     # score_dict['Bi'] = bi_score
     return score_dict
 
-def getScoreDict_TypeSens(candidate,EtoV_sent,VtoE_sent):
+
 
 def getScoreDictForSet_TypeInSens(CandidateSet,EtoV_sent,VtoE_sent):
     res = []
     for candidate in CandidateSet:
         res.append(getScoreDict_TypeInSens(candidate,EtoV_sent,VtoE_sent))
-    return res
-
-def getScoreDictForSet_TypeSens(candidateSet,EtoV_sent,VtoE_sent):
-    res = []
-    for candidate in CandidateSet:
-        res.append(getScoreDict_TypeSens(candidate,EtoV_sent,VtoE_sent))
     return res
 
 def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_index,candidate_index,train_mode = False):

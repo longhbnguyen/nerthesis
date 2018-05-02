@@ -3,7 +3,7 @@ import numpy as np
 
 df = pd.read_csv('count_result.tsv',sep = '\t',encoding='utf-8')
 
-def getScore(cur_candidate):
+def getBiProb(cur_candidate):
     v_type = cur_candidate[5]
     e_type = cur_candidate[2]
     e_cond = df['Eng'] == e_type

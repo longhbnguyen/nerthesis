@@ -31,7 +31,7 @@ test_list_VtoE = read_align_file(align_file_VtoE)
 
 
 def main():
-    ScoreTable.createScoreTable(test_list_EtoV,test_list_VtoE)
+    ScoreTable.createScoreTable_TypeInSens(test_list_EtoV,test_list_VtoE)
     print("Created Score Table")
     CandidateSet.createCandidateSetForTraining(test_list_EtoV,test_list_VtoE)
     print("Create Candidate Set")

@@ -32,8 +32,8 @@ def getMonoProb(cur_candidate, sent_idx):
     e_ent_scores = getMonoScore(e_ent_idx,sent_idx,'en')
     v_ent_scores = getMonoScore(v_ent_idx,sent_idx,'vi')
     pair_score = {}
-    for key,value in e_ent_scores.items():
-        pair_score[key] = e_ent_scores[key] + v_ent_scores[key]
+    pair_score['EN'] = e_ent_scores
+    pair_score['VN'] = v_ent_scores
     return pair_score    
 
 def main():

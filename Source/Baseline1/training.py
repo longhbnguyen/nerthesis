@@ -88,7 +88,7 @@ def update_list_lambda(list_lambda,step,number_of_lambda):
 
 #Main
 def main():
-    ScoreTable.createScoreTable(dev_list_EtoV,dev_list_VtoE)
+    ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE)
     CandidateSet.createCandidateSetForTraining(dev_list_EtoV,dev_list_VtoE)
     list_lambda = init_lambda(4)
     best_lambda = list_lambda
