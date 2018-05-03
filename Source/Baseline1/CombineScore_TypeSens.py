@@ -22,11 +22,23 @@ def getWeightDict():
 def getDictDot(score_dict,weight_dict):
     '''
     '''
-    res = 0.0
-    print(score_dict)
+    res = {}
+    res['ORGANIZATION'] = 0.0
+    res['PERSON'] = 0.0
+    res['LOCATION'] = 0.0
     for key,value in score_dict.items():
-        res = res + (score_dict[key]) * (weight_dict[key])
+        for sub_key,sub_value in score_dict[key].items():
+            if sub_key == 'EN' or sub_key == 'VN':
+                tmp_key = key + '_' + sub_key.lower()
+                for label,label_value in score_dict[key][sub_key].items():
+                    res[label] = res[label] + (score_dict[key][sub_key][label]) * (weight_dict[tmp_key])
+            else:
+                res[sub_key] = res[sub_key] + (score_dict[key][sub_key]) * (weight_dict[key])
+                
     return res
+
+
+
 
 def getScoreDictForSet_TypeSens(CandidateSet,EtoV_sent,VtoE_sent,sent_index):
     res = []
@@ -68,3 +80,8 @@ def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,list_lambda,sent_index,trai
         res.append(score_cur_candidate)
     return res
 
+# score_dict = {'mono': {'EN': {'ORGANIZATION': 0.9026413030157396, 'PERSON': 1.185135540950598e-10, 'LOCATION': 2.725428938048629e-16}, 'VN':{'ORGANIZATION': 1.6818753363942106e-13, 'PERSON': 8.534458703643806e-18, 'LOCATION': 2.9818008996581602e-18}}, 'bi': {'ORGANIZATION': 0.9457305502846299, 'PERSON': 0.001265022137887413, 'LOCATION': 0.0530044275774826}}
+# weight_dict = config.getWeight()
+# print(weight_dict)
+# tmp = getDictDot(score_dict,weight_dict)
+# print(tmp)

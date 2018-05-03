@@ -46,6 +46,8 @@ def createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE):
 
 
 def getScoreforOneCandidate_TypeInSens(sent_index,candidate_index):
+    # print(sent_index, candidate_index)
+    # print(ScoreTable_TypeInSens)
     return ScoreTable_TypeInSens[sent_index][candidate_index]
 
     
