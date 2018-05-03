@@ -48,8 +48,12 @@ def createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE):
 def getScoreforOneCandidate_TypeInSens(sent_index,candidate_index):
     return ScoreTable_TypeInSens[sent_index][candidate_index]
 
+    
+def getScoreforOneCandidate_TypeSens(sent_index,candidate_index):
+    return ScoreTable_TypeSens[sent_index][candidate_index]
+
 def getScoreforOneCandidate(sent_index,candidate_index):
-    full_score = ScoreTable[sent_index][candidate_index]
+    full_score = ScoreTable_TypeInSens[sent_index][candidate_index]
     score = {}
     score['coocurence'] = full_score['coocurence']
     score['translation'] = full_score['translation']
