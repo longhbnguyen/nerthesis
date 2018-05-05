@@ -45,5 +45,6 @@ ScoreTable.createScoreTable_TypeInSens(EtoV_dev_list,VtoE_dev_list)
 # # tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0],0)
 list_lambda = config.getWeight()
 res = getNEPair(EtoV_dev_list[0],VtoE_dev_list[0],list_lambda,0)
-print(res)
+for pair in res:
+    print(pair)
 # print(len(tmp))
