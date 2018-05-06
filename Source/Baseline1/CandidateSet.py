@@ -22,12 +22,19 @@ import utilities
 import json
 import os.path
 
-candidate_set_file = 'Candidate_Set_Dev.json'
+candidate_set_file = 'Candidate_Set_Test.json'
 Candidate_Set_Table = None
 EtoV_model.createEntListTable()
 VtoE_model.createEntListTable()
 
+
+
+
+                                        
 def createCandidateSetForTraining(EtoV_List,VtoE_List):
+    '''
+    Create CandidateSet file
+    '''
     global Candidate_Set_Table
     if os.path.isfile(candidate_set_file):
         json_data=open(candidate_set_file).read()
@@ -43,6 +50,7 @@ def createCandidateSetForTraining(EtoV_List,VtoE_List):
 
 def getCandidateSet(EtoV_sent,VtoE_sent, sent_index):
     '''
+    Get Candidate Set of 1 sentence pair
     '''
 
 
@@ -50,24 +58,18 @@ def getCandidateSet(EtoV_sent,VtoE_sent, sent_index):
     VtoE_set = VtoE_model.getEntSetFromFile(VtoE_sent['Source'],VtoE_sent['Target'], sent_index)
     V_Ent_List = []
     E_Ent_List = []
-    # print('EtoVSet')
     for pair in EtoV_set:
-        # print('Pair ' ,pair)
         V_Ent_List.append((pair[1],pair[2],pair[4]))
         E_Ent_List.append((pair[0],pair[2],pair[3]))
-    # print('VtoESet')
     for pair in VtoE_set:
-        # print('Pair ' ,pair)        
         E_Ent_List.append((pair[1],pair[2],pair[4]))
         V_Ent_List.append((pair[0],pair[2],pair[3]))
-    # print('E_Ent_List ',E_Ent_List)
-    # print('V_Ent_List ',V_Ent_List)
-
+    
     res = []
     for en_ent in E_Ent_List:
         for vn_ent in V_Ent_List:
             res.append((en_ent[0],vn_ent[0],en_ent[1],en_ent[2],vn_ent[2],vn_ent[1]))
-    # res = EtoV_set + VtoE_set
+    res = utilities.make_unique(res)
     return res
 
 def getCandidateSetFromFile(sent_index):
@@ -78,5 +80,8 @@ def getCandidateSetFromFile(sent_index):
 # VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Dev.txt')
 
 # tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0],0)
-# print(tmp)
+# unique = make_unique(tmp)
+# print('tmp',tmp)
+# print('unique',unique)
 # print(len(tmp))
+# print(len(unique))

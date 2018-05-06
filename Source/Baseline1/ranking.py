@@ -77,7 +77,9 @@ def getFinalNEPair(CombineScore,CandidateSet):
                 # print('CurCandidate ', cur[0])
                 
                 # print('CompareCandidate', CandidateSet[j])
-                if CandidateSet[j][1] == cur[0][1]:
+                if CandidateSet[j][2] == cur[0][2]:
+                    # print(CandidateSet[j][2])
+                    # print(cur[0][2])
                     # print('Same Score')
                     cur.append(CandidateSet[j])
                 if checkOverLap[i][j] or checkOverLap[j][i]:
@@ -114,3 +116,4 @@ def reassign_type(ne_pairs):
 # candidate_j = (([2, 3, 4], [26, 27], 'ORGANIZATION', 'National Weather Service', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.1521425840107209, 'PERSON': 1.260924226036337e-10, 'LOCATION': 0.13503773007786968}, 0.13999999999999999)
 # tmp = is_overlapping(candidate_i[0][0],candidate_j[0][0]) or is_overlapping(candidate_i[0][1],candidate_j[0][1])
 # print(tmp)
+

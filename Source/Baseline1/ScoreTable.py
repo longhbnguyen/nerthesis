@@ -7,8 +7,8 @@ import os.path
 ScoreTable_TypeInSens = []
 ScoreTable_TypeSens = []
 
-score_table_TypeInSens_file = 'ScoreTable_TypeInSens_Dev.json'
-score_table_TypeSens_file = 'ScoreTable_TypeSens_Dev.json'
+score_table_TypeInSens_file = 'ScoreTable_TypeInSens_Test.json'
+score_table_TypeSens_file = 'ScoreTable_TypeSens_Test.json'
 
 def createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE):
     global ScoreTable_TypeInSens
