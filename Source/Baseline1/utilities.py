@@ -96,3 +96,11 @@ def read_align_file(align_file):
         item['Source'] = source
         res.append(item)
     return res
+
+def make_unique(original_list):
+    '''
+    Remove duplicate element from list
+    '''
+    unique_list = []
+    [unique_list.append(obj) for obj in original_list if obj not in unique_list]
+    return unique_list

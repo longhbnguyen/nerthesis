@@ -1,26 +1,185 @@
-CandidateSet  0 (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.016824989780286063, 'PERSON': 1.7015859664557756e-05, 'LOCATION': 0.28218290409288943}, 0.36594993859649116)
-CandidateSet  1 (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.016824989780286063, 'PERSON': 1.7015859664557756e-05, 'LOCATION': 0.28218290409288943}, 0.36594993859649116)
-CandidateSet  2 (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.01672488730772774, 'PERSON': 0.0878103660158929, 'LOCATION': 0.1287088283646825}, 0.305)
-CandidateSet  3 (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.012692992971165527, 'PERSON': 0.08923667346438735, 'LOCATION': 0.13131441525275026}, 0.305)
-CandidateSet  4 (([2, 3, 4], [15, 16], 'ORGANIZATION', 'National Weather Service', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.1521454762676625, 'PERSON': 0.08739506291254309, 'LOCATION': 0.03812236578321777}, 0.27999999999999997)
-CandidateSet  5 (([2, 3, 4], [15, 16], 'ORGANIZATION', 'National Weather Service', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.16533705124019293, 'PERSON': 0.08795528700217894, 'LOCATION': 0.024370566721051465}, 0.27999999999999997)
-CandidateSet  6 (([2, 3, 4], [26, 27], 'ORGANIZATION', 'National Weather Service', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.1521425840107209, 'PERSON': 1.260924226036337e-10, 'LOCATION': 0.13503773007786968}, 0.13999999999999999)
-CandidateSet  7 (([11, 12], [26, 27], 'LOCATION', 'El Nino', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.01672199505078613, 'PERSON': 0.0004153032294422297, 'LOCATION': 0.22562419265933442}, 0.13999999999999999)
-CandidateSet  8 (([19], [26, 27], 'LOCATION', 'California', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.01680386527034754, 'PERSON': 6.798553194171892e-07, 'LOCATION': 0.2791528478403463}, 0.12033590350877194)
-CandidateSet  9 (([19], [26, 27], 'LOCATION', 'California', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.01680386527034754, 'PERSON': 6.798553194171892e-07, 'LOCATION': 0.2791528478403463}, 0.12033590350877194)
-CandidateSet  10 (([19], [15, 16], 'LOCATION', 'California', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.016806757527289155, 'PERSON': 0.0873957426417701, 'LOCATION': 0.18223748354569436}, 0.012280701754385963)
-CandidateSet  11 (([19], [15, 16], 'LOCATION', 'California', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.01277486319072694, 'PERSON': 0.08882205009026455, 'LOCATION': 0.1848430704337621}, 0.012280701754385963)
-CandidateSet  12 (([19], [15, 16], 'LOCATION', 'California', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.016806757527289155, 'PERSON': 0.0873957426417701, 'LOCATION': 0.18223748354569436}, 0.012280701754385963)
-CandidateSet  13 (([19], [15, 16], 'LOCATION', 'California', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.01277486319072694, 'PERSON': 0.08882205009026455, 'LOCATION': 0.1848430704337621}, 0.012280701754385963)
-CandidateSet  14 (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.18483718533005378, 'PERSON': 0.00012650222564009758, 'LOCATION': 0.005300442757748288}, 5.199390710643473e-08)
-CandidateSet  15 (([2, 3, 4], [27], 'ORGANIZATION', 'National Weather Service', 'California', 'LOCATION'), {'ORGANIZATION': 0.1521637085206594, 'PERSON': 1.6336130437563173e-05, 'LOCATION': 0.13806778633041286}, 0.0)
-CandidateSet  16 (([11, 12], [1, 2, 3, 4, 5, 6], 'LOCATION', 'El Nino', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.04387590897578922, 'PERSON': 0.0012520171111443682, 'LOCATION': 0.10071738095138838}, 0.0)
-CandidateSet  17 (([11, 12], [27], 'LOCATION', 'El Nino', 'California', 'LOCATION'), {'ORGANIZATION': 0.016743119560724648, 'PERSON': 0.00043163923378737026, 'LOCATION': 0.2286542489118776}, 0.0)
-CandidateSet  18 (([19], [1, 2, 3, 4, 5, 6], 'LOCATION', 'California', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.043957779195350634, 'PERSON': 0.0008373937370215557, 'LOCATION': 0.15424603613240023}, 0.0)
-CandidateSet  19 (([2, 3, 4, 11, 12, 29, 31, 32, 33], [1, 2, 3, 4, 5, 6], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.0468628969791028, 'PERSON': 0.028040278853601858, 'LOCATION': 0.02509682416731216}, 0.0)
-CandidateSet  20 (([2, 3, 4, 11, 12, 29, 31, 32, 33], [15, 16], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.018919149085049953, 'PERSON': 0.08739506290069174, 'LOCATION': 0.08108456266425632}, 0.0)
-CandidateSet  21 (([2, 3, 4, 11, 12, 29, 31, 32, 33], [27], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'California', 'LOCATION'), {'ORGANIZATION': 0.018937381338046864, 'PERSON': 1.6336118586207762e-05, 'LOCATION': 0.18102998321145142}, 0.0)
-CandidateSet  22 (([2, 3, 4, 11, 12, 29, 31, 32, 33], [15, 16], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.008238726834273855, 'PERSON': 0.1358236015563467, 'LOCATION': 0.04333644625937744}, 0.0)
-CandidateSet  23 (([2, 3, 4, 11, 12, 29, 31, 32, 33], [26, 27], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.01891625682810834, 'PERSON': 1.1424106719412772e-10, 'LOCATION': 0.1779999269589082}, 0.0)
-CandidateSet  24 (([19], [1, 2, 3, 4, 5, 6], 'LOCATION', 'California', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.043957779195350634, 'PERSON': 0.0008373937370215557, 'LOCATION': 0.15424603613240023}, 0.0)
-[([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), ([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), ([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), ([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), ([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION')]
+{'Source_len': 35, 'Target_len': 49, 'Score': 5.45972e-65, 'Target': ['Dịch', 'vụ', 'Thời', 'tiết', 'Quốc', 'gia', 'nói', 'với', 'chúng', 'tôi', 'chiều', 'nay', 'nó', 'là', 'El', 'Nino', 'gây', 'ra', 'những', 'con', 'sóng', 'khổng', 'lồ', 'trên', 'bờ', 'biển', 'California', ',', 'và', 'mặc', 'dù', 'có', 'đê', 'cát', ',', 'một', 'số', 'căn', 'nhà', 'phía', 'trước', 'đại', 'dương', 'đã', 'bị', 'lũ', 'lụt', 'nhỏ', '.'], 'Source': [{'Word': 'NULL', 'Index': [32]}, {'Word': 'The', 'Index': []}, {'Word': 'National', 'Index': [5, 6]}, {'Word': 'Weather', 'Index': [1, 3, 4]}, {'Word': 'Service', 'Index': [2]}, {'Word': 'told', 'Index': [7, 8]}, {'Word': 'us', 'Index': [9, 10]}, {'Word': 'this', 'Index': []}, {'Word': 'afternoon', 'Index': [11, 12]}, {'Word': 'it', 'Index': [13]}, {'Word': 'is', 'Index': [14]}, {'Word': 'El', 'Index': [15]}, {'Word': 'Nino', 'Index': [16]}, {'Word': 'causing', 'Index': [17, 18]}, {'Word': 'these', 'Index': [19]}, {'Word': 'huge', 'Index': [22, 23]}, {'Word': 'waves', 'Index': [20, 21]}, {'Word': 'on', 'Index': [24]}, {'Word': 'the', 'Index': []}, {'Word': 'California', 'Index': [27]}, {'Word': 'coast', 'Index': [25, 26]}, {'Word': ',', 'Index': [28]}, {'Word': 'and', 'Index': [29]}, {'Word': 'despite', 'Index': [30, 31]}, {'Word': 'the', 'Index': []}, {'Word': 'sand', 'Index': [34]}, {'Word': 'berms', 'Index': [33, 38]}, {'Word': ',', 'Index': [35]}, {'Word': 'some', 'Index': [36, 37]}, {'Word': 'ocean', 'Index': [42, 43]}, {'Word': 'front', 'Index': [40, 41]}, {'Word': 'homes', 'Index': [39]}, {'Word': 'suffered', 'Index': [44, 45]}, {'Word': 'minor', 'Index': [48]}, {'Word': 'flooding', 'Index': [46, 47]}, {'Word': '.', 'Index': [49]}]}
+{'Source_len': 49, 'Target_len': 35, 'Score': 7.85216e-65, 'Target': ['The', 'National', 'Weather', 'Service', 'told', 'us', 'this', 'afternoon', 'it', 'is', 'El', 'Nino', 'causing', 'these', 'huge', 'waves', 'on', 'the', 'California', 'coast', ',', 'and', 'despite', 'the', 'sand', 'berms', ',', 'some', 'ocean', 'front', 'homes', 'suffered', 'minor', 'flooding', '.'], 'Source': [{'Word': 'NULL', 'Index': [10, 18, 24]}, {'Word': 'Dịch', 'Index': []}, {'Word': 'vụ', 'Index': []}, {'Word': 'Thời', 'Index': [1]}, {'Word': 'tiết', 'Index': []}, {'Word': 'Quốc', 'Index': []}, {'Word': 'gia', 'Index': []}, {'Word': 'nói', 'Index': [5]}, {'Word': 'với', 'Index': []}, {'Word': 'chúng', 'Index': [6]}, {'Word': 'tôi', 'Index': []}, {'Word': 'chiều', 'Index': [8]}, {'Word': 'nay', 'Index': [7]}, {'Word': 'nó', 'Index': [9]}, {'Word': 'là', 'Index': []}, {'Word': 'El', 'Index': [2, 4, 11, 29, 31, 33]}, {'Word': 'Nino', 'Index': [3, 12, 32]}, {'Word': 'gây', 'Index': [13]}, {'Word': 'ra', 'Index': []}, {'Word': 'những', 'Index': [14]}, {'Word': 'con', 'Index': []}, {'Word': 'sóng', 'Index': [16]}, {'Word': 'khổng', 'Index': [15]}, {'Word': 'lồ', 'Index': []}, {'Word': 'trên', 'Index': [17]}, {'Word': 'bờ', 'Index': [20]}, {'Word': 'biển', 'Index': []}, {'Word': 'California', 'Index': [19]}, {'Word': ',', 'Index': [21]}, {'Word': 'và', 'Index': [22]}, {'Word': 'mặc', 'Index': [23]}, {'Word': 'dù', 'Index': []}, {'Word': 'có', 'Index': []}, {'Word': 'đê', 'Index': [26]}, {'Word': 'cát', 'Index': [25]}, {'Word': ',', 'Index': [27]}, {'Word': 'một', 'Index': []}, {'Word': 'số', 'Index': [28]}, {'Word': 'căn', 'Index': []}, {'Word': 'nhà', 'Index': []}, {'Word': 'phía', 'Index': []}, {'Word': 'trước', 'Index': [30]}, {'Word': 'đại', 'Index': []}, {'Word': 'dương', 'Index': []}, {'Word': 'đã', 'Index': []}, {'Word': 'bị', 'Index': []}, {'Word': 'lũ', 'Index': []}, {'Word': 'lụt', 'Index': [34]}, {'Word': 'nhỏ', 'Index': []}, {'Word': '.', 'Index': [35]}]}
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([19], [26, 27], 'LOCATION', 'California', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.08401932635173771, 'PERSON': 3.399276597085946e-06, 'LOCATION': 1.395764239201731}, 1.3188653392409595)
+Overlap
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.06346496485582763, 'PERSON': 0.44618336732193675, 'LOCATION': 0.6565720762637512}, 1.2229591836734692)
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([2, 3, 4], [15, 16], 'ORGANIZATION', 'National Weather Service', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.7607273813383124, 'PERSON': 0.43697531456271543, 'LOCATION': 0.19061182891608885}, 0.5061224489795919)
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([2, 3, 4], [15, 16], 'ORGANIZATION', 'National Weather Service', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.8266852562009647, 'PERSON': 0.4397764350108947, 'LOCATION': 0.12185283360525731}, 0.5061224489795919)
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [1, 2, 3, 4, 5, 6], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.23431448489551399, 'PERSON': 0.1402013942680093, 'LOCATION': 0.1254841208365608}, 0.49387755102040815)
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([19], [15, 16], 'LOCATION', 'California', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.08403378763644577, 'PERSON': 0.4369787132088504, 'LOCATION': 0.9111874177284717}, 0.4883637665592553)
+Overlap
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([19], [15, 16], 'LOCATION', 'California', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.0638743159536347, 'PERSON': 0.4441102504513227, 'LOCATION': 0.9242153521688105}, 0.4883637665592553)
+Overlap
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [15, 16], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.09459574542524976, 'PERSON': 0.43697531450345867, 'LOCATION': 0.4054228133212815}, 0.41723356009070295)
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [15, 16], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.04119363417136927, 'PERSON': 0.6791180077817335, 'LOCATION': 0.21668223129688718}, 0.41723356009070295)
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([11, 12], [1, 2, 3, 4, 5, 6], 'LOCATION', 'El Nino', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.2193795448789461, 'PERSON': 0.006260085555721841, 'LOCATION': 0.5035869047569418}, 0.4020408163265306)
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([11, 12], [26, 27], 'LOCATION', 'El Nino', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.08360997525393064, 'PERSON': 0.0020765161472111487, 'LOCATION': 1.128120963296672}, 0.3408163265306122)
+Overlap
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([19], [1, 2, 3, 4, 5, 6], 'LOCATION', 'California', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.21978889597675316, 'PERSON': 0.004186968685107779, 'LOCATION': 0.771230180662001}, 0.32040816326530613)
+Overlap
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([2, 3, 4], [26, 27], 'ORGANIZATION', 'National Weather Service', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.7607129200536042, 'PERSON': 6.304621130181684e-10, 'LOCATION': 0.6751886503893483}, 0.2489795918367347)
+Overlap
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([11, 12], [27], 'LOCATION', 'El Nino', 'California', 'LOCATION'), {'ORGANIZATION': 0.08371559780362325, 'PERSON': 0.0021581961689368513, 'LOCATION': 1.1432712445593878}, 0.22653061224489796)
+Overlap
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [26, 27], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.0945812841405417, 'PERSON': 5.712053359706386e-10, 'LOCATION': 0.889999634794541}, 0.1489795918367347)
+Overlap
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([2, 3, 4], [27], 'ORGANIZATION', 'National Weather Service', 'California', 'LOCATION'), {'ORGANIZATION': 0.760818542603297, 'PERSON': 8.168065218781586e-05, 'LOCATION': 0.6903389316520643}, 0.1346938775510204)
+Overlap
+=================
+CurCandidate  (([19], [27], 'LOCATION', 'California', 'California', 'LOCATION'), {'ORGANIZATION': 0.08412494890143032, 'PERSON': 8.507929832278878e-05, 'LOCATION': 1.410914520464447}, 1.4800182214464732)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [27], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'California', 'LOCATION'), {'ORGANIZATION': 0.09468690669023432, 'PERSON': 8.168059293103881e-05, 'LOCATION': 0.9051499160572569}, 0.1346938775510204)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.06346496485582763, 'PERSON': 0.44618336732193675, 'LOCATION': 0.6565720762637512}, 1.2229591836734692)
+Same Score
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([2, 3, 4], [15, 16], 'ORGANIZATION', 'National Weather Service', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.7607273813383124, 'PERSON': 0.43697531456271543, 'LOCATION': 0.19061182891608885}, 0.5061224489795919)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([2, 3, 4], [15, 16], 'ORGANIZATION', 'National Weather Service', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.8266852562009647, 'PERSON': 0.4397764350108947, 'LOCATION': 0.12185283360525731}, 0.5061224489795919)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [1, 2, 3, 4, 5, 6], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.23431448489551399, 'PERSON': 0.1402013942680093, 'LOCATION': 0.1254841208365608}, 0.49387755102040815)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([19], [15, 16], 'LOCATION', 'California', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.08403378763644577, 'PERSON': 0.4369787132088504, 'LOCATION': 0.9111874177284717}, 0.4883637665592553)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([19], [15, 16], 'LOCATION', 'California', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.0638743159536347, 'PERSON': 0.4441102504513227, 'LOCATION': 0.9242153521688105}, 0.4883637665592553)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [15, 16], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.09459574542524976, 'PERSON': 0.43697531450345867, 'LOCATION': 0.4054228133212815}, 0.41723356009070295)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [15, 16], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.04119363417136927, 'PERSON': 0.6791180077817335, 'LOCATION': 0.21668223129688718}, 0.41723356009070295)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([11, 12], [1, 2, 3, 4, 5, 6], 'LOCATION', 'El Nino', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.2193795448789461, 'PERSON': 0.006260085555721841, 'LOCATION': 0.5035869047569418}, 0.4020408163265306)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([11, 12], [26, 27], 'LOCATION', 'El Nino', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.08360997525393064, 'PERSON': 0.0020765161472111487, 'LOCATION': 1.128120963296672}, 0.3408163265306122)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([19], [1, 2, 3, 4, 5, 6], 'LOCATION', 'California', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.21978889597675316, 'PERSON': 0.004186968685107779, 'LOCATION': 0.771230180662001}, 0.32040816326530613)
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([2, 3, 4], [26, 27], 'ORGANIZATION', 'National Weather Service', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.7607129200536042, 'PERSON': 6.304621130181684e-10, 'LOCATION': 0.6751886503893483}, 0.2489795918367347)
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([11, 12], [27], 'LOCATION', 'El Nino', 'California', 'LOCATION'), {'ORGANIZATION': 0.08371559780362325, 'PERSON': 0.0021581961689368513, 'LOCATION': 1.1432712445593878}, 0.22653061224489796)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [26, 27], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.0945812841405417, 'PERSON': 5.712053359706386e-10, 'LOCATION': 0.889999634794541}, 0.1489795918367347)
+Overlap
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([2, 3, 4], [27], 'ORGANIZATION', 'National Weather Service', 'California', 'LOCATION'), {'ORGANIZATION': 0.760818542603297, 'PERSON': 8.168065218781586e-05, 'LOCATION': 0.6903389316520643}, 0.1346938775510204)
+=================
+CurCandidate  (([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.0836244365386387, 'PERSON': 0.43905183007946447, 'LOCATION': 0.6435441418234125}, 1.2229591836734692)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [27], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'California', 'LOCATION'), {'ORGANIZATION': 0.09468690669023432, 'PERSON': 8.168059293103881e-05, 'LOCATION': 0.9051499160572569}, 0.1346938775510204)
+Overlap
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [1, 2, 3, 4, 5, 6], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.23431448489551399, 'PERSON': 0.1402013942680093, 'LOCATION': 0.1254841208365608}, 0.49387755102040815)
+Overlap
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([19], [15, 16], 'LOCATION', 'California', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.08403378763644577, 'PERSON': 0.4369787132088504, 'LOCATION': 0.9111874177284717}, 0.4883637665592553)
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([19], [15, 16], 'LOCATION', 'California', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.0638743159536347, 'PERSON': 0.4441102504513227, 'LOCATION': 0.9242153521688105}, 0.4883637665592553)
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [15, 16], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'El Nino', 'LOCATION'), {'ORGANIZATION': 0.09459574542524976, 'PERSON': 0.43697531450345867, 'LOCATION': 0.4054228133212815}, 0.41723356009070295)
+Overlap
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [15, 16], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'El Nino', 'PERSON'), {'ORGANIZATION': 0.04119363417136927, 'PERSON': 0.6791180077817335, 'LOCATION': 0.21668223129688718}, 0.41723356009070295)
+Overlap
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([11, 12], [1, 2, 3, 4, 5, 6], 'LOCATION', 'El Nino', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.2193795448789461, 'PERSON': 0.006260085555721841, 'LOCATION': 0.5035869047569418}, 0.4020408163265306)
+Overlap
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([11, 12], [26, 27], 'LOCATION', 'El Nino', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.08360997525393064, 'PERSON': 0.0020765161472111487, 'LOCATION': 1.128120963296672}, 0.3408163265306122)
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([19], [1, 2, 3, 4, 5, 6], 'LOCATION', 'California', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.21978889597675316, 'PERSON': 0.004186968685107779, 'LOCATION': 0.771230180662001}, 0.32040816326530613)
+Overlap
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([2, 3, 4], [26, 27], 'ORGANIZATION', 'National Weather Service', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.7607129200536042, 'PERSON': 6.304621130181684e-10, 'LOCATION': 0.6751886503893483}, 0.2489795918367347)
+Overlap
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([11, 12], [27], 'LOCATION', 'El Nino', 'California', 'LOCATION'), {'ORGANIZATION': 0.08371559780362325, 'PERSON': 0.0021581961689368513, 'LOCATION': 1.1432712445593878}, 0.22653061224489796)
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [26, 27], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'biển California', 'LOCATION'), {'ORGANIZATION': 0.0945812841405417, 'PERSON': 5.712053359706386e-10, 'LOCATION': 0.889999634794541}, 0.1489795918367347)
+Overlap
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([2, 3, 4], [27], 'ORGANIZATION', 'National Weather Service', 'California', 'LOCATION'), {'ORGANIZATION': 0.760818542603297, 'PERSON': 8.168065218781586e-05, 'LOCATION': 0.6903389316520643}, 0.1346938775510204)
+Overlap
+=================
+CurCandidate  (([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION'), {'ORGANIZATION': 0.9241859266502689, 'PERSON': 0.0006325111282004879, 'LOCATION': 0.02650221378874144}, 0.49387781098994366)
+CompareCandidate (([2, 3, 4, 11, 12, 29, 31, 32, 33], [27], 'PERSON', 'National Weather Service El Nino ocean homes suffered minor', 'California', 'LOCATION'), {'ORGANIZATION': 0.09468690669023432, 'PERSON': 8.168059293103881e-05, 'LOCATION': 0.9051499160572569}, 0.1346938775510204)
+Overlap
+([19], [27], 'LOCATION', 'California', 'California', 'LOCATION')
+([11, 12], [15, 16], 'LOCATION', 'El Nino', 'El Nino', 'LOCATION')
+([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION')

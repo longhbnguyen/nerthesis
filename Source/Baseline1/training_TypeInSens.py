@@ -6,12 +6,13 @@ output: list_of_weight
 import numpy as np
 from utilities import read_align_file
 import predict
-import evaluate
+import evaluate_TypeInSens
 import config
 import TrueSet
 import ScoreTable
 import CandidateSet
 
+lambda_list_to_update = ['translation', ' transliteration', 'coocurence', 'distortion']
 
 lambda_step = 0.1
 cur_Count = 0
@@ -42,8 +43,8 @@ def train_dev(list_lambda):
         }
     """
     #get list
-    FinalPredictNEPairList = predict.getFinalPredictNEPairList(dev_list_EtoV,dev_list_VtoE,list_lambda,train_mode_InSens=  True)
-    res = evaluate.getMetrics(FinalPredictNEPairList,trueSet,0)
+    FinalPredictNEPairList = predict.getFinalPredictNEPairList(dev_list_EtoV,dev_list_VtoE,list_lambda,train_mode_InSens=True)
+    res = evaluate_TypeInSens.getMetrics(FinalPredictNEPairList,trueSet)
     return res
 
 def init_lambda(number_of_lambda):
@@ -88,8 +89,8 @@ def update_list_lambda(list_lambda,step,number_of_lambda):
 
 #Main
 def main():
-    ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE)
     CandidateSet.createCandidateSetForTraining(dev_list_EtoV,dev_list_VtoE)
+    ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE)
     list_lambda = init_lambda(4)
     best_lambda = list_lambda
     best_res = init_result()

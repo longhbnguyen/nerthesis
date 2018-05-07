@@ -5,6 +5,7 @@ import ranking as getFinalRes
 import config
 import utilities
 import ScoreTable
+
 def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index, train_mode_InSens  = False, train_mode_Sens = False):
     '''
     Input: EtoV_sent, VtoE_sent
@@ -15,12 +16,14 @@ def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index, train_mode_InSens  =
         CandidateSet = getCandidateSet.getCandidateSetFromFile(sent_index)
     else:
         CandidateSet = getCandidateSet.getCandidateSet(EtoV_sent,VtoE_sent, sent_index)
+    
     CombineScore = {}
 
     CombineScore['TypeSens'] = getCombineScore_TypeSens.getCombineScore(CandidateSet,EtoV_sent,VtoE_sent, list_lambda,sent_index,train_mode = train_mode_Sens)
     CombineScore['TypeInSens'] = getCombineScore_InSens.getCombineScore(CandidateSet,EtoV_sent,VtoE_sent, list_lambda,sent_index,train_mode = train_mode_InSens)
     
     res = getFinalRes.getFinalNEPair(CombineScore,CandidateSet)
+    res = utilities.make_unique(res)
     return res
 
 # def getFinalPredictNEPairList_fromScoreTable(dev_list_EtoV,dev_list_VtoE)
@@ -38,12 +41,16 @@ def getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,train
     return res
 
 
-EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Dev.txt')
-VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Dev.txt')
-ScoreTable.createScoreTable_TypeSens(EtoV_dev_list,VtoE_dev_list)
-ScoreTable.createScoreTable_TypeInSens(EtoV_dev_list,VtoE_dev_list)
-# # tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0],0)
-list_lambda = config.getWeight()
-res = getNEPair(EtoV_dev_list[0],VtoE_dev_list[0],list_lambda,0)
-print(res)
-# print(len(tmp))
+# EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Dev.txt')
+# VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Dev.txt')
+# ScoreTable.createScoreTable_TypeSens(EtoV_dev_list,VtoE_dev_list)
+# ScoreTable.createScoreTable_TypeInSens(EtoV_dev_list,VtoE_dev_list)
+# # # tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0],0)
+# list_lambda = config.getWeight()
+# print(EtoV_dev_list[0])
+# print(VtoE_dev_list[0])
+
+# res = getNEPair(EtoV_dev_list[0],VtoE_dev_list[0],list_lambda,0)
+# for pair in res:
+#     print(pair)
+# # print(len(tmp))
