@@ -6,7 +6,7 @@ config = configparser.ConfigParser()
 config.read(config_file)
 
 def getInitWeightTypeSens():
-    weight = config['Best Weight']
+    weight = config['Best Weight TypeInSens']
     res = {}
     for key,value in weight.items():
         res[key] = float(value)
@@ -35,6 +35,16 @@ def WriteBestLambda(best_lambda):
 def WriteBestLambda_TypeSens(best_lambda):
     w = open(config_file,'a',encoding='utf-8')
     w.write('\n[Best Weight TypeSens]\n')
+    for key,value in best_lambda.items():
+        w.write(key)
+        w.write('=')
+        w.write(str(value))
+        w.write('\n')
+    w.close()
+
+def WriteBestLambda_TypeInSens(best_lambda):
+    w = open(config_file,'a',encoding='utf-8')
+    w.write('\n[Best Weight TypeInSens]\n')
     for key,value in best_lambda.items():
         w.write(key)
         w.write('=')

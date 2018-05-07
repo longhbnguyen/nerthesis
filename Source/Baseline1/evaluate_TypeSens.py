@@ -77,6 +77,6 @@ def getMetrics(predict_set,true_set):
     res['R'] = recall
     res['P'] = precision
     res['F1'] = f1
-
+    print(res)
     return res
 

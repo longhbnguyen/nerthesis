@@ -41,16 +41,18 @@ def getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,train
     return res
 
 
-# EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Dev.txt')
-# VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Dev.txt')
+# EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Test.txt')
+# VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Test.txt')
 # ScoreTable.createScoreTable_TypeSens(EtoV_dev_list,VtoE_dev_list)
 # ScoreTable.createScoreTable_TypeInSens(EtoV_dev_list,VtoE_dev_list)
+# getCandidateSet.createCandidateSetForTraining(EtoV_dev_list,VtoE_dev_list)
+# print(getCandidateSet.Candidate_Set_Table[-1])
 # # # tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0],0)
 # list_lambda = config.getWeight()
-# print(EtoV_dev_list[0])
-# print(VtoE_dev_list[0])
+# # print(EtoV_dev_list[0])
+# # print(VtoE_dev_list[0])
 
-# res = getNEPair(EtoV_dev_list[0],VtoE_dev_list[0],list_lambda,0)
+# res = getNEPair(EtoV_dev_list[-1],VtoE_dev_list[-1],list_lambda,len(EtoV_dev_list)-1, train_mode_InSens=True)
 # for pair in res:
 #     print(pair)
 # # print(len(tmp))

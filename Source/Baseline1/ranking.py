@@ -43,19 +43,22 @@ def getOverLapMatrix(CandidateSet):
         
     #Test
     
-    for i in range(len(CandidateSet)):
-        for j in range(len(CandidateSet)):
-            # print("Candidate i", CandidateSet[i])
-            # print("Candidate j", CandidateSet[j])
-            # print("Res i j",i,j,res[i][j])
-            if res[i][j] != res[j][i]:
-                print('Res',i,j,'-','Res',j,i)
+    # for i in range(len(CandidateSet)):
+    #     for j in range(len(CandidateSet)):
+    #         # print("Candidate i", CandidateSet[i])
+    #         # print("Candidate j", CandidateSet[j])
+    #         # print("Res i j",i,j,res[i][j])
+    #         if res[i][j] != res[j][i]:
+    #             print('Res',i,j,'-','Res',j,i)
     return res
 
 def getFinalNEPair(CombineScore,CandidateSet):
     '''
+
     '''
     res = []
+    if len(CandidateSet) == 1:
+        return CandidateSet
     CandidateSet = list(zip(CandidateSet, CombineScore['TypeSens'], CombineScore['TypeInSens']))
     CandidateSet = sorted(CandidateSet,key=lambda CandidateSet: CandidateSet[2],reverse=True)
     checkOverLap = getOverLapMatrix(CandidateSet)

@@ -28,9 +28,6 @@ EtoV_model.createEntListTable()
 VtoE_model.createEntListTable()
 
 
-
-
-                                        
 def createCandidateSetForTraining(EtoV_List,VtoE_List):
     '''
     Create CandidateSet file
@@ -76,11 +73,11 @@ def getCandidateSetFromFile(sent_index):
     return Candidate_Set_Table[sent_index]
 
 
-# EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Dev.txt')
-# VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Dev.txt')
+# EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Test.txt')
+# VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Test.txt')
 
-# tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0],0)
-# unique = make_unique(tmp)
+# tmp = getCandidateSet(EtoV_dev_list[-1],VtoE_dev_list[-1],len(EtoV_dev_list)-1)
+# unique = utilities.make_unique(tmp)
 # print('tmp',tmp)
 # print('unique',unique)
 # print(len(tmp))

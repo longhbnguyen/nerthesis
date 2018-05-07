@@ -43,12 +43,10 @@ def main():
     # print(predict_set[0])
     # print(true_set[0])
     # EvaluationRes = {'TP':,'TN':,}
-
     EvaluationRes_type_insen = evaluate_TypeInSens.getMetrics(predict_set,true_set)
     EvaluationRes_type_sen = evaluate_TypeSens.getMetrics(predict_set,true_set)
-
     print('Type-insensitive ', EvaluationRes_type_insen)
-    print('Type-sensitive (Translation+Transliteration) ', EvaluationRes_type_sen)
+    print('Type-sensitive ', EvaluationRes_type_sen)
 
 if __name__ == '__main__':
     main()

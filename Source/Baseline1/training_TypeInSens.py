@@ -47,7 +47,7 @@ def train_dev(list_lambda):
     res = evaluate_TypeInSens.getMetrics(FinalPredictNEPairList,trueSet)
     return res
 
-def init_lambda(number_of_lambda):
+def init_lambda():
     '''
     Init lambda 
     '''
@@ -68,7 +68,7 @@ def init_result():
 def better_than(res,best_res):
     return (res['F1'] > best_res['F1'])
 
-def update_list_lambda(list_lambda,step,number_of_lambda):
+def update_list_lambda(list_lambda,step):
     ''' 
     '''
     global cur_Count
@@ -78,9 +78,10 @@ def update_list_lambda(list_lambda,step,number_of_lambda):
     tmp = cur_Count
     res = list_lambda
     for key,value in res.items():
-        res[key] = int(tmp % 10) / 10
-        tmp = int(tmp / 10)
-    if (cur_Count > (10**number_of_lambda) ):
+        if key in lambda_list_to_update:
+            res[key] = int(tmp % 10) / 10
+            tmp = int(tmp / 10)
+    if (cur_Count > (10**len(lambda_list_to_update)) ):
         return None
     # if (cur_Count > 10):
     #     return None
@@ -91,7 +92,8 @@ def update_list_lambda(list_lambda,step,number_of_lambda):
 def main():
     CandidateSet.createCandidateSetForTraining(dev_list_EtoV,dev_list_VtoE)
     ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE)
-    list_lambda = init_lambda(4)
+    ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE)
+    list_lambda = init_lambda()
     best_lambda = list_lambda
     best_res = init_result()
     step = 0.1
@@ -101,12 +103,12 @@ def main():
         if (better_than(cur_res,best_res)):
             best_lambda = dict((k,v) for k,v in list_lambda.items())
             best_res = cur_res
-        list_lambda = update_list_lambda(list_lambda,step,4)
+        list_lambda = update_list_lambda(list_lambda,step)
         
         
     print('BestRes ' ,best_res)
     print('BestLambda ', best_lambda)
-    config.WriteBestLambda(best_lambda)
+    config.WriteBestLambda_TypeInSens(best_lambda)
     
 if __name__ == '__main__':
     main()

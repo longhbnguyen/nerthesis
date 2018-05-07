@@ -89,7 +89,8 @@ def update_list_lambda(list_lambda,step):
 
 #Main
 def main():
-    # CandidateSet.createCandidateSetForTraining(dev_list_EtoV,dev_list_VtoE)
+    CandidateSet.createCandidateSetForTraining(dev_list_EtoV,dev_list_VtoE)
+    ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE)
     ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE)
     list_lambda = init_lambda()
     best_lambda = list_lambda
@@ -97,7 +98,7 @@ def main():
     while list_lambda != None:
         print('List Lambda ', list_lambda)
         cur_res = train_dev(list_lambda)
-        print('Res', cur_res)
+        # print('Res', cur_res)
         if (better_than(cur_res,best_res)):
             best_lambda = dict((k,v) for k,v in list_lambda.items())
             best_res = cur_res
