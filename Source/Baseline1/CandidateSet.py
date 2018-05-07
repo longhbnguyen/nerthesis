@@ -22,17 +22,24 @@ import utilities
 import json
 import os.path
 
-candidate_set_file = 'Candidate_Set_Test.json'
+candidate_set_test_file = 'Candidate_Set_Test.json'
+candidate_set_dev_file = 'Candidate_Set_Dev.json'
+
 Candidate_Set_Table = None
-EtoV_model.createEntListTable()
-VtoE_model.createEntListTable()
 
 
-def createCandidateSetForTraining(EtoV_List,VtoE_List):
+
+def createCandidateSet(EtoV_List,VtoE_List, mode):
     '''
     Create CandidateSet file
     '''
     global Candidate_Set_Table
+    EtoV_model.createEntListTable(mode)
+    VtoE_model.createEntListTable(mode)
+    if mode == 'dev':
+        candidate_set_file = candidate_set_dev_file
+    elif mode == 'test':
+        candidate_set_file = candidate_set_test_file
     if os.path.isfile(candidate_set_file):
         json_data=open(candidate_set_file).read()
         Candidate_Set_Table = json.loads(json_data)
@@ -44,7 +51,6 @@ def createCandidateSetForTraining(EtoV_List,VtoE_List):
             json.dump(Candidate_Set_Table,f)
 
     
-
 def getCandidateSet(EtoV_sent,VtoE_sent, sent_index):
     '''
     Get Candidate Set of 1 sentence pair

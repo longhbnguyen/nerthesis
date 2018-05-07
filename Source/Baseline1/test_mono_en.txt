@@ -1,0 +1,43 @@
+['mono_en']
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.1425287356321839, 'P': 0.11211573236889692, 'F1': 0.12550607287449392}
+Cur Count  1
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.4367816091954023, 'P': 0.3435804701627486, 'F1': 0.38461538461538464}
+Cur Count  2
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.4367816091954023, 'P': 0.3435804701627486, 'F1': 0.38461538461538464}
+Cur Count  3
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.4367816091954023, 'P': 0.3435804701627486, 'F1': 0.38461538461538464}
+Cur Count  4
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.4367816091954023, 'P': 0.3435804701627486, 'F1': 0.38461538461538464}
+Cur Count  5
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.4367816091954023, 'P': 0.3435804701627486, 'F1': 0.38461538461538464}
+Cur Count  6
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.4367816091954023, 'P': 0.3435804701627486, 'F1': 0.38461538461538464}
+Cur Count  7
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.4367816091954023, 'P': 0.3435804701627486, 'F1': 0.38461538461538464}
+Cur Count  8
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.4367816091954023, 'P': 0.3435804701627486, 'F1': 0.38461538461538464}
+Cur Count  9
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.4367816091954023, 'P': 0.3435804701627486, 'F1': 0.38461538461538464}
+Cur Count  10
+List Lambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.1425287356321839, 'P': 0.11211573236889692, 'F1': 0.12550607287449392}
+Cur Count  11
+BestRes  {'R': 0.4367816091954023, 'P': 0.3435804701627486, 'F1': 0.38461538461538464}
+BestLambda  {'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.0, 'bi': 0.0}
+Create Candidate Set
+Created Score Table
+{'coocurence': 0.3, 'translation': 0.2, 'transliteration': 0.0, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.8325817361894025, 'P': 0.7928073000536768, 'F1': 0.8122078636238657}
+{'R': 0.8139797068771139, 'P': 0.7750939345142244, 'F1': 0.7940610393181193}
+Type-insensitive  {'R': 0.8325817361894025, 'P': 0.7928073000536768, 'F1': 0.8122078636238657}
+Type-sensitive  {'R': 0.8139797068771139, 'P': 0.7750939345142244, 'F1': 0.7940610393181193}

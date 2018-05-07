@@ -26,6 +26,8 @@ def getDictDot(score_dict,weight_dict):
     res['ORGANIZATION'] = 0.0
     res['PERSON'] = 0.0
     res['LOCATION'] = 0.0
+    # print('ScoreDict', score_dict)
+    # print('WeightDict', weight_dict)
     for key,value in score_dict.items():
         for sub_key,sub_value in score_dict[key].items():
             if sub_key == 'EN' or sub_key == 'VN':
@@ -34,7 +36,7 @@ def getDictDot(score_dict,weight_dict):
                     res[label] = res[label] + (score_dict[key][sub_key][label]) * (weight_dict[tmp_key])
             else:
                 res[sub_key] = res[sub_key] + (score_dict[key][sub_key]) * (weight_dict[key])
-                
+    
     return res
 
 
@@ -64,6 +66,7 @@ def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_
     else:
         score_dict = getScoreDict(cur_candidate, EtoV_sent, VtoE_sent,sent_index)
     score = getDictDot(score_dict,weight_dict)
+    # print('Score',score)
     return score
 
 def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,list_lambda,sent_index,train_mode = False):

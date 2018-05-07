@@ -7,11 +7,18 @@ import os.path
 ScoreTable_TypeInSens = []
 ScoreTable_TypeSens = []
 
-score_table_TypeInSens_file = 'ScoreTable_TypeInSens_Test.json'
-score_table_TypeSens_file = 'ScoreTable_TypeSens_Test.json'
+score_table_TypeInSens_file_test = 'ScoreTable_TypeInSens_Test.json'
+score_table_TypeSens_file_test = 'ScoreTable_TypeSens_Test.json'
+score_table_TypeInSens_file_dev = 'ScoreTable_TypeInSens_dev.json'
+score_table_TypeSens_file_dev = 'ScoreTable_TypeSens_dev.json'
 
-def createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE):
+def createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE, mode):
     global ScoreTable_TypeInSens
+    if mode == 'dev':
+        score_table_TypeInSens_file = score_table_TypeInSens_file_dev
+    elif mode == 'test':
+        score_table_TypeInSens_file = score_table_TypeInSens_file_test
+        
     if os.path.isfile(score_table_TypeInSens_file):
         json_data=open(score_table_TypeInSens_file).read()
         ScoreTable_TypeInSens = json.loads(json_data)
@@ -26,12 +33,16 @@ def createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE):
         with open(score_table_TypeInSens_file,'w',encoding='utf-8') as f:
             json.dump(ScoreTable_TypeInSens,f)
 
-def createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE):
+def createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE, mode):
     global ScoreTable_TypeSens
+    if mode == 'dev':
+        score_table_TypeSens_file = score_table_TypeSens_file_dev
+    elif mode == 'test':
+        score_table_TypeSens_file = score_table_TypeSens_file_test
+    
     if os.path.isfile(score_table_TypeSens_file):
         json_data=open(score_table_TypeSens_file).read()
         ScoreTable_TypeSens = json.loads(json_data)
-        
     else:
         for i in range(len(dev_list_EtoV)):
             EtoV_sent = dev_list_EtoV[i]
@@ -47,7 +58,7 @@ def createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE):
 
 def getScoreforOneCandidate_TypeInSens(sent_index,candidate_index):
     # print(sent_index, candidate_index)
-    # print(ScoreTable_TypeInSens)
+    print(ScoreTable_TypeInSens[sent_index][candidate_index])
     return ScoreTable_TypeInSens[sent_index][candidate_index]
 
     

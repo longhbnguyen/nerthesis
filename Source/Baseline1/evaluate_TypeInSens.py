@@ -80,4 +80,3 @@ def getMetrics(predict_set,true_set):
     res['F1'] = f1
     print(res)
     return res
-

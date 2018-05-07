@@ -67,8 +67,8 @@ def getFinalNEPair(CombineScore,CandidateSet):
     i = 0
     free = [True] * len(CandidateSet)
     for i in range(len(CandidateSet)-1):
-        # print('CurCandidateSet ', CandidateSet[i])
-        # print('=================')
+        print('CurCandidateSet ', CandidateSet[i])
+        print('=================')
         if (free[i]):
             cur = [CandidateSet[i]]
             # print('CurCandidate ', cur)
@@ -91,7 +91,9 @@ def getFinalNEPair(CombineScore,CandidateSet):
             # print('CurrentSet', cur)
             res = res + cur
             # print('Res', res)
+    # print('Before Reassign', res)
     res = reassign_type(res)
+    # print('After Reassign', res)
     return res
 
 def reassign_type(ne_pairs):

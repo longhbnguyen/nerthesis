@@ -11,6 +11,7 @@ import config
 import TrueSet
 import ScoreTable
 import CandidateSet
+import sys
 
 lambda_list_to_update = ['translation', ' transliteration', 'coocurence', 'distortion']
 
@@ -51,7 +52,7 @@ def init_lambda():
     '''
     Init lambda 
     '''
-    res = config.getWeight()
+    res = config.getWeightZero()
     # print(res)
     for key,value in res.items():
         res[key] = 0.0
@@ -77,6 +78,7 @@ def update_list_lambda(list_lambda,step):
     print('Cur Count ', cur_Count)
     tmp = cur_Count
     res = list_lambda
+    # print(lambda_list_to_update)
     for key,value in res.items():
         if key in lambda_list_to_update:
             res[key] = int(tmp % 10) / 10
@@ -88,11 +90,32 @@ def update_list_lambda(list_lambda,step):
     
     return res
 
+def getBestLambda(lambda_list_to_update_tmp):
+    global lambda_list_to_update 
+    lambda_list_to_update = lambda_list_to_update_tmp
+    CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
+    ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE,'dev')
+    ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE,'dev')
+    list_lambda = init_lambda()
+    best_lambda = list_lambda
+    best_res = init_result()
+    step = 0.1
+    while list_lambda != None:
+        print('List Lambda ', list_lambda)
+        cur_res = train_dev(list_lambda)
+        if (better_than(cur_res,best_res)):
+            best_lambda = dict((k,v) for k,v in list_lambda.items())
+            best_res = cur_res
+        list_lambda = update_list_lambda(list_lambda,step)
+    print('BestRes ' ,best_res)
+    print('BestLambda ', best_lambda)
+
+    return best_lambda
 #Main
-def main():
-    CandidateSet.createCandidateSetForTraining(dev_list_EtoV,dev_list_VtoE)
-    ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE)
-    ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE)
+def main(lambda_list_to_update_tmp):
+    CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
+    ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE,'dev')
+    ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE,'dev')
     list_lambda = init_lambda()
     best_lambda = list_lambda
     best_res = init_result()
@@ -108,7 +131,8 @@ def main():
         
     print('BestRes ' ,best_res)
     print('BestLambda ', best_lambda)
-    config.WriteBestLambda_TypeInSens(best_lambda)
+    # config.WriteBestLambda_TypeInSens(best_lambda)
     
 if __name__ == '__main__':
-    main()
+    lambda_list_to_update_tmp = sys.argv[2:]
+    main(lambda_list_to_update_tmp)

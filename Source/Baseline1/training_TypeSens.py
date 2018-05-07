@@ -87,11 +87,12 @@ def update_list_lambda(list_lambda,step):
     
     return res
 
-#Main
-def main():
-    CandidateSet.createCandidateSetForTraining(dev_list_EtoV,dev_list_VtoE)
-    ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE)
-    ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE)
+def getBestLambda(lambda_list_to_update_tmp):
+    global lambda_list_to_update
+    lambda_list_to_update = lambda_list_to_update_tmp
+    CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
+    ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE,'dev')
+    ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE,'dev')
     list_lambda = init_lambda()
     best_lambda = list_lambda
     best_res = init_result()
@@ -104,6 +105,26 @@ def main():
             best_res = cur_res
         list_lambda = update_list_lambda(list_lambda,lambda_step)
         
+    print('BestRes ' ,best_res)
+    print('BestLambda ', best_lambda)
+    return best_lambda
+
+#Main
+def main():
+    CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
+    ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE,'dev')
+    ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE,'dev')
+    list_lambda = init_lambda()
+    best_lambda = list_lambda
+    best_res = init_result()
+    while list_lambda != None:
+        print('List Lambda ', list_lambda)
+        cur_res = train_dev(list_lambda)
+        # print('Res', cur_res)
+        if (better_than(cur_res,best_res)):
+            best_lambda = dict((k,v) for k,v in list_lambda.items())
+            best_res = cur_res
+        list_lambda = update_list_lambda(list_lambda,lambda_step)
         
     print('BestRes ' ,best_res)
     print('BestLambda ', best_lambda)

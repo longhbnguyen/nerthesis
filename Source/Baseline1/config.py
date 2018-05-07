@@ -22,6 +22,16 @@ def getWeight():
     # print('Res ',res)
     return res
 
+def getWeightZero():
+    weight = config['Weight Zero']
+    res = {}
+    for key,value in weight.items():
+        # print('Key ',key)
+        # print('Value ',value)
+        res[key] = float(value)
+    # print('Res ',res)
+    return res
+
 def WriteBestLambda(best_lambda):
     w = open(config_file,'a',encoding='utf-8')
     w.write('\n[Best Weight]\n')
