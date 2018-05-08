@@ -35,7 +35,7 @@ test_list_VtoE = read_align_file(align_file_VtoE)
 
 def main(lambda_list_to_update):
     print(lambda_list_to_update)
-    list_lambda = training_TypeInSens.getBestLambda(lambda_list_to_update)
+    list_lambda = training_TypeSens.getBestLambda(lambda_list_to_update)
 
     CandidateSet.createCandidateSet(test_list_EtoV,test_list_VtoE,'test')
     print("Create Candidate Set")

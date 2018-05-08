@@ -12,3 +12,4 @@ python run.py translation transliteration coocurence > translation_transliterati
 python run.py translation transliteration distortion > translation_transliteration_distortion_test.txt
 python run.py transliteration coocurence distortion > transliteration_coocurence_distortion_test.txt
 python run.py translation coocurence distortion > translation_coocurence_distortion_test.txt
+python run.py translation transliteration coocurence distortion > translation_transliteration_coocurence_distortion_test.txt
