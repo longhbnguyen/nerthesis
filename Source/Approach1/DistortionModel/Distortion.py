@@ -1,7 +1,20 @@
 from utilities import wordLen
+import math
 
 def absProb(posE,posV):
     return 1 - abs(posE - posV)
+
+def expProb(posE, posV):
+    '''Not Done'''
+    return math.exp(abs(posE-posV))
+
+def sigmoid(x):
+    return 1 / (1 + math.exp(-x))
+
+def sigmoidProb(posE, posV):
+    return sigmoid(posE-posV)
+
+     
 
 def getDistortionprob(NEPair, enSent, vnSent):
     # print('NEPair ',NEPair)

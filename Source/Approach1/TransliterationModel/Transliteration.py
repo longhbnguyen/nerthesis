@@ -1,4 +1,7 @@
 
+def normalize(res,n):
+    return res**(1/n)
+
 def getTransliterationProb(NEPair,VtoE_sent):
     enNE = NEPair[3]
     vnNE = NEPair[4]
@@ -14,4 +17,7 @@ def getTransliterationProb(NEPair,VtoE_sent):
                 break
     if n == 0:
         return 0.0
+
+    res = word_count / n
+    res = normalize(res,n)
     return word_count / n
