@@ -42,21 +42,21 @@ def getDictDot(score_dict,weight_dict):
 
 
 
-def getScoreDictForSet_TypeSens(CandidateSet,EtoV_sent,VtoE_sent,sent_index):
+def getScoreDictForSet_TypeSens(CandidateSet,EtoV_sent,VtoE_sent,sent_index,mode):
     res = []
     for candidate in CandidateSet:
-        res.append(getScoreDict(candidate,EtoV_sent,VtoE_sent,sent_index))
+        res.append(getScoreDict(candidate,EtoV_sent,VtoE_sent,sent_index,mode))
     return res
 
-def getScoreDict(cur_candidate,EtoV_sent,VtoE_sent,sent_index):
-    mono_score = MonoProb.getMonoProb(cur_candidate,sent_index)
+def getScoreDict(cur_candidate,EtoV_sent,VtoE_sent,sent_index, mode):
+    mono_score = MonoProb.getMonoProb(cur_candidate,sent_index, mode)
     bi_score = BiProb.getBiProb(cur_candidate)
     score_dict= {}
     score_dict['mono'] = mono_score
     score_dict['bi'] = bi_score
     return score_dict
 
-def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_index,candidate_index,train_mode = False):
+def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_index,candidate_index,mode,train_mode = False):
     '''
 
     '''
@@ -64,12 +64,12 @@ def getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_
     if train_mode:
         score_dict = ScoreTable.getScoreforOneCandidate_TypeSens(sent_index,candidate_index)
     else:
-        score_dict = getScoreDict(cur_candidate, EtoV_sent, VtoE_sent,sent_index)
+        score_dict = getScoreDict(cur_candidate, EtoV_sent, VtoE_sent,sent_index,mode)
     score = getDictDot(score_dict,weight_dict)
     # print('Score',score)
     return score
 
-def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,list_lambda,sent_index,train_mode = False):
+def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,list_lambda,sent_index,mode,train_mode = False):
     '''
     '''
     if train_mode:
@@ -79,7 +79,7 @@ def getCombineScore(CandidateSet,EtoV_sent,VtoE_sent,list_lambda,sent_index,trai
     res = []
     for i in range(len(CandidateSet)):
         cur_candidate = CandidateSet[i]
-        score_cur_candidate = getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_index,i,train_mode = True)
+        score_cur_candidate = getCombineScoreCandidate(cur_candidate,EtoV_sent,VtoE_sent,weight_dict,sent_index,i,mode,train_mode = True)
         res.append(score_cur_candidate)
     return res
 

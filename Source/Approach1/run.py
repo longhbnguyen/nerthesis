@@ -43,7 +43,7 @@ def main(lambda_list_to_update):
     ScoreTable.createScoreTable_TypeSens(test_list_EtoV,test_list_VtoE,'test')
     print("Created Score Table")
     print(list_lambda)
-    predict_set = getPredict.getFinalPredictNEPairList(test_list_EtoV, test_list_VtoE,list_lambda,train_mode_InSens = True, train_mode_Sens=True)
+    predict_set = getPredict.getFinalPredictNEPairList(test_list_EtoV, test_list_VtoE,list_lambda,'test',train_mode_InSens = True, train_mode_Sens=True)
     true_set = TrueSet.getFileTrueSet(test_file_en,test_file_vn)
     # print(predict_set[0])
     # print(true_set[0])

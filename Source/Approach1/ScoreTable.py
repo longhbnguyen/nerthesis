@@ -19,7 +19,7 @@ def createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE, mode):
         score_table_TypeInSens_file = score_table_TypeInSens_file_dev
     elif mode == 'test':
         score_table_TypeInSens_file = score_table_TypeInSens_file_test
-    
+        
     if os.path.isfile(score_table_TypeInSens_file):
         json_data=open(score_table_TypeInSens_file).read()
         ScoreTable_TypeInSens = json.loads(json_data)
@@ -50,7 +50,7 @@ def createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE, mode):
             EtoV_sent = dev_list_EtoV[i]
             VtoE_sent = dev_list_VtoE[i]
             candidateSet = CandidateSet.getCandidateSet(EtoV_sent,VtoE_sent,i)
-            score = CombineScore_TypeSens.getScoreDictForSet_TypeSens(candidateSet,EtoV_sent,VtoE_sent,i)
+            score = CombineScore_TypeSens.getScoreDictForSet_TypeSens(candidateSet,EtoV_sent,VtoE_sent,i,mode)
             ScoreTable_TypeSens.append(score)
         with open(score_table_TypeSens_file,'w',encoding='utf-8') as f:
             json.dump(ScoreTable_TypeSens,f)

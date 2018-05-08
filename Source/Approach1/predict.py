@@ -6,7 +6,7 @@ import config
 import utilities
 import ScoreTable
 
-def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index, train_mode_InSens  = False, train_mode_Sens = False):
+def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index,mode, train_mode_InSens  = False, train_mode_Sens = False):
     '''
     Input: EtoV_sent, VtoE_sent
     Output: NE Pairs List of a sentence pair
@@ -19,7 +19,7 @@ def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index, train_mode_InSens  =
     
     CombineScore = {}
 
-    CombineScore['TypeSens'] = getCombineScore_TypeSens.getCombineScore(CandidateSet,EtoV_sent,VtoE_sent, list_lambda,sent_index,train_mode = train_mode_Sens)
+    CombineScore['TypeSens'] = getCombineScore_TypeSens.getCombineScore(CandidateSet,EtoV_sent,VtoE_sent, list_lambda,sent_index,mode,train_mode = train_mode_Sens)
     CombineScore['TypeInSens'] = getCombineScore_InSens.getCombineScore(CandidateSet,EtoV_sent,VtoE_sent, list_lambda,sent_index,train_mode = train_mode_InSens)
     # print('CombineScore TypeSens', CombineScore['TypeSens'])
     res = getFinalRes.getFinalNEPair(CombineScore,CandidateSet)
@@ -29,7 +29,7 @@ def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index, train_mode_InSens  =
 
 # def getFinalPredictNEPairList_fromScoreTable(dev_list_EtoV,dev_list_VtoE)
 
-def getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,train_mode_InSens = False, train_mode_Sens = False):
+def getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,mode,train_mode_InSens = False, train_mode_Sens = False):
     '''
     Input: align lists
     Output: predict pairs list
@@ -37,7 +37,7 @@ def getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,train
     res = []
     for i in range(len(align_list_EtoV)):
         # print('======================')
-        ne_pairs = getNEPair(align_list_EtoV[i],align_list_VtoE[i], list_lambda,i,train_mode_InSens= train_mode_InSens, train_mode_Sens= train_mode_Sens)
+        ne_pairs = getNEPair(align_list_EtoV[i],align_list_VtoE[i], list_lambda,i,mode,train_mode_InSens= train_mode_InSens, train_mode_Sens= train_mode_Sens)
 
         res.append(ne_pairs)
     return res
