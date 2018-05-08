@@ -1,3 +1,7 @@
+python run.py translation > translation_test.txt
+python run.py transliteration > transliteration_test.txt
+python run.py coocurence > coocurence_test.txt
+python run.py distortion > distortion_test.txt
 python run.py translation transliteration > translation_transliteration_test.txt
 python run.py translation coocurence > translation_coocurence_test.txt
 python run.py traslation distortion > translation_distortion_test.txt
@@ -8,3 +12,5 @@ python run.py translation transliteration coocurence > translation_transliterati
 python run.py translation transliteration distortion > translation_transliteration_distortion_test.txt
 python run.py transliteration coocurence distortion > transliteration_coocurence_distortion_test.txt
 python run.py translation coocurence distortion > translation_coocurence_distortion_test.txt
+python run.py translation transliteration coocurence distortion > translation_transliteration_coocurence_distortion_test.txt
+cp translation_test.txt transliteration_test.txt coocurence_test.txt distortion_test.txt translation_transliteration_test.txt translation_coocurence_test.txt translation_distortion_test.txt transliteration_coocurence_test.txt transliteration_distortion_test.txt coocurence_distortion_test.txt translation_transliteration_coocurence_test.txt translation_transliteration_distortion_test.txt transliteration_coocurence_distortion_test.txt translation_coocurence_distortion_test.txt translation_transliteration_coocurence_distortion_test.txt ./Result/

@@ -171,21 +171,21 @@ def getEntList_StanfordNER(source_tuple_list):
 
 
 def createEntListTable_Stanford(mode):
-    print('Create Ent List')
+    # print('Create Ent List')
     global initial_ent_list_stanford
     initial_ent_list_stanford = []
-    print('Mode ',mode)
+    # print('Mode ',mode)
     if mode == 'dev':
         initial_ent_list_file_stanford = initial_ent_list_file_stanford_dev
     elif mode == 'test':
         initial_ent_list_file_stanford = initial_ent_list_file_stanford_test
     
-    print(initial_ent_list_file_stanford)
+    # print(initial_ent_list_file_stanford)
     
     line_list = []
     word_list_sent = []
     with open(initial_ent_list_file_stanford,'r',encoding='utf-8') as f:
-        print(initial_ent_list_file_stanford)
+        # print(initial_ent_list_file_stanford)
         for line in f:
             # print(line)
             if line == '\n':
@@ -235,7 +235,7 @@ def createEntListTable_Stanford(mode):
                     cur_label = label
         initial_ent_list_stanford.append(ent_list_sent)
     
-    print('initial_ent_list_stanford[0]', initial_ent_list_stanford[0])
+    # print('initial_ent_list_stanford[0]', initial_ent_list_stanford[0])
 
 
 def getEntList_StanfordNER_FromFile(sent_index):
@@ -268,8 +268,8 @@ def SoftAlign(source_sent,target_sent,sent_index):
     # ent_set = getEntSet(v_sent,e_sent)
     source_ent_list = getEntList_StanfordNER_FromFile(sent_index)
     target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
-    print('SourceSent', source_sent)
-    print('TargetSent', target_sent)
+    # print('SourceSent', source_sent)
+    # print('TargetSent', target_sent)
     res_source_ent_list = []
     res_target_ent_list = []
     for i in range(len(target_ent_list)):
@@ -317,19 +317,19 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
     Output: Target entity list
     '''
     target_ent_list = []
-    print('TupleList',tuple_list)
-    print('TargetSent', target_sent)
-    print('SourceEntList', source_ent_list)
+    # print('TupleList',tuple_list)
+    # print('TargetSent', target_sent)
+    # print('SourceEntList', source_ent_list)
     for source_ent in source_ent_list:
         res = ''
         target_ent_idx = []
         # print(source_ent)
         # print(tuple_list)
-        print(source_ent[0])
+        # print(source_ent[0])
         for idx in source_ent[0]:
             # print(idx)
             # idx = idx + 1
-            print(idx)
+            # print(idx)
             list_idx = tuple_list[int(idx)]['Index']
             for index in list_idx:
                 target_ent_idx.append(int(index))

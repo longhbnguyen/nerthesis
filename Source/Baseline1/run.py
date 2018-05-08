@@ -10,8 +10,8 @@ import training_TypeInSens
 import training_TypeSens
 import sys
 
-align_file_EtoV = '../../Alignment_Split/EtoV_test.txt'
-align_file_VtoE = '../../Alignment_Split/VtoE_test.txt'
+align_file_EtoV = '../../Alignment_Split/EtoV_Test.txt'
+align_file_VtoE = '../../Alignment_Split/VtoE_Test.txt'
 test_file_en = '../../Data/corpora/0_DATA/3_Test/test_eng'
 test_file_vn = '../../Data/corpora/0_DATA/3_Test/test_viet'
 
