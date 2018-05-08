@@ -138,6 +138,8 @@ def getEntList_StanfordNER(source_tuple_list):
 
 
 def createEntListTable(mode):
+    global initial_ent_list
+    initial_ent_list = []
     if mode == 'dev':
         initial_ent_list_file = initial_ent_list_file_dev
     elif mode == 'test':

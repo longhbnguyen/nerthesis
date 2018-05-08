@@ -67,8 +67,8 @@ def getFinalNEPair(CombineScore,CandidateSet):
     i = 0
     free = [True] * len(CandidateSet)
     for i in range(len(CandidateSet)-1):
-        print('CurCandidateSet ', CandidateSet[i])
-        print('=================')
+        # print('CurCandidateSet ', CandidateSet[i])
+        # print('=================')
         if (free[i]):
             cur = [CandidateSet[i]]
             # print('CurCandidate ', cur)

@@ -43,15 +43,15 @@ def main(lambda_list_to_update):
     ScoreTable.createScoreTable_TypeSens(test_list_EtoV,test_list_VtoE,'test')
     print("Created Score Table")
     print(list_lambda)
-    predict_set = getPredict.getFinalPredictNEPairList(test_list_EtoV, test_list_VtoE,list_lambda,train_mode_InSens = True, train_mode_Sens=True)
+    predict_set = getPredict.getFinalPredictNEPairList(test_list_EtoV, test_list_VtoE,list_lambda,'test',train_mode_InSens = True, train_mode_Sens=True)
     true_set = TrueSet.getFileTrueSet(test_file_en,test_file_vn)
     # print(predict_set[0])
     # print(true_set[0])
     # EvaluationRes = {'TP':,'TN':,}
-    for i in range(len(predict_set)):
-        print('=============')
-        print('Predict', i , len(predict_set[i]))
-        print(predict_set[i])
+    # for i in range(len(predict_set)):
+    #     print('=============')
+    #     print('Predict', i , len(predict_set[i]))
+    #     print(predict_set[i])
     EvaluationRes_type_insen = evaluate_TypeInSens.getMetrics(predict_set,true_set)
     EvaluationRes_type_sen = evaluate_TypeSens.getMetrics(predict_set,true_set)
     print('Type-insensitive ', EvaluationRes_type_insen)

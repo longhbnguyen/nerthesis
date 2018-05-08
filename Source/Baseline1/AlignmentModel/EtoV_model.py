@@ -138,6 +138,8 @@ def getEntList_StanfordNER(source_tuple_list):
 
 
 def createEntListTable(mode):
+    global initial_ent_list
+    initial_ent_list = []
     if mode == 'dev':
         initial_ent_list_file = initial_ent_list_file_dev
     elif mode == 'test':
@@ -192,9 +194,11 @@ def createEntListTable(mode):
                     idx_seq.append(i+1)
                     cur_label = label
         initial_ent_list.append(ent_list_sent)
+        # print(initial_ent_list)
 
 
 def getEntList_StanfordNER_FromFile(sent_index):
+    # print(initial_ent_list)
     return initial_ent_list[sent_index]
 
 def getCombineNER(tuple_list):

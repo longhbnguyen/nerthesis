@@ -134,8 +134,7 @@ McVeigh	PERSON	PERSON
 and	O	O
 Terry	PERSON	PERSON
 Nichols	PERSON	PERSON
-that	O	O
-'s	O	O
+that's	O	O
 being	O	O
 prepared	O	O
 by	O	O
@@ -357,8 +356,7 @@ SilkAir	ORGANIZATION	ORGANIZATION
 horizontal	O	O
 stabilizer	O	O
 ,	O	O
-there	O	O
-'s	O	O
+there's	O	O
 no	O	O
 proof	O	O
 that	O	O
@@ -1480,8 +1478,7 @@ of	O	O
 one	O	O
 of	O	O
 the	O	O
-world	O	O
-'s	O	O
+world's	O	O
 most	O	O
 popular	O	O
 airplanes	O	O
@@ -6080,8 +6077,7 @@ in	O	O
 New	LOCATION	LOCATION
 York	LOCATION	LOCATION
 ,	O	O
-Monday	O	O
-,	O	O
+Monday,	O	O
 January	O	O
 19	O	O
 ,	O	O
@@ -6723,8 +6719,7 @@ school	O	O
 for	O	O
 Martin	PERSON	PERSON
 Luther	PERSON	PERSON
-King	PERSON	PERSON
-,	PERSON	O
+King,	PERSON	PERSON
 Junior	PERSON	PERSON
 ,	O	O
 the	O	O
@@ -6762,8 +6757,7 @@ think	O	O
 that	O	O
 Martin	PERSON	PERSON
 Luther	PERSON	PERSON
-King	PERSON	PERSON
-,	PERSON	O
+King,	PERSON	PERSON
 Junior	PERSON	PERSON
 was	O	O
 a	O	O
@@ -7012,8 +7006,7 @@ of	O	O
 students	O	O
 from	O	O
 Saint	ORGANIZATION	O
-Mary	ORGANIZATION	PERSON
-'s	ORGANIZATION	O
+Mary's	ORGANIZATION	O
 College	ORGANIZATION	O
 in	O	O
 Maryland	LOCATION	LOCATION
@@ -8712,8 +8705,7 @@ in	O	O
 preparation	O	O
 for	O	O
 the	O	O
-President	O	O
-'s	O	O
+President's	O	O
 State	O	O
 of	O	O
 the	O	O
@@ -9456,8 +9448,7 @@ in	O	O
 New	LOCATION	LOCATION
 York	LOCATION	LOCATION
 ,	O	O
-Thursday	O	O
-,	O	O
+Thursday,	O	O
 January	O	O
 twenty-second	O	O
 ,	O	O
@@ -10233,8 +10224,7 @@ side	O	O
 But	O	O
 sometimes	O	O
 the	O	O
-President	O	O
-'s	O	O
+President's	O	O
 problems	O	O
 have	O	O
 become	O	O
@@ -11319,8 +11309,7 @@ Washington	LOCATION	LOCATION
 
 But	O	O
 le	O	O
-t	O	O
-'s	O	O
+t's	O	O
 put	O	O
 it	O	O
 to	O	O
@@ -14482,8 +14471,7 @@ in	O	O
 New	LOCATION	LOCATION
 York	LOCATION	LOCATION
 ,	O	O
-Wednesday	O	O
-,	O	O
+Wednesday,	O	O
 January	O	O
 twenty-eighth	O	O
 ,	O	O
@@ -15475,8 +15463,7 @@ in	O	O
 New	LOCATION	LOCATION
 York	LOCATION	LOCATION
 ,	O	O
-Thursday	O	O
-,	O	O
+Thursday,	O	O
 January	O	O
 twenty-ninth	O	O
 ,	O	O
@@ -16160,8 +16147,7 @@ in	O	O
 New	LOCATION	LOCATION
 York	LOCATION	LOCATION
 ,	O	O
-Friday	O	O
-,	O	O
+Friday,	O	O
 January	O	O
 thirtieth	O	O
 ,	O	O
@@ -16765,8 +16751,7 @@ such	O	O
 as	O	O
 trashing	O	O
 the	O	O
-President	O	O
-'s	O	O
+President's	O	O
 opponents	O	O
 .	O	O
 

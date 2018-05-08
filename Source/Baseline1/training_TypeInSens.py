@@ -44,7 +44,7 @@ def train_dev(list_lambda):
         }
     """
     #get list
-    FinalPredictNEPairList = predict.getFinalPredictNEPairList(dev_list_EtoV,dev_list_VtoE,list_lambda,train_mode_InSens=True)
+    FinalPredictNEPairList = predict.getFinalPredictNEPairList(dev_list_EtoV,dev_list_VtoE,list_lambda,'dev',train_mode_InSens=True)
     res = evaluate_TypeInSens.getMetrics(FinalPredictNEPairList,trueSet)
     return res
 

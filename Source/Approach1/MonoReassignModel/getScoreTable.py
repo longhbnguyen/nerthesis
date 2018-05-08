@@ -1,5 +1,5 @@
-en_file = './MonoReassignModel/eng_dev.tsv'
-vi_file = './MonoReassignModel/viet_dev.tsv'
+en_file = './MonoReassignModel/eng_test.tsv'
+vi_file = './MonoReassignModel/viet_test.tsv'
 
 def getScoreTableEn():
     table = []

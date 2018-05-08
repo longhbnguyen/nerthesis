@@ -8,17 +8,23 @@ import MonoReassignModel.MonoFromFile as Mono
 import pandas as pd 
 import utilities
 import json
+import csv
+
 path_to_model = '../../stanford-ner-2018-02-27/vietnamese_new.gz'
 path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
 
-initial_ent_list_file_stanford = './AlignmentModel/ner_viet_test.tsv'
-initial_ent_list_file_spacy = './AlignmentModel/vi_ent_list_spacy_test.txt'
+initial_ent_list_file_stanford_dev = './AlignmentModel/ner_viet_dev.tsv'
+initial_ent_list_file_spacy_dev = './AlignmentModel/vi_ent_list_spacy_dev.txt'
+initial_ent_list_file_stanford_test = './AlignmentModel/ner_viet_test.tsv'
+initial_ent_list_file_spacy_test = './AlignmentModel/vi_ent_list_spacy_test.txt'
+
+
 alignment_table_file = './AlignmentModel/Result.actual.ti.final'
 
 initial_ent_list_stanford = []
 initial_ent_list_spacy = []
 
-alignment_table = pd.read_csv(alignment_table_file, sep = ' ', encoding = 'utf-8')
+alignment_table = pd.read_csv(alignment_table_file, sep = '\t', encoding = 'utf-8',quoting=csv.QUOTE_NONE, error_bad_lines=False)
 alignment_table = alignment_table.fillna('NaN')
 
 
@@ -91,8 +97,13 @@ def getEntList_Spacy(source_tuple_list):
 def getEntList_Spacy_FromFile(sent_index):
     return initial_ent_list_spacy[sent_index]
 
-def createEntListTable_Spacy():
+def createEntListTable_Spacy(mode):
     global initial_ent_list_spacy
+    if mode == 'dev':
+        initial_ent_list_file_spacy = initial_ent_list_file_spacy_dev
+    elif mode == 'test':
+        initial_ent_list_file_spacy = initial_ent_list_file_spacy_test
+
     json_data=open(initial_ent_list_file_spacy).read()
     initial_ent_list_spacy = json.loads(json_data)
 
@@ -155,8 +166,14 @@ def getEntList_StanfordNER(source_tuple_list):
     return ent_list
 
 
-def createEntListTable_Stanford():
+def createEntListTable_Stanford(mode):
     global initial_ent_list_stanford
+    initial_ent_list_stanford = []
+    if mode == 'dev':
+        initial_ent_list_file_stanford = initial_ent_list_file_stanford_dev
+    elif mode == 'test':
+        initial_ent_list_file_stanford = initial_ent_list_file_stanford_test
+
     line_list = []
     word_list_sent = []
     with open(initial_ent_list_file_stanford,'r',encoding='utf-8') as f:
@@ -219,9 +236,9 @@ def getCombineNER(tuple_list):
 
 def getCombineNERFromFile(sent_index):
     stanfordner_list = getEntList_StanfordNER_FromFile(sent_index)
-    print('StanfordList ', stanfordner_list)
+    # print('StanfordList ', stanfordner_list)
     spacy_list = getEntList_Spacy_FromFile(sent_index)
-    print('SpacyList ', spacy_list)
+    # print('SpacyList ', spacy_list)
     return stanfordner_list + spacy_list
 
 def HardAlign(source_sent, target_sent, sent_index):
@@ -284,15 +301,15 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
     Output: Target entity list
     '''
     target_ent_list = []
-    print(source_ent_list)
+    # print(source_ent_list)
     # print(tuple_list[8])
     for source_ent in source_ent_list:
         res = ''
         target_ent_idx = []
-        print(source_ent)
+        # print(source_ent)
         for idx in source_ent[0]:
             # idx = idx + 1
-            print(idx)
+            # print(idx)
             list_idx = tuple_list[int(idx)]['Index']
             for index in list_idx:
                 target_ent_idx.append(int(index))

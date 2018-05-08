@@ -1,7 +1,14 @@
-en_file = './MonoReassignModel/eng_test.tsv'
-vi_file = './MonoReassignModel/viet_test.tsv'
+en_file_test = './MonoReassignModel/eng_test.tsv'
+vi_file_test = './MonoReassignModel/viet_test.tsv'
 
-def getScoreTableEn():
+en_file_dev = './MonoReassignModel/eng_dev.tsv'
+vi_file_dev = './MonoReassignModel/viet_dev.tsv'
+
+def getScoreTableEn(mode):
+    if mode == 'dev':
+        en_file = en_file_dev
+    elif mode == 'test':
+        en_file = en_file_test
     table = []
     sent = []
     with open(en_file,'r',encoding = 'utf-8') as f:
@@ -21,7 +28,12 @@ def getScoreTableEn():
             
     return table
 
-def getScoreTableVi():
+def getScoreTableVi(mode):
+    if mode == 'dev':
+        vi_file = vi_file_dev
+    elif mode == 'test':
+        vi_file = vi_file_test
+    
     table = []
     sent = []
     with open(vi_file,'r',encoding = 'utf-8') as f:
