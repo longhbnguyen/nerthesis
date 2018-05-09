@@ -17,10 +17,10 @@ lambda_list_to_update = ['mono_en','mono_vn','bi']
 lambda_step = 0.1
 
 cur_Count = 0
-dev_file_EtoV = '../../Alignment_Split/EtoV_Dev.txt'
-dev_file_VtoE = '../../Alignment_Split/VtoE_Dev.txt'
-dev_file_en = '../../Data/corpora/0_DATA/2_Development/dev_eng'
-dev_file_vn = '../../Data/corpora/0_DATA/2_Development/dev_viet'
+dev_file_EtoV = config.align_file_EtoV_dev
+dev_file_VtoE = config.align_file_VtoE_dev
+dev_file_en = config.en_file_dev
+dev_file_vn = config.vn_file_dev
 dev_list_EtoV = read_align_file(dev_file_EtoV)
 dev_list_VtoE = read_align_file(dev_file_VtoE)
 config_file = 'config.ini'

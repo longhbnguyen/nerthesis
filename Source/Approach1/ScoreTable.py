@@ -4,13 +4,15 @@ import CombineScore_TypeSens
 import CombineScore_InSens
 import json
 import os.path
+import config
+
 ScoreTable_TypeInSens = []
 ScoreTable_TypeSens = []
 
-score_table_TypeInSens_file_test = 'ScoreTable_TypeInSens_Test.json'
-score_table_TypeSens_file_test = 'ScoreTable_TypeSens_Test.json'
-score_table_TypeInSens_file_dev = 'ScoreTable_TypeInSens_dev.json'
-score_table_TypeSens_file_dev = 'ScoreTable_TypeSens_dev.json'
+score_table_TypeInSens_file_test = config.score_table_TypeInSens_file_test
+score_table_TypeSens_file_test = config.score_table_TypeSens_file_test
+score_table_TypeInSens_file_dev = config.score_table_TypeInSens_file_dev
+score_table_TypeSens_file_dev = config.score_table_TypeSens_file_dev
 
 def createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE, mode):
     global ScoreTable_TypeInSens

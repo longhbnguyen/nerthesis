@@ -10,10 +10,10 @@ import training_TypeInSens
 import training_TypeSens
 import sys
 
-align_file_EtoV = '../../Alignment_Split/EtoV_Test.txt'
-align_file_VtoE = '../../Alignment_Split/VtoE_Test.txt'
-test_file_en = '../../Data/corpora/0_DATA/3_Test/test_eng'
-test_file_vn = '../../Data/corpora/0_DATA/3_Test/test_viet'
+align_file_EtoV = config.align_file_EtoV_test
+align_file_VtoE = config.align_file_VtoE_test
+test_file_en = config.en_file_test
+test_file_vn = config.vn_file_test
 
 config_file = 'config.ini'
 

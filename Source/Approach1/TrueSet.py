@@ -1,7 +1,8 @@
 import re
+import config
 
-en_file = '../../Data/corpora/0_DATA/2_Development/dev_eng'
-vn_file = '../../Data/corpora/0_DATA/2_Development/dev_viet'
+en_file = config.en_file_dev
+vn_file = config.vn_file_dev
 
 ent_pattern = re.compile(r"(<[A-Z]+\_\d+>)([^</>]*)(</[A-Z]+\_\d+>)")
 ent_type_pattern = re.compile(r"(<([A-Z]+)\_\d+>)")

@@ -21,9 +21,9 @@ from AlignmentModel import EtoV_model, VtoE_model
 import utilities
 import json
 import os.path
-
-candidate_set_test_file = 'Candidate_Set_Test.json'
-candidate_set_dev_file = 'Candidate_Set_Dev.json'
+import config
+candidate_set_test_file = config.candidate_set_test_file
+candidate_set_dev_file = config.candidate_set_dev_file
 
 Candidate_Set_Table = None
 

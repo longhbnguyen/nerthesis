@@ -9,17 +9,18 @@ import pandas as pd
 import utilities
 import json
 import csv
+import config
 
-path_to_model = '../../stanford-ner-2018-02-27/vietnamese_new.gz'
-path_to_jar = '../../stanford-ner-2018-02-27/stanford-ner-3.9.1.jar'
+path_to_model = config.vn_model_stanford
+path_to_jar = config.path_to_jar
 
-initial_ent_list_file_stanford_dev = './AlignmentModel/ner_viet_dev.tsv'
-initial_ent_list_file_spacy_dev = './AlignmentModel/vi_ent_list_spacy_dev.txt'
-initial_ent_list_file_stanford_test = './AlignmentModel/ner_viet_test.tsv'
-initial_ent_list_file_spacy_test = './AlignmentModel/vi_ent_list_spacy_test.txt'
+initial_ent_list_file_stanford_dev = config.initial_viet_ent_list_file_stanford_dev
+initial_ent_list_file_spacy_dev = config.initial_viet_ent_list_file_spacy_dev
+initial_ent_list_file_stanford_test = config.initial_viet_ent_list_file_stanford_test
+initial_ent_list_file_spacy_test = config.initial_viet_ent_list_file_spacy_test
 
 
-alignment_table_file = './AlignmentModel/Result.actual.ti.final'
+alignment_table_file = config.alignment_table_file
 
 initial_ent_list_stanford = []
 initial_ent_list_spacy = []
@@ -30,7 +31,7 @@ alignment_table = alignment_table.fillna('NaN')
 
 nertagger=StanfordNERTagger(path_to_model, path_to_jar)
 
-nlp = spacy.load('./InitialNER/viNerFull50')
+nlp = spacy.load(config.vn_model_spacy)
 
 v_sent = None
 e_sent = None

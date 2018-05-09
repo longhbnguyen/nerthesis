@@ -1,7 +1,20 @@
 import MonoReassignModel.getScoreTable as getScoreTable
 
 
+def normalize(score,n):
+    return score**(1/n)
+
+
 def getMonoScore(ent, idx, mode, run_mode):
+    n = len(ent)
+
+    if n == 0:
+        scores = {}
+        scores['ORGANIZATION'] = 0.0
+        scores['PERSON'] = 0.0
+        scores['LOCATION'] = 0.0
+        return scores
+    
     en_table = getScoreTable.getScoreTableEn(run_mode)
     vi_table = getScoreTable.getScoreTableVi(run_mode)
 
@@ -18,9 +31,10 @@ def getMonoScore(ent, idx, mode, run_mode):
         per_score *= table[idx][i-1][3]
         loc_score *= table[idx][i-1][4]
     scores = {}
-    scores['ORGANIZATION'] = org_score
-    scores['PERSON'] = per_score
-    scores['LOCATION'] = loc_score
+    
+    scores['ORGANIZATION'] = normalize(org_score,n)
+    scores['PERSON'] = normalize(per_score,n)
+    scores['LOCATION'] = normalize(loc_score,n)
 
     # scores = sorted(scores, key = lambda score: score[1], reverse = True)
     # max_label = scores[0][0]
