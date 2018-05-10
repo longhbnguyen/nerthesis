@@ -42,19 +42,22 @@ def getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,mode,
         res.append(ne_pairs)
     return res
 
+def main():
+    EtoV_dev_list = utilities.read_align_file('../../../Alignment_Split/EtoV_Test.txt')
+    VtoE_dev_list = utilities.read_align_file('../../../Alignment_Split/VtoE_Test.txt')
+    ScoreTable.createScoreTable_TypeSens(EtoV_dev_list,VtoE_dev_list,'test')
+    ScoreTable.createScoreTable_TypeInSens(EtoV_dev_list,VtoE_dev_list,'test')
+    getCandidateSet.createCandidateSet(EtoV_dev_list,VtoE_dev_list,'test')
+    # print(getCandidateSet.Candidate_Set_Table[-1])
+    # # tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0],0)
+    list_lambda = config.getWeight()
+    # print(EtoV_dev_list[0])
+    # print(VtoE_dev_list[0])
 
-# EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Test.txt')
-# VtoE_dev_list = utilities.read_align_file('../../Alignment_Split/VtoE_Test.txt')
-# ScoreTable.createScoreTable_TypeSens(EtoV_dev_list,VtoE_dev_list,'test')
-# ScoreTable.createScoreTable_TypeInSens(EtoV_dev_list,VtoE_dev_list,'test')
-# getCandidateSet.createCandidateSet(EtoV_dev_list,VtoE_dev_list,'test')
-# # print(getCandidateSet.Candidate_Set_Table[-1])
-# # # tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0],0)
-# list_lambda = config.getWeight()
-# # print(EtoV_dev_list[0])
-# # print(VtoE_dev_list[0])
+    res = getNEPair(EtoV_dev_list[788],VtoE_dev_list[788],list_lambda,788, 'test')
+    for pair in res:
+        print(pair)
+    # print(len(tmp))
 
-# res = getNEPair(EtoV_dev_list[788],VtoE_dev_list[788],list_lambda,788, train_mode_InSens=True)
-# for pair in res:
-#     print(pair)
-# # print(len(tmp))
+if __name__ == '__main__':
+    main()

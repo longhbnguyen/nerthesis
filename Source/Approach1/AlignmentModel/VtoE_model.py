@@ -344,7 +344,7 @@ def getEntSet(source_sent,target_sent):
     return ent_set
 
 def getEntSetFromFile(source_sent, target_sent, sent_index):
-    # source_ent_list = getCombineNERFromFile(sent_index)
+    # source_ent_list = getEntList_StanfordNER_FromFile(sent_index)
     # target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
     source_ent_list, target_ent_list = SoftAlign(source_sent,target_sent,sent_index)
     # print(target_ent_list)

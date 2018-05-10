@@ -1,0 +1,315 @@
+['mono_en', 'mono_vn']
+Create Candidate Set
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.19770114942528735, 'P': 0.1958997722095672, 'F1': 0.19679633867276888}
+Cur Count  1
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.7977011494252874, 'P': 0.7904328018223234, 'F1': 0.7940503432494278}
+Cur Count  2
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.7977011494252874, 'P': 0.7904328018223234, 'F1': 0.7940503432494278}
+Cur Count  3
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.7977011494252874, 'P': 0.7904328018223234, 'F1': 0.7940503432494278}
+Cur Count  4
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.7977011494252874, 'P': 0.7904328018223234, 'F1': 0.7940503432494278}
+Cur Count  5
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.7977011494252874, 'P': 0.7904328018223234, 'F1': 0.7940503432494278}
+Cur Count  6
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.7977011494252874, 'P': 0.7904328018223234, 'F1': 0.7940503432494278}
+Cur Count  7
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.7977011494252874, 'P': 0.7904328018223234, 'F1': 0.7940503432494278}
+Cur Count  8
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.7977011494252874, 'P': 0.7904328018223234, 'F1': 0.7940503432494278}
+Cur Count  9
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.7977011494252874, 'P': 0.7904328018223234, 'F1': 0.7940503432494278}
+Cur Count  10
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.1, 'bi': 0.0}
+{'R': 0.6298850574712643, 'P': 0.6241457858769932, 'F1': 0.6270022883295194}
+Cur Count  11
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.1, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  12
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.1, 'bi': 0.0}
+{'R': 0.7908045977011494, 'P': 0.7835990888382688, 'F1': 0.7871853546910755}
+Cur Count  13
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.1, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  14
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.1, 'bi': 0.0}
+{'R': 0.7954022988505747, 'P': 0.7881548974943052, 'F1': 0.7917620137299771}
+Cur Count  15
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.1, 'bi': 0.0}
+{'R': 0.7954022988505747, 'P': 0.7881548974943052, 'F1': 0.7917620137299771}
+Cur Count  16
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.1, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  17
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.1, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  18
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.1, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  19
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.1, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  20
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.2, 'bi': 0.0}
+{'R': 0.6298850574712643, 'P': 0.6241457858769932, 'F1': 0.6270022883295194}
+Cur Count  21
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.2, 'bi': 0.0}
+{'R': 0.728735632183908, 'P': 0.7220956719817767, 'F1': 0.7254004576659039}
+Cur Count  22
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.2, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  23
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.2, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  24
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.2, 'bi': 0.0}
+{'R': 0.7908045977011494, 'P': 0.7835990888382688, 'F1': 0.7871853546910755}
+Cur Count  25
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.2, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  26
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.2, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  27
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.2, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  28
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.2, 'bi': 0.0}
+{'R': 0.7954022988505747, 'P': 0.7881548974943052, 'F1': 0.7917620137299771}
+Cur Count  29
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.2, 'bi': 0.0}
+{'R': 0.7954022988505747, 'P': 0.7881548974943052, 'F1': 0.7917620137299771}
+Cur Count  30
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.3, 'bi': 0.0}
+{'R': 0.6298850574712643, 'P': 0.6241457858769932, 'F1': 0.6270022883295194}
+Cur Count  31
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.3, 'bi': 0.0}
+{'R': 0.7011494252873564, 'P': 0.6947608200455581, 'F1': 0.6979405034324943}
+Cur Count  32
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.3, 'bi': 0.0}
+{'R': 0.7494252873563219, 'P': 0.7425968109339408, 'F1': 0.7459954233409611}
+Cur Count  33
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.3, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  34
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.3, 'bi': 0.0}
+{'R': 0.7908045977011494, 'P': 0.7835990888382688, 'F1': 0.7871853546910755}
+Cur Count  35
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.3, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  36
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.3, 'bi': 0.0}
+{'R': 0.7908045977011494, 'P': 0.7835990888382688, 'F1': 0.7871853546910755}
+Cur Count  37
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.3, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  38
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.3, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  39
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.3, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  40
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.4, 'bi': 0.0}
+{'R': 0.6298850574712643, 'P': 0.6241457858769932, 'F1': 0.6270022883295194}
+Cur Count  41
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.4, 'bi': 0.0}
+{'R': 0.6804597701149425, 'P': 0.6742596810933941, 'F1': 0.677345537757437}
+Cur Count  42
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.4, 'bi': 0.0}
+{'R': 0.728735632183908, 'P': 0.7220956719817767, 'F1': 0.7254004576659039}
+Cur Count  43
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.4, 'bi': 0.0}
+{'R': 0.7609195402298851, 'P': 0.7539863325740319, 'F1': 0.7574370709382151}
+Cur Count  44
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.4, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  45
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.4, 'bi': 0.0}
+{'R': 0.7908045977011494, 'P': 0.7835990888382688, 'F1': 0.7871853546910755}
+Cur Count  46
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.4, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  47
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.4, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  48
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.4, 'bi': 0.0}
+{'R': 0.7908045977011494, 'P': 0.7835990888382688, 'F1': 0.7871853546910755}
+Cur Count  49
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.4, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  50
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.5, 'bi': 0.0}
+{'R': 0.6298850574712643, 'P': 0.6241457858769932, 'F1': 0.6270022883295194}
+Cur Count  51
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.5, 'bi': 0.0}
+{'R': 0.671264367816092, 'P': 0.6651480637813212, 'F1': 0.6681922196796339}
+Cur Count  52
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.5, 'bi': 0.0}
+{'R': 0.7149425287356321, 'P': 0.7084282460136674, 'F1': 0.711670480549199}
+Cur Count  53
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.5, 'bi': 0.0}
+{'R': 0.7402298850574712, 'P': 0.7334851936218679, 'F1': 0.736842105263158}
+Cur Count  54
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.5, 'bi': 0.0}
+{'R': 0.7655172413793103, 'P': 0.7585421412300684, 'F1': 0.7620137299771167}
+Cur Count  55
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.5, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  56
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.5, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  57
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.5, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  58
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.5, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  59
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.5, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  60
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.6, 'bi': 0.0}
+{'R': 0.6298850574712643, 'P': 0.6241457858769932, 'F1': 0.6270022883295194}
+Cur Count  61
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.6, 'bi': 0.0}
+{'R': 0.6574712643678161, 'P': 0.6514806378132119, 'F1': 0.6544622425629291}
+Cur Count  62
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.6, 'bi': 0.0}
+{'R': 0.7011494252873564, 'P': 0.6947608200455581, 'F1': 0.6979405034324943}
+Cur Count  63
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.6, 'bi': 0.0}
+{'R': 0.728735632183908, 'P': 0.7220956719817767, 'F1': 0.7254004576659039}
+Cur Count  64
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.6, 'bi': 0.0}
+{'R': 0.7494252873563219, 'P': 0.7425968109339408, 'F1': 0.7459954233409611}
+Cur Count  65
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.6, 'bi': 0.0}
+{'R': 0.767816091954023, 'P': 0.7608200455580866, 'F1': 0.7643020594965675}
+Cur Count  66
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.6, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  67
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.6, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  68
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.6, 'bi': 0.0}
+{'R': 0.7908045977011494, 'P': 0.7835990888382688, 'F1': 0.7871853546910755}
+Cur Count  69
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.6, 'bi': 0.0}
+{'R': 0.7931034482758621, 'P': 0.785876993166287, 'F1': 0.7894736842105263}
+Cur Count  70
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.7, 'bi': 0.0}
+{'R': 0.6298850574712643, 'P': 0.6241457858769932, 'F1': 0.6270022883295194}
+Cur Count  71
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.7, 'bi': 0.0}
+{'R': 0.6551724137931034, 'P': 0.6492027334851936, 'F1': 0.6521739130434783}
+Cur Count  72
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.7, 'bi': 0.0}
+{'R': 0.6850574712643678, 'P': 0.6788154897494305, 'F1': 0.6819221967963386}
+Cur Count  73
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.7, 'bi': 0.0}
+{'R': 0.7149425287356321, 'P': 0.7084282460136674, 'F1': 0.711670480549199}
+Cur Count  74
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.7, 'bi': 0.0}
+{'R': 0.735632183908046, 'P': 0.7289293849658315, 'F1': 0.7322654462242563}
+Cur Count  75
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.7, 'bi': 0.0}
+{'R': 0.7609195402298851, 'P': 0.7539863325740319, 'F1': 0.7574370709382151}
+Cur Count  76
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.7, 'bi': 0.0}
+{'R': 0.767816091954023, 'P': 0.7608200455580866, 'F1': 0.7643020594965675}
+Cur Count  77
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.7, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  78
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.7, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  79
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.7, 'bi': 0.0}
+{'R': 0.7908045977011494, 'P': 0.7835990888382688, 'F1': 0.7871853546910755}
+Cur Count  80
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.8, 'bi': 0.0}
+{'R': 0.6298850574712643, 'P': 0.6241457858769932, 'F1': 0.6270022883295194}
+Cur Count  81
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.8, 'bi': 0.0}
+{'R': 0.6482758620689655, 'P': 0.642369020501139, 'F1': 0.6453089244851258}
+Cur Count  82
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.8, 'bi': 0.0}
+{'R': 0.6804597701149425, 'P': 0.6742596810933941, 'F1': 0.677345537757437}
+Cur Count  83
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.8, 'bi': 0.0}
+{'R': 0.7103448275862069, 'P': 0.7038724373576309, 'F1': 0.7070938215102975}
+Cur Count  84
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.8, 'bi': 0.0}
+{'R': 0.728735632183908, 'P': 0.7220956719817767, 'F1': 0.7254004576659039}
+Cur Count  85
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.8, 'bi': 0.0}
+{'R': 0.7425287356321839, 'P': 0.7357630979498861, 'F1': 0.7391304347826086}
+Cur Count  86
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.8, 'bi': 0.0}
+{'R': 0.7609195402298851, 'P': 0.7539863325740319, 'F1': 0.7574370709382151}
+Cur Count  87
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.8, 'bi': 0.0}
+{'R': 0.7724137931034483, 'P': 0.765375854214123, 'F1': 0.7688787185354691}
+Cur Count  88
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.8, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  89
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.8, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  90
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.9, 'bi': 0.0}
+{'R': 0.6298850574712643, 'P': 0.6241457858769932, 'F1': 0.6270022883295194}
+Cur Count  91
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.9, 'bi': 0.0}
+{'R': 0.6459770114942529, 'P': 0.6400911161731208, 'F1': 0.643020594965675}
+Cur Count  92
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.2, 'mono_vn': 0.9, 'bi': 0.0}
+{'R': 0.671264367816092, 'P': 0.6651480637813212, 'F1': 0.6681922196796339}
+Cur Count  93
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.3, 'mono_vn': 0.9, 'bi': 0.0}
+{'R': 0.7011494252873564, 'P': 0.6947608200455581, 'F1': 0.6979405034324943}
+Cur Count  94
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.4, 'mono_vn': 0.9, 'bi': 0.0}
+{'R': 0.7172413793103448, 'P': 0.7107061503416856, 'F1': 0.7139588100686499}
+Cur Count  95
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.5, 'mono_vn': 0.9, 'bi': 0.0}
+{'R': 0.735632183908046, 'P': 0.7289293849658315, 'F1': 0.7322654462242563}
+Cur Count  96
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.6, 'mono_vn': 0.9, 'bi': 0.0}
+{'R': 0.7494252873563219, 'P': 0.7425968109339408, 'F1': 0.7459954233409611}
+Cur Count  97
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.7, 'mono_vn': 0.9, 'bi': 0.0}
+{'R': 0.7632183908045977, 'P': 0.7562642369020501, 'F1': 0.7597254004576659}
+Cur Count  98
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.8, 'mono_vn': 0.9, 'bi': 0.0}
+{'R': 0.774712643678161, 'P': 0.7676537585421412, 'F1': 0.7711670480549199}
+Cur Count  99
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.9, 'mono_vn': 0.9, 'bi': 0.0}
+{'R': 0.7885057471264367, 'P': 0.7813211845102506, 'F1': 0.7848970251716246}
+Cur Count  100
+List Lambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.0, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.19770114942528735, 'P': 0.1958997722095672, 'F1': 0.19679633867276888}
+Cur Count  101
+BestRes  {'R': 0.7977011494252874, 'P': 0.7904328018223234, 'F1': 0.7940503432494278}
+BestLambda  {'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.0, 'bi': 0.0}
+Create Candidate Set
+Create Candidate Set
+Created Score Table
+{'coocurence': 0.5, 'translation': 0.4, 'transliteration': 0.1, 'distortion': 0.1, 'mono_en': 0.1, 'mono_vn': 0.0, 'bi': 0.0}
+{'R': 0.8602029312288614, 'P': 0.8199892530897367, 'F1': 0.839614855570839}
+{'R': 0.8410372040586246, 'P': 0.8017195056421279, 'F1': 0.8209078404401651}
+Type-insensitive  {'R': 0.8602029312288614, 'P': 0.8199892530897367, 'F1': 0.839614855570839}
+Type-sensitive  {'R': 0.8410372040586246, 'P': 0.8017195056421279, 'F1': 0.8209078404401651}

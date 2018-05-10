@@ -19,5 +19,5 @@ def getTransliterationProb(NEPair,VtoE_sent):
         return 0.0
 
     res = word_count / n
-    res = normalize(res,n)
+    # res = normalize(res,n)
     return word_count / n
