@@ -61,6 +61,8 @@ def getFinalNEPair(CombineScore,CandidateSet):
         return CandidateSet
     CandidateSet = list(zip(CandidateSet, CombineScore['TypeSens'], CombineScore['TypeInSens']))
     CandidateSet = sorted(CandidateSet,key=lambda CandidateSet: CandidateSet[2],reverse=True)
+    # for i in range(len(CandidateSet)):
+    #     print('Initial NE Pair', i , CandidateSet[i])
     checkOverLap = getOverLapMatrix(CandidateSet)
     # get cur
     # remove overlap cur
@@ -116,6 +118,8 @@ def reassign_type(ne_pairs):
     '''checked'''
     checkOverLap = getOverLapMatrix(ne_pairs)
     res = []
+    # for i in range(len(ne_pairs)):
+    #     print('NE Pair',i,ne_pairs[i])
     for i in range(len(ne_pairs)):
         # print('===============')
         # print('Initial NE Pair ',i,ne_pairs[i])
@@ -128,10 +132,10 @@ def reassign_type(ne_pairs):
                 max_type = key
         
         pair = (ne_pairs[i][0][0],ne_pairs[i][0][1],max_type,ne_pairs[i][0][3],ne_pairs[i][0][4],max_type,max_score)
-        print('Final NE Pair ',i,pair)        
+        # print('Final NE Pair ',i,pair)        
         res.append(pair)
     
-    res = eliminate_duplicate_pairs(res,checkOverLap)
+    # res = eliminate_duplicate_pairs(res,checkOverLap)
 
     return res
 

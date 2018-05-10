@@ -364,9 +364,9 @@ def getEntSet(source_sent,target_sent):
     return ent_set
 
 def getEntSetFromFile(source_sent, target_sent, sent_index):
-    # source_ent_list = getEntList_StanfordNER_FromFile(sent_index)
-    # target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
-    source_ent_list,target_ent_list = SoftAlign(source_sent,target_sent,sent_index)
+    source_ent_list = getEntList_StanfordNER_FromFile(sent_index)
+    target_ent_list = getTargetEntList(source_sent,target_sent,source_ent_list)
+    # source_ent_list,target_ent_list = SoftAlign(source_sent,target_sent,sent_index)
     ent_set = []
     for i in range(len(source_ent_list)):
         tp = (source_ent_list[i][0],target_ent_list[i][0],source_ent_list[i][1],source_ent_list[i][2],target_ent_list[i][2])
