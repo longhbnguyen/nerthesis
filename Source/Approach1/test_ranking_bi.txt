@@ -1,0 +1,3430 @@
+Create Candidate Set
+======================
+2
+([2], [2], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([10, 11], [13, 14], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+3
+([12], [18], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([7], [10], 'LOCATION', 'Denver', 'Denver', 'LOCATION')
+([14, 15], [15, 16], 'PERSON', 'Bob Jamieson', 'Bob Jamieson', 'PERSON')
+======================
+2
+([1], [1], 'PERSON', 'Nichols', 'Nichols', 'PERSON')
+([10, 11], [12, 13, 14, 15], 'ORGANIZATION', 'Richard Matsch', 'Thẩm phán Richard Matsch', 'ORGANIZATION')
+======================
+1
+(([4, 5], [5, 6], 'PERSON', 'Terry Nichols', 'Terry Nichols', 'PERSON'), 0.04842853865565497)
+======================
+1
+(([15, 16], [15, 16], 'PERSON', 'Terry Nichols', 'Terry Nichols', 'PERSON'), 0.04842853865565497)
+======================
+2
+([3], [3], 'PERSON', 'Bob', 'Bob', 'PERSON')
+([1], [1], 'PERSON', 'Peter', 'Peter', 'PERSON')
+======================
+3
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([7, 8], [7, 8, 9], 'LOCATION', 'Oklahoma City', 'Thành phố Oklahoma', 'LOCATION')
+([3, 4], [1, 2], 'PERSON', 'Dean Reynolds', 'Dean Reynolds', 'PERSON')
+======================
+2
+([4], [4], 'LOCATION', 'Oklahoma', 'Oklahoma', 'LOCATION')
+([10], [12], 'LOCATION', 'Denver', 'Denver', 'LOCATION')
+======================
+3
+([26, 27], [37, 38, 39], 'LOCATION', 'Bob Macey', 'quận Bob Macey', 'LOCATION')
+([18, 19], [26, 27], 'PERSON', 'Terry Nichols', 'Terry Nichols', 'PERSON')
+([15, 16], [23, 24], 'PERSON', 'Timothy McVeigh', 'Timothy McVeigh', 'PERSON')
+======================
+4
+([15], [16], 'LOCATION', 'Denver', 'Denver', 'LOCATION')
+([4, 5], [4, 5, 6], 'LOCATION', 'Oklahoma City', 'Thành phố Oklahoma', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Dean Reynolds', 'Dean Reynolds', 'PERSON')
+([20, 21], [26, 27], 'PERSON', 'Jeffrey Toobin', 'Jeffrey Toobin', 'PERSON')
+======================
+1
+(([6, 7], [8, 9, 10], 'LOCATION', 'Oklahoma City', 'Thành phố Oklahoma', 'LOCATION'), 0.083289817232376)
+======================
+2
+([4], [4], 'LOCATION', 'Denver', 'Denver', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Jeffrey Toobin', 'Jeffrey Toobin', 'PERSON')
+======================
+1
+([8], [11], 'LOCATION', 'Idaho', 'Idaho', 'LOCATION')
+======================
+3
+([2], [6], 'ORGANIZATION', 'FBI', 'FBI', 'ORGANIZATION')
+([26, 27], [2, 3, 31, 32], 'LOCATION', 'Ruby Ridge', 'tay súng Ruby Ridge', 'LOCATION')
+([18, 19], [22, 23], 'PERSON', 'Randy Weaver', 'Randy Weaver', 'PERSON')
+======================
+2
+([9, 10], [12, 13], 'LOCATION', 'Lon Horiuchi', 'Lon Horiuchi', 'LOCATION')
+([5], [8], 'LOCATION', 'Idaho', 'Idaho', 'LOCATION')
+======================
+2
+([12, 13], [14], 'ORGANIZATION', 'United States', 'Mỹ', 'ORGANIZATION')
+([2], [1], 'LOCATION', 'Iran', 'Iran', 'LOCATION')
+======================
+4
+([1, 2], [1, 2], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([8, 9, 10], [9, 10, 11, 12, 13], 'ORGANIZATION', 'Federal Aviation Administration', 'Cục Hàng không Liên bang', 'ORGANIZATION')
+([34], [44], 'LOCATION', 'Indonesia', 'Indonesia', 'LOCATION')
+([], [24, 25], 'PERSON', '', 'Bảy Ba', 'PERSON')
+======================
+1
+([2], [1, 4], 'ORGANIZATION', 'SilkAir', 'Chiếc SilkAir', 'ORGANIZATION')
+======================
+2
+([15], [25], 'ORGANIZATION', 'SilkAir', 'SilkAir', 'ORGANIZATION')
+([1], [1], 'ORGANIZATION', 'Boeing', 'Boeing', 'ORGANIZATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Lisa Stark', 'Lisa Stark', 'PERSON')
+======================
+2
+([3], [3], 'PERSON', 'Williamson', 'Williamson', 'PERSON')
+([1], [1], 'PERSON', 'Brown', 'Brown', 'PERSON')
+======================
+3
+([10], [8], 'ORGANIZATION', 'Ford', 'Ford', 'ORGANIZATION')
+([1], [1], 'ORGANIZATION', 'Toyota', 'Toyota', 'ORGANIZATION')
+([4, 6, 7], [5, 6], 'PERSON', 'both Honda Accord', 'Honda Accord', 'PERSON')
+======================
+2
+([13], [14], 'ORGANIZATION', 'Iran', 'Iran', 'ORGANIZATION')
+([11], [12], 'LOCATION', 'America', 'Mỹ', 'LOCATION')
+======================
+2
+([5], [7], 'ORGANIZATION', 'CNN', 'CNN', 'ORGANIZATION')
+([9], [13], 'LOCATION', 'Americans', 'Mỹ', 'LOCATION')
+======================
+1
+(([9], [14], 'LOCATION', 'Teheran', 'Teheran', 'LOCATION'), 0.083289817232376)
+======================
+1
+([1], [1], 'ORGANIZATION', 'Iran', 'Iran', 'ORGANIZATION')
+======================
+2
+([3], [5], 'ORGANIZATION', 'France', 'Pháp', 'ORGANIZATION')
+([11], [15], 'LOCATION', 'Iranians', 'Iran', 'LOCATION')
+======================
+3
+([15], [18], 'ORGANIZATION', 'Iran', 'Iran', 'ORGANIZATION')
+([3, 4, 5], [3, 4, 5, 6], 'ORGANIZATION', 'Total Oil Company', 'Công ty dầu Total', 'ORGANIZATION')
+([1], [1], 'LOCATION', 'France', 'Pháp', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([9, 10], [8, 9], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'John Donvan', 'John Donvan', 'PERSON')
+======================
+2
+([2], [10], 'LOCATION', 'Iran', 'Iran', 'LOCATION')
+([8], [15], 'LOCATION', 'American', 'Mỹ', 'LOCATION')
+======================
+5
+([26, 27], [39, 40], 'LOCATION', 'Middle East', 'Trung Đông', 'LOCATION')
+([], [13], 'LOCATION', '', 'Iran', 'LOCATION')
+([5, 6], [8, 9, 10], 'ORGANIZATION', 'ABC News', 'Tin Tức ABC', 'ORGANIZATION')
+([11], [5], 'ORGANIZATION', 'American', 'Mỹ', 'ORGANIZATION')
+([1], [26], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+======================
+5
+([27], [28], 'ORGANIZATION', 'Hamas', 'Hamas', 'ORGANIZATION')
+([5], [2, 3], 'ORGANIZATION', 'CIA', 'ra, CIA', 'ORGANIZATION')
+([25], [25, 26], 'ORGANIZATION', 'Hezbollah', 'như Hezbollah', 'ORGANIZATION')
+([7], [6], 'LOCATION', 'Iran', 'Iran', 'LOCATION')
+([31], [33], 'LOCATION', 'Israel', 'Israel', 'LOCATION')
+======================
+1
+([7], [13], 'LOCATION', 'Iran', 'Iran', 'LOCATION')
+======================
+4
+([19, 20], [27, 28], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([14], [22], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([16, 17], [24, 25], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+([23], [30, 31, 32], 'PERSON', 'Pentagon', 'Lầu Năm Góc', 'PERSON')
+======================
+4
+([12], [13], 'LOCATION', 'Israel', 'Israel', 'LOCATION')
+([3], [5, 6, 7], 'LOCATION', 'Mediterranean', 'Địa Trung Hải', 'LOCATION')
+([14], [15, 16, 17], 'LOCATION', 'Turkey', 'Thổ Nhĩ Kỳ', 'LOCATION')
+([9, 10], [11], 'LOCATION', 'United States', 'Mỹ', 'LOCATION')
+======================
+4
+([9, 10, 11], [1, 2, 3], 'LOCATION', 'New York state', 'Nguyễn Thành Thắng', 'LOCATION')
+([21], [19, 20], 'LOCATION', 'Vietnam', 'Việt Nam', 'LOCATION')
+([17, 18], [22, 23], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([1, 2, 3], [11, 12, 13], 'LOCATION', 'Thang Thanh Nguyen', 'bang New York', 'LOCATION')
+======================
+2
+([3], [6], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([5, 6], [3, 4], 'PERSON', 'Rebecca Chase', 'Rebecca Chase', 'PERSON')
+======================
+2
+([20], [29], 'LOCATION', 'Chicago', 'Chicago', 'LOCATION')
+([6, 7, 8, 9, 11, 12, 13, 18], [27], 'PERSON', 'professional infertility lab would making crazy statements Seed', 'Seed', 'PERSON')
+======================
+0
+======================
+1
+(([4], [7], 'LOCATION', 'California', 'California', 'LOCATION'), 0.083289817232376)
+======================
+5
+([13, 14, 15, 16], [5, 6, 7], 'ORGANIZATION', 'Food and Drug Administration', 'Cục Sức khỏe', 'ORGANIZATION')
+([24], [33], 'PERSON', 'Seed', 'Seed', 'PERSON')
+([19], [30], 'PERSON', 'Seed', 'Seed', 'PERSON')
+([9, 10], [11, 12], 'PERSON', 'Donna Shalala', 'Donna Shalala', 'PERSON')
+([5], [18], 'PERSON', 'Health', 'Thuốc', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Atlanta', 'Atlanta', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Rebecca Chase', 'Rebecca Chase', 'PERSON')
+======================
+2
+([11], [16, 17], 'ORGANIZATION', 'Congress', 'Quốc hội', 'ORGANIZATION')
+([6], [10], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+1
+(([2, 3, 4, 5, 6], [3, 4], 'ORGANIZATION', 'New England Journal of Medicine', 'Nước Anh', 'ORGANIZATION'), 0.07507002801120449)
+======================
+1
+([1], [1], 'PERSON', 'Brown', 'Brown', 'PERSON')
+======================
+1
+([10], [20], 'ORGANIZATION', 'US', 'Mỹ', 'ORGANIZATION')
+======================
+1
+([3, 4, 5], [2, 3, 4, 5, 6], 'ORGANIZATION', 'General Accounting Office', 'Tổng cục Kế toán không', 'ORGANIZATION')
+======================
+4
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([9], [9], 'LOCATION', 'Florida', 'Florida', 'LOCATION')
+([7], [7], 'LOCATION', 'Clewiston', 'Clewiston', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'John Martin', 'John Martin', 'PERSON')
+======================
+1
+([10], [10, 13], 'ORGANIZATION', 'Unabomber', 'này, Unabomber', 'ORGANIZATION')
+======================
+2
+([2], [2], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([10, 11], [13, 14], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+2
+([3], [3], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+([33], [49], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+======================
+1
+([4], [5], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+======================
+2
+([29], [37], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+([7, 8], [10, 11], 'PERSON', 'Judy Clarke', 'Judy Clarke', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Sacramento', 'Sacramento', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Ken Kashiwahara', 'Ken Kashiwahara', 'PERSON')
+======================
+2
+([16], [14], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+([1], [1], 'PERSON', 'Terry', 'Terry', 'PERSON')
+======================
+2
+([6], [7], 'LOCATION', 'Sacramento', 'Sacramento', 'LOCATION')
+([3, 4], [4, 5], 'PERSON', 'Terry Moran', 'Terry Moran', 'PERSON')
+======================
+2
+([2, 3], [2, 3], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([11, 12], [14, 15], 'PERSON', 'Ramzi Yousef', 'Ramzi Yousef', 'PERSON')
+======================
+1
+(([21, 22], [21, 22], 'LOCATION', 'North America', 'Bắc Mỹ', 'LOCATION'), 0.083289817232376)
+======================
+6
+([20], [21], 'ORGANIZATION', 'Vermont', 'Vermont', 'ORGANIZATION')
+([23], [24], 'LOCATION', 'Watertown', 'Watertown', 'LOCATION')
+([25, 26], [26, 27], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([4], [4], 'LOCATION', 'Canada', 'Canada', 'LOCATION')
+([2], [2], 'LOCATION', 'Quebec', 'Quebec', 'LOCATION')
+([18], [19], 'LOCATION', 'Burlington', 'Burlington', 'LOCATION')
+======================
+1
+([6, 7, 8], [14, 15, 16, 17], 'LOCATION', 'New York City', 'Thành phố New York', 'LOCATION')
+======================
+1
+([8], [11, 12, 13], 'LOCATION', 'Pacific', 'Thái Bình Dương', 'LOCATION')
+======================
+3
+([1, 2], [1, 2], 'LOCATION', 'Avery County', 'Avery County', 'LOCATION')
+([4, 5], [4, 5], 'LOCATION', 'North Carolina', 'North Carolina', 'LOCATION')
+([20, 21], [23, 24], 'LOCATION', 'North Carolina', 'North Carolina', 'LOCATION')
+======================
+2
+([5], [5], 'ORGANIZATION', 'DC', 'DC', 'ORGANIZATION')
+([3], [3], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Morton Dean', 'Morton Dean', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Aaron Brown', 'Aaron Brown', 'PERSON')
+======================
+3
+([24, 25], [23, 24, 25, 26], 'ORGANIZATION', 'World Bank', 'Ngân hàng Thế giới', 'ORGANIZATION')
+([28, 29, 30], [15, 16], 'ORGANIZATION', 'International Monetary Fund', 'Châu Á', 'ORGANIZATION')
+([18], [28, 29, 30, 31, 32], 'LOCATION', 'Asia', 'Quỹ Tiền tệ Quốc tế', 'LOCATION')
+======================
+1
+([4, 5], [5, 6], 'LOCATION', 'Hong Kong', 'Hồng Kông', 'LOCATION')
+======================
+1
+(([3, 4], [4, 5], 'PERSON', 'Wong Kwan', 'Wong Kwan', 'PERSON'), 0.04842853865565497)
+======================
+1
+([3, 4], [3, 4], 'LOCATION', 'Hong Kong', 'Hồng Kông', 'LOCATION')
+======================
+2
+([8, 9], [11, 12], 'LOCATION', 'Hong Kong', 'Hồng Kông', 'LOCATION')
+([4], [8, 9], 'LOCATION', 'Asia', 'Châu Á', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'Hong Kong', 'Hồng Kông', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Jim Laurie', 'Jim Laurie', 'PERSON')
+======================
+1
+(([5, 6, 7, 8, 9], [7, 8, 9, 10, 11, 12, 13], 'ORGANIZATION', 'US Centers for Disease Control', 'Trung tâm Kiểm soát Dịch bệnh Mỹ', 'ORGANIZATION'), 0.061878453038674036)
+======================
+0
+======================
+1
+([10], [10], 'LOCATION', 'Cleveland', 'Cleveland', 'LOCATION')
+======================
+1
+(([7], [10], 'LOCATION', 'Cleveland', 'Cleveland', 'LOCATION'), 0.055299188640973634)
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Cleveland', 'Cleveland', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Michele Norris', 'Michele Norris', 'PERSON')
+======================
+3
+([2], [5], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([11, 12, 13], [12, 13, 14, 15, 16], 'ORGANIZATION', 'Federal Aviation Administration', 'Cục Hàng không Liên bang', 'ORGANIZATION')
+([4, 5], [2, 3], 'PERSON', 'Lisa Stark', 'Lisa Stark', 'PERSON')
+======================
+1
+([8, 9, 10], [12, 15, 16, 17, 18, 19, 20, 21, 28, 29], 'ORGANIZATION', 'Professional Golfers Association', 'tour Hiệp hội Người chơi Golf Chuyên nghiệp chút nào', 'ORGANIZATION')
+======================
+2
+([5, 6, 7], [3, 4, 5], 'ORGANIZATION', 'Mike Von Fremd', 'Mike Von Fremd', 'ORGANIZATION')
+([3], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+======================
+0
+======================
+2
+([7, 8], [9, 10], 'PERSON', 'Casey Martin', 'Casey Martin', 'PERSON')
+([20, 21], [25, 26], 'PERSON', 'Casey Martin', 'Casey Martin', 'PERSON')
+======================
+1
+(([10, 11, 12, 13], [12, 13, 14, 15, 16], 'ORGANIZATION', 'United States Golf Association', 'Hiệp hội Golf Hoa Kỳ', 'ORGANIZATION'), 0.094573055028463)
+======================
+4
+([1, 2, 3], [1, 2, 3], 'ORGANIZATION', 'Mike Von Fremd', 'Mike Von Fremd', 'ORGANIZATION')
+([5, 6], [5, 6], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([10], [10], 'LOCATION', 'Florida', 'Florida', 'LOCATION')
+([8], [8], 'LOCATION', 'Lakeland', 'Lakeland', 'LOCATION')
+======================
+4
+([18, 19, 20], [25, 26, 27], 'ORGANIZATION', 'New York Times', 'New York Times', 'ORGANIZATION')
+([5, 6], [8, 9], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([13, 14], [14, 15], 'PERSON', 'Emily Mindell', 'Emily Mindell', 'PERSON')
+([1, 2], [1, 2], 'PERSON', 'Bill Gottlieb', 'Bill Gottlieb', 'PERSON')
+======================
+3
+([3], [3], 'PERSON', 'Emily', 'Emily', 'PERSON')
+([13], [17], 'PERSON', 'Emily', 'Emily', 'PERSON')
+([1], [1], 'PERSON', 'Bill', 'Bill', 'PERSON')
+======================
+1
+([5, 6], [6, 7], 'PERSON', 'Bill Gates', 'Bill Gates', 'PERSON')
+======================
+3
+([1, 2], [1], 'ORGANIZATION', 'The Times', 'Times', 'ORGANIZATION')
+([11], [12], 'PERSON', 'Emily', 'Emily', 'PERSON')
+([6], [6], 'PERSON', 'Bill', 'Bill', 'PERSON')
+======================
+3
+([1, 2], [1], 'ORGANIZATION', 'The Times', 'Times', 'ORGANIZATION')
+([13], [18], 'PERSON', 'Emily', 'Emily', 'PERSON')
+([5], [4], 'PERSON', 'Bill', 'Bill', 'PERSON')
+======================
+1
+([2, 3], [2, 3], 'PERSON', 'Sonny Bono', 'Sonny Bono', 'PERSON')
+======================
+2
+([8, 9], [9, 10], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([3], [4], 'LOCATION', 'Canada', 'Canada', 'LOCATION')
+======================
+6
+([57], [68], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([34], [39], 'ORGANIZATION', 'Montreal', 'Montreal', 'ORGANIZATION')
+([8], [10], 'LOCATION', 'Canada', 'Canada', 'LOCATION')
+([12], [14], 'LOCATION', 'Quebec', 'Quebec', 'LOCATION')
+([14], [16], 'LOCATION', 'Montreal', 'Montreal', 'LOCATION')
+([59, 60], [65, 66], 'PERSON', 'Mort Dean', 'Mort Dean', 'PERSON')
+======================
+2
+([1], [1], 'ORGANIZATION', 'Bangor', 'Bangor', 'ORGANIZATION')
+([3], [3], 'LOCATION', 'Maine', 'Maine', 'LOCATION')
+======================
+2
+([1, 2], [1, 2], 'LOCATION', 'New London', 'New London', 'LOCATION')
+([4, 5], [4, 5], 'LOCATION', 'New Hampshire', 'New Hampshire', 'LOCATION')
+======================
+2
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'Morton Dean', 'Morton Dean', 'PERSON')
+======================
+2
+([5, 6], [4, 5], 'ORGANIZATION', 'Bill Redeker', 'Bill Redeker', 'ORGANIZATION')
+([3], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+======================
+3
+([1, 2], [1, 2], 'ORGANIZATION', 'Bill Redeker', 'Bill Redeker', 'ORGANIZATION')
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'ORGANIZATION', 'Montreal', 'Montreal', 'ORGANIZATION')
+======================
+1
+([1, 2], [1, 2], 'PERSON', 'Bob Sheets', 'Bob Sheets', 'PERSON')
+======================
+2
+([5, 6], [6, 7], 'PERSON', 'Dick Rutan', 'Dick Rutan', 'PERSON')
+([8, 9], [9, 10], 'PERSON', 'Dave Melton', 'Dave Melton', 'PERSON')
+======================
+1
+(([6, 7], [9, 10], 'PERSON', 'Dick Rutan', 'Dick Rutan', 'PERSON'), 0.04842853865565497)
+======================
+1
+([9], [10], 'PERSON', 'Rutan', 'Rutan', 'PERSON')
+======================
+2
+([16], [20, 21], 'LOCATION', 'Earth', 'Trái đất', 'LOCATION')
+([9], [11], 'PERSON', 'Rutan', 'Rutan', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Albuquerque', 'Albuquerque', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Lisa Salters', 'Lisa Salters', 'PERSON')
+======================
+0
+======================
+2
+([12, 13, 14], [26, 27], 'ORGANIZATION', 'International Monetary Fund', 'Châu Á', 'ORGANIZATION')
+([20], [20, 21, 22, 23], 'LOCATION', 'Asia', 'Quỹ Tiền tệ Quốc', 'LOCATION')
+======================
+3
+([14], [14], 'ORGANIZATION', 'IMF', 'IMF', 'ORGANIZATION')
+([5], [5], 'LOCATION', 'Suharto', 'Suharto', 'LOCATION')
+([2], [3], 'LOCATION', 'Indonesian', 'Indonesia', 'LOCATION')
+======================
+2
+([6], [12], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([8, 9], [2, 3, 9, 10], 'PERSON', 'David Ensor', 'chi tiết David Ensor', 'PERSON')
+======================
+2
+([5], [7], 'LOCATION', 'Indonesia', 'Indonesia', 'LOCATION')
+([19], [28], 'PERSON', 'Suharto', 'Suharto', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([8, 9], [7, 8, 9], 'ORGANIZATION', 'State Department', 'Bộ Ngoại giao', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'David Ensor', 'David Ensor', 'PERSON')
+======================
+3
+([5], [5], 'LOCATION', 'California', 'California', 'LOCATION')
+([2, 3], [2, 3], 'LOCATION', 'Palm Springs', 'Palm Springs', 'LOCATION')
+([13, 14], [20, 21], 'PERSON', 'Sonny Bono', 'Sonny Bono', 'PERSON')
+======================
+2
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([3, 4], [1, 2], 'PERSON', 'Brian Rooney', 'Brian Rooney', 'PERSON')
+======================
+2
+([1, 2], [1, 2], 'PERSON', 'Tony Orlando', 'Tony Orlando', 'PERSON')
+([11, 12], [10, 11], 'PERSON', 'Jerry Vale', 'Jerry Vale', 'PERSON')
+======================
+2
+([11], [16], 'PERSON', 'Cher', 'Cher', 'PERSON')
+([9], [12], 'PERSON', 'Sonny', 'Sonny', 'PERSON')
+======================
+1
+([24], [28], 'ORGANIZATION', 'Napoleon', 'Napoleon', 'ORGANIZATION')
+======================
+1
+([6], [7], 'PERSON', 'Son', 'Sơn', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'Palm Springs', 'Palm Springs', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Brian Rooney', 'Brian Rooney', 'PERSON')
+======================
+3
+([9], [13], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([17, 18], [18, 19], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([11, 12], [10, 11], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+3
+([6], [7], 'ORGANIZATION', 'Muskogee', 'Muskogee', 'ORGANIZATION')
+([8], [9], 'LOCATION', 'Oklahoma', 'Oklahoma', 'LOCATION')
+([3, 4], [4, 5], 'PERSON', 'Tom Coburn', 'Tom Coburn', 'PERSON')
+======================
+1
+([1], [1], 'PERSON', 'Coburn', 'Coburn', 'PERSON')
+======================
+2
+([5, 6, 7], [6, 7, 8, 9, 10], 'ORGANIZATION', 'House Ethics Committee', 'Ủy ban Đạo đức Nhà', 'ORGANIZATION')
+([27], [37], 'PERSON', 'Coburn', 'Coburn', 'PERSON')
+======================
+2
+([16, 17], [3, 4], 'ORGANIZATION', 'Ethics Committee', 'hai Coburns', 'ORGANIZATION')
+([3, 4, 6, 7], [14, 15, 16, 17], 'LOCATION', 'moment , two Coburns', 'Ủy ban Đạo đức', 'LOCATION')
+======================
+3
+([4], [2, 3], 'ORGANIZATION', 'Committee', 'Ủy ban', 'ORGANIZATION')
+([7], [8], 'PERSON', 'Coburn', 'Coburn', 'PERSON')
+([14], [16, 22], 'PERSON', 'Coburn', 'Coburn giúp', 'PERSON')
+======================
+2
+([19], [20], 'PERSON', 'Peter', 'Peter', 'PERSON')
+([9, 10], [10, 11], 'PERSON', 'Tom Coburn', 'Tom Coburn', 'PERSON')
+======================
+2
+([24], [32], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([10, 11], [10, 11], 'PERSON', 'Michelle Kwan', 'Michelle Kwan', 'PERSON')
+======================
+2
+([13], [19], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([6, 7], [9, 10], 'PERSON', 'Tara Lipinski', 'Tara Lipinski', 'PERSON')
+======================
+1
+([4, 5], [6, 7], 'PERSON', 'Isaac Stern', 'Isaac Stern', 'PERSON')
+======================
+1
+([14, 15], [15, 16], 'LOCATION', 'Middle East', 'Trung Đông', 'LOCATION')
+======================
+2
+([14], [18], 'LOCATION', 'Maryland', 'Maryland', 'LOCATION')
+([10, 11, 12], [14, 15, 16], 'LOCATION', 'West Twin Rivers', 'Tây Twin Rivers', 'LOCATION')
+======================
+1
+(([1, 2], [1, 2], 'PERSON', 'George Foreman', 'George Foreman', 'PERSON'), 0.04842853865565497)
+======================
+1
+([4, 5], [4, 5], 'PERSON', 'Mollie Beattie', 'Mollie Beattie', 'PERSON')
+======================
+3
+([3, 4, 5, 6], [4, 5, 6, 7, 8, 9, 10], 'ORGANIZATION', 'ABC News World Headquarters', 'ABC News Trụ sở chính Thế giới', 'ORGANIZATION')
+([8, 9], [12, 13], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([13, 14], [17, 18], 'PERSON', 'Aaron Brown', 'Aaron Brown', 'PERSON')
+======================
+6
+([27], [31], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([9, 10], [10, 11], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([13, 14], [13, 14], 'LOCATION', 'New Hampshire', 'New Hampshire', 'LOCATION')
+([21], [20], 'LOCATION', 'Maine', 'Maine', 'LOCATION')
+([17], [16], 'LOCATION', 'Vermont', 'Vermont', 'LOCATION')
+([29, 30], [28, 29], 'PERSON', 'Bob Woodruff', 'Bob Woodruff', 'PERSON')
+======================
+4
+([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'National Weather Service', 'Dịch vụ Thời tiết Quốc gia', 'ORGANIZATION')
+([34], [43], 'LOCATION', 'Canada', 'Canada', 'LOCATION')
+([25, 26, 27], [33, 34], 'LOCATION', 'Gulf of Mexico', 'Vịnh Mexico', 'LOCATION')
+([8, 9], [10, 11], 'PERSON', 'El Nino', 'El Nino', 'PERSON')
+======================
+1
+([1, 2], [1, 2], 'PERSON', 'Burt Gendron', 'Burt Gendron', 'PERSON')
+======================
+1
+([11, 12], [12, 13], 'LOCATION', 'New York', 'New York', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'Lewiston Maine', 'Lewiston Maine', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Bob Woodruff', 'Bob Woodruff', 'PERSON')
+======================
+3
+([11, 12], [14, 15], 'ORGANIZATION', 'Bill Redeker', 'Bill Redeker', 'ORGANIZATION')
+([9], [17], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([15], [21], 'LOCATION', 'Montreal', 'Montreal', 'LOCATION')
+======================
+2
+([5, 6], [10, 11], 'ORGANIZATION', 'Rolling Stones', 'Rolling Stones', 'ORGANIZATION')
+([23], [33], 'ORGANIZATION', 'Montreal', 'Montreal', 'ORGANIZATION')
+======================
+3
+([1, 2], [1, 2], 'ORGANIZATION', 'Bill Redeker', 'Bill Redeker', 'ORGANIZATION')
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'ORGANIZATION', 'Montreal', 'Montreal', 'ORGANIZATION')
+======================
+2
+([9], [15], 'LOCATION', 'Belfast', 'Belfast', 'LOCATION')
+([11, 12], [17, 18], 'LOCATION', 'Northern Ireland', 'Bắc Ai-len', 'LOCATION')
+======================
+4
+([2], [15, 16], 'LOCATION', 'US', 'Hoa Kỳ', 'LOCATION')
+([31, 32], [47, 48], 'LOCATION', 'Northern Ireland', 'Bắc Ireland', 'LOCATION')
+([18], [29], 'LOCATION', 'American', 'Mỹ', 'LOCATION')
+([4, 5], [5, 6, 7], 'PERSON', 'George Mitchell', 'Mỹ George Mitchell', 'PERSON')
+======================
+3
+([4], [8, 9, 10], 'ORGANIZATION', 'America', 'Công giáo Ireland', 'ORGANIZATION')
+([13, 14], [18, 19], 'LOCATION', 'Northern Ireland', 'Bắc Ireland', 'LOCATION')
+([8], [15, 16], 'LOCATION', 'Irish', 'nước Mỹ', 'LOCATION')
+======================
+4
+([13, 14], [16, 17, 23, 24], 'ORGANIZATION', 'Sinn Fein', 'lãnh đạo cũng giống', 'ORGANIZATION')
+([10], [14], 'LOCATION', 'British', 'Anh', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Edward Kennedy', 'Edward Kennedy', 'PERSON')
+([16, 17], [18, 19, 20, 21], 'PERSON', 'Gerry Adams', 'Sinn Fein Gerry Adams', 'PERSON')
+======================
+8
+([26], [31], 'ORGANIZATION', 'England', 'Anh', 'ORGANIZATION')
+([16, 17, 18, 19], [1, 2, 3], 'ORGANIZATION', 'Council of the Isles', 'Chính phủ Anh', 'ORGANIZATION')
+([1, 2, 3], [8, 9, 11, 12, 19, 20, 21, 22], 'ORGANIZATION', 'The British government', 'xuất tại cuộc họp Hội đồng quần đảo', 'ORGANIZATION')
+([28], [33], 'LOCATION', 'Scotland', 'Scotland', 'LOCATION')
+([30], [35, 36], 'LOCATION', 'Wales', 'xứ Wales', 'LOCATION')
+([9, 10], [13, 14], 'LOCATION', 'Northern Ireland', 'Bắc Ireland', 'LOCATION')
+([32, 33], [38, 39], 'LOCATION', 'Northern Ireland', 'Bắc Ireland', 'LOCATION')
+([36, 37], [41, 42, 43], 'LOCATION', 'Irish Republic', 'Cộng hòa Ireland', 'LOCATION')
+======================
+3
+([4], [9], 'ORGANIZATION', 'Britain', 'Anh', 'ORGANIZATION')
+([10], [12], 'LOCATION', 'Ireland', 'Ireland', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Mo Mowlam', 'Mo Mowlam', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'London', 'London', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Richard Gizbert', 'Richard Gizbert', 'PERSON')
+======================
+2
+([20], [25], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([23], [28, 29, 30], 'PERSON', 'Pope', 'Đức Giáo Hoàng', 'PERSON')
+======================
+2
+([13], [20], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+([2, 3], [3], 'PERSON', 'Unabomber trial', 'Unabomber', 'PERSON')
+======================
+3
+([1], [11], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([10], [14], 'LOCATION', 'Sacramento', 'Sacramento', 'LOCATION')
+([6, 7], [8, 9], 'ORGANIZATION', 'Terry Moran', 'Terry Moran', 'ORGANIZATION')
+======================
+4
+([1, 2], [1, 2], 'PERSON', 'Theodore Kaczynski', 'Theodore Kaczynski', 'PERSON')
+([7, 8], [8, 9], 'PERSON', 'Sally Johnson', 'Sally Johnson', 'PERSON')
+([20, 21], [28, 29], 'PERSON', 'John Hinckley', 'John Hinckley', 'PERSON')
+([25, 26], [35, 36], 'PERSON', 'Jim Baker', 'Jim Baker', 'PERSON')
+======================
+1
+([1], [1], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+======================
+2
+([18, 19], [29, 30], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([9, 10], [14, 15], 'PERSON', 'Colin Ferguson', 'Colin Ferguson', 'PERSON')
+======================
+1
+([17, 18], [25, 26], 'PERSON', 'Ted Kaczynski', 'Ted Kaczynski', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Sacramento', 'Sacramento', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Terry Moran', 'Terry Moran', 'PERSON')
+======================
+1
+([1, 2, 3, 4], [1, 2, 3, 4, 5], 'ORGANIZATION', 'The National Democratic Party', 'Đảng Dân chủ Quốc gia', 'ORGANIZATION')
+======================
+3
+([9, 10], [10, 11], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([35, 36], [42, 43], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([16, 17], [16, 17, 18, 19, 20], 'ORGANIZATION', 'Al Gore', 'Phó Tổng thống Al Gore', 'ORGANIZATION')
+======================
+3
+([24], [28, 29, 30, 31, 32, 33, 34, 36, 37], 'ORGANIZATION', 'IMF', 'thắt chặt vành đai theo yêu cầu IMF để', 'ORGANIZATION')
+([35], [52], 'LOCATION', 'Indonesian', 'Indonesia', 'LOCATION')
+([4, 5], [4, 5, 6, 7, 8], 'ORGANIZATION', 'Lawrence Summers', 'Bộ tài chính Lawrence Summers', 'ORGANIZATION')
+======================
+2
+([3], [6], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([5, 6], [3, 4], 'PERSON', 'Jack Smith', 'Jack Smith', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'Las Vegas', 'Las Vegas.', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Jack Smith', 'Jack Smith', 'PERSON')
+======================
+2
+([5, 6], [6, 7], 'PERSON', 'Jerod Swallow', 'Jerod Swallow', 'PERSON')
+([2, 3], [3, 4], 'PERSON', 'Elizabeth Punsalan', 'Elizabeth Punsalan', 'PERSON')
+======================
+3
+([9], [11], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([14, 15], [16, 17], 'PERSON', 'Tara Lipinski', 'Tara Lipinski', 'PERSON')
+([11, 12], [13, 14], 'PERSON', 'Michelle Kwan', 'Michelle Kwan', 'PERSON')
+======================
+1
+(([11], [12], 'ORGANIZATION', 'Princeton', 'Princeton', 'ORGANIZATION'), 0.094573055028463)
+======================
+3
+([3], [3], 'ORGANIZATION', 'Texas', 'Texas', 'ORGANIZATION')
+([9, 10], [9, 10], 'ORGANIZATION', 'Wake Forest', 'Wake Forest', 'ORGANIZATION')
+([5, 6, 7], [5, 6, 7], 'ORGANIZATION', 'North Carolina State', 'Bang Bắc Carolina', 'ORGANIZATION')
+======================
+1
+(([1], [5], 'ORGANIZATION', 'Princeton', 'Princeton', 'ORGANIZATION'), 0.094573055028463)
+======================
+3
+([13], [17], 'ORGANIZATION', 'Princeton', 'Princeton', 'ORGANIZATION')
+([7], [10], 'ORGANIZATION', 'NBA', 'NBA', 'ORGANIZATION')
+([9, 10], [13, 14], 'PERSON', 'Bill Bradley', 'Bill Bradley', 'PERSON')
+======================
+1
+([1], [1], 'ORGANIZATION', 'Princeton', 'Princeton', 'ORGANIZATION')
+======================
+4
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New Haven', 'New Haven', 'LOCATION')
+([10], [10], 'LOCATION', 'Connecticut', 'Connecticut', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'JuJu Chang', 'JuJu Chang', 'PERSON')
+======================
+1
+(([1], [1], 'PERSON', 'Pippen', 'Pippen', 'PERSON'), 0.04842853865565497)
+======================
+2
+([3], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([5, 6], [4, 5], 'PERSON', 'Anderson Cooper', 'Anderson Cooper', 'PERSON')
+======================
+3
+([5, 6], [10, 11], 'ORGANIZATION', 'New York', 'New York', 'ORGANIZATION')
+([8, 9], [2, 4, 5, 7, 8, 15], 'LOCATION', 'Waldorf Astoria', 'màn buông xuống Waldorf Astoria làm', 'LOCATION')
+([18, 19], [22, 23], 'PERSON', 'Alexandra Doan', 'Alexandra Đoàn', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Anderson Cooper', 'Anderson Cooper', 'PERSON')
+======================
+1
+([3, 4], [3, 4], 'PERSON', 'Aaron Brown', 'Aaron Brown', 'PERSON')
+======================
+2
+([8, 9], [10, 11], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([11, 12], [13, 14], 'LOCATION', 'New York', 'New York', 'LOCATION')
+======================
+4
+([10, 11], [8, 9, 10], 'ORGANIZATION', 'United Nations', 'Liên Hợp Quốc', 'ORGANIZATION')
+([7], [6], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([2, 3], [1, 2], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([5], [4], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+======================
+3
+([9], [15], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([11, 12], [12, 13], 'LOCATION', 'Ron Claiborne', 'Ron Claiborne', 'LOCATION')
+([17], [20], 'LOCATION', 'Baghdad', 'Baghdad', 'LOCATION')
+======================
+2
+([8], [16], 'PERSON', 'Ritter', 'Ritter', 'PERSON')
+([18], [19, 20], 'PERSON', 'Ritter', 'chính Ritter', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Baghdad', 'Baghdad', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Ron Claiborne', 'Ron Claiborne', 'PERSON')
+======================
+1
+([11, 12], [15, 16], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+1
+([1], [1], 'PERSON', 'Saddam', 'Saddam', 'PERSON')
+======================
+2
+([16, 17, 18, 19], [23, 24, 25, 26, 27, 28, 29], 'ORGANIZATION', 'United Nations Security Council', 'Hội đồng Bảo an Liên Hợp Quốc', 'ORGANIZATION')
+([2, 3], [2, 3], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON')
+======================
+5
+([5], [5, 6, 7], 'ORGANIZATION', 'UN', 'Liên Hợp Quốc', 'ORGANIZATION')
+([23, 24], [28, 29, 30, 31, 32, 33], 'ORGANIZATION', 'Security Council', 'Hội đồng Bảo an rằng nhóm', 'ORGANIZATION')
+([37], [49], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([9, 10], [9, 10], 'PERSON', 'Richard Butler', 'Richard Butler', 'PERSON')
+([16, 17], [18, 19], 'PERSON', 'Kofi Annan', 'Kofi Annan', 'PERSON')
+======================
+2
+([17], [26, 27, 28], 'ORGANIZATION', 'UN', 'Liên Hợp Quốc', 'ORGANIZATION')
+([23], [32, 33, 34], 'ORGANIZATION', 'UN', 'Liên Hiệp Quốc', 'ORGANIZATION')
+======================
+8
+([35, 36], [45, 46], 'ORGANIZATION', 'Bill Clinton', 'Bill Clinton', 'ORGANIZATION')
+([19, 20], [28, 29], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([40], [11, 12, 13], 'ORGANIZATION', 'UN', 'Liên Hợp Quốc', 'ORGANIZATION')
+([7], [], 'ORGANIZATION', 'UN', '', 'ORGANIZATION')
+([16], [43], 'LOCATION', 'American', 'Mỹ', 'LOCATION')
+([33], [23], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([12], [17], 'PERSON', 'Saddam', 'Saddam', 'PERSON')
+([43, 44], [53, 54], 'PERSON', 'Kofi Annan', 'Kofi Annan', 'PERSON')
+======================
+1
+(([3, 4], [2, 3], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION'), 0.094573055028463)
+======================
+2
+([5, 6], [4, 5], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+3
+([2, 3], [2, 3], 'LOCATION', 'Hong Kong', 'Hong Kong', 'LOCATION')
+([17, 18, 19], [22, 23, 24, 25, 26], 'LOCATION', 'Peregrine Investment Bank', 'Ngân hàng Đầu tư Peregrine', 'LOCATION')
+([14], [19, 20], 'LOCATION', 'Asia', 'châu Á', 'LOCATION')
+======================
+3
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'Hong Kong', 'Hồng Kông', 'LOCATION')
+([3, 4], [1, 2], 'PERSON', 'Jim Laurie', 'Jim Laurie', 'PERSON')
+======================
+3
+([43], [64], 'LOCATION', 'Indonesia', 'Indonesia', 'LOCATION')
+([23], [37, 38], 'LOCATION', 'Asia', 'châu Á', 'LOCATION')
+([14], [24], 'ORGANIZATION', 'Peregrine', 'Peregrine', 'ORGANIZATION')
+======================
+2
+([3], [3], 'LOCATION', 'Indonesia', 'Indonesia', 'LOCATION')
+([17], [23, 24], 'LOCATION', 'Asia', 'châu Á', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'Hong Kong', 'Hồng Kông', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Jim Laurie', 'Jim Laurie', 'PERSON')
+======================
+0
+======================
+2
+([6, 7], [4, 5], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([2], [2], 'LOCATION', 'Maine', 'Maine', 'LOCATION')
+======================
+3
+([3, 4], [1, 2], 'ORGANIZATION', 'Bill Redeker', 'Bill Redeker', 'ORGANIZATION')
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([7], [8], 'ORGANIZATION', 'Montreal', 'Montreal', 'ORGANIZATION')
+======================
+1
+(([13, 14], [17, 18], 'PERSON', 'Francine Piaget', 'Francine Piaget', 'PERSON'), 0.04842853865565497)
+======================
+3
+([1, 2], [1, 2], 'ORGANIZATION', 'Bill Redeker', 'Bill Redeker', 'ORGANIZATION')
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'ORGANIZATION', 'Montreal', 'Montreal', 'ORGANIZATION')
+======================
+1
+([2, 3, 4], [1, 2, 3, 4, 5], 'ORGANIZATION', 'Federal Aviation Administration', 'Cục Hàng không Liên bang', 'ORGANIZATION')
+======================
+1
+([16], [20, 21], 'LOCATION', 'Asia', 'châu Á', 'LOCATION')
+======================
+2
+([13], [10], 'LOCATION', 'Asian', 'Mỹ', 'LOCATION')
+([8, 9], [16, 17], 'LOCATION', 'United States', 'châu Á', 'LOCATION')
+======================
+5
+([23], [28], 'ORGANIZATION', 'Toyota', 'Toyota', 'ORGANIZATION')
+([25], [23, 24, 25, 26, 30], 'ORGANIZATION', 'Mitsubishi', 'thành phần âm thanh Mitsubishi', 'ORGANIZATION')
+([13, 14], [16, 17], 'LOCATION', 'Harmen Carden', 'Harmen Carden', 'LOCATION')
+([8], [10], 'LOCATION', 'California', 'California', 'LOCATION')
+([6], [6, 7, 8], 'LOCATION', 'Northridge', 'từ trong Northridge', 'LOCATION')
+======================
+2
+([3], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([5, 6], [4, 5], 'PERSON', 'Robert Krulwich', 'Robert Krulwich', 'PERSON')
+======================
+2
+([11], [14], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([19], [23, 24], 'LOCATION', 'Asia', 'châu Á', 'LOCATION')
+======================
+3
+([19], [25], 'ORGANIZATION', 'Ford', 'Ford', 'ORGANIZATION')
+([16], [23], 'ORGANIZATION', 'GM', 'GM', 'ORGANIZATION')
+([11], [15], 'PERSON', 'Hyundais', 'Huyndai', 'PERSON')
+======================
+2
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'Robert Krulwich', 'Robert Krulwich', 'PERSON')
+======================
+1
+([2, 3, 4], [1, 2, 3, 4, 5], 'ORGANIZATION', 'International Monetary Fund', 'Quỹ Tiền tệ quốc tế', 'ORGANIZATION')
+======================
+3
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([8, 9], [11, 12], 'LOCATION', 'Capitol Hill', 'Capitol Hill', 'LOCATION')
+([3, 4], [1, 2], 'PERSON', 'Cokie Roberts', 'Cokie Roberts', 'PERSON')
+======================
+2
+([6], [9, 10], 'ORGANIZATION', 'Congress', 'Quốc hội', 'ORGANIZATION')
+([9], [13, 14], 'LOCATION', 'Asia', 'châu Á', 'LOCATION')
+======================
+2
+([4, 5], [4, 5], 'LOCATION', 'Capitol Hill', 'Capitol Hill', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Cokie Roberts', 'Cokie Roberts', 'PERSON')
+======================
+2
+([6, 7], [9, 10], 'PERSON', 'Todd Buchholz', 'Todd Buchholz', 'PERSON')
+([21], [28], 'PERSON', 'Bush', 'Bush', 'PERSON')
+======================
+2
+([9, 10], [8, 9], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([16], [15], 'LOCATION', 'American', 'Mỹ', 'LOCATION')
+======================
+2
+([13, 14], [19, 20], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([2], [3], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+3
+([16, 17], [20], 'ORGANIZATION', 'Lakeland Classic', 'Lakeland', 'ORGANIZATION')
+([19], [24], 'LOCATION', 'Florida', 'Florida', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Casey Martin', 'Casey Martin', 'PERSON')
+======================
+2
+([9], [12], 'ORGANIZATION', 'Medicare', 'Medicare', 'ORGANIZATION')
+([3], [4, 5], 'ORGANIZATION', 'Congress', 'Quốc hội', 'ORGANIZATION')
+======================
+0
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+======================
+2
+([4], [4], 'ORGANIZATION', 'Unabomber', 'Unabomber', 'ORGANIZATION')
+([6, 7], [6, 7], 'PERSON', 'Ted Kaczynski', 'Ted Kaczynski', 'PERSON')
+======================
+2
+([2, 3], [2, 3], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [9, 10], 'LOCATION', 'New York', 'New York', 'LOCATION')
+======================
+3
+([14, 15, 16], [22, 23, 24], 'ORGANIZATION', 'University of Texas', 'Đại học Texas', 'ORGANIZATION')
+([9], [15], 'LOCATION', 'California', 'California', 'LOCATION')
+([6, 7], [13], 'ORGANIZATION', 'Geron Corporation', 'Geron', 'ORGANIZATION')
+======================
+1
+(([7, 8, 9], [10, 11], 'ORGANIZATION', 'Journal of Science', 'Khoa học', 'ORGANIZATION'), 0.094573055028463)
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Ned Potter', 'Ned Potter', 'PERSON')
+======================
+2
+([2, 3], [1], 'LOCATION', 'United States', 'Mỹ', 'LOCATION')
+([12, 13], [10, 11], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON')
+======================
+4
+([18], [25, 26, 27], 'ORGANIZATION', 'UN', 'Liên Hợp Quốc', 'ORGANIZATION')
+([3], [4], 'LOCATION', 'Baghdad', 'Baghdad', 'LOCATION')
+([22], [30], 'LOCATION', 'Iraqis', 'Iraq', 'LOCATION')
+([5, 6], [6, 7], 'PERSON', 'Scott Ritter', 'Scott Ritter', 'PERSON')
+======================
+5
+([24], [34], 'ORGANIZATION', 'Ritter', 'Ritter', 'ORGANIZATION')
+([3, 4], [2, 3, 4], 'ORGANIZATION', 'United Nations', 'Liên Hiệp Quốc', 'ORGANIZATION')
+([9], [15, 16, 17], 'ORGANIZATION', 'UN', 'Liên Hợp Quốc', 'ORGANIZATION')
+([20], [27], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([13, 14], [19, 20], 'PERSON', 'Richard Butler', 'Richard Butler', 'PERSON')
+======================
+1
+([1], [1], 'PERSON', 'Butler', 'Butler', 'PERSON')
+======================
+1
+(([2, 3], [1, 2, 3, 4], 'ORGANIZATION', 'Security Council', 'Hội đồng Bảo an', 'ORGANIZATION'), 0.094573055028463)
+======================
+1
+([8], [10], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+======================
+1
+([6], [7], 'PERSON', 'Ritter', 'Ritter', 'PERSON')
+======================
+2
+([6, 7], [5, 6], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+3
+([23], [37], 'ORGANIZATION', 'Washington', 'Washington', 'ORGANIZATION')
+([21], [30, 31, 32], 'ORGANIZATION', 'UN', 'Liên Hợp Quốc', 'ORGANIZATION')
+([1], [1], 'PERSON', 'Peter', 'Peter', 'PERSON')
+======================
+2
+([12, 13], [15, 16], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([16, 17], [19, 20], 'PERSON', 'Scott Ritter', 'Scott Ritter', 'PERSON')
+======================
+1
+([17, 18], [18, 19, 20], 'PERSON', 'Scott Ritter', 'Scott Ritter sang', 'PERSON')
+======================
+2
+([10, 11], [17, 18], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [13, 14], 'PERSON', 'Richard Lugar', 'Richard Lugar', 'PERSON')
+======================
+3
+([2], [4], 'ORGANIZATION', 'UN', 'LHQ', 'ORGANIZATION')
+([10], [8], 'LOCATION', 'Baghdad', 'Baghdad', 'LOCATION')
+([4, 5], [1, 2], 'PERSON', 'Richard Butler', 'Richard Butler', 'PERSON')
+======================
+3
+([13, 14], [15, 16], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([18, 19], [22, 23], 'PERSON', 'Paula Jones', 'Paula Jones', 'PERSON')
+([1], [1], 'PERSON', 'Sam', 'Sam', 'PERSON')
+======================
+0
+======================
+2
+([5, 6], [4, 5], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+3
+([15], [19, 20], 'ORGANIZATION', 'Navy', 'Hải quân', 'ORGANIZATION')
+([8, 9], [13, 14, 15], 'LOCATION', 'Oklahoma City', 'Thành phố Oklahoma', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Timothy McVeigh', 'Timothy McVeigh', 'PERSON')
+======================
+2
+([3], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([5, 6], [4, 5], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+======================
+2
+([9, 10], [12, 13], 'PERSON', 'Tim McVeigh', 'Tim McVeigh', 'PERSON')
+([15, 16, 18], [28], 'PERSON', 'screen nickname Boysearch', 'Boysearch', 'PERSON')
+======================
+1
+(([5], [7], 'PERSON', 'Tim', 'Tim', 'PERSON'), 0.04842853865565497)
+======================
+6
+([10, 11], [15, 16], 'ORGANIZATION', 'America Online', 'America Online', 'ORGANIZATION')
+([18], [24], 'LOCATION', 'Honolulu', 'Honolulu', 'LOCATION')
+([4], [34], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION')
+([25], [5], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION')
+([16], [22], 'PERSON', 'Tim', 'Tim', 'PERSON')
+([27, 28], [31, 32], 'PERSON', 'Tim McVeigh', 'Tim McVeigh', 'PERSON')
+======================
+1
+([3], [4], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION')
+======================
+2
+([14], [16], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION')
+([1], [1], 'PERSON', 'McVeigh', 'McVeigh', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+======================
+2
+([19, 20], [22, 23], 'LOCATION', 'Hong Kong', 'Hồng Kông', 'LOCATION')
+([8], [10, 11], 'LOCATION', 'Indonesian', 'phiếu Indonesia', 'LOCATION')
+======================
+1
+(([12], [16], 'LOCATION', 'Texas', 'Texas', 'LOCATION'), 0.083289817232376)
+======================
+2
+([3], [6], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([5, 6], [3, 4], 'PERSON', 'Dean Reynolds', 'Dean Reynolds', 'PERSON')
+======================
+3
+([8], [11, 12, 13, 14], 'LOCATION', 'Houston', 'ban bồi thẩm Houston', 'LOCATION')
+([20, 21, 22], [22, 23, 24], 'PERSON', 'Karla Faye Tucker', 'Karla Faye Tucker', 'PERSON')
+([30, 31], [40, 41], 'PERSON', 'Danny Garrett', 'Danny Garrett', 'PERSON')
+======================
+3
+([26], [27], 'LOCATION', 'Texas', 'Texas', 'LOCATION')
+([24], [25], 'LOCATION', 'Gatesville', 'Gatesville', 'LOCATION')
+([2, 3], [2, 3], 'PERSON', 'Karla Faye', 'Karla Faye', 'PERSON')
+======================
+3
+([17, 18], [26, 27], 'PERSON', 'Karla Faye', 'Karla Faye', 'PERSON')
+([10], [15], 'PERSON', 'Brown', 'Brown', 'PERSON')
+([14], [17], 'PERSON', 'Christians', 'Thiên', 'PERSON')
+======================
+2
+([13, 14], [16, 17], 'PERSON', 'Karla Faye', 'Karla Faye', 'PERSON')
+([1, 2], [1, 2], 'PERSON', 'Ron Carlson', 'Ron Carlson', 'PERSON')
+======================
+3
+([14, 15, 16, 17], [22], 'ORGANIZATION', 'Texas Board of Pardons', 'Texas', 'ORGANIZATION')
+([], [13, 14, 15], 'ORGANIZATION', '', 'Ủy ban Ân', 'ORGANIZATION')
+([4, 5, 6], [4, 5, 6], 'PERSON', 'Karla Faye Tucker', 'Karla Faye Tucker', 'PERSON')
+======================
+2
+([19, 20, 21], [31], 'ORGANIZATION', 'Board of Pardons', 'Lạy', 'ORGANIZATION')
+([], [24, 25, 26, 27], 'ORGANIZATION', '', 'Ủy ban Ân xá', 'ORGANIZATION')
+======================
+1
+([4, 5], [8, 9], 'PERSON', 'Karla Faye', 'Karla Faye', 'PERSON')
+======================
+4
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7, 8, 9], 'LOCATION', 'Gatesville', 'Gatesville , Texas.', 'LOCATION')
+([9], [], 'LOCATION', 'Texas', '', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Dean Reynolds', 'Dean Reynolds', 'PERSON')
+======================
+2
+([10], [14], 'LOCATION', 'Texas', 'Texas', 'LOCATION')
+([13, 14], [18, 19], 'PERSON', 'Bill Lane', 'Bill Lane', 'PERSON')
+======================
+1
+(([38, 39, 40], [51, 52, 53], 'PERSON', 'Karla Faye Tucker', 'Karla Faye Tucker', 'PERSON'), 0.04842853865565497)
+======================
+1
+(([5], [6], 'PERSON', 'Lane', 'Lane', 'PERSON'), 0.04842853865565497)
+======================
+2
+([2], [2], 'LOCATION', 'Maine', 'Maine', 'LOCATION')
+([5], [6], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([5], [8], 'LOCATION', 'Russian', 'Nga', 'LOCATION')
+([7, 8], [9, 10], 'PERSON', 'Boris Yeltsin', 'Boris Yeltsin', 'PERSON')
+======================
+1
+(([4, 5], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION'), 0.083289817232376)
+======================
+1
+(([2, 3], [1, 2], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON'), 0.04842853865565497)
+======================
+3
+([1, 2], [1, 2], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [6, 7], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGANIZATION')
+([23, 24], [25, 26], 'PERSON', 'Alexis Herman', 'Alexis Herman', 'PERSON')
+======================
+2
+([1], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([7, 8], [9, 10], 'PERSON', 'Brian Ross', 'Brian Ross', 'PERSON')
+======================
+3
+([17, 18], [23, 24], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([9, 10], [12, 13], 'PERSON', 'Alexis Herman', 'Alexis Herman', 'PERSON')
+([7], [10], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([6, 7], [5, 6, 7], 'ORGANIZATION', 'United Nations', 'Liên Hợp Quốc', 'ORGANIZATION')
+([2, 3], [2, 3], 'PERSON', 'Alexis Herman', 'Alexis Herman', 'PERSON')
+======================
+4
+([2, 3], [1, 2, 3], 'ORGANIZATION', 'Justice Department', 'Bộ Tư pháp', 'ORGANIZATION')
+([17], [22, 23], 'LOCATION', 'Africa', 'châu Phi', 'LOCATION')
+([6], [6], 'PERSON', 'Herman', 'Herman', 'PERSON')
+([11, 12], [14, 15], 'PERSON', 'Laurent Yene', 'Laurent Yene', 'PERSON')
+======================
+8
+([8], [15], 'ORGANIZATION', 'FBI', 'FBI', 'ORGANIZATION')
+([32, 33], [41, 42], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([4, 5], [8, 9, 10], 'ORGANIZATION', 'Justice Department', 'Bộ Tư pháp', 'ORGANIZATION')
+([13], [19], 'PERSON', 'Herman', 'Herman', 'PERSON')
+([17], [28], 'PERSON', 'Herman', 'Herman', 'PERSON')
+([30], [44], 'PERSON', 'Herman', 'Herman', 'PERSON')
+([45], [62], 'PERSON', 'Herman', 'Herman', 'PERSON')
+([1], [1], 'PERSON', 'Yene', 'Yene', 'PERSON')
+======================
+4
+([31], [35, 36, 37], 'ORGANIZATION', 'FCC', 'giấy phép FCC', 'ORGANIZATION')
+([6], [8], 'PERSON', 'Herman', 'Herman', 'PERSON')
+([24], [27], 'PERSON', 'Herman', 'Herman', 'PERSON')
+([11], [11], 'PERSON', 'Yene', 'Yene', 'PERSON')
+======================
+1
+([7, 8], [9, 10], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+======================
+3
+([10], [11, 12, 13, 27, 28, 29], 'ORGANIZATION', 'FCC', 'giấy phép FCC cãi nhau về', 'ORGANIZATION')
+([2], [5], 'PERSON', 'Herman', 'Herman', 'PERSON')
+([13], [16], 'PERSON', 'Yene', 'Yene', 'PERSON')
+======================
+1
+([3, 4], [4, 5], 'PERSON', 'Brian Ross', 'Brian Ross', 'PERSON')
+======================
+2
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([3, 4], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+2
+([6], [9], 'PERSON', 'Herman', 'Herman', 'PERSON')
+([35, 36], [39, 40], 'PERSON', 'Brian Ross', 'Brian Ross', 'PERSON')
+======================
+1
+([1], [1], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+1
+([13], [17], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+1
+([19], [26], 'ORGANIZATION', 'Clinton', 'Clinton', 'ORGANIZATION')
+======================
+2
+([5, 6], [4, 5], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+2
+([7, 8, 9, 10], [8, 9, 10, 11, 12, 13, 14], 'ORGANIZATION', 'United Nations Security Council', 'Hội đồng Bảo an Liên Hiệp Quốc', 'ORGANIZATION')
+([13], [18], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+======================
+4
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([8], [8, 9, 10], 'ORGANIZATION', 'Pentagon', 'Lầu Năm Góc', 'ORGANIZATION')
+([14], [19], 'ORGANIZATION', 'UN', 'LHQ', 'ORGANIZATION')
+([3, 4], [1, 2], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+======================
+2
+([2], [6], 'ORGANIZATION', 'UN', 'LHQ', 'ORGANIZATION')
+([5, 6], [7, 8], 'PERSON', 'Richard Butler', 'Richard Butler', 'PERSON')
+======================
+3
+([4], [7], 'ORGANIZATION', 'UN', 'LHQ', 'ORGANIZATION')
+([7], [9], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([10, 11], [13, 14], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+([8], [7, 8, 9], 'PERSON', 'Pentagon', 'Lầu Năm Góc', 'PERSON')
+======================
+1
+(([3, 4, 5, 6], [8], 'ORGANIZATION', 'Food and Drug Administration', 'Dược', 'ORGANIZATION'), 0.07507002801120449)
+======================
+3
+([18], [23], 'ORGANIZATION', 'TWA', 'TWA', 'ORGANIZATION')
+([6, 7, 8], [6, 7], 'ORGANIZATION', 'Federal Aviation Administration', 'Cục Hàng', 'ORGANIZATION')
+([2], [2], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+======================
+2
+([14], [20], 'ORGANIZATION', 'TWA', 'TWA', 'ORGANIZATION')
+([16, 17], [21, 22], 'PERSON', 'Steven Snyder', 'Steven Snyder', 'PERSON')
+======================
+1
+([1], [1], 'ORGANIZATION', 'TWA', 'TWA', 'ORGANIZATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Lisa Stark', 'Lisa Stark', 'PERSON')
+======================
+1
+([7, 8, 9, 10], [6, 7, 8, 9, 10], 'ORGANIZATION', 'Dow Jones Industrials gained', 'cụm công nghiệp Dow Jones', 'ORGANIZATION')
+======================
+1
+(([4, 5, 6], [3, 4, 5], 'ORGANIZATION', 'University of Chicago', 'Đại học Chicago', 'ORGANIZATION'), 0.094573055028463)
+======================
+1
+([6, 7, 10], [9, 10, 11, 12], 'ORGANIZATION', 'New England Medicine', 'Y khoa New England', 'ORGANIZATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Deborah Amos', 'Deborah Amos', 'PERSON')
+======================
+1
+([14], [19], 'LOCATION', 'America', 'Mỹ', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Morton Dean', 'Morton Dean', 'PERSON')
+======================
+7
+([32, 33], [43, 44, 45], 'ORGANIZATION', 'US government', 'chính phủ Mỹ', 'ORGANIZATION')
+([1], [1], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([15], [24], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([48], [64], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([18, 19], [26, 27], 'ORGANIZATION', 'State Department', 'Bộ Ngoại', 'ORGANIZATION')
+([], [20, 21, 22], 'PERSON', '', 'Đức Thánh Cha', 'PERSON')
+([], [62], 'ORGANIZATION', '', 'Mỹ', 'ORGANIZATION')
+======================
+2
+([4], [7], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([], [20, 21, 22], 'PERSON', '', 'Đức Giáo Hoàng', 'PERSON')
+======================
+3
+([14], [19], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([11], [17], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([18], [25, 26, 27], 'PERSON', 'Pope', 'Đức Giáo Hoàng', 'PERSON')
+======================
+3
+([2], [5], 'LOCATION', 'Cuban', 'Cuba', 'LOCATION')
+([18], [28], 'PERSON', 'Castro', 'Castro', 'PERSON')
+([15], [19, 20, 21], 'PERSON', 'Pope', 'Đức Giáo Hoàng', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Antonio Mora', 'Antonio Mora', 'PERSON')
+======================
+1
+([10], [12, 18, 19], 'LOCATION', 'Georgia', 'ấy Georgia trong', 'LOCATION')
+======================
+1
+(([6, 7], [4, 5], 'LOCATION', 'Atlanta Symphony', 'Atlanta Symphony', 'LOCATION'), 0.083289817232376)
+======================
+1
+([3, 4], [3, 4], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+2
+([13], [21], 'LOCATION', 'Guatemala', 'Guatemala', 'LOCATION')
+([3], [6], 'LOCATION', 'Maryland', 'Maryland', 'LOCATION')
+======================
+4
+([2, 3, 4], [5, 6, 7, 8], 'ORGANIZATION', 'ABC News world', 'thế giới ABC News', 'ORGANIZATION')
+([7, 8], [10, 11], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([20, 21], [29, 30], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+([10], [13, 14], 'PERSON', 'Monday,', 'Thứ Hai', 'PERSON')
+======================
+1
+([25, 26], [37, 38], 'LOCATION', 'Central America', 'Trung Mỹ', 'LOCATION')
+======================
+2
+([14], [19], 'ORGANIZATION', 'Washington', 'Washington', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'David Ensor', 'David Ensor', 'PERSON')
+======================
+2
+([41], [61], 'LOCATION', 'American', 'Mỹ', 'LOCATION')
+([6, 7], [7, 8], 'ORGANIZATION', 'State Department', 'Bộ Ngoại', 'ORGANIZATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([8, 9], [7, 8, 9], 'ORGANIZATION', 'State Department', 'Bộ Ngoại giao', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'David Ensor', 'David Ensor', 'PERSON')
+======================
+5
+([3], [7], 'ORGANIZATION', 'UN', 'LHQ', 'ORGANIZATION')
+([27], [37], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([34], [1, 2], 'LOCATION', 'Americans', 'Chánh Thanh', 'LOCATION')
+([13], [19], 'LOCATION', 'Iraqi', 'Iraq', 'LOCATION')
+([5], [45], 'ORGANIZATION', 'inspector', 'Mỹ', 'ORGANIZATION')
+======================
+4
+([27], [37], 'ORGANIZATION', 'American', 'Mỹ', 'ORGANIZATION')
+([5], [4], 'LOCATION', 'Baghdad', 'Baghdad', 'LOCATION')
+([21], [28], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([7], [6], 'PERSON', 'Butler', 'Butler', 'PERSON')
+======================
+3
+([15], [18], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([8, 9], [14, 15], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON')
+([2], [2], 'PERSON', 'Butler', 'Butler', 'PERSON')
+======================
+2
+([13], [20], 'LOCATION', 'Iraqi', 'Iraq', 'LOCATION')
+([9], [16], 'PERSON', 'Butler', 'Butler', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Baghdad', 'Baghdad', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Ron Claiborne', 'Ron Claiborne', 'PERSON')
+======================
+4
+([14, 15, 16], [15, 16, 17, 18, 19], 'ORGANIZATION', 'Irish Republican Army', 'Quân đội Cộng hòa Ailen', 'ORGANIZATION')
+([], [26, 27], 'ORGANIZATION', '', 'Chính phủ', 'ORGANIZATION')
+([2], [2], 'LOCATION', 'London', 'London', 'LOCATION')
+([35, 36], [44, 45], 'LOCATION', 'Northern Ireland', 'Bắc Ireland', 'LOCATION')
+======================
+7
+([33], [39], 'LOCATION', 'Ireland', 'Ireland', 'LOCATION')
+([14], [18], 'LOCATION', 'Britain', 'Anh', 'LOCATION')
+([11], [37], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([30], [16], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([42], [51], 'PERSON', 'Kennedy', 'Kennedy', 'PERSON')
+([16, 17], [20, 21], 'PERSON', 'Raymond Seitz', 'Raymond Seitz', 'PERSON')
+([35, 36, 37], [41, 42, 43], 'PERSON', 'Jean Kennedy Smith', 'Jean Kennedy Smith', 'PERSON')
+======================
+5
+([26], [33], 'ORGANIZATION', 'IRA', 'IRA', 'ORGANIZATION')
+([], [31], 'LOCATION', '', 'Anh', 'LOCATION')
+([18], [25], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([12, 13], [16, 17], 'PERSON', 'John Major', 'John Major', 'PERSON')
+([3], [4], 'PERSON', 'Seitz', 'Seitz', 'PERSON')
+======================
+0
+======================
+9
+([29], [35], 'ORGANIZATION', 'London', 'London', 'ORGANIZATION')
+([16], [19], 'ORGANIZATION', 'IRA', 'IRA', 'ORGANIZATION')
+([], [17], 'ORGANIZATION', '', 'Anh', 'ORGANIZATION')
+([35], [45], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([21], [64], 'LOCATION', 'British', 'Anh', 'LOCATION')
+([47], [26], 'LOCATION', 'British', 'Anh', 'LOCATION')
+([], [10, 11], 'ORGANIZATION', '', 'Kennedy Smith', 'ORGANIZATION')
+([], [28, 29], 'ORGANIZATION', '', 'Bắc Ai-len', 'ORGANIZATION')
+([2], [3], 'PERSON', 'Seitz', 'Seitz', 'PERSON')
+======================
+3
+([10], [15], 'ORGANIZATION', 'IRA', 'IRA', 'ORGANIZATION')
+([18, 19, 20, 21], [26, 27, 28, 29], 'LOCATION', 'Number ten Downing Street', 'Số mười Downing Street', 'LOCATION')
+([2], [3], 'PERSON', 'Seitz', 'Seitz', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'London', 'London', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Mike Lee', 'Mike Lee', 'PERSON')
+======================
+1
+([10], [10], 'LOCATION', 'California', 'California', 'LOCATION')
+======================
+1
+(([19, 20], [24, 25], 'PERSON', 'Alice Featherstone', 'Alice Featherstone', 'PERSON'), 0.04842853865565497)
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Lisa Stark', 'Lisa Stark', 'PERSON')
+======================
+0
+======================
+2
+([1], [6], 'PERSON', 'Perkins', 'Perkins', 'PERSON')
+([10, 11], [16, 17], 'PERSON', 'Johnny Cash', 'Johnny Cash', 'PERSON')
+======================
+1
+([1, 2, 3], [3, 4, 5], 'PERSON', 'Martin Luther King', 'Martin Luther King', 'PERSON')
+======================
+4
+([2], [2], 'LOCATION', 'Atlanta', 'Atlanta', 'LOCATION')
+([6, 7, 9], [5, 6, 7, 8], 'LOCATION', 'King Center located', 'Trung tâm Vua nằm', 'LOCATION')
+([14, 15, 16], [15, 16, 17], 'PERSON', 'Coretta Scott King', 'Coretta Scott King', 'PERSON')
+([21], [23], 'PERSON', 'Gore', 'Gore', 'PERSON')
+======================
+1
+(([2, 3], [2, 3], 'LOCATION', 'New Hampshire', 'New Hampshire', 'LOCATION'), 0.083289817232376)
+======================
+4
+([3, 4], [1, 2], 'ORGANIZATION', 'Michele Norris', 'Michele Norris', 'ORGANIZATION')
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([11], [14], 'LOCATION', 'California', 'California', 'LOCATION')
+([9], [12], 'LOCATION', 'Riverside', 'Riverside', 'LOCATION')
+======================
+2
+([42, 43, 44], [50, 51, 52], 'PERSON', 'Martin Luther King', 'Martin Luther King', 'PERSON')
+([17, 18, 19, 20], [24, 25, 26, 27], 'PERSON', 'Martin Luther King, Junior', 'Martin Luther King, Junior', 'PERSON')
+======================
+4
+([14], [25], 'LOCATION', 'Americans', 'Mỹ', 'LOCATION')
+([19], [17], 'LOCATION', 'Americans', 'Mỹ', 'LOCATION')
+([5, 6, 7, 8], [6, 7, 8, 9], 'PERSON', 'Martin Luther King, Junior', 'Martin Luther King, Junior', 'PERSON')
+([13], [19], 'PERSON', 'African', 'Phi', 'PERSON')
+======================
+4
+([10], [10], 'LOCATION', 'Miami', 'Miami', 'LOCATION')
+([7, 8], [7, 8], 'LOCATION', 'Los Angeles', 'Los Angeles', 'LOCATION')
+([2], [2], 'LOCATION', 'Chicago', 'Chicago', 'LOCATION')
+([4, 5], [4, 5], 'LOCATION', 'New Jersey', 'New Jersey', 'LOCATION')
+======================
+1
+([13, 14, 15], [17, 18, 19], 'PERSON', 'Martin Luther King', 'Martin Luther King', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Michele Norris', 'Michele Norris', 'PERSON')
+======================
+4
+([15], [28], 'LOCATION', 'Americans', 'Mỹ', 'LOCATION')
+([22], [18], 'LOCATION', 'Americans', 'Mỹ', 'LOCATION')
+([1], [1], 'PERSON', 'Dyson', 'Dyson', 'PERSON')
+([7], [10], 'PERSON', 'King', 'King', 'PERSON')
+======================
+0
+======================
+3
+([30], [39], 'LOCATION', 'Montgomery', 'Montgomery', 'LOCATION')
+([25], [34], 'LOCATION', 'Selma', 'Selma', 'LOCATION')
+([27], [36], 'LOCATION', 'Alabama', 'Alabama', 'LOCATION')
+======================
+2
+([9], [11], 'LOCATION', 'Memphis', 'Memphis', 'LOCATION')
+([11], [13], 'LOCATION', 'Tennessee', 'Tennessee', 'LOCATION')
+======================
+2
+([6], [12], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([8, 9], [9, 10], 'PERSON', 'Jane Clayson', 'Jane Clayson', 'PERSON')
+======================
+1
+(([2], [1], 'ORGANIZATION', 'MTA', 'MTA', 'ORGANIZATION'), 0.094573055028463)
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'Los Angeles', 'Los Angeles', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Jane Clayson', 'Jane Clayson', 'PERSON')
+======================
+3
+([19], [23, 24, 25, 26], 'ORGANIZATION', 'Saint', 'Đại học Saint Mary', 'ORGANIZATION')
+([7], [8], 'LOCATION', 'Guatemala', 'Guatemala', 'LOCATION')
+([23], [28], 'LOCATION', 'Maryland', 'Maryland', 'LOCATION')
+======================
+3
+([4], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([2], [2], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+([6, 7], [4, 5], 'PERSON', 'Antonio Mora', 'Antonio Mora', 'PERSON')
+======================
+3
+([7], [31, 32], 'LOCATION', 'Cuba', 'Giáo Hội', 'LOCATION')
+([2], [6], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+([10], [12, 13], 'PERSON', 'Ortega', 'Cuba Ortega', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Antonio Mora', 'Antonio Mora', 'PERSON')
+======================
+1
+([3, 4], [3, 4], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+1
+(([9], [13], 'LOCATION', 'Havana', 'Havana', 'LOCATION'), 0.083289817232376)
+======================
+2
+([7], [13], 'ORGANIZATION', 'America', 'Mỹ', 'ORGANIZATION')
+([5], [6], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+======================
+2
+([19], [24, 25], 'ORGANIZATION', 'Jesus', 'Chúa Giêsu', 'ORGANIZATION')
+([9, 10], [10, 11, 12], 'LOCATION', 'Che Guevara', 'Cuba Che Guevara', 'LOCATION')
+======================
+2
+([19, 20], [27, 28, 29], 'ORGANIZATION', 'Communist Party', 'Đảng Cộng sản', 'ORGANIZATION')
+([12], [20], 'LOCATION', 'Cuban', 'Cuba', 'LOCATION')
+======================
+2
+([10, 11], [10, 11], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([14, 15], [14, 15], 'PERSON', 'Diane Sawyer', 'Diane Sawyer', 'PERSON')
+======================
+2
+([7], [7, 8, 9], 'ORGANIZATION', 'ABC', 'Ken Kashiwahara ABC', 'ORGANIZATION')
+([9, 10], [], 'ORGANIZATION', 'Ken Kashiwahara', '', 'ORGANIZATION')
+======================
+1
+(([9], [12], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON'), 0.04842853865565497)
+======================
+2
+([10], [14], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+([27], [40], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Sacramento', 'Sacramento', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Ken Kashiwahara', 'Ken Kashiwahara', 'PERSON')
+======================
+2
+([6, 7], [5, 6], 'PERSON', 'Ted Kaczynski', 'Ted Kaczynski', 'PERSON')
+([1, 2], [1, 2], 'PERSON', 'Sally Johnson', 'Sally Johnson', 'PERSON')
+======================
+2
+([8, 9], [13, 14], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGANIZATION')
+([14], [25], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+======================
+3
+([10, 11], [9, 10], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([2], [3], 'LOCATION', 'Israeli', 'Israel', 'LOCATION')
+([7], [7], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+3
+([8], [10], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([3, 4], [2, 3], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([10, 11], [7, 8], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+5
+([32], [33], 'ORGANIZATION', 'Israel', 'Israel', 'ORGANIZATION')
+([9], [9], 'LOCATION', 'Israel', 'Israel', 'LOCATION')
+([19], [19], 'LOCATION', 'Israel', 'Israel', 'LOCATION')
+([16, 17], [16, 17], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([26, 27], [26, 27], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+======================
+3
+([13], [12], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([17], [17], 'PERSON', 'Netanyahu', 'Netanyahu', 'PERSON')
+([29], [44, 45], 'PERSON', 'Clinton', 'hoảng Clinton', 'PERSON')
+======================
+3
+([5, 6], [5, 6], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([20], [26], 'PERSON', 'Netanyahu', 'Netanyahu', 'PERSON')
+([9], [10], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+1
+(([17], [18, 19, 20, 21, 22, 23], 'ORGANIZATION', 'Netanyahu', 'Nhà nước bàn bạc với Netanyahu', 'ORGANIZATION'), 0.04686289697908598)
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([8, 9], [7, 8], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+3
+([3, 4, 5, 9, 10], [2, 3, 4, 5, 6], 'ORGANIZATION', 'Holocaust Memorial Museum reversed itself', 'Bảo tàng Tưởng niệm Holocaust', 'ORGANIZATION')
+([7], [8], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([13], [17], 'PERSON', 'Arafat', 'Arafat', 'PERSON')
+======================
+2
+([2], [1, 2, 3], 'ORGANIZATION', 'Pentagon', 'Lầu Năm Góc', 'ORGANIZATION')
+([21], [28, 29], 'LOCATION', 'Vietnam', 'Việt Nam', 'LOCATION')
+======================
+3
+([7], [7], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+([12, 13], [9, 10, 11, 12, 13], 'LOCATION', 'Fidel Castro', 'Đức Giáo Hoàng, Fidel Castro', 'LOCATION')
+([4, 5], [4, 5], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+2
+([21], [32], 'LOCATION', 'American', 'Mỹ', 'LOCATION')
+([5], [7, 8], 'PERSON', 'Oprah', 'cùa Oprah', 'PERSON')
+======================
+3
+([3, 4, 5], [1, 2, 3], 'ORGANIZATION', 'Mike von Fremd', 'Mike von Fremd', 'ORGANIZATION')
+([1], [5], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([8], [7], 'LOCATION', 'Amarillo', 'Amarillo', 'LOCATION')
+======================
+1
+(([5], [8], 'PERSON', 'Oprah', 'Oprah', 'PERSON'), 0.04842853865565497)
+======================
+3
+([1, 2, 3], [1, 2, 3], 'ORGANIZATION', 'Mike von Fremd', 'Mike von Fremd', 'ORGANIZATION')
+([5, 6], [5, 6], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([8], [8], 'LOCATION', 'Amarillo', 'Amarillo', 'LOCATION')
+======================
+1
+(([3, 4, 5], [2, 3, 4, 5, 6, 7, 8, 9], 'LOCATION', 'United Arab Emirates', 'Các Tiểu Vương Quốc Ả Rập Thống Nhất', 'LOCATION'), 0.083289817232376)
+======================
+2
+([11], [13], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([8, 9], [10, 11], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+1
+([10, 11], [11, 12], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+======================
+2
+([1, 2], [5, 6], 'PERSON', 'John Paul', 'John Paul', 'PERSON')
+([4, 5], [3], 'PERSON', 'advancing Parkinson', 'Parkinson', 'PERSON')
+======================
+3
+([4], [8], 'ORGANIZATION', 'US', 'Mỹ', 'ORGANIZATION')
+([7], [11], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([14], [22], 'LOCATION', 'Cubans', 'Cuba', 'LOCATION')
+======================
+5
+([21], [35], 'ORGANIZATION', 'Castro', 'Castro', 'ORGANIZATION')
+([23], [33], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([27], [38], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([5], [6, 7], 'LOCATION', 'Poland', 'Ba Lan', 'LOCATION')
+([3], [2, 3, 4], 'PERSON', 'Pope', 'Đức Giáo Hoàng', 'PERSON')
+======================
+4
+([27, 29], [2, 3, 4], 'LOCATION', 'Cubans freedoms', 'Đức Giáo Hoàng', 'LOCATION')
+([20], [24], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([3], [34], 'LOCATION', 'Pope', 'Cuba', 'LOCATION')
+([22], [26], 'PERSON', 'Castro', 'Castro', 'PERSON')
+======================
+1
+([1, 2], [1, 2], 'PERSON', 'Fidel Castro', 'Fidel Castro', 'PERSON')
+======================
+3
+([1, 2], [1, 2], 'ORGANIZATION', 'Bill Blakemore', 'Bill Blakemore', 'ORGANIZATION')
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8, 9], 'LOCATION', 'Vatican City', 'Thành phố Vatican', 'LOCATION')
+======================
+2
+([1, 2], [1, 2], 'PERSON', 'Fidel Castro', 'Fidel Castro', 'PERSON')
+([4, 5], [4, 5], 'PERSON', 'John Paul', 'Gioan Phaolô', 'PERSON')
+======================
+2
+([12], [16], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([21], [31], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+======================
+2
+([5], [6], 'ORGANIZATION', 'Castro', 'Castro', 'ORGANIZATION')
+([9], [9, 10, 11], 'PERSON', 'Pope', 'Đức Giáo Hoàng', 'PERSON')
+======================
+1
+([14], [18], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+======================
+3
+([7], [9], 'ORGANIZATION', 'Compaq', 'Compaq', 'ORGANIZATION')
+([3], [5], 'ORGANIZATION', 'Microsoft', 'Microsoft', 'ORGANIZATION')
+([5], [7], 'ORGANIZATION', 'Intel', 'Intel', 'ORGANIZATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Gina Smith', 'Gina Smith', 'PERSON')
+======================
+1
+([3, 4], [7, 8], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+======================
+1
+(([11, 12], [19, 20], 'PERSON', 'Christa McAuliffe', 'Christa McAuliffe', 'PERSON'), 0.04842853865565497)
+======================
+1
+([4], [5], 'PERSON', 'Diane', 'Diane', 'PERSON')
+======================
+1
+([9], [11], 'LOCATION', 'Cubans', 'Cuba', 'LOCATION')
+======================
+2
+([2], [2], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([10, 11], [13, 14], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+4
+([11], [10], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([35, 36], [36, 37], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+([15], [15], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([28], [26], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+1
+(([8, 9], [16, 17], 'PERSON', 'Jeffrey Toobin', 'Jeffrey Toobin', 'PERSON'), 0.04842853865565497)
+======================
+3
+([7], [12], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([9, 10], [9, 10], 'LOCATION', 'Sam Donaldson', 'Sam Donaldson', 'LOCATION')
+([18, 19], [19, 20], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+======================
+5
+([31], [38], 'ORGANIZATION', 'Clinton', 'Clinton', 'ORGANIZATION')
+([14, 15], [14, 15], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([3], [3], 'PERSON', 'Peter', 'Peter', 'PERSON')
+([19], [21], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([1], [1], 'PERSON', 'Sam', 'Sam', 'PERSON')
+======================
+2
+([22, 23, 24], [31, 32], 'LOCATION', 'White House intern', 'Nhà Trắng', 'LOCATION')
+([13, 14], [19, 20], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+3
+([16, 17], [23, 24], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([26, 27], [39, 40], 'PERSON', 'Mara Liasson', 'Mara Liasson', 'PERSON')
+([23, 24], [29, 30, 31, 32, 33, 34, 35, 36, 37], 'ORGANIZATION', 'Robert Siegel', 'Đài phát thanh Công cộng Quốc gia Robert Siegel', 'ORGANIZATION')
+======================
+2
+([1, 2], [1, 2], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([15, 16], [21, 22], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+======================
+3
+([32, 33], [40, 41], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([7, 8], [10, 11], 'PERSON', 'Kenneth Starr', 'Kenneth Starr', 'PERSON')
+([25], [35], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([8], [14], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([10, 11], [11, 12], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+======================
+7
+([6, 7], [5, 6], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([12], [11, 12, 13], 'ORGANIZATION', 'Pentagon', 'Lầu Năm Góc', 'ORGANIZATION')
+([2, 3], [2, 3], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([34], [42], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([27], [33], 'PERSON', 'Tripp', 'Tripp', 'PERSON')
+([21, 22], [27, 28], 'PERSON', 'Linda Tripp', 'Linda Tripp', 'PERSON')
+([43, 44], [55, 56], 'PERSON', 'Ken Starr', 'Ken Starr', 'PERSON')
+======================
+4
+([1, 2], [1, 2], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([27], [41], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([15], [22], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([8], [8, 9, 10], 'PERSON', 'Tripp', 'năm ngoái Tripp', 'PERSON')
+======================
+4
+([7, 8], [9, 10], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([37, 38, 39], [53, 54], 'LOCATION', 'White House aide', 'Nhà Trắng', 'LOCATION')
+([18], [26], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([21, 22], [28, 29], 'PERSON', 'Robert Bennett', 'Robert Bennett', 'PERSON')
+======================
+2
+([6], [8], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([3], [3], 'PERSON', 'Tripp', 'Tripp', 'PERSON')
+======================
+6
+([30], [36], 'ORGANIZATION', 'Lewinsky', 'Lewinsky', 'ORGANIZATION')
+([12, 13], [16, 17, 18], 'ORGANIZATION', 'Justice Department', 'Bộ Tư pháp', 'ORGANIZATION')
+([21], [25], 'LOCATION', 'Starr', 'Starr', 'LOCATION')
+([6], [10], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([2], [3], 'PERSON', 'Tripp', 'Tripp', 'PERSON')
+([18], [22, 23], 'PERSON', 'Tripp', 'cô, Tripp', 'PERSON')
+======================
+5
+([1, 2], [1, 2], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([12], [13], 'ORGANIZATION', 'FBI', 'FBI', 'ORGANIZATION')
+([7], [11], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([20], [25], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([14], [16], 'PERSON', 'Tripp', 'Tripp', 'PERSON')
+======================
+5
+([16], [27], 'PERSON', 'Jones', 'Jones', 'PERSON')
+([24, 25], [35, 36], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+([8], [12], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([22], [31], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([1], [1], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+3
+([3, 4], [3, 4], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([6], [7], 'PERSON', 'Jordan', 'Jordan', 'PERSON')
+([9], [10], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+1
+([7], [9], 'PERSON', 'Peter', 'Peter', 'PERSON')
+======================
+2
+([4], [4], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+======================
+2
+([7, 8], [8, 9], 'PERSON', 'Kenneth Starr', 'Kenneth Starr', 'PERSON')
+([1], [1], 'PERSON', 'Jeffrey', 'Jeffrey', 'PERSON')
+======================
+3
+([28], [38], 'ORGANIZATION', 'FBI', 'FBI', 'ORGANIZATION')
+([23, 24], [30, 31, 32, 33], 'ORGANIZATION', 'Travel Office', 'Văn phòng Du lịch', 'ORGANIZATION')
+([31, 32], [47, 48], 'PERSON', 'Vince Foster', 'Vince Foster', 'PERSON')
+======================
+4
+([26], [35], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([17], [28, 31, 32, 33], 'PERSON', 'Reno', 'Reno Thẩm phán Reno', 'PERSON')
+([22], [], 'PERSON', 'Reno', '', 'PERSON')
+([], [], 'PERSON', '', '', 'PERSON')
+======================
+1
+([10, 11, 12, 13, 14, 15], [44, 45], 'ORGANIZATION', 'Public Broadcasting and National Public Radio', 'Liên bang', 'ORGANIZATION')
+======================
+2
+([17, 18, 19], [24, 25, 26, 27], 'ORGANIZATION', 'National Public Radio', 'Đài Cộng đồng Quốc', 'ORGANIZATION')
+([21, 22], [21, 22], 'PERSON', 'Mara Liasson', 'Mara Liasson', 'PERSON')
+======================
+2
+([19, 20], [26, 27, 28, 29], 'ORGANIZATION', 'Public Broadcasting', 'Đài phát thanh Cộng', 'ORGANIZATION')
+([16, 17], [23, 24], 'PERSON', 'Jim Lehrer', 'Jim Lehrer', 'PERSON')
+======================
+2
+([10, 11], [10, 11], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([6, 7], [7, 8], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+1
+([26, 27], [30, 31], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+======================
+5
+([26, 27], [33, 34], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([40, 41], [47, 48], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([14, 15], [16, 17], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([12], [14], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([3], [4], 'PERSON', 'Sam', 'Sam', 'PERSON')
+======================
+2
+([11, 12], [16, 17], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([14], [19], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+======================
+2
+([20], [24], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([5, 6], [4, 5], 'PERSON', 'John Paul', 'Gioan Phaolô', 'PERSON')
+======================
+4
+([45], [54], 'ORGANIZATION', 'American', 'Mỹ', 'ORGANIZATION')
+([10, 11], [10, 11, 12, 13], 'ORGANIZATION', 'Catholic Church', 'Giáo Hội Công Giáo', 'ORGANIZATION')
+([54], [67], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([48], [57], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+======================
+1
+([1, 2], [1, 2], 'PERSON', 'John Paul', 'John Paul', 'PERSON')
+======================
+3
+([15], [22], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([18], [28], 'LOCATION', 'Cubans', 'Cuba', 'LOCATION')
+([1, 2], [4, 5], 'PERSON', 'John Paul', 'John Paul', 'PERSON')
+======================
+2
+([9], [12], 'ORGANIZATION', 'US', 'Mỹ', 'ORGANIZATION')
+([14], [17], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+======================
+2
+([12], [18], 'LOCATION', 'Cuban', 'Cuba', 'LOCATION')
+([15, 16], [20, 21], 'PERSON', 'John Paul', 'Gioan Phaolô', 'PERSON')
+======================
+2
+([14], [16], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([6, 7], [6, 7], 'PERSON', 'Fidel Castro', 'Fidel Castro', 'PERSON')
+======================
+1
+(([1, 2], [1, 2], 'PERSON', 'Conchita Diaz', 'Conchita Diaz', 'PERSON'), 0.04842853865565497)
+======================
+2
+([6], [6], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+([1, 2, 3], [1, 2, 3], 'PERSON', 'Patricia Rotea Galindo', 'Patricia Rotea Galindo', 'PERSON')
+======================
+1
+([6], [7], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+======================
+1
+([8, 9], [10, 11], 'PERSON', 'John Gotti', 'John Gotti', 'PERSON')
+======================
+1
+([9, 10, 11, 12, 15], [15, 16, 17, 18, 19], 'ORGANIZATION', 'Gambino crime family indicted government', 'gia đình tội phạm Gambino', 'ORGANIZATION')
+======================
+1
+(([4, 5], [4, 5], 'PERSON', 'John Gotti', 'John Gotti', 'PERSON'), 0.04842853865565497)
+======================
+2
+([12, 13], [15, 16], 'PERSON', 'Gregory DePalma', 'Gregory DePalma', 'PERSON')
+([20], [25], 'PERSON', 'Gambino', 'Gambino', 'PERSON')
+======================
+1
+(([15, 16], [23, 24], 'PERSON', 'Denny MacLaine', 'Denny MacLaine', 'PERSON'), 0.04842853865565497)
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'John Miller', 'John Miller', 'PERSON')
+======================
+3
+([7], [10], 'LOCATION', 'Baghdad', 'Baghdad', 'LOCATION')
+([4, 5], [6, 7], 'PERSON', 'Richard Butler', 'Richard Butler', 'PERSON')
+([1, 2, 10, 11], [1, 2], 'PERSON', 'Chief weapons getting nowhere', 'Chánh Thanh', 'PERSON')
+======================
+4
+([7], [8], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([13, 14], [19, 20], 'LOCATION', 'Middle East', 'Trung Đông', 'LOCATION')
+([1], [1], 'LOCATION', 'Palestinian', 'Nhà', 'LOCATION')
+([3, 4], [4, 5, 6], 'LOCATION', 'Yasser Arafat', 'Palestine Yasser Arafat', 'LOCATION')
+======================
+2
+([9, 10], [9, 10], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([16], [18], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+4
+([2, 3], [1, 2, 3, 4, 5], 'ORGANIZATION', 'Federal Reserve', 'Cục Dự trữ Liên bang', 'ORGANIZATION')
+([8], [44], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([26], [13], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([23], [41, 42], 'LOCATION', 'Asian', 'châu Á', 'LOCATION')
+======================
+2
+([7], [7], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+([2], [2], 'PERSON', 'Peter', 'Peter', 'PERSON')
+======================
+1
+([1], [1], 'PERSON', 'Fidel', 'Fidel', 'PERSON')
+======================
+2
+([29, 30], [36, 37], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([15, 16], [23, 24], 'PERSON', 'Fidel Castro', 'Fidel Castro', 'PERSON')
+======================
+2
+([9, 10], [6, 7, 8], 'ORGANIZATION', 'National Assembly', 'Quốc hội Cuba', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'Ricardo Alarcon', 'Ricardo Alarcon', 'PERSON')
+======================
+4
+([4], [24], 'LOCATION', 'Cuban', 'Cuba', 'LOCATION')
+([17], [8], 'LOCATION', 'Cubans', 'Cuba', 'LOCATION')
+([13], [17], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([35], [49], 'PERSON', 'Castro', 'Castro', 'PERSON')
+======================
+2
+([4, 5], [5, 6, 7, 8], 'ORGANIZATION', 'Central Park', 'Công viên Trung tâm', 'ORGANIZATION')
+([7], [15], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+======================
+4
+([2, 3, 4], [5, 6, 7, 8], 'ORGANIZATION', 'ABC News world', 'thế giới ABC News', 'ORGANIZATION')
+([7, 8], [10, 11], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([10, 11, 12], [13, 14], 'LOCATION', 'Thursday, January twenty-second', 'Thứ Năm', 'LOCATION')
+([20, 21], [31, 32], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+1
+([16, 17], [24, 25], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+======================
+2
+([7, 8], [11, 12], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([12, 13], [19, 20], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+2
+([10], [13], 'LOCATION', 'Palestinian', 'nhà', 'LOCATION')
+([12, 13], [16, 17, 18], 'LOCATION', 'Yasser Arafat', 'Palestine Yasser Arafat', 'LOCATION')
+======================
+2
+([27, 28], [35, 36], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([3, 4], [4, 5], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+======================
+5
+([24, 25], [33, 34], 'ORGANIZATION', 'American Express', 'American Express', 'ORGANIZATION')
+([21], [30], 'LOCATION', 'Revlon', 'Revlon', 'LOCATION')
+([5, 6], [8, 9], 'PERSON', 'Betty Currie', 'Betty Currie', 'PERSON')
+([1], [1], 'PERSON', 'Jordan', 'Jordan', 'PERSON')
+([8], [12], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([13], [17], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([9, 10], [13, 14], 'PERSON', 'Gennifer Flowers', 'Gennifer Flowers', 'PERSON')
+======================
+1
+([12, 13], [16, 17], 'PERSON', 'Betty Currie', 'Betty Currie', 'PERSON')
+======================
+2
+([5, 6], [4, 5], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+1
+([6, 7], [9, 10], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+3
+([11], [11], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [4, 5], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([6, 7], [7, 8], 'PERSON', 'William Ginsburg', 'William Ginsburg', 'PERSON')
+======================
+2
+([10], [13], 'LOCATION', 'Arkansas', 'Arkansas', 'LOCATION')
+([13], [15, 16, 17], 'LOCATION', 'Wright', 'Thẩm phán Wright', 'LOCATION')
+======================
+4
+([30], [38], 'ORGANIZATION', 'Starr', 'Starr', 'ORGANIZATION')
+([1], [1], 'ORGANIZATION', 'Ginsburg', 'Ginsburg', 'ORGANIZATION')
+([6], [8], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([12, 13], [21, 22], 'PERSON', 'Ken Starr', 'Ken Starr', 'PERSON')
+======================
+4
+([1, 2], [1, 2], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([48, 49], [69, 70], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+([51], [75], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([8], [10], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+1
+([12, 13], [18, 19], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+======================
+2
+([9, 10], [12, 13], 'PERSON', 'Paula Jones', 'Paula Jones', 'PERSON')
+([1], [1], 'PERSON', 'Tripp', 'Tripp', 'PERSON')
+======================
+4
+([16, 17], [18, 19], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([2], [2], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([13], [16], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([8], [8], 'PERSON', 'Tripp', 'Tripp', 'PERSON')
+======================
+2
+([8], [9], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([5, 6], [6, 7], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+======================
+3
+([7, 8], [11, 12], 'ORGANIZATION', 'Bill Clinton', 'Bill Clinton', 'ORGANIZATION')
+([19, 20], [24, 25], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([3], [6], 'PERSON', 'Kennedy', 'Kennedy', 'PERSON')
+======================
+1
+([4, 5], [6, 7], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+1
+([7, 8, 9, 10], [9, 10, 11, 12, 13], 'LOCATION', 'Beverly Hills High School', 'Trường Trung học Beverly Hills', 'LOCATION')
+======================
+4
+([17], [22, 23, 24], 'ORGANIZATION', 'Lewis', 'Đại học Lewis', 'ORGANIZATION')
+([19, 20], [26], 'ORGANIZATION', 'Clark College', 'Clark', 'ORGANIZATION')
+([7], [10], 'LOCATION', 'Oregon', 'Oregon', 'LOCATION')
+([5], [8], 'LOCATION', 'Portland', 'Portland', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Linda Douglass', 'Linda Douglass', 'PERSON')
+======================
+2
+([2, 4], [6], 'ORGANIZATION', 'Unabomber confession', 'Unabomber', 'ORGANIZATION')
+([6, 7], [8, 9], 'PERSON', 'Ted Kaczynski', 'Ted Kaczynski', 'PERSON')
+======================
+2
+([2], [2], 'LOCATION', 'California', 'California', 'LOCATION')
+([8], [8], 'PERSON', 'Unabomber', 'Unabomber', 'PERSON')
+======================
+3
+([10], [12], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([2], [2], 'LOCATION', 'Sacramento', 'Sacramento', 'LOCATION')
+([12, 13], [9, 10], 'PERSON', 'Ken Kashiwahara', 'Ken Kashiwahara', 'PERSON')
+======================
+2
+([3, 4], [2, 3], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGANIZATION')
+([14], [15], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+======================
+1
+([3], [8], 'PERSON', 'Kaczynski', 'Kaczynski', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Sacramento', 'Sacramento', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Ken Kashiwahara', 'Ken Kashiwahara', 'PERSON')
+======================
+1
+(([4, 5], [5, 6], 'PERSON', 'Ted Kaczynski', 'Ted Kaczynski', 'PERSON'), 0.04842853865565497)
+======================
+3
+([4], [4], 'LOCATION', 'Sacramento', 'Sacramento', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Terry Moran', 'Terry Moran', 'PERSON')
+([8, 9], [8, 9], 'PERSON', 'Ken Kashiwahara', 'Ken Kashiwahara', 'PERSON')
+======================
+2
+([1], [8], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([6, 7], [9, 10], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+======================
+3
+([3, 4], [3, 4], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([22], [28, 29, 30], 'ORGANIZATION', 'Pentagon', 'Lầu Năm Góc', 'ORGANIZATION')
+([7], [8], 'LOCATION', 'Americans', 'Mỹ', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+([8], [7, 8, 9], 'PERSON', 'Pentagon', 'Lầu Năm Góc', 'PERSON')
+======================
+1
+(([7, 8, 9], [10, 11], 'ORGANIZATION', 'Dow Jones Industrials', 'Dow Jones', 'ORGANIZATION'), 0.07507002801120449)
+======================
+2
+([12, 13], [20, 21], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([16, 17], [23, 24], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+======================
+2
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([3, 4], [1, 2], 'ORGANIZATION', 'Chris Wallace', 'Chris Wallace', 'ORGANIZATION')
+======================
+2
+([9], [5], 'LOCATION', 'Jordan', 'Jordan', 'LOCATION')
+([1], [1], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([12], [12], 'PERSON', 'Jordan', 'Jordan', 'PERSON')
+([7, 8], [5, 6, 7, 8], 'ORGANIZATION', 'Vincent Foster', 'Nhà Trắng Vincent Foster', 'ORGANIZATION')
+======================
+1
+([10], [16], 'LOCATION', 'Jordan', 'Jordan', 'LOCATION')
+======================
+3
+([6, 7], [5, 6, 7], 'ORGANIZATION', 'Justice Department', 'Bộ Tư pháp', 'ORGANIZATION')
+([9], [9], 'LOCATION', 'Jordan', 'Jordan', 'LOCATION')
+([2, 3], [2, 3], 'PERSON', 'Webster Hubbell', 'Webster Hubbell', 'PERSON')
+======================
+3
+([14], [19], 'PERSON', 'Jordan', 'Jordan', 'PERSON')
+([27], [36], 'PERSON', 'Jordan', 'Jordan', 'PERSON')
+([11, 12], [16, 17], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+1
+([6], [6], 'LOCATION', 'Jordan', 'Jordan', 'LOCATION')
+======================
+3
+([12], [15, 16], 'ORGANIZATION', 'Cadillac', 'chiếc Cadillac', 'ORGANIZATION')
+([7], [11], 'LOCATION', 'London', 'London', 'LOCATION')
+([24, 25], [36, 37], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+======================
+2
+([3], [4], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([10, 11], [13, 14], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+======================
+1
+(([4, 5], [9, 10], 'PERSON', 'Jeff Toobin', 'Jeff Toobin', 'PERSON'), 0.04842853865565497)
+======================
+3
+([21, 22], [27, 28], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([17, 18], [22, 23], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+([10, 11], [15, 16], 'PERSON', 'Ken Starr', 'Ken Starr', 'PERSON')
+======================
+2
+([14, 15], [19, 20], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([20, 21], [24, 25], 'PERSON', 'Paula Jones', 'Paula Jones', 'PERSON')
+======================
+1
+([6, 7], [9, 10], 'PERSON', 'John Paul', 'Gioan Phaolô', 'PERSON')
+======================
+2
+([3, 4], [1, 2], 'ORGANIZATION', 'Bill Blakemore', 'Bill Blakemore', 'ORGANIZATION')
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+======================
+1
+([2, 3], [2, 3], 'PERSON', 'John Paul', 'John Paul', 'PERSON')
+======================
+4
+([11], [18], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([13, 14], [20, 21], 'PERSON', 'Fidel Castro', 'Fidel Castro', 'PERSON')
+([38, 39], [52, 53], 'PERSON', 'John Paul', 'Gioan Phaolô', 'PERSON')
+([1, 2], [4, 5, 6], 'PERSON', 'The Pope', 'Đức Giáo Hoàng', 'PERSON')
+======================
+4
+([1, 2], [1, 2], 'ORGANIZATION', 'Bill Blakemore', 'Bill Blakemore', 'ORGANIZATION')
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([10], [10], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([7, 8], [7, 8], 'LOCATION', 'Santa Clara', 'Santa Clara', 'LOCATION')
+======================
+4
+([18, 19], [31, 32], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([27, 28], [40, 41], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+([5], [7], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([33], [49], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+1
+([3, 4], [3, 4], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+4
+([2, 3, 4], [5, 6, 7, 8], 'ORGANIZATION', 'ABC News world', 'thế giới ABC News', 'ORGANIZATION')
+([7, 8], [10, 11], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([10, 11, 12], [13, 14, 15], 'LOCATION', 'Friday January twenty-third', 'Thứ Sáu Tháng', 'LOCATION')
+([20, 21], [30, 31], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+3
+([27], [35], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([29, 30], [32, 33], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+([12, 13], [14, 15], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+3
+([11, 12], [13, 14], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([4, 5], [5, 6], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([16], [22], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([4], [7], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([18, 19], [24, 25], 'PERSON', 'Paula Jones', 'Paula Jones', 'PERSON')
+======================
+3
+([1, 2], [1, 2], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([23, 24], [26, 27], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([9], [12], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+1
+([14, 15], [18, 19], 'PERSON', 'Betty Currie', 'Betty Currie', 'PERSON')
+======================
+2
+([5, 6], [10, 11], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+([21], [27], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+3
+([4, 5], [6, 7], 'PERSON', 'William Ginsburg', 'William Ginsburg', 'PERSON')
+([22], [31], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([13, 14], [25, 26], 'PERSON', 'Ken Starr', 'Ken Starr', 'PERSON')
+======================
+5
+([30], [37], 'ORGANIZATION', 'FBI', 'FBI', 'ORGANIZATION')
+([36], [44], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([10, 11, 15, 16, 39, 41], [18, 19], 'LOCATION', 'lured Miss Ritz Carlton managed detain', 'Ritz Carlton', 'LOCATION')
+([19, 20], [21, 22, 23, 24, 25], 'LOCATION', 'Pentagon City', 'Thành phố Lầu Năm Góc', 'LOCATION')
+([12], [14], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+4
+([5], [7], 'LOCATION', 'Peter', 'Peter', 'LOCATION')
+([21, 22], [26, 27], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([10], [13], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([12], [15], 'PERSON', 'Ginsburg', 'Ginsburg', 'PERSON')
+======================
+1
+([19, 20], [32, 33], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+2
+([3], [3], 'PERSON', 'Peter', 'Peter', 'PERSON')
+([1], [1], 'PERSON', 'Sam', 'Sam', 'PERSON')
+======================
+1
+(([8, 9], [12, 13], 'PERSON', 'Mike McCurry', 'Mike McCurry', 'PERSON'), 0.04842853865565497)
+======================
+2
+([5, 6], [4, 5], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+1
+(([3], [5], 'PERSON', 'Clinton', 'Clinton', 'PERSON'), 0.04842853865565497)
+======================
+2
+([1], [1], 'PERSON', 'Linda', 'Linda', 'PERSON')
+([6], [7], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+1
+([3], [4], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([1, 2], [1, 2], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([6], [6], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([4], [4], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Linda Douglass', 'Linda Douglass', 'PERSON')
+======================
+2
+([13, 14], [16, 17], 'PERSON', 'Kenneth Starr', 'Kenneth Starr', 'PERSON')
+([4], [4], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+0
+======================
+8
+([49], [73], 'ORGANIZATION', 'FBI', 'FBI', 'ORGANIZATION')
+([21, 22], [29, 30, 31], 'ORGANIZATION', 'Justice Department', 'Sở Tư pháp', 'ORGANIZATION')
+([25], [34], 'LOCATION', 'Starr', 'Starr', 'LOCATION')
+([36], [51], 'LOCATION', 'Arkansas', 'Arkansas', 'LOCATION')
+([42, 43], [59, 60, 61, 62, 63, 64], 'LOCATION', 'White House', 'Văn phòng Du lịch Nhà Trắng', 'LOCATION')
+([67], [95], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([14], [21, 22], 'PERSON', 'Hubbell', 'Web Hubbell', 'PERSON')
+([52, 53], [78, 79], 'PERSON', 'Vince Foster', 'Vince Foster', 'PERSON')
+======================
+2
+([8], [10], 'LOCATION', 'Iran', 'Iran', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Lawrence Walsh', 'Lawrence Walsh', 'PERSON')
+======================
+3
+([28, 29], [40, 41], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([3], [8], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([20, 21], [35, 36], 'PERSON', 'Paula Jones', 'Paula Jones', 'PERSON')
+======================
+1
+(([2], [3], 'PERSON', 'Bush', 'Bush', 'PERSON'), 0.04842853865565497)
+======================
+4
+([22], [32], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([11, 12], [14, 15], 'LOCATION', 'Little Rock', 'Little Rock', 'LOCATION')
+([24], [35], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([8], [12], 'PERSON', 'Whitewater', 'Whitewater', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', "Tim O'Brien", "Tim O'Brien", 'PERSON')
+======================
+1
+(([10, 11], [16, 17], 'PERSON', 'Jeffrey Toobin', 'Jeffrey Toobin', 'PERSON'), 0.04842853865565497)
+======================
+1
+([10, 11], [12, 13], 'PERSON', 'Janet Reno', 'Janet Reno', 'PERSON')
+======================
+1
+(([3, 4], [6, 7], 'PERSON', 'Jeff Toobin', 'Jeff Toobin', 'PERSON'), 0.04842853865565497)
+======================
+1
+([5, 6], [8, 9], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+======================
+2
+([5], [6], 'LOCATION', 'Colorado', 'Colorado', 'LOCATION')
+([1, 2], [3, 4], 'PERSON', 'Rocky Mountain', 'Rocky Mountain', 'PERSON')
+======================
+1
+([3], [4], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Denver', 'Denver', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Tom Foreman', 'Tom Foreman', 'PERSON')
+======================
+1
+(([6, 7], [9, 10], 'PERSON', 'Tom Rosenstiel', 'Tom Rosenstiel', 'PERSON'), 0.04842853865565497)
+======================
+1
+([3, 4], [4, 5], 'PERSON', 'Tom Rosenstiel', 'Tom Rosenstiel', 'PERSON')
+======================
+5
+([11, 12, 13], [12, 13, 14, 15, 16], 'ORGANIZATION', 'UN Security Council', 'Hội đồng Bảo an LHQ', 'ORGANIZATION')
+([15], [18], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([5], [4, 5], 'ORGANIZATION', 'UN', 'Chánh Thanh', 'ORGANIZATION')
+([7, 8], [8, 9], 'PERSON', 'Richard Butler', 'Richard Butler', 'PERSON')
+([4], [], 'ORGANIZATION', 'chief', '', 'ORGANIZATION')
+======================
+3
+([4], [], 'ORGANIZATION', 'State', '', 'ORGANIZATION')
+([10, 11], [7, 8], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([5, 6], [1, 2, 3, 4], 'PERSON', 'Madeleine Albright', 'Ngoại trưởng Madeleine Albright', 'PERSON')
+======================
+2
+([12], [15], 'ORGANIZATION', 'CIA', 'CIA', 'ORGANIZATION')
+([1, 2, 3], [1, 2, 3], 'PERSON', 'Mir Aimal Kasi', 'Mir Aimal Kasi', 'PERSON')
+======================
+4
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([11], [14], 'LOCATION', 'Brazil', 'Brazil', 'LOCATION')
+([8], [12], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([3, 4], [1, 2], 'PERSON', 'Barry Serafin', 'Barry Serafin', 'PERSON')
+======================
+3
+([11, 12], [14, 15], 'ORGANIZATION', 'State Department', 'Bộ Ngoại', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Brazil', 'Brazil', 'LOCATION')
+([4, 5], [4, 5], 'LOCATION', 'Sao Paulo', 'Sao Paulo', 'LOCATION')
+======================
+2
+([2, 3], [1, 2, 3], 'ORGANIZATION', 'State Department', 'Bộ Ngoại giao', 'ORGANIZATION')
+([21, 22], [29, 30], 'LOCATION', 'Sao Paulo', 'Sao Paulo', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Barry Serafin', 'Barry Serafin', 'PERSON')
+======================
+3
+([10], [14], 'LOCATION', 'Camaguey', 'Camaguey', 'LOCATION')
+([18], [23], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([1, 2], [1, 2, 3], 'PERSON', 'The Pope', 'Đức Giáo Hoàng', 'PERSON')
+======================
+3
+([5], [10], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([7, 8], [7, 8], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+([16, 17], [22, 23], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+2
+([18, 19], [21, 22], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([5, 6, 8], [10], 'PERSON', 'Twenty Twenty Nightline', 'Nightline', 'PERSON')
+======================
+1
+([4, 5], [5, 6], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+3
+([3, 4], [6, 7], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([39, 40], [60, 61], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([10], [19], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+1
+(([3, 4], [3, 4], 'PERSON', 'Forrest Sawyer', 'Forrest Sawyer', 'PERSON'), 0.04842853865565497)
+======================
+3
+([3, 4], [7, 8], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([12], [19], 'LOCATION', 'Americans', 'Mỹ', 'LOCATION')
+([14], [22], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+3
+([8], [15], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([13], [17], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([10, 11], [12, 13], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+======================
+3
+([13, 14], [21, 22], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([10, 11], [15, 16], 'PERSON', 'William Ginsburg', 'William Ginsburg', 'PERSON')
+([6, 7], [10, 11], 'PERSON', 'Ken Starr', 'Ken Starr', 'PERSON')
+======================
+2
+([2], [3], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([15], [23], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+1
+([6, 7], [7, 8], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+2
+([9], [12], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([2], [2], 'PERSON', 'Starr', 'Starr', 'PERSON')
+======================
+5
+([30], [41], 'ORGANIZATION', 'Clinton', 'Clinton', 'ORGANIZATION')
+([4, 5], [6, 7], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([11], [16], 'ORGANIZATION', 'FBI', 'FBI', 'ORGANIZATION')
+([8, 10, 19], [24], 'LOCATION', 'consented having Watergate', 'Watergate', 'LOCATION')
+([7], [9], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([4, 5], [9, 10], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([12], [18], 'PERSON', 'Tripp', 'Tripp', 'PERSON')
+======================
+3
+([1], [1], 'ORGANIZATION', 'Forrest', 'Forrest', 'ORGANIZATION')
+([6], [6], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([3, 4], [3, 4], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+======================
+2
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([3, 4], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+2
+([4], [3], 'ORGANIZATION', 'Hollywood', 'Hollywood', 'ORGANIZATION')
+([6, 7], [7, 8], 'PERSON', 'Harry Thomasson', 'Harry Thomasson', 'PERSON')
+======================
+1
+(([2, 3], [3, 4], 'PERSON', 'Harold Ickes', 'Harold Ickes', 'PERSON'), 0.04842853865565497)
+======================
+2
+([4, 5], [5, 6], 'PERSON', 'Leon Panetta', 'Leon Panetta', 'PERSON')
+([38], [52], 'PERSON', 'Gore', 'Gore', 'PERSON')
+======================
+3
+([10, 11], [13, 14], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([3, 4], [3, 4, 5], 'LOCATION', 'Roy Romer', 'Đảng Roy Romer', 'LOCATION')
+([22], [33], 'PERSON', 'Panetta', 'Panetta', 'PERSON')
+======================
+2
+([18], [29], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([8], [12], 'PERSON', 'Gore', 'Gore', 'PERSON')
+======================
+3
+([1], [1], 'ORGANIZATION', 'Forrest', 'Forrest', 'ORGANIZATION')
+([7, 8], [6, 7], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([3, 4], [3, 4], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+3
+([8, 9], [20, 21], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([5], [12], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([13, 14], [23, 24], 'PERSON', 'George Stephanopoulos', 'George Stephanopoulos', 'PERSON')
+======================
+3
+([8], [15, 16], 'ORGANIZATION', 'State', 'Quốc phòng', 'ORGANIZATION')
+([10], [12, 13], 'ORGANIZATION', 'Defense', 'Nhà nước', 'ORGANIZATION')
+([19], [27], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+======================
+2
+([1, 2], [7, 8], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([5, 6], [9, 10], 'PERSON', 'George Stephanopoulos', 'George Stephanopoulos', 'PERSON')
+======================
+2
+([3], [6], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([5, 6], [3, 4], 'PERSON', 'Mike Lee', 'Mike Lee', 'PERSON')
+======================
+3
+([9], [11], 'LOCATION', 'Jerusalem', 'Jerusalem', 'LOCATION')
+([15], [16], 'LOCATION', 'Berlin', 'Berlin', 'LOCATION')
+([12], [14], 'LOCATION', 'Moscow', 'Moscow', 'LOCATION')
+======================
+3
+([2], [2], 'LOCATION', 'France', 'Pháp', 'LOCATION')
+([12], [24], 'LOCATION', 'Mitterrand', 'Mitterrand', 'LOCATION')
+([23], [39], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'London', 'London', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Mike Lee', 'Mike Lee', 'PERSON')
+======================
+2
+([20, 21], [29, 30], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([13], [22], 'PERSON', 'Gore', 'Gore', 'PERSON')
+======================
+2
+([1, 2], [1, 2], 'PERSON', 'Al Gore', 'Al Gore', 'PERSON')
+([4, 5], [4, 5], 'PERSON', 'Bill Clinton', 'Bill Clinton', 'PERSON')
+======================
+1
+([15, 16], [15, 16], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+======================
+1
+([6, 7], [6, 7], 'ORGANIZATION', 'Democratic party', 'Đảng Dân', 'ORGANIZATION')
+======================
+3
+([15], [34], 'ORGANIZATION', 'House', 'House', 'ORGANIZATION')
+([21], [40], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([24, 25], [42, 43], 'PERSON', 'Richard Gephardt', 'Richard Gephardt', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Karla Davis', 'Karla Davis', 'PERSON')
+======================
+1
+(([10, 11], [16, 17], 'PERSON', 'Slick Willy', 'Slick Willy', 'PERSON'), 0.04842853865565497)
+======================
+1
+([17], [28], 'ORGANIZATION', 'Clinton', 'Clinton', 'ORGANIZATION')
+======================
+2
+([5], [10, 11, 12], 'LOCATION', 'Virginia', 'Virginia Chuck Robb', 'LOCATION')
+([7, 8], [7], 'LOCATION', 'Chuck Robb', 'Thượng', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([8, 9], [7, 8], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Michel McQueen', 'Michel McQueen', 'PERSON')
+======================
+5
+([18, 19], [24, 25], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([16], [19], 'PERSON', 'Cokie', 'Cokie', 'PERSON')
+([28], [42], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([14], [17], 'PERSON', 'Sam', 'Sam', 'PERSON')
+([33, 34], [44, 45], 'PERSON', 'Paul Begala', 'Paul Begala', 'PERSON')
+======================
+2
+([2], [2], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([15, 16], [13, 14, 15, 16, 17], 'LOCATION', 'John Paul', 'Đức Giáo Hoàng Gioan Phaolô', 'LOCATION')
+======================
+2
+([5, 6], [4, 5], 'ORGANIZATION', 'Bill Blakemore', 'Bill Blakemore', 'ORGANIZATION')
+([3], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+======================
+3
+([15], [21], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Fidel Castro', 'Fidel Castro', 'PERSON')
+([9, 10], [16, 17], 'PERSON', 'John Paul', 'John Paul', 'PERSON')
+======================
+1
+([9, 10], [11, 12, 13, 14, 15], 'LOCATION', 'John Paul', 'Đức Giáo Hoàng Gioan Phaolô', 'LOCATION')
+======================
+2
+([1, 2], [1, 2], 'PERSON', 'Fidel Castro', 'Fidel Castro', 'PERSON')
+([14, 15], [17, 18], 'PERSON', 'John Paul', 'John Paul', 'PERSON')
+======================
+4
+([1, 2], [1, 2], 'ORGANIZATION', 'Bill Blakemore', 'Bill Blakemore', 'ORGANIZATION')
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([11], [12], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([9], [8, 9, 10], 'PERSON', 'Pope', 'Đức Giáo Hoàng', 'PERSON')
+======================
+3
+([13, 14], [12, 13], 'ORGANIZATION', 'Denver Broncos', 'Denver Broncos', 'ORGANIZATION')
+([7, 8, 9], [8, 9, 10, 11], 'ORGANIZATION', 'Green Bay Packers', 'Green Bay Packers đón', 'ORGANIZATION')
+([2, 3], [2, 3], 'LOCATION', 'San Diego', 'San Diego', 'LOCATION')
+======================
+1
+(([2, 3], [1, 2], 'ORGANIZATION', 'Denver Broncos', 'Denver Broncos', 'ORGANIZATION'), 0.07507002801120449)
+======================
+1
+([6, 7, 8], [6, 7, 8, 13, 14, 15, 16, 17, 18], 'ORGANIZATION', 'Green Bay Packers', 'Green Bay Packers thể phủ nhận sự tuyệt vời', 'ORGANIZATION')
+======================
+2
+([7], [14], 'LOCATION', 'Denver', 'Denver', 'LOCATION')
+([18, 23, 24], [37, 38], 'PERSON', 'somehow Super Bowl', 'Super Bowl', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Denver', 'Denver', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Tom Foreman', 'Tom Foreman', 'PERSON')
+======================
+2
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([3, 4], [1, 2], 'PERSON', 'John Martin', 'John Martin', 'PERSON')
+======================
+2
+([7, 8], [9, 10], 'PERSON', 'Mike McCurry', 'Mike McCurry', 'PERSON')
+([24], [34], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+1
+([3, 4], [4, 5], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+1
+(([6, 7], [7, 8, 9, 10, 11], 'ORGANIZATION', 'US News', 'US News and World Report', 'ORGANIZATION'), 0.094573055028463)
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'John Martin', 'John Martin', 'PERSON')
+======================
+0
+======================
+3
+([5], [8], 'LOCATION', 'America', 'Mỹ', 'LOCATION')
+([13], [17], 'PERSON', 'Cokie', 'Cokie', 'PERSON')
+([11], [15], 'PERSON', 'Sam', 'Sam', 'PERSON')
+======================
+1
+([1, 2], [1, 2], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+1
+([4], [6], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+======================
+1
+([2], [3], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([18, 19], [18, 19], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([11, 12], [13, 14], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+1
+(([23], [31], 'PERSON', 'Clinton', 'Clinton', 'PERSON'), 0.04842853865565497)
+======================
+1
+([7, 8], [10, 11], 'ORGANIZATION', 'Mike McCurry', 'Mike McCurry', 'ORGANIZATION')
+======================
+2
+([19], [21], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([2, 3], [2, 3], 'PERSON', 'Gennifer Flowers', 'Gennifer Flowers', 'PERSON')
+======================
+2
+([10, 11], [9, 10], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([1], [1], 'PERSON', 'Sam', 'Sam', 'PERSON')
+======================
+2
+([4], [8], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([6, 7], [5, 6], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+======================
+2
+([15], [24], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([8], [11], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([22, 23], [31, 32], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([7], [9], 'PERSON', 'Starr', 'Starr', 'PERSON')
+======================
+2
+([1, 2, 3], [4, 5], 'LOCATION', 'The White House', 'Nhà Trắng', 'LOCATION')
+([6, 7], [7, 8], 'PERSON', 'Mike McCurry', 'Mike McCurry', 'PERSON')
+======================
+3
+([14, 15], [19, 20], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([20], [24], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([9], [11], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([16], [22], 'LOCATION', 'Lewinsky', 'Lewinsky', 'LOCATION')
+([7, 8], [11, 12], 'PERSON', 'Paula Jones', 'Paula Jones', 'PERSON')
+======================
+4
+([15], [25], 'ORGANIZATION', 'Jones', 'Jones', 'ORGANIZATION')
+([10], [18], 'ORGANIZATION', 'Clinton', 'Clinton', 'ORGANIZATION')
+([6, 7], [9, 10], 'PERSON', 'Robert Bennett', 'Robert Bennett', 'PERSON')
+([3], [7, 8], 'PERSON', 'Clinton', 'bà Clinton', 'PERSON')
+======================
+1
+([15, 16], [18, 19], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+======================
+2
+([11, 12], [14, 15], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([7, 8], [11, 12], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+2
+([21, 22], [26], 'ORGANIZATION', 'Union address', 'Union', 'ORGANIZATION')
+([30, 31], [39, 40], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+======================
+1
+([8, 9], [9, 10], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+======================
+2
+([12, 13, 14], [18, 19], 'ORGANIZATION', 'White House turmoil', 'Nhà Trắng', 'ORGANIZATION')
+([16], [21], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+======================
+2
+([4], [8], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([6, 7], [5, 6], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+======================
+4
+([16, 17], [22, 23], 'LOCATION', 'Saudi Arabia', 'Saudi Arabia', 'LOCATION')
+([19], [25], 'LOCATION', 'Bahrain', 'Bahrain', 'LOCATION')
+([7], [], 'LOCATION', 'US', '', 'LOCATION')
+([24], [], 'LOCATION', 'US', '', 'LOCATION')
+======================
+4
+([8], [10], 'LOCATION', 'Moscow', 'Moscow', 'LOCATION')
+([15], [19], 'LOCATION', 'Baghdad', 'Baghdad', 'LOCATION')
+([22], [29], 'LOCATION', 'Russia', 'Nga', 'LOCATION')
+([19], [25], 'PERSON', 'Yeltsin', 'Yeltsin', 'PERSON')
+======================
+2
+([27, 28], [39, 40], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON')
+([8], [18], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+([8], [7, 8, 9], 'PERSON', 'Pentagon', 'Lầu Năm Góc', 'PERSON')
+======================
+5
+([2], [2], 'LOCATION', 'Moscow', 'Moscow', 'LOCATION')
+([6], [22], 'LOCATION', 'Russian', 'Nga', 'LOCATION')
+([41], [8], 'LOCATION', 'Russian', 'Nga', 'LOCATION')
+([14], [57], 'LOCATION', 'Russia', 'Nga', 'LOCATION')
+([19], [24, 25], 'PERSON', 'Nicholas', 'Nicholas Thứ', 'PERSON')
+======================
+1
+([14, 15, 16], [21, 22, 23], 'ORGANIZATION', 'AT and T', 'AT và T', 'ORGANIZATION')
+======================
+2
+([1], [1], 'ORGANIZATION', 'Compaq', 'Compaq', 'ORGANIZATION')
+([6], [4, 7, 8, 10], 'ORGANIZATION', 'Digital', 'họ Digital với phẩy', 'ORGANIZATION')
+======================
+2
+([1], [1], 'LOCATION', 'Smyrna', 'Smyrna', 'LOCATION')
+([3], [3], 'LOCATION', 'Georgia', 'Georgia', 'LOCATION')
+======================
+2
+([4, 5], [4, 5], 'LOCATION', 'New Jersey', 'New Jersey', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Fort Lee', 'Fort Lee', 'PERSON')
+======================
+4
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'Fort Lee', 'Fort Lee', 'LOCATION')
+([10, 11], [11, 12], 'LOCATION', 'New Jersey', 'New Jersey', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Betsy Stark', 'Betsy Stark', 'PERSON')
+======================
+2
+([18, 19, 20], [23, 24, 25], 'ORGANIZATION', 'Chicago Merchandise Mart', 'Chicago Merchandise Mart', 'ORGANIZATION')
+([6], [10], 'PERSON', 'Kennedys', 'Kennedy', 'PERSON')
+======================
+1
+([9, 10], [11, 12], 'PERSON', 'White House', 'Nhà Trắng', 'PERSON')
+======================
+1
+([15, 16], [13, 14], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+======================
+1
+([5], [7], 'ORGANIZATION', 'USTR', 'USTR', 'ORGANIZATION')
+======================
+2
+([3, 4], [3, 4], 'PERSON', 'Gene Sperling', 'Gene Sperling', 'PERSON')
+([12, 13], [17, 18], 'PERSON', 'Bill Clinton', 'Bill Clinton', 'PERSON')
+======================
+2
+([7], [8, 9], 'ORGANIZATION', 'Congress', 'Quốc hội', 'ORGANIZATION')
+([1], [1], 'PERSON', 'Cokie', 'Cokie', 'PERSON')
+======================
+1
+([26], [24, 26, 27], 'ORGANIZATION', 'Congress', 'đưa Quốc hội', 'ORGANIZATION')
+======================
+2
+([20, 21], [28, 29], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([2], [3], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([7, 8], [9, 10], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([14], [20, 22], 'LOCATION', 'Iraq', 'Iraq họ', 'LOCATION')
+======================
+1
+([18, 19], [21, 22], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+======================
+1
+([2, 3], [5, 6], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+======================
+2
+([9], [17], 'LOCATION', 'Hollywood', 'Hollywood', 'LOCATION')
+([22], [37], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Beth Nissen', 'Beth Nissen', 'PERSON')
+======================
+1
+([5, 6], [7, 8], 'PERSON', 'Kenneth Starr', 'Kenneth Starr', 'PERSON')
+======================
+1
+([13], [17, 18], 'ORGANIZATION', 'Congress', 'Quốc hội', 'ORGANIZATION')
+======================
+3
+([11], [15], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([8, 9], [9, 10], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([13, 14], [12, 13], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+2
+([21, 22, 23], [11, 12, 13, 14, 15, 27, 28, 29, 30, 31, 33, 34], 'ORGANIZATION', 'NBC News Today', 'nhất phu nhân xuất hiện show diễn Ngày hôm nay NBC News', 'ORGANIZATION')
+([16, 17], [22, 23, 24, 25], 'LOCATION', 'New York', 'Thành phố New York', 'LOCATION')
+======================
+1
+([1], [1], 'PERSON', 'Starr', 'Starr', 'PERSON')
+======================
+2
+([1], [1], 'PERSON', 'Peter', 'Peter', 'PERSON')
+([3], [3], 'PERSON', 'Sam', 'Sam', 'PERSON')
+======================
+2
+([4, 5], [7, 8], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([17], [21], 'PERSON', 'Starr', 'Starr', 'PERSON')
+======================
+6
+([42], [63], 'ORGANIZATION', 'Clintons', 'Clinton', 'ORGANIZATION')
+([5, 6], [8, 9], 'PERSON', 'Kenneth Starr', 'Kenneth Starr', 'PERSON')
+([21], [33], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([26, 27], [41, 42], 'PERSON', 'Jerry Falwell', 'Jerry Falwell', 'PERSON')
+([10, 11], [16, 17], 'PERSON', 'Jesse Helms', 'Jesse Helms', 'PERSON')
+([13, 14], [19, 20], 'PERSON', 'Lauch Faircloth', 'Lauch Faircloth', 'PERSON')
+======================
+1
+([9], [16], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([13, 14], [25, 26], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([16, 17], [27, 28], 'PERSON', 'Mike McCurry', 'Mike McCurry', 'PERSON')
+======================
+2
+([6, 7], [4, 5], 'ORGANIZATION', 'Rutherford Institute', 'Viện Rutherford', 'ORGANIZATION')
+([11, 12], [13, 14, 15, 16], 'PERSON', 'Paula Jones', 'trường hợp Paula Jones', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Michel McQueen', 'Michel McQueen', 'PERSON')
+======================
+2
+([9], [12], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([18, 19], [26, 27], 'PERSON', 'Kenneth Starr', 'Kenneth Starr', 'PERSON')
+======================
+2
+([3], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([5, 6], [4, 5], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+======================
+5
+([25, 26], [33, 34], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([20, 21], [29, 30], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([42], [52], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([35], [46], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([10], [14, 15, 44, 45], 'PERSON', 'Currie', 'Currie người bào chữa', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'PERSON', 'Betty Currie', 'Betty Currie', 'PERSON')
+([9, 10], [8, 9], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+([17], [16], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([3], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([9], [11], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+3
+([9], [17], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([5], [9], 'PERSON', 'Tripp', 'Tripp', 'PERSON')
+([13, 14], [19, 20], 'PERSON', 'Robert Bennett', 'Robert Bennett', 'PERSON')
+======================
+2
+([4], [5], 'PERSON', 'Peter', 'Peter', 'PERSON')
+([6, 7], [7, 8], 'PERSON', 'Jackie Judd', 'Jackie Judd', 'PERSON')
+======================
+3
+([7, 8, 9], [7, 8, 9], 'ORGANIZATION', 'Dallas Morning News', 'Dallas Morning News', 'ORGANIZATION')
+([16, 17], [18, 19, 20], 'ORGANIZATION', 'Secret Service', 'Sở mật vụ', 'ORGANIZATION')
+([30, 31], [36, 37], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+2
+([4, 5], [4, 5], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([7], [7], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+======================
+3
+([15, 16], [14, 15], 'LOCATION', 'Middle East', 'Trung Đông', 'LOCATION')
+([4, 5, 6, 7], [11, 12], 'ORGANIZATION', 'Department of Home Affairs', 'Châu Âu', 'ORGANIZATION')
+([12], [1, 2, 3, 4, 5, 6, 7, 10], 'LOCATION', 'Europe', 'Bộ trưởng Bộ nội vụ đi trong tới', 'LOCATION')
+======================
+2
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([3, 4], [1, 2], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+======================
+1
+([6, 7], [6, 7], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+([8], [7, 8, 9], 'PERSON', 'Pentagon', 'Lầu Năm Góc', 'PERSON')
+======================
+1
+(([3, 4, 5], [6, 7, 8], 'ORGANIZATION', 'Smith Kline Beecham', 'Smith Kline Beecham', 'ORGANIZATION'), 0.07507002801120449)
+======================
+3
+([32], [40], 'ORGANIZATION', 'Clinton', 'Clinton', 'ORGANIZATION')
+([29, 30], [31, 32], 'LOCATION', 'Capitol Hill', 'Capitol Hill', 'LOCATION')
+([8], [9], 'LOCATION', 'Americans', 'Mỹ', 'LOCATION')
+======================
+1
+(([1, 2], [1, 2], 'PERSON', 'Catherine Doar', 'Catherine Doar', 'PERSON'), 0.04842853865565497)
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Betsy Stark', 'Betsy Stark', 'PERSON')
+======================
+1
+([13], [19], 'LOCATION', 'America', 'Mỹ', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Atlanta', 'Atlanta', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Rebecca Chase', 'Rebecca Chase', 'PERSON')
+======================
+1
+([7, 8, 9, 10], [11, 12], 'PERSON', 'Dow Jones Industrials gained', 'Dow Jones', 'PERSON')
+======================
+3
+([25, 26], [29, 30], 'LOCATION', 'Capitol Hill', 'Capitol Hill', 'LOCATION')
+([10, 11], [13, 14], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+([13, 14], [16, 17], 'PERSON', 'Cokie Roberts', 'Cokie Roberts', 'PERSON')
+======================
+1
+([3], [5, 6], 'PERSON', 'Democrats', 'Đảng Dân', 'PERSON')
+======================
+5
+([6], [], 'ORGANIZATION', 'House', '', 'ORGANIZATION')
+([23], [], 'ORGANIZATION', 'House', '', 'ORGANIZATION')
+([25], [], 'ORGANIZATION', 'Senate', '', 'ORGANIZATION')
+([14, 15], [16, 17], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([8], [11], 'PERSON', 'Gingrich', 'Gingrich', 'PERSON')
+======================
+1
+([1], [1], 'PERSON', 'Cokie', 'Cokie', 'PERSON')
+======================
+2
+([11, 12], [12, 13], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([7, 8], [9, 10], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+2
+([3], [3], 'PERSON', 'Cokie', 'Cokie', 'PERSON')
+([1], [1], 'PERSON', 'Sam', 'Sam', 'PERSON')
+======================
+1
+([10], [12], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+======================
+3
+([2, 3, 4], [5, 6, 7, 8], 'ORGANIZATION', 'ABC News world', 'thế giới ABC News', 'ORGANIZATION')
+([7, 8], [10, 11], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([20, 21], [31, 32], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+2
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([3, 4], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+1
+([3], [4], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([6, 7, 9, 10, 15, 17, 20, 22], [21, 22, 23], 'LOCATION', 'uncharacteristically animated warming up University Illinois leaped their', 'Đại học Illinois', 'LOCATION')
+([3], [4], 'PERSON', 'Gore', 'Gore', 'PERSON')
+======================
+2
+([9, 10, 11, 12], [9, 10], 'LOCATION', 'United States of America', 'Hoa Kỳ', 'LOCATION')
+([14, 15, 16], [12, 13, 14], 'PERSON', 'William Jefferson Clinton', 'William Jefferson Clinton', 'PERSON')
+======================
+2
+([11], [13], 'LOCATION', 'Wisconsin', 'Wisconsin', 'LOCATION')
+([8, 9], [10, 11], 'LOCATION', 'La Crosse', 'La Crosse', 'LOCATION')
+======================
+3
+([9], [10, 11], 'LOCATION', 'America', 'nước Mỹ', 'LOCATION')
+([4], [4], 'PERSON', 'Lisa', 'Lisa', 'PERSON')
+([1], [1], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([8], [8, 9], 'LOCATION', 'Midwest', 'Trung Tây', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+1
+([12], [15, 16, 17], 'ORGANIZATION', 'Republicans', 'Đảng cộng hòa', 'ORGANIZATION')
+======================
+2
+([4, 5], [4, 5], 'LOCATION', 'Capitol Hill', 'Capitol Hill', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Cokie Roberts', 'Cokie Roberts', 'PERSON')
+======================
+2
+([5], [13], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([1], [1], 'PERSON', 'Starr', 'Starr', 'PERSON')
+======================
+2
+([1], [1], 'PERSON', 'Panetta', 'Panetta', 'PERSON')
+([9], [8], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+3
+([10, 11], [11, 12], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([26], [36], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([13], [15], 'PERSON', 'Panetta', 'Panetta', 'PERSON')
+======================
+2
+([8], [14], 'LOCATION', 'California', 'California', 'LOCATION')
+([1], [1], 'PERSON', 'Panetta', 'Panetta', 'PERSON')
+======================
+5
+([4, 5], [5, 6], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([17, 18], [25, 26, 27], 'ORGANIZATION', 'Secret Service', 'Sở mật vụ', 'ORGANIZATION')
+([30], [41], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([12], [16], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([32], [43], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+4
+([36], [46], 'ORGANIZATION', 'Lewinsky', 'Lewinsky', 'ORGANIZATION')
+([10], [19], 'LOCATION', 'Oregon', 'Oregon', 'LOCATION')
+([1], [6], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([13, 14], [22, 23], 'PERSON', 'Andy Bleiler', 'Andy Bleiler', 'PERSON')
+======================
+2
+([1, 2], [1, 2], 'PERSON', 'Terry Giles', 'Terry Giles', 'PERSON')
+([10], [13], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+1
+([9, 10], [12, 13], 'PERSON', 'Ken Starr', 'Ken Starr', 'PERSON')
+======================
+1
+([9, 10], [12, 13, 14], 'ORGANIZATION', 'Secret Service', 'Sở mật vụ', 'ORGANIZATION')
+======================
+4
+([3, 4], [1, 2], 'ORGANIZATION', 'Linda Douglass', 'Linda Douglass', 'ORGANIZATION')
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([11, 12], [14, 15], 'LOCATION', 'Little Rock', 'Little Rock', 'LOCATION')
+([7, 8], [8, 9], 'PERSON', 'Charlie Trie', 'Charlie Trie', 'PERSON')
+======================
+1
+([8], [13], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+======================
+5
+([23], [33], 'ORGANIZATION', 'America', 'Mỹ', 'ORGANIZATION')
+([4], [4, 5, 6], 'ORGANIZATION', 'State', 'Bộ ngoại giao', 'ORGANIZATION')
+([21], [27], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([30, 31], [41, 42], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON')
+([12], [18], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([12, 13], [13, 14], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
+([15], [17], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+======================
+3
+([1], [4], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([8], [8, 9, 10], 'LOCATION', 'Pentagon', 'Lầu Năm Góc', 'LOCATION')
+([3, 4], [1, 2], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+======================
+1
+([2, 3], [1, 2], 'ORGANIZATION', 'Air Force', 'Không quân', 'ORGANIZATION')
+======================
+1
+([3, 4, 5, 6], [5, 6, 7, 8, 9], 'ORGANIZATION', 'Eglin Air Force Base', 'Căn cứ Không quân Eglin', 'ORGANIZATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([1, 2], [1, 2], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+([8], [7, 8, 9], 'PERSON', 'Pentagon', 'Lầu Năm Góc', 'PERSON')
+======================
+1
+(([8, 9], [8, 9, 10], 'ORGANIZATION', 'Secret Service', 'Cơ quan Mật', 'ORGANIZATION'), 0.094573055028463)
+======================
+1
+(([9, 10], [8, 9, 10], 'ORGANIZATION', 'Secret Service', 'Cơ quan Mật', 'ORGANIZATION'), 0.094573055028463)
+======================
+1
+([1, 2], [1, 4, 5, 6], 'ORGANIZATION', 'Secret Service', 'Các Sở mật vụ', 'ORGANIZATION')
+======================
+2
+([21, 22], [27, 28], 'PERSON', 'Ronald Reagan', 'Ronald Reagan', 'PERSON')
+([9, 10], [12, 13, 14], 'PERSON', 'Gerald Ford', 'trên Gerald Ford', 'PERSON')
+======================
+1
+([9, 10], [9, 10, 11, 12], 'ORGANIZATION', 'Secret Service', 'Cơ quan Mật vụ', 'ORGANIZATION')
+======================
+1
+([19], [31], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'John McKenzie', 'John McKenzie', 'PERSON')
+======================
+2
+([11, 12, 13], [14, 15, 16, 17], 'ORGANIZATION', 'New York University', 'Đại học New York', 'ORGANIZATION')
+([4, 5], [7, 8], 'PERSON', 'Ronald Noble', 'Ronald Noble', 'PERSON')
+======================
+3
+([9, 10], [10, 11, 12, 13, 14, 15, 16, 17, 18], 'ORGANIZATION', 'Treasury Department', 'Bộ Tài chính đã giám sát Cơ quan Mật', 'ORGANIZATION')
+([2], [3], 'PERSON', 'Noble', 'Noble', 'PERSON')
+([24], [30], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+1
+(([22, 23], [29, 30, 31], 'ORGANIZATION', 'Secret Service', 'Cơ quan Mật', 'ORGANIZATION'), 0.094573055028463)
+======================
+2
+([6, 7], [8, 9, 10], 'ORGANIZATION', 'Secret Service', 'Sở mật vụ', 'ORGANIZATION')
+([11, 12, 13], [14, 15, 16], 'PERSON', 'John F Kennedy', 'John F Kennedy', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Canada', 'Canada', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'John Willemson', 'John Willemson', 'PERSON')
+======================
+2
+([6, 7, 8], [8, 9, 10, 11], 'ORGANIZATION', 'New York University', 'Đại học New York', 'ORGANIZATION')
+([2], [3], 'PERSON', 'Noble', 'Noble', 'PERSON')
+======================
+1
+([9, 10], [9, 10, 11, 12, 13, 14, 15], 'ORGANIZATION', 'Supreme Court', 'kháng cáo lên Tòa án Tối cao', 'ORGANIZATION')
+======================
+0
+======================
+1
+(([4, 5, 6], [24, 25, 26, 27, 28], 'ORGANIZATION', 'General Accounting Office', 'Nghĩa trang Quốc gia Arlington', 'ORGANIZATION'), 0.094573055028463)
+======================
+2
+([2, 3], [2, 3], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([11, 12], [18], 'PERSON', 'Michelangelo drawing', 'Michelangelo', 'PERSON')
+======================
+2
+([12, 13], [16, 17], 'PERSON', 'Bertrand Picard', 'Bertrand Picard', 'PERSON')
+([], [13, 14], 'PERSON', '', 'Thụy Sĩ', 'PERSON')
+======================
+1
+([15, 16], [24, 25], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+======================
+2
+([16, 17], [23, 24], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([14], [21], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([1], [1], 'LOCATION', 'Miami', 'Miami', 'LOCATION')
+([3], [3], 'LOCATION', 'Florida', 'Florida', 'LOCATION')
+======================
+1
+([7, 8, 9, 12], [9, 10, 11, 12, 13], 'LOCATION', 'Miami International Airport scene', 'Sân bay Quốc tế Miami', 'LOCATION')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Miami', 'Miami', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'John Martin', 'John Martin', 'PERSON')
+======================
+3
+([2, 3], [5, 6], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [10, 11], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([20, 21], [30, 31], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+3
+([4, 5], [5, 6], 'PERSON', 'Kenneth Starr', 'Kenneth Starr', 'PERSON')
+([10, 11], [11, 12], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([19], [20], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+3
+([19, 20], [29, 30], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([11, 12], [15, 16], 'PERSON', 'William Ginsburg', 'William Ginsburg', 'PERSON')
+([36], [53], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([23], [28], 'ORGANIZATION', 'Clinton', 'Clinton', 'ORGANIZATION')
+([5], [6], 'PERSON', 'Starr', 'Starr', 'PERSON')
+======================
+2
+([7], [14], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([15], [27], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+3
+([4, 5, 6], [2, 3, 4, 5], 'ORGANIZATION', 'New York Times', 'The New York Times', 'ORGANIZATION')
+([17, 18], [19, 20], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([8], [8], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([1, 2], [1, 2], 'PERSON', 'Vernon Jordan', 'Vernon Jordan', 'PERSON')
+([13], [25], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([21], [27], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([5, 6], [7, 8], 'PERSON', 'Paula Jones', 'Paula Jones', 'PERSON')
+======================
+2
+([3], [3], 'PERSON', 'Jackie', 'Jackie', 'PERSON')
+([1], [1], 'PERSON', 'Peter', 'Peter', 'PERSON')
+======================
+2
+([1], [8], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([7, 8], [10, 11], 'PERSON', 'Jeffrey Toobin', 'Jeffrey Toobin', 'PERSON')
+======================
+3
+([21, 22], [32, 33], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([3, 4], [2, 3], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([17, 18], [26, 27], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+3
+([4, 5], [2, 3], 'ORGANIZATION', 'Sam Donaldson', 'Sam Donaldson', 'ORGANIZATION')
+([2], [5], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([9], [11], 'PERSON', 'Sam', 'Sam', 'PERSON')
+======================
+3
+([8, 9], [11, 12], 'PERSON', 'Mike McCurry', 'Mike McCurry', 'PERSON')
+([13, 14], [16, 17], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([16], [21], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+2
+([4, 5], [7, 8], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([10], [15], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+1
+([11], [13], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([5, 6], [4, 5], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Sam Donaldson', 'Sam Donaldson', 'PERSON')
+======================
+1
+(([24], [40], 'LOCATION', 'Minnesota', 'Minnesota', 'LOCATION'), 0.083289817232376)
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Barry Serafin', 'Barry Serafin', 'PERSON')
+======================
+2
+([3], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([5, 6], [4, 5], 'PERSON', 'Rebecca Chase', 'Rebecca Chase', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'Birmingham', 'Birmingham', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Rebecca Chase', 'Rebecca Chase', 'PERSON')
+======================
+3
+([16], [33], 'ORGANIZATION', 'McVeigh', 'McVeigh', 'ORGANIZATION')
+([2], [39, 40, 41], 'ORGANIZATION', 'Navy', 'Trực tuyến Mỹ', 'ORGANIZATION')
+([22, 23, 24, 25], [1, 2], 'LOCATION', 'employee at America Online', 'Hải quân', 'LOCATION')
+======================
+2
+([3], [6], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+([5, 6], [3, 4], 'PERSON', 'Deborah Amos', 'Deborah Amos', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'New York', 'New York', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Deborah Amos', 'Deborah Amos', 'PERSON')
+======================
+1
+([1], [1], 'PERSON', 'Parrish', 'Parrish', 'PERSON')
+======================
+1
+([5], [6], 'LOCATION', 'Parrish', 'Parrish', 'LOCATION')
+======================
+2
+([4, 5], [5, 6], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON')
+([8], [10], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+3
+([17], [10, 11, 12, 13], 'LOCATION', 'Iraqis', 'Ngoại trưởng Madeleine Albright', 'LOCATION')
+([13], [15], 'LOCATION', 'France', 'Pháp', 'LOCATION')
+([9], [20], 'ORGANIZATION', 'State', 'Iraq', 'ORGANIZATION')
+======================
+1
+(([2, 3, 4], [1, 2, 3, 4, 5, 6], 'ORGANIZATION', 'Federal Communications Commission', 'Ủy ban Truyền thông Liên bang', 'ORGANIZATION'), 0.094573055028463)
+======================
+3
+([2], [2], 'LOCATION', 'Australia', 'Úc', 'LOCATION')
+([10], [17], 'LOCATION', 'American', 'Mỹ', 'LOCATION')
+([12, 13, 14, 16, 18, 23, 24, 25], [30, 31, 32], 'LOCATION', 'who disappeared during scuba trip Great Barrier Reef', 'Great Barrier Reef', 'LOCATION')
+======================
+4
+([16], [18], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([14], [16], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([29, 30], [37, 38], 'PERSON', 'Paula Jones', 'Paula Jones', 'PERSON')
+([3, 4], [2, 3], 'PERSON', 'White House', 'Nhà Trắng', 'PERSON')
+======================
+1
+(([5, 6], [5, 6], 'PERSON', 'Steven Craig', 'Steven Craig', 'PERSON'), 0.04842853865565497)
+======================
+1
+([1, 2, 5, 13, 15, 16, 24, 26, 31], [1, 2], 'PERSON', 'Soon Shiong pioneer exists clone these mean unlimited diabetics', 'Soon Shiong', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [7, 8], 'LOCATION', 'Los Angeles', 'Los Angeles', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Jane Clayson', 'Jane Clayson', 'PERSON')
+======================
+1
+([3, 4], [3, 4], 'PERSON', 'Peter Jennings', 'Peter Jennings', 'PERSON')
+======================
+3
+([20], [30], 'ORGANIZATION', 'Peter', 'Peter', 'ORGANIZATION')
+([2, 3], [5, 6], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7, 8], [10, 11], 'LOCATION', 'New York', 'New York', 'LOCATION')
+======================
+3
+([21, 22, 23], [30, 31, 32, 33, 34], 'ORGANIZATION', 'House Judiciary Committee', 'Uỷ ban Tư pháp Hạ', 'ORGANIZATION')
+([7], [16], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([12], [20], 'PERSON', 'Starr', 'Starr', 'PERSON')
+======================
+2
+([8, 9], [9, 10], 'PERSON', 'Henry Hyde', 'Henry Hyde', 'PERSON')
+([25], [37], 'PERSON', 'Starr', 'Starr', 'PERSON')
+======================
+3
+([26, 27], [40, 41], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+([21, 22], [32, 33], 'PERSON', 'Linda Tripp', 'Linda Tripp', 'PERSON')
+([3, 4], [2, 3, 6], 'PERSON', 'Bob Weiner', 'Bob Weiner cho', 'PERSON')
+======================
+2
+([14], [20], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+([7], [11], 'PERSON', 'Tripp', 'Tripp', 'PERSON')
+======================
+1
+([1], [1], 'PERSON', 'Starr', 'Starr', 'PERSON')
+======================
+2
+([14, 15], [15, 16], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([11], [13], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+3
+([24], [33], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+([7], [10], 'PERSON', 'Starr', 'Starr', 'PERSON')
+([26], [35], 'PERSON', 'Lewinsky', 'Lewinsky', 'PERSON')
+======================
+2
+([32, 33], [47, 48], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+([8], [12], 'PERSON', 'Starr', 'Starr', 'PERSON')
+======================
+1
+([10, 11], [13, 14], 'PERSON', 'Monica Lewinsky', 'Monica Lewinsky', 'PERSON')
+======================
+2
+([18, 19], [24, 25], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON')
+([13], [19], 'PERSON', 'Clinton', 'Clinton', 'PERSON')
+======================
+1
+([3], [4, 5, 6], 'ORGANIZATION', 'still', 'Chính phủ vẫn', 'ORGANIZATION')
+======================
+6
+([], [12], 'LOCATION', '', 'Hussein', 'LOCATION')
+([], [16], 'LOCATION', '', 'Albright', 'LOCATION')
+([], [24], 'LOCATION', '', 'Vịnh', 'LOCATION')
+([6], [11], 'LOCATION', 'Jordan', 'Jordan', 'LOCATION')
+([28], [34], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([17, 18], [20, 21], 'LOCATION', 'Middle East', 'Trung Đông', 'LOCATION')
+======================
+3
+([12], [19], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([21], [28, 29, 30], 'PERSON', 'Pentagon', 'Lầu Năm Góc', 'PERSON')
+([16, 17], [21, 22, 23, 24, 25, 26], 'ORGANIZATION', 'William Cohen', 'Bộ trưởng Quốc phòng William Cohen', 'ORGANIZATION')
+======================
+3
+([11], [13], 'LOCATION', 'Iraq', 'Iraq', 'LOCATION')
+([3], [4], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([24, 25], [27, 28], 'PERSON', 'Saddam Hussein', 'Saddam Hussein', 'PERSON')
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([7], [7], 'LOCATION', 'London', 'London', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'David Ensor', 'David Ensor', 'PERSON')
+======================
+2
+([2], [2], 'LOCATION', 'Algeria', 'Algeria', 'LOCATION')
+([5], [4], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+======================
+6
+([13], [16], 'ORGANIZATION', 'Iran', 'Iran', 'ORGANIZATION')
+([19], [23], 'LOCATION', 'Sudan', 'Sudan', 'LOCATION')
+([17], [20, 21], 'LOCATION', 'Burma', 'Miến Điện', 'LOCATION')
+([21], [25], 'LOCATION', 'Afghanistan', 'Afghanistan', 'LOCATION')
+([15], [18], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')
+([11], [12, 13, 14], 'LOCATION', 'Turkey', 'Thổ Nhĩ Kỳ', 'LOCATION')
+======================
+5
+([10], [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 'ORGANIZATION', 'Treasury', 'Bộ trưởng Quốc phòng và Chủ tịch Cục Dự trữ Liên', 'ORGANIZATION')
+([15], [11, 12], 'ORGANIZATION', 'Defense', 'Tài chính', 'ORGANIZATION')
+([18, 19], [30, 31], 'ORGANIZATION', 'Federal Reserve', 'Quốc hội', 'ORGANIZATION')
+([2, 3], [2, 3], 'LOCATION', 'Capitol Hill', 'Capitol Hill', 'LOCATION')
+([31], [42, 43], 'LOCATION', 'Asian', 'châu Á', 'LOCATION')
+======================
+1
+(([14, 15], [20, 21], 'ORGANIZATION', 'Korea Telecom', 'Korea Telecom', 'ORGANIZATION'), 0.07507002801120449)
+======================
+1
+([1], [1], 'ORGANIZATION', 'Caterpillar', 'Caterpillar', 'ORGANIZATION')
+======================
+1
+([12, 13], [18, 19], 'LOCATION', 'Latin America', 'Mỹ Latinh', 'LOCATION')
+======================
+2
+([4], [27], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+([17], [8], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+======================
+4
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([9], [9], 'LOCATION', 'Maryland', 'Maryland', 'LOCATION')
+([7], [7], 'LOCATION', 'Gaithersburg', 'Gaithersburg', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'Betsy Stark', 'Betsy Stark', 'PERSON')
+======================
+1
+(([7, 8, 9], [11, 12], 'ORGANIZATION', 'Dow Jones Industrials', 'Dow Jones', 'ORGANIZATION'), 0.07507002801120449)
+======================
+1
+([1, 2], [1, 2], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+======================
+2
+([9, 10], [13, 14], 'ORGANIZATION', 'CBS News', 'CBS News', 'ORGANIZATION')
+([5, 6], [8, 9], 'PERSON', 'Hillary Clinton', 'Hillary Clinton', 'PERSON')
+======================
+1
+(([9, 10], [11, 12], 'PERSON', 'Marlin Fitzwater', 'Marlin Fitzwater', 'PERSON'), 0.04842853865565497)
+======================
+1
+(([7, 8, 9], [9, 10, 11, 12], 'ORGANIZATION', 'New York Times', 'The New York Times', 'ORGANIZATION'), 0.094573055028463)
+======================
+3
+([4, 5], [4, 5], 'ORGANIZATION', 'ABC News', 'ABC News', 'ORGANIZATION')
+([8, 9], [7, 8], 'LOCATION', 'White House', 'Nhà Trắng', 'LOCATION')
+([1, 2], [1, 2], 'PERSON', 'John Cochran', 'John Cochran', 'PERSON')
+======================
+4
+([22], [28, 29, 30], 'ORGANIZATION', 'Washington', 'Bưu điện Washington', 'ORGANIZATION')
+([14, 15], [20, 21], 'PERSON', 'Deep Throat', 'Deep Throat', 'PERSON')
+([28], [38], 'PERSON', 'Watergate', 'Watergate', 'PERSON')
+([31], [44, 45, 46], 'ORGANIZATION', 'Nixon', 'Tổng thống Nixon', 'ORGANIZATION')
+======================
+1
+(([4, 5], [8, 9], 'PERSON', 'Ben Bradlee', 'Ben Bradlee', 'PERSON'), 0.04842853865565497)
+======================
+1
+([24], [33], 'LOCATION', 'Cuba', 'Cuba', 'LOCATION')

@@ -55,8 +55,15 @@ def main():
     # print(VtoE_dev_list[0])
 
     res = getNEPair(EtoV_dev_list[788],VtoE_dev_list[788],list_lambda,788, 'test')
-    for pair in res:
-        print(pair)
+    print('Final', res)
+    # for i in range(len(EtoV_dev_list)):
+    #     # if i == 7:
+    #         # break
+    #     print('======================')
+    #     res = getNEPair(EtoV_dev_list[i],VtoE_dev_list[i],list_lambda,i, 'test')
+    #     print(len(res))
+    #     for pair in res:
+    #         print(pair)
     # print(len(tmp))
 
 if __name__ == '__main__':
