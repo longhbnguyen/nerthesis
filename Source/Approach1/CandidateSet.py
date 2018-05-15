@@ -37,6 +37,8 @@ def createCandidateSet(EtoV_List,VtoE_List, mode):
 
     EtoV_model.createEntListTable_Stanford(mode)
     VtoE_model.createEntListTable_Stanford(mode)
+    EtoV_model.createEntListTable_Spacy(mode)
+    VtoE_model.createEntListTable_Spacy(mode)
     print('Create Candidate Set')
     if mode == 'dev':
         candidate_set_file = candidate_set_dev_file
