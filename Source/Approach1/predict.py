@@ -6,6 +6,9 @@ import config
 import utilities
 import ScoreTable
 
+#Test
+import DistortionModel.Distortion as Distortion
+
 def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index,mode, train_mode_InSens  = False, train_mode_Sens = False):
     '''
     Input: EtoV_sent, VtoE_sent
@@ -43,21 +46,22 @@ def getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,mode,
     return res
 
 def main():
-    EtoV_dev_list = utilities.read_align_file('../../../Alignment_Split/EtoV_Test.txt')
-    VtoE_dev_list = utilities.read_align_file('../../../Alignment_Split/VtoE_Test.txt')
-    ScoreTable.createScoreTable_TypeSens(EtoV_dev_list,VtoE_dev_list,'test')
-    ScoreTable.createScoreTable_TypeInSens(EtoV_dev_list,VtoE_dev_list,'test')
-    getCandidateSet.createCandidateSet(EtoV_dev_list,VtoE_dev_list,'test')
-    # print(getCandidateSet.Candidate_Set_Table[-1])
-    # # tmp = getCandidateSet(EtoV_dev_list[0],VtoE_dev_list[0],0)
-    list_lambda = config.getWeight()
-    # print(EtoV_dev_list[0])
-    # print(VtoE_dev_list[0])
-
-    res = getNEPair(EtoV_dev_list[788],VtoE_dev_list[788],list_lambda,788, 'test')
-    for pair in res:
-        print(pair)
-    # print(len(tmp))
+    EtoV_dev_list = utilities.read_align_file('../../../Alignment_Split/EtoV_Dev.txt')
+    VtoE_dev_list = utilities.read_align_file('../../../Alignment_Split/VtoE_Dev.txt')
+    getCandidateSet.createCandidateSet(EtoV_dev_list,VtoE_dev_list,'dev')
+    ScoreTable.createScoreTable_TypeSens(EtoV_dev_list,VtoE_dev_list,'dev')
+    ScoreTable.createScoreTable_TypeInSens(EtoV_dev_list,VtoE_dev_list,'dev')
+    # k = 0
+    for i in range(len(EtoV_dev_list)):
+        # k +=1
+        # if (k>100):
+            # break
+        cur_candidate_list = getCandidateSet.getCandidateSetFromFile(i)
+        for candidate in cur_candidate_list:
+            tmp  = Distortion.getDistortionprob(candidate,EtoV_dev_list[i],VtoE_dev_list[i])
+                # print('=============================')
+                # print('Candidate: ',candidate)
+        
 
 if __name__ == '__main__':
     main()
