@@ -32,9 +32,9 @@ def getMonoScore(ent, idx, mode, run_mode):
         loc_score *= table[idx][i-1][4]
     scores = {}
     
-    scores['ORGANIZATION'] = normalize(org_score,n)
-    scores['PERSON'] = normalize(per_score,n)
-    scores['LOCATION'] = normalize(loc_score,n)
+    scores['ORGANIZATION'] = org_score
+    scores['PERSON'] = per_score
+    scores['LOCATION'] = loc_score
 
     # scores = sorted(scores, key = lambda score: score[1], reverse = True)
     # max_label = scores[0][0]

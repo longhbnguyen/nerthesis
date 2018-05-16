@@ -1,11 +1,11 @@
 import spacy
 from ast import literal_eval
 
-nlp  = spacy.load('viNerFull50')
+nlp  = spacy.load('en')
 
-w = open('datatest_viet_spacy.txt', 'w', encoding = 'utf-8')
+w = open('cooc_spacy_en.txt', 'w', encoding = 'utf-8')
 i = 0
-with open('test_viet_sent.txt','r',encoding = 'utf-8') as f:
+with open('nlp.vi-en.tok.clean.en','r',encoding = 'utf-8') as f:
     for line in f:
         doc = nlp(line)
         ent_flag = False
@@ -24,7 +24,7 @@ with open('test_viet_sent.txt','r',encoding = 'utf-8') as f:
                         label = 'LOCATION'
                     elif label == 'ORG':
                         label = 'ORGANIZATION'
-                    elif label == 'PER':
+                    elif label == 'PERSON':
                         label = 'PERSON'
                     else:
                         label = 'O'

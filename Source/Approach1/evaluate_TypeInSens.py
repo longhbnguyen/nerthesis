@@ -6,6 +6,7 @@ def evaluateSentencePair(predict,true_set):
     '''
     Compare predict set and true set of a sentence pair
     '''
+    print('==================')
     tp = 0
     predict = utilities.make_unique(predict)
     predict = sorted(predict, key=lambda tmp: tmp[0])
@@ -39,6 +40,10 @@ def evaluateSentencePair(predict,true_set):
                     true_vi_end = true_set[i][1][-1]
                     if true_vi_begin == predict_vi_begin and true_vi_end == predict_vi_end:
                         tp += 1
+                    else:
+                        print('--------------')
+                        print('True', true_set[i])
+                        print('Predict', pair)
     # print('TP ', tp)
     return tp
 

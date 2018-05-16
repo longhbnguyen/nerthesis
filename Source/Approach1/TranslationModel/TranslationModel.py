@@ -82,8 +82,7 @@ def getNETranslationProb(NEPair,VtoE_sent):
         res *= (sum)
     if len(enNE) == 0:
         return 0.0
-    # res = res / (len(enNE)**len(vn
-    # res = normalize(res,len(enNE))
+    res = normalize(res,len(enNE))
     return res
 
 
