@@ -2,6 +2,7 @@
 ([],[])
 '''
 import utilities
+import ScoreTable
 def evaluateSentencePair(predict,true_set):
     '''
     Compare predict set and true set of a sentence pair
@@ -9,7 +10,9 @@ def evaluateSentencePair(predict,true_set):
     print('==================')
     tp = 0
     predict = utilities.make_unique(predict)
+    # print('evaluateSentencePair',predict)
     predict = sorted(predict, key=lambda tmp: tmp[0])
+    # print('Predict Set', predict)
     # print(predict)
     # print('Predict Set ', predict)
     # print('True Set ', true_set)
@@ -34,6 +37,7 @@ def evaluateSentencePair(predict,true_set):
                 if predict_en_end == true_en_end:
                     if len(pair[1]) < 1:
                         continue
+                    # print('Predict Pair',pair)
                     predict_vi_begin = pair[1][0]
                     predict_vi_end = pair[1][-1]
                     true_vi_begin = true_set[i][1][0]
@@ -44,6 +48,7 @@ def evaluateSentencePair(predict,true_set):
                         print('--------------')
                         print('True', true_set[i])
                         print('Predict', pair)
+                        print('Score',ScoreTable.getScoreforOneCandidate_TypeInSens(pair[-2],pair[-1]))
     # print('TP ', tp)
     return tp
 
@@ -69,6 +74,7 @@ def getMetrics(predict_set,true_set):
     get Metrics Evaluation
     type_mode: 0:Insensitive , 1:Type-Sensitive
     '''
+    # print('Predict',predict_set)
     tp, total_predict_pairs,total_true_pairs = evaluate(predict_set,true_set)
     # print('True Set ',true_set)
     # print('Predict Set ', predict_set)

@@ -52,16 +52,20 @@ def getOverLapMatrix(CandidateSet):
     #             print('Res',i,j,'-','Res',j,i)
     return res
 
-def getFinalNEPair(CombineScore,CandidateSet):
+def getFinalNEPair(CombineScore,CandidateSet,sent_index):
     '''
 
     '''
+    # print('========================')
     res = []
-    if len(CandidateSet) <= 1:
+    if (not len(CandidateSet)):
         return CandidateSet
     # print('Init', CandidateSet)
     CandidateSet = list(zip(CandidateSet, CombineScore['TypeSens'], CombineScore['TypeInSens']))
     CandidateSet = sorted(CandidateSet,key=lambda CandidateSet: CandidateSet[2],reverse=True)
+    if len(CandidateSet) == 1:
+        # print('LenCandidate=0',tuple(CandidateSet[0][0]) + (sent_index,0))
+        return [tuple(CandidateSet[0][0]) + (sent_index,0)]
     # for i in range(len(CandidateSet)):
     #     print('Initial NE Pair', i , CandidateSet[i])
     checkOverLap = getOverLapMatrix(CandidateSet)
@@ -73,7 +77,9 @@ def getFinalNEPair(CombineScore,CandidateSet):
         # print('CurCandidateSet ', CandidateSet[i])
         # print('=================')
         if (free[i]):
-            cur = [CandidateSet[i]]
+            tmp = CandidateSet[i] + (sent_index,i)
+            
+            cur = [tmp]
             # print('CurCandidate ', cur)
             # Remove Overlap with Candidate i
             
@@ -87,7 +93,9 @@ def getFinalNEPair(CombineScore,CandidateSet):
                     # print(CandidateSet[j][2])
                     # print(cur[0][2])
                     # print('Same Score')
-                    cur.append(CandidateSet[j])
+                    tmp = CandidateSet[j] + (sent_index,j)
+                    # print('TMP', tmp)
+                    cur.append(tmp)
                 if checkOverLap[i][j] or checkOverLap[j][i]:
                     # print('Overlap')
                     free[j] = False
@@ -96,7 +104,7 @@ def getFinalNEPair(CombineScore,CandidateSet):
             # print('Res', res)
     # print(CandidateSet)
     if free[len(CandidateSet)-1]:
-        res = res + [CandidateSet[-1]]
+        res = res + [CandidateSet[-1]+(sent_index,len(CandidateSet)-1)]
     # print('Before Reassign', res)
     res = reassign_type(res)
     # print('After Reassign', res)
@@ -107,6 +115,7 @@ def eliminate_duplicate_pairs(CandidateSet):
     if len(CandidateSet) <= 1:
         return CandidateSet
     CandidateSet = sorted(CandidateSet,key=lambda CandidateSet: CandidateSet[1],reverse=True)
+
     # print('Before', CandidateSet)
     checkOverLap = getOverLapMatrix(CandidateSet)
     # print('CandidateSet',CandidateSet)
@@ -128,7 +137,9 @@ def eliminate_duplicate_pairs(CandidateSet):
         res = res + [CandidateSet[-1]]
     final_res = []
     for i in range(len(res)):
-        final_res.append(res[i][0])
+        tmp = res[i][0] + (res[i][-2],res[i][-1])
+        final_res.append(tmp)
+    # print('EliminateDuplicate', final_res)    
     return final_res
 
 def reassign_type(ne_pairs):
@@ -149,7 +160,9 @@ def reassign_type(ne_pairs):
                 max_score = value
                 max_type = key
         
-        pair = ((ne_pairs[i][0][0],ne_pairs[i][0][1],max_type,ne_pairs[i][0][3],ne_pairs[i][0][4],max_type),max_score)
+        # print('NE Pair',ne_pairs[i])
+        pair = ((ne_pairs[i][0][0],ne_pairs[i][0][1],max_type,ne_pairs[i][0][3],ne_pairs[i][0][4],max_type),max_score,ne_pairs[i][-2],ne_pairs[i][-1])
+
         # print('Final NE Pair ',i,pair)        
         res.append(pair)
     res = eliminate_duplicate_pairs(res)

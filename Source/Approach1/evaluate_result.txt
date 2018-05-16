@@ -2,13 +2,14 @@
 Create Candidate Set
 Create Candidate Set
 Created Score Table
-{'coocurence': 0.1, 'translation': 0.1, 'transliteration': 0.1, 'distortion': 0.0, 'mono_en': 0.1, 'mono_vn': 0.0, 'bi': 0.0}
+{'coocurence': 0.1, 'translation': 0.1, 'transliteration': 0.0, 'distortion': 0.2, 'mono_en': 0.1, 'mono_vn': 0.0, 'bi': 0.0}
 ==================
 ==================
 ==================
 --------------
 True ([10, 11], [14, 15], 'PERSON', 'Richard Matsch', 'Richard Matsch')
-Predict ([10, 11], [12, 13, 14, 15], 'PERSON', 'Richard Matsch', 'Thẩm phán Richard Matsch', 'PERSON')
+Predict ([10, 11], [12, 13, 14, 15], 'PERSON', 'Richard Matsch', 'Thẩm phán Richard Matsch', 'PERSON', 2, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.9125}
 ==================
 ==================
 ==================
@@ -17,7 +18,8 @@ Predict ([10, 11], [12, 13, 14, 15], 'PERSON', 'Richard Matsch', 'Thẩm phán R
 ==================
 --------------
 True ([26, 27], [38, 39], 'PERSON', 'Bob Macey', 'Bob Macey')
-Predict ([26, 27], [37, 38, 39], 'PERSON', 'Bob Macey', 'quận Bob Macey', 'PERSON')
+Predict ([26, 27], [37, 38, 39], 'PERSON', 'Bob Macey', 'quận Bob Macey', 'PERSON', 8, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.2, 'distortion': 0.8857142857142857}
 ==================
 ==================
 ==================
@@ -25,14 +27,16 @@ Predict ([26, 27], [37, 38, 39], 'PERSON', 'Bob Macey', 'quận Bob Macey', 'PER
 ==================
 --------------
 True ([26, 27], [31, 32], 'LOCATION', 'Ruby Ridge', 'Ruby Ridge')
-Predict ([26, 27], [2, 3, 31, 32], 'LOCATION', 'Ruby Ridge', 'tay súng Ruby Ridge', 'LOCATION')
+Predict ([26, 27], [2, 3, 31, 32], 'LOCATION', 'Ruby Ridge', 'tay súng Ruby Ridge', 'LOCATION', 13, 11)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.45346320346320357}
 ==================
 ==================
 ==================
 ==================
 --------------
 True ([2], [4], 'ORGANIZATION', 'SilkAir', 'SilkAir')
-Predict [[2], [1, 4], 'ORGANIZATION', 'SilkAir', 'Chiếc SilkAir', 'ORGANIZATION']
+Predict ([2], [1, 4], 'ORGANIZATION', 'SilkAir', 'Chiếc SilkAir', 'ORGANIZATION', 17, 0)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.96875}
 ==================
 ==================
 ==================
@@ -46,13 +50,11 @@ Predict [[2], [1, 4], 'ORGANIZATION', 'SilkAir', 'Chiếc SilkAir', 'ORGANIZATIO
 ==================
 ==================
 ==================
---------------
-True ([1], [5], 'LOCATION', 'US', 'Mỹ')
-Predict ([1], [26], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
 ==================
 --------------
 True ([5], [3], 'ORGANIZATION', 'CIA', 'CIA')
-Predict ([5], [2, 3], 'ORGANIZATION', 'CIA', 'ra, CIA', 'ORGANIZATION')
+Predict ([5], [2, 3], 'ORGANIZATION', 'CIA', 'ra, CIA', 'ORGANIZATION', 31, 10)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.4834558823529411}
 ==================
 ==================
 ==================
@@ -64,7 +66,8 @@ Predict ([5], [2, 3], 'ORGANIZATION', 'CIA', 'ra, CIA', 'ORGANIZATION')
 ==================
 --------------
 True ([13, 14, 15, 16], [15, 16, 17, 18, 19, 20, 21], 'ORGANIZATION', 'Food and Drug Administration', 'Cục Quản lý Thuốc và Thực phẩm')
-Predict ([13, 14, 15, 16], [5, 6, 7], 'ORGANIZATION', 'Food and Drug Administration', 'Cục Sức khỏe', 'ORGANIZATION')
+Predict ([13, 14, 15, 16], [18], 'ORGANIZATION', 'Food and Drug Administration', 'Thuốc', 'ORGANIZATION', 40, 4)
+Score {'translation': 0.0, 'transliteration': 1.0, 'coocurence': 0.2, 'distortion': 0.9744897959183674}
 ==================
 ==================
 ==================
@@ -73,12 +76,14 @@ Predict ([13, 14, 15, 16], [5, 6, 7], 'ORGANIZATION', 'Food and Drug Administrat
 ==================
 --------------
 True ([3, 4, 5], [2, 3, 4, 5], 'ORGANIZATION', 'General Accounting Office', 'Tổng cục Kế toán')
-Predict [[3, 4, 5], [2, 3, 4, 5, 6], 'ORGANIZATION', 'General Accounting Office', 'Tổng cục Kế toán không', 'ORGANIZATION']
+Predict ([3, 4, 5], [2, 3, 4, 5, 6], 'ORGANIZATION', 'General Accounting Office', 'Tổng cục Kế toán không', 'ORGANIZATION', 46, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.8068181818181819}
 ==================
 ==================
 --------------
 True ([10], [13], 'PERSON', 'Unabomber', 'Unabomber')
-Predict [[10], [10, 13], 'ORGANIZATION', 'Unabomber', 'này, Unabomber', 'ORGANIZATION']
+Predict ([10], [10, 13], 'ORGANIZATION', 'Unabomber', 'này, Unabomber', 'ORGANIZATION', 48, 0)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.8992673992673992}
 ==================
 ==================
 ==================
@@ -92,22 +97,10 @@ Predict [[10], [10, 13], 'ORGANIZATION', 'Unabomber', 'này, Unabomber', 'ORGANI
 ==================
 ==================
 ==================
---------------
-True ([4, 5], [4, 5], 'LOCATION', 'North Carolina', 'North Carolina')
-Predict ([4, 5], [23, 24], 'LOCATION', 'North Carolina', 'North Carolina', 'LOCATION')
---------------
-True ([20, 21], [23, 24], 'LOCATION', 'North Carolina', 'North Carolina')
-Predict ([20, 21], [4, 5], 'LOCATION', 'North Carolina', 'North Carolina', 'LOCATION')
 ==================
 ==================
 ==================
 ==================
---------------
-True ([18], [15, 16], 'LOCATION', 'Asia', 'Châu Á')
-Predict ([18], [28, 29, 30, 31, 32], 'LOCATION', 'Asia', 'Quỹ Tiền tệ Quốc tế', 'LOCATION')
---------------
-True ([28, 29, 30], [28, 29, 30, 31, 32], 'ORGANIZATION', 'International Monetary Fund', 'Quỹ Tiền tệ Quốc tế')
-Predict ([28, 29, 30], [15, 16], 'ORGANIZATION', 'International Monetary Fund', 'Châu Á', 'ORGANIZATION')
 ==================
 ==================
 ==================
@@ -122,7 +115,8 @@ Predict ([28, 29, 30], [15, 16], 'ORGANIZATION', 'International Monetary Fund', 
 ==================
 --------------
 True ([8, 9, 10], [15, 16, 17, 18, 19, 20, 21], 'ORGANIZATION', 'Professional Golfers Association', 'Hiệp hội Người chơi Golf Chuyên nghiệp')
-Predict [[8, 9, 10], [12, 15, 16, 17, 18, 19, 20, 21, 28, 29], 'ORGANIZATION', 'Professional Golfers Association', 'tour Hiệp hội Người chơi Golf Chuyên nghiệp chút nào', 'ORGANIZATION']
+Predict ([8, 9, 10], [12, 15, 16, 17, 18, 19, 20, 21, 28, 29], 'ORGANIZATION', 'Professional Golfers Association', 'tour Hiệp hội Người chơi Golf Chuyên nghiệp chút nào', 'ORGANIZATION', 77, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 1.0}
 ==================
 ==================
 ==================
@@ -151,36 +145,37 @@ Predict [[8, 9, 10], [12, 15, 16, 17, 18, 19, 20, 21, 28, 29], 'ORGANIZATION', '
 ==================
 --------------
 True ([12, 13, 14], [20, 21, 22, 23, 24], 'ORGANIZATION', 'International Monetary Fund', 'Quỹ Tiền tệ Quốc tế')
-Predict ([12, 13, 14], [26, 27], 'ORGANIZATION', 'International Monetary Fund', 'Châu Á', 'ORGANIZATION')
---------------
-True ([20], [26, 27], 'LOCATION', 'Asia', 'Châu Á')
-Predict ([20], [20, 21, 22, 23], 'LOCATION', 'Asia', 'Quỹ Tiền tệ Quốc', 'LOCATION')
+Predict ([12, 13, 14], [20, 21, 22, 23], 'ORGANIZATION', 'International Monetary Fund', 'Quỹ Tiền tệ Quốc', 'ORGANIZATION', 103, 1)
+Score {'translation': 1.000000000000002e-15, 'transliteration': 0.0, 'coocurence': 0.5, 'distortion': 0.7393162393162394}
 ==================
 ==================
 --------------
 True ([8, 9], [9, 10], 'PERSON', 'David Ensor', 'David Ensor')
-Predict ([8, 9], [2, 3, 9, 10], 'PERSON', 'David Ensor', 'chi tiết David Ensor', 'PERSON')
-==================
-==================
-==================
-==================
-==================
-==================
-==================
-==================
-==================
-==================
-==================
-==================
-==================
+Predict ([8, 9], [2, 3, 9, 10], 'PERSON', 'David Ensor', 'chi tiết David Ensor', 'PERSON', 105, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.1, 'distortion': 0.8769230769230769}
 ==================
 --------------
-True ([16, 17], [14, 15, 16, 17], 'ORGANIZATION', 'Ethics Committee', 'Ủy ban Đạo đức')
-Predict ([16, 17], [3, 4], 'ORGANIZATION', 'Ethics Committee', 'hai Coburns', 'ORGANIZATION')
+True ([19], [28], 'PERSON', 'Suharto', 'Suharto')
+Predict ([19], [26, 27, 28], 'PERSON', 'Suharto', 'Tổng thống Suharto', 'PERSON', 106, 0)
+Score {'translation': 0.688661, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.9814323607427056}
+==================
+==================
+==================
+==================
+==================
+==================
+==================
+==================
+==================
+==================
+==================
+==================
+==================
 ==================
 --------------
 True ([14], [16], 'PERSON', 'Coburn', 'Coburn')
-Predict ([14], [16, 22], 'PERSON', 'Coburn', 'Coburn giúp', 'PERSON')
+Predict ([14], [16, 22], 'PERSON', 'Coburn', 'Coburn giúp', 'PERSON', 120, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.9014308426073132}
 ==================
 ==================
 ==================
@@ -200,36 +195,25 @@ Predict ([14], [16, 22], 'PERSON', 'Coburn', 'Coburn giúp', 'PERSON')
 ==================
 ==================
 ==================
---------------
-True ([2], [5], 'LOCATION', 'US', 'Mỹ')
-Predict ([2], [15, 16], 'LOCATION', 'US', 'Hoa Kỳ', 'LOCATION')
 --------------
 True ([4, 5], [6, 7], 'PERSON', 'George Mitchell', 'George Mitchell')
-Predict ([4, 5], [5, 6, 7], 'PERSON', 'George Mitchell', 'Mỹ George Mitchell', 'PERSON')
+Predict ([4, 5], [5, 6, 7], 'PERSON', 'George Mitchell', 'Mỹ George Mitchell', 'PERSON', 139, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.40625, 'distortion': 0.9626696832579186}
 ==================
---------------
-True ([4], [16], 'LOCATION', 'America', 'Mỹ')
-Predict ([4], [8, 9, 10], 'LOCATION', 'America', 'Công giáo Ireland', 'LOCATION')
 ==================
---------------
-True ([16, 17], [20, 21], 'PERSON', 'Gerry Adams', 'Gerry Adams')
-Predict ([16, 17], [18, 19, 20, 21], 'PERSON', 'Gerry Adams', 'Sinn Fein Gerry Adams', 'PERSON')
 --------------
 True ([13, 14], [18, 19], 'ORGANIZATION', 'Sinn Fein', 'Sinn Fein')
-Predict ([13, 14], [16, 17, 23, 24], 'ORGANIZATION', 'Sinn Fein', 'lãnh đạo cũng giống', 'ORGANIZATION')
+Predict ([13, 14], [16, 17, 23, 24], 'ORGANIZATION', 'Sinn Fein', 'lãnh đạo cũng giống', 'ORGANIZATION', 141, 7)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.09090909090909091, 'distortion': 0.8838838838838838}
+--------------
+True ([16, 17], [20, 21], 'PERSON', 'Gerry Adams', 'Gerry Adams')
+Predict ([16, 17], [18, 19, 20, 21], 'PERSON', 'Gerry Adams', 'Sinn Fein Gerry Adams', 'PERSON', 141, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.3333333333333333, 'distortion': 0.6586586586586587}
 ==================
 --------------
 True ([16, 17, 18, 19], [19, 20, 21, 22], 'ORGANIZATION', 'Council of the Isles', 'Hội đồng quần đảo')
-Predict ([16, 17, 18, 19], [41, 42, 43], 'ORGANIZATION', 'Council of the Isles', 'Cộng hòa Ireland', 'ORGANIZATION')
---------------
-True ([32, 33], [38, 39], 'LOCATION', 'Northern Ireland', 'Bắc Ireland')
-Predict ([32, 33], [13, 14], 'LOCATION', 'Northern Ireland', 'Bắc Ireland', 'LOCATION')
---------------
-True ([36, 37], [41, 42, 43], 'LOCATION', 'Irish Republic', 'Cộng hòa Ireland')
-Predict ([36, 37], [1, 2, 3], 'LOCATION', 'Irish Republic', 'Chính phủ Anh', 'LOCATION')
---------------
-True ([9, 10], [13, 14], 'LOCATION', 'Northern Ireland', 'Bắc Ireland')
-Predict ([9, 10], [38, 39], 'LOCATION', 'Northern Ireland', 'Bắc Ireland', 'LOCATION')
+Predict ([16, 17, 18, 19], [19], 'ORGANIZATION', 'Council of the Isles', 'Hội', 'ORGANIZATION', 142, 10)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.06521739130434782, 'distortion': 0.48684210526315785}
 ==================
 ==================
 ==================
@@ -244,14 +228,17 @@ Predict ([9, 10], [38, 39], 'LOCATION', 'Northern Ireland', 'Bắc Ireland', 'LO
 ==================
 --------------
 True ([16, 17], [19, 20], 'PERSON', 'Al Gore', 'Al Gore')
-Predict ([16, 17], [16, 17, 18, 19, 20], 'PERSON', 'Al Gore', 'Phó Tổng thống Al Gore', 'PERSON')
+Predict ([16, 17], [16, 17, 18, 19, 20], 'PERSON', 'Al Gore', 'Phó Tổng thống Al Gore', 'PERSON', 154, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.8184523809523809}
 ==================
 --------------
-True ([24], [36], 'ORGANIZATION', 'IMF', 'IMF')
-Predict ([24], [28, 29, 30, 31, 32, 33, 34, 36, 37], 'ORGANIZATION', 'IMF', 'thắt chặt vành đai theo yêu cầu IMF để', 'ORGANIZATION')
---------------
 True ([4, 5], [7, 8], 'PERSON', 'Lawrence Summers', 'Lawrence Summers')
-Predict ([4, 5], [4, 5, 6, 7, 8], 'PERSON', 'Lawrence Summers', 'Bộ tài chính Lawrence Summers', 'PERSON')
+Predict ([4, 5], [4, 5, 6, 7, 8], 'PERSON', 'Lawrence Summers', 'Bộ tài chính Lawrence Summers', 'PERSON', 155, 0)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.961996336996337}
+--------------
+True ([24], [36], 'ORGANIZATION', 'IMF', 'IMF')
+Predict ([24], [28, 29, 30, 31, 32, 33, 34, 36, 37], 'ORGANIZATION', 'IMF', 'thắt chặt vành đai theo yêu cầu IMF để', 'ORGANIZATION', 155, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.5512820512820513}
 ==================
 ==================
 ==================
@@ -267,7 +254,8 @@ Predict ([4, 5], [4, 5, 6, 7, 8], 'PERSON', 'Lawrence Summers', 'Bộ tài chín
 ==================
 --------------
 True ([8, 9], [7, 8], 'ORGANIZATION', 'Waldorf Astoria', 'Waldorf Astoria')
-Predict ([8, 9], [2, 4, 5, 7, 8, 15], 'LOCATION', 'Waldorf Astoria', 'màn buông xuống Waldorf Astoria làm', 'LOCATION')
+Predict ([8, 9], [2, 4, 5, 7, 8, 15], 'LOCATION', 'Waldorf Astoria', 'màn buông xuống Waldorf Astoria làm', 'LOCATION', 168, 15)
+Score {'translation': 0.9955410883805852, 'transliteration': 1.0, 'coocurence': 0.48148148148148145, 'distortion': 0.8106060606060606}
 ==================
 ==================
 ==================
@@ -276,7 +264,12 @@ Predict ([8, 9], [2, 4, 5, 7, 8, 15], 'LOCATION', 'Waldorf Astoria', 'màn buôn
 ==================
 --------------
 True ([18], [20], 'PERSON', 'Ritter', 'Ritter')
-Predict ([18], [19, 20], 'PERSON', 'Ritter', 'chính Ritter', 'PERSON')
+Predict ([18], [19, 20], 'PERSON', 'Ritter', 'chính Ritter', 'PERSON', 174, 0)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.2857142857142857, 'distortion': 0.6380952380952382}
+--------------
+True ([8], [16], 'PERSON', 'Ritter', 'Ritter')
+Predict ([8], [13, 14, 15, 16], 'PERSON', 'Ritter', 'đoàn kiểm tra Ritter', 'PERSON', 174, 1)
+Score {'translation': 1e-15, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.49523809523809526}
 ==================
 ==================
 ==================
@@ -284,15 +277,8 @@ Predict ([18], [19, 20], 'PERSON', 'Ritter', 'chính Ritter', 'PERSON')
 ==================
 --------------
 True ([23, 24], [28, 29, 30, 31], 'ORGANIZATION', 'Security Council', 'Hội đồng Bảo an')
-Predict ([23, 24], [28, 29, 30, 31, 32, 33], 'ORGANIZATION', 'Security Council', 'Hội đồng Bảo an rằng nhóm', 'ORGANIZATION')
-==================
-==================
---------------
-True ([40], [52], 'ORGANIZATION', 'UN', 'LHQ')
-Predict ([40], [11, 12, 13], 'ORGANIZATION', 'UN', 'Liên Hợp Quốc', 'ORGANIZATION')
---------------
-True ([33], [43], 'LOCATION', 'US', 'Mỹ')
-Predict ([33], [23], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+Predict ([23, 24], [28, 29, 30, 31, 32, 33], 'ORGANIZATION', 'Security Council', 'Hội đồng Bảo an rằng nhóm', 'ORGANIZATION', 179, 7)
+Score {'translation': 0.9999644993698527, 'transliteration': 1.0, 'coocurence': 0.23529411764705882, 'distortion': 0.944811320754717}
 ==================
 ==================
 ==================
@@ -308,13 +294,13 @@ Predict ([33], [23], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
 ==================
 ==================
 ==================
---------------
-True ([8, 9], [10], 'LOCATION', 'United States', 'Mỹ')
-Predict ([8, 9], [16, 17], 'LOCATION', 'United States', 'châu Á', 'LOCATION')
+==================
+==================
 ==================
 --------------
 True ([6], [8], 'LOCATION', 'Northridge', 'Northridge')
-Predict ([6], [6, 7, 8], 'LOCATION', 'Northridge', 'từ trong Northridge', 'LOCATION')
+Predict ([6], [6, 7, 8], 'LOCATION', 'Northridge', 'từ trong Northridge', 'LOCATION', 197, 7)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.25, 'distortion': 0.26302729528535984}
 ==================
 ==================
 ==================
@@ -335,7 +321,8 @@ Predict ([6], [6, 7, 8], 'LOCATION', 'Northridge', 'từ trong Northridge', 'LOC
 ==================
 --------------
 True ([6, 7], [10, 11, 12, 13], 'ORGANIZATION', 'Geron Corporation', 'Tổng công ty Geron')
-Predict ([6, 7], [13], 'ORGANIZATION', 'Geron Corporation', 'Geron', 'ORGANIZATION')
+Predict ([6, 7], [13], 'ORGANIZATION', 'Geron Corporation', 'Geron', 'ORGANIZATION', 215, 3)
+Score {'translation': 0.0, 'transliteration': 0.5, 'coocurence': 0.3333333333333333, 'distortion': 0.9169526424159231}
 ==================
 ==================
 ==================
@@ -351,7 +338,8 @@ Predict ([6, 7], [13], 'ORGANIZATION', 'Geron Corporation', 'Geron', 'ORGANIZATI
 ==================
 --------------
 True ([17, 18], [18, 19], 'PERSON', 'Scott Ritter', 'Scott Ritter')
-Predict [[17, 18], [18, 19, 20], 'PERSON', 'Scott Ritter', 'Scott Ritter sang', 'PERSON']
+Predict ([17, 18], [18, 19, 20], 'PERSON', 'Scott Ritter', 'Scott Ritter sang', 'PERSON', 228, 0)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.9901185770750988}
 ==================
 ==================
 ==================
@@ -361,27 +349,33 @@ Predict [[17, 18], [18, 19, 20], 'PERSON', 'Scott Ritter', 'Scott Ritter sang', 
 ==================
 --------------
 True ([3], [4, 5], 'ORGANIZATION', 'ABC', 'John McWethy')
-Predict ([3], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION')
+Predict ([3], [7], 'ORGANIZATION', 'ABC', 'ABC', 'ORGANIZATION', 235, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.03076923076923077, 'distortion': 0.9285714285714286}
 --------------
 True ([5, 6], [7], 'PERSON', 'John McWethy', 'ABC')
-Predict ([5, 6], [4, 5], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON')
+Predict ([5, 6], [4, 5], 'PERSON', 'John McWethy', 'John McWethy', 'PERSON', 235, 0)
+Score {'translation': 0.9942620000000001, 'transliteration': 1.0, 'coocurence': 0.3076923076923077, 'distortion': 0.5535714285714286}
 ==================
 ==================
 ==================
 --------------
 True ([25], [34, 35], 'ORGANIZATION', 'Navy', 'Hải quân')
-Predict ([25], [5], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION')
+Predict ([25], [34], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION', 238, 6)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.3, 'distortion': 0.9990421455938697}
 --------------
 True ([4], [5, 6], 'ORGANIZATION', 'Navy', 'Hải quân')
-Predict ([4], [34], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION')
+Predict ([4], [5], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION', 238, 3)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.47126436781609193}
 ==================
 --------------
 True ([3], [4, 5], 'ORGANIZATION', 'Navy', 'Hải quân')
-Predict ([3], [4], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION')
+Predict ([3], [4], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION', 239, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.9625668449197862}
 ==================
 --------------
 True ([14], [16, 17], 'ORGANIZATION', 'Navy', 'Hải quân')
-Predict ([14], [16], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION')
+Predict ([14], [16], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION', 240, 2)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.5, 'distortion': 0.9932659932659933}
 ==================
 ==================
 ==================
@@ -389,23 +383,27 @@ Predict ([14], [16], 'ORGANIZATION', 'Navy', 'Hải', 'ORGANIZATION')
 ==================
 --------------
 True ([8], [14], 'LOCATION', 'Houston', 'Houston')
-Predict ([8], [11, 12, 13, 14], 'LOCATION', 'Houston', 'ban bồi thẩm Houston', 'LOCATION')
+Predict ([8], [11, 12, 13, 14], 'LOCATION', 'Houston', 'ban bồi thẩm Houston', 'LOCATION', 245, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.41666666666666663}
 ==================
 ==================
 ==================
 ==================
 --------------
 True ([4, 5, 6], [4, 5], 'PERSON', 'Karla Faye Tucker', 'Karla Faye')
-Predict ([4, 5, 6], [4, 5, 6], 'PERSON', 'Karla Faye Tucker', 'Karla Faye Tucker', 'PERSON')
+Predict ([4, 5, 6], [4, 5, 6], 'PERSON', 'Karla Faye Tucker', 'Karla Faye Tucker', 'PERSON', 249, 0)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.5, 'distortion': 0.9739130434782608}
 ==================
 --------------
 True ([19, 20, 21], [24, 25, 26, 27], 'ORGANIZATION', 'Board of Pardons', 'Ủy ban Ân xá')
-Predict ([19, 20, 21], [31], 'ORGANIZATION', 'Board of Pardons', 'Lạy', 'ORGANIZATION')
+Predict ([19, 20, 21], [31], 'ORGANIZATION', 'Board of Pardons', 'Lạy', 'ORGANIZATION', 250, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.9866310160427807}
 ==================
 ==================
 --------------
 True ([7], [7], 'LOCATION', 'Gatesville', 'Gatesville')
-Predict ([7], [7, 8, 9], 'LOCATION', 'Gatesville', 'Gatesville , Texas.', 'LOCATION')
+Predict ([7], [7, 8, 9], 'LOCATION', 'Gatesville', 'Gatesville , Texas.', 'LOCATION', 252, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.3222222222222222}
 ==================
 ==================
 ==================
@@ -416,7 +414,8 @@ Predict ([7], [7, 8, 9], 'LOCATION', 'Gatesville', 'Gatesville , Texas.', 'LOCAT
 ==================
 --------------
 True ([7, 8], [6, 7, 8], 'ORGANIZATION', 'Justice Department', 'Bộ Tư pháp')
-Predict ([7, 8], [6, 7], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGANIZATION')
+Predict ([7, 8], [6, 7], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGANIZATION', 260, 3)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.10344827586206896, 'distortion': 0.9422222222222222}
 ==================
 ==================
 ==================
@@ -425,12 +424,14 @@ Predict ([7, 8], [6, 7], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGA
 ==================
 --------------
 True ([31], [37], 'ORGANIZATION', 'FCC', 'FCC')
-Predict ([31], [35, 36, 37], 'ORGANIZATION', 'FCC', 'giấy phép FCC', 'ORGANIZATION')
+Predict ([31], [35, 36, 37], 'ORGANIZATION', 'FCC', 'giấy phép FCC', 'ORGANIZATION', 266, 3)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.39702517162471396}
 ==================
 ==================
 --------------
 True ([10], [13], 'ORGANIZATION', 'FCC', 'FCC')
-Predict ([10], [11, 12, 13, 27, 28, 29], 'ORGANIZATION', 'FCC', 'giấy phép FCC cãi nhau về', 'ORGANIZATION')
+Predict ([10], [11, 12, 13, 27, 28, 29], 'ORGANIZATION', 'FCC', 'giấy phép FCC cãi nhau về', 'ORGANIZATION', 268, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.1891891891891892, 'distortion': 0.650375939849624}
 ==================
 ==================
 ==================
@@ -447,7 +448,8 @@ Predict ([10], [11, 12, 13, 27, 28, 29], 'ORGANIZATION', 'FCC', 'giấy phép FC
 ==================
 --------------
 True ([6, 7, 8], [6, 7, 8, 9, 10], 'ORGANIZATION', 'Federal Aviation Administration', 'Cục Hàng không liên bang')
-Predict ([6, 7, 8], [6, 7], 'ORGANIZATION', 'Federal Aviation Administration', 'Cục Hàng', 'ORGANIZATION')
+Predict ([6, 7, 8], [6, 7], 'ORGANIZATION', 'Federal Aviation Administration', 'Cục Hàng', 'ORGANIZATION', 282, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.261904761904762}
 ==================
 ==================
 ==================
@@ -456,17 +458,16 @@ Predict ([6, 7, 8], [6, 7], 'ORGANIZATION', 'Federal Aviation Administration', '
 ==================
 --------------
 True ([6, 7, 8, 9, 10], [7, 8, 9, 10, 11, 12], 'ORGANIZATION', 'New England Journal of Medicine', 'Tạp chí Y khoa New England')
-Predict [[6, 7, 10], [9, 10, 11, 12], 'ORGANIZATION', 'New England Medicine', 'Y khoa New England', 'ORGANIZATION']
+Predict ([6, 7, 10], [9, 10, 11, 12], 'ORGANIZATION', 'New England Medicine', 'Y khoa New England', 'ORGANIZATION', 288, 0)
+Score {'translation': 0.0, 'transliteration': 0.6666666666666666, 'coocurence': 0.0, 'distortion': 0.9568181818181818}
 ==================
 ==================
 ==================
 ==================
 --------------
 True ([18, 19], [26, 27, 28], 'ORGANIZATION', 'State Department', 'Bộ Ngoại giao')
-Predict ([18, 19], [26, 27], 'ORGANIZATION', 'State Department', 'Bộ Ngoại', 'ORGANIZATION')
---------------
-True ([32], [45], 'LOCATION', 'US', 'Mỹ')
-Predict ([32], [62], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
+Predict ([18, 19], [26, 27], 'ORGANIZATION', 'State Department', 'Bộ Ngoại', 'ORGANIZATION', 292, 8)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.007874015748031496, 'distortion': 0.3588697017268446}
 ==================
 ==================
 ==================
@@ -474,7 +475,8 @@ Predict ([32], [62], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
 ==================
 --------------
 True ([10], [18], 'LOCATION', 'Georgia', 'Georgia')
-Predict [[10], [12, 18, 19], 'LOCATION', 'Georgia', 'ấy Georgia trong', 'LOCATION']
+Predict ([10], [12, 18, 19], 'LOCATION', 'Georgia', 'ấy Georgia trong', 'LOCATION', 297, 0)
+Score {'translation': 0.746912, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.8311688311688311}
 ==================
 ==================
 ==================
@@ -484,30 +486,8 @@ Predict [[10], [12, 18, 19], 'LOCATION', 'Georgia', 'ấy Georgia trong', 'LOCAT
 ==================
 --------------
 True ([6, 7], [7, 8, 9], 'ORGANIZATION', 'State Department', 'Bộ Ngoại giao')
-Predict ([6, 7], [7, 8], 'ORGANIZATION', 'State Department', 'Bộ Ngoại', 'ORGANIZATION')
-==================
-==================
-==================
-==================
-==================
-==================
-==================
---------------
-True ([14, 15, 16], [15, 16, 17, 18, 19], 'ORGANIZATION', 'Irish Republican Army', 'Quân đội Cộng hòa Ailen')
-Predict ([14, 15, 16], [26, 27], 'ORGANIZATION', 'Irish Republican Army', 'Chính phủ', 'ORGANIZATION')
-==================
---------------
-True ([30], [37], 'LOCATION', 'US', 'Mỹ')
-Predict ([30], [16], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
---------------
-True ([11], [16], 'LOCATION', 'US', 'Mỹ')
-Predict ([11], [37], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
-==================
-==================
-==================
---------------
-True ([24, 25], [28, 29], 'LOCATION', 'Northern Ireland', 'Bắc Ai-len')
-Predict ([24, 25], [64], 'LOCATION', 'Northern Ireland', 'Anh', 'LOCATION')
+Predict ([6, 7], [7, 8], 'ORGANIZATION', 'State Department', 'Bộ Ngoại', 'ORGANIZATION', 304, 1)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.1875, 'distortion': 0.9733683420855214}
 ==================
 ==================
 ==================
@@ -534,12 +514,25 @@ Predict ([24, 25], [64], 'LOCATION', 'Northern Ireland', 'Anh', 'LOCATION')
 ==================
 ==================
 ==================
---------------
-True ([10], [13], 'PERSON', 'Ortega', 'Ortega')
-Predict ([10], [12, 13], 'PERSON', 'Ortega', 'Cuba Ortega', 'PERSON')
+==================
+==================
+==================
+==================
+==================
+==================
+==================
+==================
+==================
+==================
+==================
 --------------
 True ([7], [12], 'LOCATION', 'Cuba', 'Cuba')
-Predict ([7], [8, 9, 10], 'LOCATION', 'Cuba', 'Đức Hồng Y', 'LOCATION')
+Predict ([7], [8, 9, 10], 'LOCATION', 'Cuba', 'Đức Hồng Y', 'LOCATION', 341, 9)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.9797297297297297}
+--------------
+True ([10], [13], 'PERSON', 'Ortega', 'Ortega')
+Predict ([10], [12, 13], 'PERSON', 'Ortega', 'Cuba Ortega', 'PERSON', 341, 0)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.9362934362934363}
 ==================
 ==================
 ==================
@@ -547,16 +540,15 @@ Predict ([7], [8, 9, 10], 'LOCATION', 'Cuba', 'Đức Hồng Y', 'LOCATION')
 ==================
 --------------
 True ([9, 10], [11, 12], 'PERSON', 'Che Guevara', 'Che Guevara')
-Predict ([9, 10], [10, 11, 12], 'PERSON', 'Che Guevara', 'Cuba Che Guevara', 'PERSON')
+Predict ([9, 10], [10, 11, 12], 'PERSON', 'Che Guevara', 'Cuba Che Guevara', 'PERSON', 346, 0)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.3333333333333333, 'distortion': 0.9153846153846154}
+==================
+==================
 ==================
 --------------
-True ([19, 20], [27, 28, 29], 'ORGANIZATION', 'Communist Party', 'Đảng Cộng sản')
-Predict ([19, 20], [20], 'ORGANIZATION', 'Communist Party', 'Cuba', 'ORGANIZATION')
-==================
-==================
---------------
-True ([9, 10], [7, 8], 'PERSON', 'Ken Kashiwahara', 'Ken Kashiwahara')
-Predict ([9, 10], [7, 8, 9], 'PERSON', 'Ken Kashiwahara', 'Ken Kashiwahara ABC', 'PERSON')
+True ([7], [9], 'ORGANIZATION', 'ABC', 'ABC')
+Predict ([7], [7, 8, 9], 'ORGANIZATION', 'ABC', 'Ken Kashiwahara ABC', 'ORGANIZATION', 349, 0)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.0}
 ==================
 ==================
 ==================
@@ -564,23 +556,20 @@ Predict ([9, 10], [7, 8, 9], 'PERSON', 'Ken Kashiwahara', 'Ken Kashiwahara ABC',
 ==================
 --------------
 True ([8, 9], [13, 14, 15], 'ORGANIZATION', 'Justice Department', 'Bộ Tư pháp')
-Predict ([8, 9], [13, 14], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGANIZATION')
+Predict ([8, 9], [13, 14], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGANIZATION', 354, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.06896551724137931, 'distortion': 0.7586996336996337}
 ==================
 ==================
 ==================
---------------
-True ([16, 17], [16, 17], 'LOCATION', 'United States', 'Hoa Kỳ')
-Predict ([16, 17], [26, 27], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
---------------
-True ([26, 27], [26, 27], 'LOCATION', 'United States', 'Hoa Kỳ')
-Predict ([26, 27], [16, 17], 'LOCATION', 'United States', 'Hoa Kỳ', 'LOCATION')
 ==================
---------------
-True ([29], [45], 'PERSON', 'Clinton', 'Clinton')
-Predict ([29], [44, 45], 'PERSON', 'Clinton', 'hoảng Clinton', 'PERSON')
 --------------
 True ([13], [12, 13, 14], 'LOCATION', 'Washington', 'Washington tối qua')
-Predict ([13], [12], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
+Predict ([13], [12], 'LOCATION', 'Washington', 'Washington', 'LOCATION', 358, 0)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.3700787401574803, 'distortion': 0.8415147265077139}
+--------------
+True ([29], [45], 'PERSON', 'Clinton', 'Clinton')
+Predict ([29], [44, 45], 'PERSON', 'Clinton', 'hoảng Clinton', 'PERSON', 358, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.4628330995792427}
 ==================
 ==================
 ==================
@@ -589,12 +578,18 @@ Predict ([13], [12], 'LOCATION', 'Washington', 'Washington', 'LOCATION')
 ==================
 --------------
 True ([12, 13], [12, 13], 'PERSON', 'Fidel Castro', 'Fidel Castro')
-Predict ([12, 13], [9, 10, 11, 12, 13], 'PERSON', 'Fidel Castro', 'Đức Giáo Hoàng, Fidel Castro', 'PERSON')
+Predict ([12, 13], [11, 12, 13], 'PERSON', 'Fidel Castro', 'Hoàng, Fidel Castro', 'PERSON', 364, 6)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.8218218218218218}
 ==================
 --------------
 True ([5], [8], 'PERSON', 'Oprah', 'Oprah')
-Predict ([5], [7, 8], 'PERSON', 'Oprah', 'cùa Oprah', 'PERSON')
+Predict ([5], [7, 8], 'PERSON', 'Oprah', 'cùa Oprah', 'PERSON', 365, 0)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.995995995995996}
 ==================
+--------------
+True ([1], [5], 'ORGANIZATION', 'ABC', 'ABC')
+Predict ([1], [1, 2, 3, 5], 'ORGANIZATION', 'ABC', 'Mike von Fremd ABC', 'ORGANIZATION', 366, 1)
+Score {'translation': 0.9942620000000001, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.9861111111111112}
 ==================
 ==================
 ==================
@@ -625,7 +620,8 @@ Predict ([5], [7, 8], 'PERSON', 'Oprah', 'cùa Oprah', 'PERSON')
 ==================
 --------------
 True ([23, 24], [36, 37], 'PERSON', 'Robert Siegel', 'Robert Siegel')
-Predict ([23, 24], [29, 30, 31, 32, 33, 34, 35, 36, 37], 'PERSON', 'Robert Siegel', 'Đài phát thanh Công cộng Quốc gia Robert Siegel', 'PERSON')
+Predict ([23, 24], [29, 30, 31, 32, 33, 34, 35, 36, 37], 'PERSON', 'Robert Siegel', 'Đài phát thanh Công cộng Quốc gia Robert Siegel', 'PERSON', 394, 1)
+Score {'translation': 1.000000000000002e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.8980836236933798}
 ==================
 ==================
 ==================
@@ -633,16 +629,15 @@ Predict ([23, 24], [29, 30, 31, 32, 33, 34, 35, 36, 37], 'PERSON', 'Robert Siege
 ==================
 --------------
 True ([8], [10], 'PERSON', 'Tripp', 'Tripp')
-Predict ([8], [8, 9, 10], 'PERSON', 'Tripp', 'năm ngoái Tripp', 'PERSON')
+Predict ([8], [8, 9, 10], 'PERSON', 'Tripp', 'năm ngoái Tripp', 'PERSON', 399, 3)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.04878048780487805, 'distortion': 0.8169491525423729}
 ==================
---------------
-True ([7, 8], [9, 10], 'ORGANIZATION', 'White House', 'Nhà Trắng')
-Predict ([7, 8], [53, 54], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
 ==================
 ==================
 --------------
 True ([18], [23], 'PERSON', 'Tripp', 'Tripp')
-Predict ([18], [22, 23], 'PERSON', 'Tripp', 'cô, Tripp', 'PERSON')
+Predict ([18], [22, 23], 'PERSON', 'Tripp', 'cô, Tripp', 'PERSON', 402, 10)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.7611159546643418}
 ==================
 ==================
 ==================
@@ -652,26 +647,23 @@ Predict ([18], [22, 23], 'PERSON', 'Tripp', 'cô, Tripp', 'PERSON')
 ==================
 ==================
 --------------
-True ([17], [28], 'PERSON', 'Reno', 'Reno')
-Predict ([17], [28, 31, 32, 33], 'PERSON', 'Reno', 'Reno Thẩm phán Reno', 'PERSON')
+True ([22], [33], 'PERSON', 'Reno', 'Reno')
+Predict ([22], [28, 31, 32, 33], 'PERSON', 'Reno', 'Reno Thẩm phán Reno', 'PERSON', 410, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.65625}
 ==================
 ==================
 --------------
 True ([17, 18, 19], [24, 25, 26, 27, 28], 'ORGANIZATION', 'National Public Radio', 'Đài Cộng đồng Quốc gia')
-Predict ([17, 18, 19], [24, 25, 26, 27], 'ORGANIZATION', 'National Public Radio', 'Đài Cộng đồng Quốc', 'ORGANIZATION')
+Predict ([17, 18, 19], [24, 25, 26, 27], 'ORGANIZATION', 'National Public Radio', 'Đài Cộng đồng Quốc', 'ORGANIZATION', 412, 4)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.9145427286356822}
 ==================
 --------------
 True ([19, 20], [26, 27, 28, 29, 30], 'ORGANIZATION', 'Public Broadcasting', 'Đài phát thanh Cộng đồng')
-Predict ([19, 20], [26, 27, 28, 29], 'ORGANIZATION', 'Public Broadcasting', 'Đài phát thanh Cộng', 'ORGANIZATION')
+Predict ([19, 20], [26, 27, 28, 29], 'ORGANIZATION', 'Public Broadcasting', 'Đài phát thanh Cộng', 'ORGANIZATION', 413, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.923195084485407}
 ==================
 ==================
 ==================
---------------
-True ([40, 41], [47, 48], 'ORGANIZATION', 'White House', 'Nhà Trắng')
-Predict ([40, 41], [33, 34], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
---------------
-True ([26, 27], [33, 34], 'ORGANIZATION', 'White House', 'Nhà Trắng')
-Predict ([26, 27], [47, 48], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
 ==================
 ==================
 ==================
@@ -679,6 +671,10 @@ Predict ([26, 27], [47, 48], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORG
 ==================
 ==================
 ==================
+--------------
+True ([15, 16], [20, 21], 'PERSON', 'John Paul', 'Gioan Phaolô')
+Predict ([15, 16], [18], 'PERSON', 'John Paul', 'Cuba', 'PERSON', 423, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.974025974025974}
 ==================
 ==================
 ==================
@@ -693,15 +689,10 @@ Predict ([26, 27], [47, 48], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORG
 ==================
 --------------
 True ([3, 4], [5, 6], 'PERSON', 'Yasser Arafat', 'Yasser Arafat')
-Predict ([3, 4], [4, 5, 6], 'PERSON', 'Yasser Arafat', 'Palestine Yasser Arafat', 'PERSON')
+Predict ([3, 4], [4, 5, 6], 'PERSON', 'Yasser Arafat', 'Palestine Yasser Arafat', 'PERSON', 435, 0)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.988795518207283}
 ==================
 ==================
---------------
-True ([8], [13], 'LOCATION', 'US', 'Mỹ')
-Predict ([8], [44], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
---------------
-True ([26], [44], 'LOCATION', 'US', 'Mỹ')
-Predict ([26], [13], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
 ==================
 ==================
 ==================
@@ -710,14 +701,16 @@ Predict ([26], [13], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
 ==================
 --------------
 True ([7], [10, 11, 12, 13], 'LOCATION', 'Havana', 'Công viên Trung tâm')
-Predict ([7], [15], 'LOCATION', 'Havana', 'Havana', 'LOCATION')
+Predict ([7], [10, 11, 12, 13, 14, 15], 'LOCATION', 'Havana', 'Công viên Trung tâm của Havana', 'LOCATION', 443, 0)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.36, 'distortion': 0.6988636363636364}
 ==================
 ==================
 ==================
 ==================
 --------------
 True ([12, 13], [17, 18], 'PERSON', 'Yasser Arafat', 'Yasser Arafat')
-Predict ([12, 13], [16, 17, 18], 'PERSON', 'Yasser Arafat', 'Palestine Yasser Arafat', 'PERSON')
+Predict ([12, 13], [16, 17, 18], 'PERSON', 'Yasser Arafat', 'Palestine Yasser Arafat', 'PERSON', 447, 0)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.9699248120300752}
 ==================
 ==================
 ==================
@@ -728,7 +721,8 @@ Predict ([12, 13], [16, 17, 18], 'PERSON', 'Yasser Arafat', 'Palestine Yasser Ar
 ==================
 --------------
 True ([13], [17], 'PERSON', 'Wright', 'Wright')
-Predict ([13], [15, 16, 17], 'PERSON', 'Wright', 'Thẩm phán Wright', 'PERSON')
+Predict ([13], [15, 16, 17], 'PERSON', 'Wright', 'Thẩm phán Wright', 'PERSON', 455, 0)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.2222222222222222, 'distortion': 0.9747899159663866}
 ==================
 ==================
 ==================
@@ -746,7 +740,8 @@ Predict ([13], [15, 16, 17], 'PERSON', 'Wright', 'Thẩm phán Wright', 'PERSON'
 ==================
 --------------
 True ([3, 4], [2, 3, 4], 'ORGANIZATION', 'Justice Department', 'Bộ Tư pháp')
-Predict ([3, 4], [2, 3], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGANIZATION')
+Predict ([3, 4], [2, 3], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGANIZATION', 470, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.06896551724137931, 'distortion': 0.3771929824561403}
 ==================
 ==================
 ==================
@@ -761,7 +756,8 @@ Predict ([3, 4], [2, 3], 'ORGANIZATION', 'Justice Department', 'Bộ Tư', 'ORGA
 ==================
 --------------
 True ([7, 8], [7, 8], 'PERSON', 'Vincent Foster', 'Vincent Foster')
-Predict ([7, 8], [5, 6, 7, 8], 'PERSON', 'Vincent Foster', 'Nhà Trắng Vincent Foster', 'PERSON')
+Predict ([7, 8], [5, 6, 7, 8], 'PERSON', 'Vincent Foster', 'Nhà Trắng Vincent Foster', 'PERSON', 482, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.5, 'distortion': 0.736842105263158}
 ==================
 ==================
 ==================
@@ -769,7 +765,8 @@ Predict ([7, 8], [5, 6, 7, 8], 'PERSON', 'Vincent Foster', 'Nhà Trắng Vincent
 ==================
 --------------
 True ([12], [16], 'ORGANIZATION', 'Cadillac', 'Cadillac')
-Predict ([12], [15, 16], 'ORGANIZATION', 'Cadillac', 'chiếc Cadillac', 'ORGANIZATION')
+Predict ([12], [15, 16], 'ORGANIZATION', 'Cadillac', 'chiếc Cadillac', 'ORGANIZATION', 487, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.003787878787878788, 'distortion': 0.5693176879617557}
 ==================
 ==================
 ==================
@@ -803,9 +800,6 @@ Predict ([12], [15, 16], 'ORGANIZATION', 'Cadillac', 'chiếc Cadillac', 'ORGANI
 ==================
 ==================
 ==================
---------------
-True ([21, 22], [29, 30, 31], 'ORGANIZATION', 'Justice Department', 'Sở Tư pháp')
-Predict ([21, 22], [59, 60, 61, 62, 63, 64], 'ORGANIZATION', 'Justice Department', 'Văn phòng Du lịch Nhà Trắng', 'ORGANIZATION')
 ==================
 ==================
 ==================
@@ -818,22 +812,6 @@ Predict ([21, 22], [59, 60, 61, 62, 63, 64], 'ORGANIZATION', 'Justice Department
 ==================
 ==================
 ==================
-==================
-==================
-==================
---------------
-True ([11, 12, 13], [12, 13, 14, 15, 16], 'ORGANIZATION', 'UN Security Council', 'Hội đồng Bảo an LHQ')
-Predict ([11, 12, 13], [4, 5], 'ORGANIZATION', 'UN Security Council', 'Chánh Thanh', 'ORGANIZATION')
-==================
---------------
-True ([5, 6], [3, 4], 'PERSON', 'Madeleine Albright', 'Madeleine Albright')
-Predict ([5, 6], [1, 2, 3, 4], 'PERSON', 'Madeleine Albright', 'Ngoại trưởng Madeleine Albright', 'PERSON')
-==================
-==================
-==================
---------------
-True ([11, 12], [14, 15, 16], 'ORGANIZATION', 'State Department', 'Bộ Ngoại giao')
-Predict ([11, 12], [14, 15], 'ORGANIZATION', 'State Department', 'Bộ Ngoại', 'ORGANIZATION')
 ==================
 ==================
 ==================
@@ -842,11 +820,16 @@ Predict ([11, 12], [14, 15], 'ORGANIZATION', 'State Department', 'Bộ Ngoại',
 ==================
 ==================
 --------------
-True ([3, 4], [6, 7], 'ORGANIZATION', 'White House', 'Nhà Trắng')
-Predict ([3, 4], [60, 61], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
---------------
-True ([39, 40], [60, 61], 'ORGANIZATION', 'White House', 'Nhà Trắng')
-Predict ([39, 40], [6, 7], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+True ([11, 12], [14, 15, 16], 'ORGANIZATION', 'State Department', 'Bộ Ngoại giao')
+Predict ([11, 12], [14, 15], 'ORGANIZATION', 'State Department', 'Bộ Ngoại', 'ORGANIZATION', 539, 3)
+Score {'translation': 0.15436839054676965, 'transliteration': 1.0, 'coocurence': 0.3333333333333333, 'distortion': 0.9494736842105264}
+==================
+==================
+==================
+==================
+==================
+==================
+==================
 ==================
 ==================
 ==================
@@ -864,17 +847,12 @@ Predict ([39, 40], [6, 7], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGAN
 ==================
 --------------
 True ([3, 4], [4, 5], 'PERSON', 'Roy Romer', 'Roy Romer')
-Predict ([3, 4], [3, 4, 5], 'PERSON', 'Roy Romer', 'Đảng Roy Romer', 'PERSON')
+Predict ([3, 4], [3, 4, 5], 'PERSON', 'Roy Romer', 'Đảng Roy Romer', 'PERSON', 561, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.3333333333333333, 'distortion': 0.14941176470588236}
 ==================
 ==================
 ==================
 ==================
---------------
-True ([8], [12, 13], 'ORGANIZATION', 'State', 'Nhà nước')
-Predict ([8], [15, 16], 'ORGANIZATION', 'State', 'Quốc phòng', 'ORGANIZATION')
---------------
-True ([10], [15, 16], 'ORGANIZATION', 'Defense', 'Quốc phòng')
-Predict ([10], [12, 13], 'ORGANIZATION', 'Defense', 'Nhà nước', 'ORGANIZATION')
 ==================
 ==================
 ==================
@@ -886,18 +864,21 @@ Predict ([10], [12, 13], 'ORGANIZATION', 'Defense', 'Nhà nước', 'ORGANIZATIO
 ==================
 --------------
 True ([6, 7], [6, 7, 8], 'ORGANIZATION', 'Democratic party', 'Đảng Dân chủ')
-Predict ([6, 7], [6, 7], 'ORGANIZATION', 'Democratic party', 'Đảng Dân', 'ORGANIZATION')
+Predict ([6, 7], [6, 7], 'ORGANIZATION', 'Democratic party', 'Đảng Dân', 'ORGANIZATION', 574, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.8742857142857143}
 ==================
 ==================
 ==================
 ==================
 ==================
---------------
-True ([7, 8], [11, 12], 'PERSON', 'Chuck Robb', 'Chuck Robb')
-Predict ([7, 8], [7], 'PERSON', 'Chuck Robb', 'Thượng', 'PERSON')
 --------------
 True ([5], [10], 'LOCATION', 'Virginia', 'Virginia')
-Predict ([5], [10, 11, 12], 'LOCATION', 'Virginia', 'Virginia Chuck Robb', 'LOCATION')
+Predict ([5], [7], 'LOCATION', 'Virginia', 'Thượng', 'LOCATION', 579, 2)
+Score {'translation': 0.0, 'transliteration': 1.0, 'coocurence': 1.0, 'distortion': 0.9058823529411765}
+--------------
+True ([7, 8], [11, 12], 'PERSON', 'Chuck Robb', 'Chuck Robb')
+Predict ([7, 8], [10, 11, 12], 'PERSON', 'Chuck Robb', 'Virginia Chuck Robb', 'PERSON', 579, 0)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.9941176470588236}
 ==================
 ==================
 ==================
@@ -909,12 +890,14 @@ Predict ([5], [10, 11, 12], 'LOCATION', 'Virginia', 'Virginia Chuck Robb', 'LOCA
 ==================
 --------------
 True ([7, 8, 9], [8, 9, 10], 'ORGANIZATION', 'Green Bay Packers', 'Green Bay Packers')
-Predict ([7, 8, 9], [8, 9, 10, 11], 'ORGANIZATION', 'Green Bay Packers', 'Green Bay Packers đón', 'ORGANIZATION')
+Predict ([7, 8, 9], [8, 9, 10, 11], 'ORGANIZATION', 'Green Bay Packers', 'Green Bay Packers đón', 'ORGANIZATION', 588, 5)
+Score {'translation': 0.5756943953222768, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.8952380952380953}
 ==================
 ==================
 --------------
 True ([6, 7, 8], [6, 7, 8], 'ORGANIZATION', 'Green Bay Packers', 'Green Bay Packers')
-Predict [[6, 7, 8], [6, 7, 8, 13, 14, 15, 16, 17, 18], 'ORGANIZATION', 'Green Bay Packers', 'Green Bay Packers thể phủ nhận sự tuyệt vời', 'ORGANIZATION']
+Predict ([6, 7, 8], [6, 7, 8, 13, 14, 15, 16, 17, 18], 'ORGANIZATION', 'Green Bay Packers', 'Green Bay Packers thể phủ nhận sự tuyệt vời', 'ORGANIZATION', 590, 0)
+Score {'translation': 0.5756943953222768, 'transliteration': 1.0, 'coocurence': 0.0, 'distortion': 0.887218045112782}
 ==================
 ==================
 ==================
@@ -941,7 +924,8 @@ Predict [[6, 7, 8], [6, 7, 8, 13, 14, 15, 16, 17, 18], 'ORGANIZATION', 'Green Ba
 ==================
 --------------
 True ([3], [8], 'PERSON', 'Clinton', 'Clinton')
-Predict ([3], [7, 8], 'PERSON', 'Clinton', 'bà Clinton', 'PERSON')
+Predict ([3], [7, 8], 'PERSON', 'Clinton', 'bà Clinton', 'PERSON', 614, 10)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.1, 'distortion': 0.46627565982404695}
 ==================
 ==================
 ==================
@@ -953,14 +937,12 @@ Predict ([3], [7, 8], 'PERSON', 'Clinton', 'bà Clinton', 'PERSON')
 ==================
 ==================
 ==================
---------------
-True ([14], [22], 'LOCATION', 'Russia', 'Nga')
-Predict ([14], [57], 'LOCATION', 'Russia', 'Nga', 'LOCATION')
 ==================
 ==================
 --------------
 True ([6], [7], 'ORGANIZATION', 'Digital', 'Digital')
-Predict ([6], [4, 7, 8, 10], 'ORGANIZATION', 'Digital', 'họ Digital với phẩy', 'ORGANIZATION')
+Predict ([6], [4, 7, 8, 10], 'ORGANIZATION', 'Digital', 'họ Digital với phẩy', 'ORGANIZATION', 627, 2)
+Score {'translation': 1.0, 'transliteration': 1.0, 'coocurence': 0.5, 'distortion': 0.9897435897435898}
 ==================
 ==================
 ==================
@@ -973,12 +955,14 @@ Predict ([6], [4, 7, 8, 10], 'ORGANIZATION', 'Digital', 'họ Digital với ph�
 ==================
 --------------
 True ([26], [26, 27], 'ORGANIZATION', 'Congress', 'Quốc hội')
-Predict [[26], [24, 26, 27], 'ORGANIZATION', 'Congress', 'đưa Quốc hội', 'ORGANIZATION']
+Predict ([26], [24, 26, 27], 'ORGANIZATION', 'Congress', 'đưa Quốc hội', 'ORGANIZATION', 637, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.8941798941798942}
 ==================
 ==================
 --------------
 True ([14], [20], 'LOCATION', 'Iraq', 'Iraq')
-Predict ([14], [20, 22], 'LOCATION', 'Iraq', 'Iraq họ', 'LOCATION')
+Predict ([14], [20, 22], 'LOCATION', 'Iraq', 'Iraq họ', 'LOCATION', 639, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.2571428571428571, 'distortion': 0.9807692307692308}
 ==================
 ==================
 ==================
@@ -996,14 +980,16 @@ Predict ([14], [20, 22], 'LOCATION', 'Iraq', 'Iraq họ', 'LOCATION')
 ==================
 --------------
 True ([11, 12], [15, 16], 'PERSON', 'Paula Jones', 'Paula Jones')
-Predict ([11, 12], [13, 14, 15, 16], 'PERSON', 'Paula Jones', 'trường hợp Paula Jones', 'PERSON')
+Predict ([11, 12], [13, 14, 15, 16], 'PERSON', 'Paula Jones', 'trường hợp Paula Jones', 'PERSON', 654, 0)
+Score {'translation': 0.0, 'transliteration': 0.5, 'coocurence': 1.0, 'distortion': 0.8375350140056022}
 ==================
 ==================
 ==================
 ==================
 --------------
 True ([10], [14], 'PERSON', 'Currie', 'Currie')
-Predict ([10], [14, 15, 44, 45], 'PERSON', 'Currie', 'Currie người bào chữa', 'PERSON')
+Predict ([10], [14, 15, 44, 45], 'PERSON', 'Currie', 'Currie người bào chữa', 'PERSON', 658, 3)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.25, 'distortion': 0.36463361123299687}
 ==================
 ==================
 ==================
@@ -1013,10 +999,8 @@ Predict ([10], [14, 15, 44, 45], 'PERSON', 'Currie', 'Currie người bào chữ
 ==================
 --------------
 True ([4, 5, 6, 7], [3, 4, 5], 'ORGANIZATION', 'Department of Home Affairs', 'Bộ nội vụ')
-Predict ([4, 5, 6, 7], [14, 15], 'ORGANIZATION', 'Department of Home Affairs', 'Trung Đông', 'ORGANIZATION')
---------------
-True ([15, 16], [14, 15], 'LOCATION', 'Middle East', 'Trung Đông')
-Predict ([15, 16], [1, 2, 3, 4, 5, 6, 7, 10], 'LOCATION', 'Middle East', 'Bộ trưởng Bộ nội vụ đi trong tới', 'LOCATION')
+Predict ([4, 5, 6, 7], [1, 2, 3, 4, 5, 6, 7, 10], 'ORGANIZATION', 'Department of Home Affairs', 'Bộ trưởng Bộ nội vụ đi trong tới', 'ORGANIZATION', 665, 3)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.3566176470588235}
 ==================
 ==================
 ==================
@@ -1031,11 +1015,9 @@ Predict ([15, 16], [1, 2, 3, 4, 5, 6, 7, 10], 'LOCATION', 'Middle East', 'Bộ t
 ==================
 --------------
 True ([3], [5, 6, 7], 'ORGANIZATION', 'Democrats', 'Đảng Dân chủ')
-Predict [[3], [5, 6], 'PERSON', 'Democrats', 'Đảng Dân', 'PERSON']
+Predict ([3], [5, 6], 'PERSON', 'Democrats', 'Đảng Dân', 'PERSON', 677, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.9826086956521739}
 ==================
---------------
-True ([23], [25, 26], 'ORGANIZATION', 'House', 'Hạ viện')
-Predict ([23], [8, 9], 'ORGANIZATION', 'House', 'Hạ Viện', 'ORGANIZATION')
 ==================
 ==================
 ==================
@@ -1072,11 +1054,13 @@ Predict ([23], [8, 9], 'ORGANIZATION', 'House', 'Hạ Viện', 'ORGANIZATION')
 ==================
 --------------
 True ([1, 2], [4, 5, 6], 'ORGANIZATION', 'Secret Service', 'Sở mật vụ')
-Predict [[1, 2], [1, 4, 5, 6], 'ORGANIZATION', 'Secret Service', 'Các Sở mật vụ', 'ORGANIZATION']
+Predict ([1, 2], [1, 4, 5, 6], 'ORGANIZATION', 'Secret Service', 'Các Sở mật vụ', 'ORGANIZATION', 712, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.9879432624113476}
 ==================
 --------------
 True ([9, 10], [13, 14], 'PERSON', 'Gerald Ford', 'Gerald Ford')
-Predict ([9, 10], [12, 13, 14], 'PERSON', 'Gerald Ford', 'trên Gerald Ford', 'PERSON')
+Predict ([9, 10], [12, 13, 14], 'PERSON', 'Gerald Ford', 'trên Gerald Ford', 'PERSON', 713, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 1.0, 'distortion': 0.46026986506746637}
 ==================
 ==================
 ==================
@@ -1084,7 +1068,8 @@ Predict ([9, 10], [12, 13, 14], 'PERSON', 'Gerald Ford', 'trên Gerald Ford', 'P
 ==================
 --------------
 True ([9, 10], [10, 11, 12], 'ORGANIZATION', 'Treasury Department', 'Bộ Tài chính')
-Predict ([9, 10], [10, 11, 12, 13, 14, 15, 16, 17, 18], 'ORGANIZATION', 'Treasury Department', 'Bộ Tài chính đã giám sát Cơ quan Mật', 'ORGANIZATION')
+Predict ([9, 10], [10, 11, 12, 13, 14, 15, 16, 17, 18], 'ORGANIZATION', 'Treasury Department', 'Bộ Tài chính đã giám sát Cơ quan Mật', 'ORGANIZATION', 718, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.5607940446650124}
 ==================
 ==================
 ==================
@@ -1092,11 +1077,8 @@ Predict ([9, 10], [10, 11, 12, 13, 14, 15, 16, 17, 18], 'ORGANIZATION', 'Treasur
 ==================
 --------------
 True ([9, 10], [12, 13, 14, 15], 'ORGANIZATION', 'Supreme Court', 'Tòa án Tối cao')
-Predict [[9, 10], [9, 10, 11, 12, 13, 14, 15], 'ORGANIZATION', 'Supreme Court', 'kháng cáo lên Tòa án Tối cao', 'ORGANIZATION']
-==================
-==================
-==================
-==================
+Predict ([9, 10], [9, 10, 11, 12, 13, 14, 15], 'ORGANIZATION', 'Supreme Court', 'kháng cáo lên Tòa án Tối cao', 'ORGANIZATION', 723, 0)
+Score {'translation': 0.0, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.7443181818181818}
 ==================
 ==================
 ==================
@@ -1114,11 +1096,9 @@ Predict [[9, 10], [9, 10, 11, 12, 13, 14, 15], 'ORGANIZATION', 'Supreme Court', 
 ==================
 ==================
 --------------
-True ([3, 4], [2, 3], 'ORGANIZATION', 'White House', 'Nhà Trắng')
-Predict ([3, 4], [32, 33], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
---------------
-True ([21, 22], [32, 33], 'ORGANIZATION', 'White House', 'Nhà Trắng')
-Predict ([21, 22], [2, 3], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGANIZATION')
+True ([13], [25], 'PERSON', 'Lewinsky', 'Lewinsky')
+Predict ([13], [19, 25], 'PERSON', 'Lewinsky', 'hướng Lewinsky', 'PERSON', 739, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.32478632478632485}
 ==================
 ==================
 ==================
@@ -1129,18 +1109,16 @@ Predict ([21, 22], [2, 3], 'ORGANIZATION', 'White House', 'Nhà Trắng', 'ORGAN
 ==================
 ==================
 ==================
---------------
-True ([2], [1, 2], 'ORGANIZATION', 'Navy', 'Hải quân')
-Predict ([2], [39, 40, 41], 'ORGANIZATION', 'Navy', 'Trực tuyến Mỹ', 'ORGANIZATION')
 ==================
 ==================
 ==================
 ==================
 ==================
 ==================
---------------
-True ([10, 11], [12, 13], 'PERSON', 'Madeleine Albright', 'Madeleine Albright')
-Predict ([10, 11], [10, 11, 12, 13], 'PERSON', 'Albright', 'Ngoại trưởng Madeleine Albright', 'PERSON')
+==================
+==================
+==================
+==================
 ==================
 ==================
 ==================
@@ -1152,12 +1130,14 @@ Predict ([10, 11], [10, 11, 12, 13], 'PERSON', 'Albright', 'Ngoại trưởng Ma
 ==================
 --------------
 True ([21, 22, 23], [30, 31, 32, 33, 34, 35], 'ORGANIZATION', 'House Judiciary Committee', 'Uỷ ban Tư pháp Hạ viện')
-Predict ([21, 22, 23], [30, 31, 32, 33, 34], 'ORGANIZATION', 'House Judiciary Committee', 'Uỷ ban Tư pháp Hạ', 'ORGANIZATION')
+Predict ([21, 22, 23], [30, 31, 32, 33, 34], 'ORGANIZATION', 'House Judiciary Committee', 'Uỷ ban Tư pháp Hạ', 'ORGANIZATION', 768, 3)
+Score {'translation': 1e-15, 'transliteration': 1.0, 'coocurence': 0.3333333333333333, 'distortion': 0.788888888888889}
 ==================
 ==================
 --------------
 True ([3, 4], [2, 3], 'PERSON', 'Bob Weiner', 'Bob Weiner')
-Predict ([3, 4], [2, 3, 6], 'PERSON', 'Bob Weiner', 'Bob Weiner cho', 'PERSON')
+Predict ([3, 4], [2, 3, 6], 'PERSON', 'Bob Weiner', 'Bob Weiner cho', 'PERSON', 770, 3)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.5, 'distortion': 0.39809782608695654}
 ==================
 ==================
 ==================
@@ -1170,7 +1150,8 @@ Predict ([3, 4], [2, 3, 6], 'PERSON', 'Bob Weiner', 'Bob Weiner cho', 'PERSON')
 ==================
 --------------
 True ([16, 17], [25, 26], 'PERSON', 'William Cohen', 'William Cohen')
-Predict ([16, 17], [21, 22, 23, 24, 25, 26], 'PERSON', 'William Cohen', 'Bộ trưởng Quốc phòng William Cohen', 'PERSON')
+Predict ([16, 17], [21, 22, 23, 24, 25, 26], 'PERSON', 'William Cohen', 'Bộ trưởng Quốc phòng William Cohen', 'PERSON', 780, 0)
+Score {'translation': 0.8747030000000001, 'transliteration': 1.0, 'coocurence': 0.26666666666666666, 'distortion': 0.9325513196480938}
 ==================
 ==================
 ==================
@@ -1178,23 +1159,12 @@ Predict ([16, 17], [21, 22, 23, 24, 25, 26], 'PERSON', 'William Cohen', 'Bộ tr
 ==================
 --------------
 True ([10], [11, 12], 'ORGANIZATION', 'Treasury', 'Tài chính')
-Predict ([10], [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 'ORGANIZATION', 'Treasury', 'Bộ trưởng Quốc phòng và Chủ tịch Cục Dự trữ Liên', 'ORGANIZATION')
+Predict ([10], [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 'ORGANIZATION', 'Treasury', 'Bộ trưởng Quốc phòng và Chủ tịch Cục Dự trữ Liên', 'ORGANIZATION', 785, 2)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.0, 'distortion': 0.7418300653594772}
 ==================
 ==================
 ==================
---------------
-True ([12, 13], [18, 19], 'LOCATION', 'Latin America', 'Mỹ Latinh')
-Predict ([12, 13], [15, 16], 'LOCATION', 'Latin America', 'châu Âu', 'LOCATION')
---------------
-True ([10], [15, 16], 'LOCATION', 'Europe', 'châu Âu')
-Predict ([10], [18, 19], 'LOCATION', 'Europe', 'Mỹ Latinh', 'LOCATION')
 ==================
---------------
-True ([17], [27], 'LOCATION', 'US', 'Mỹ')
-Predict ([17], [8], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
---------------
-True ([4], [8], 'LOCATION', 'US', 'Mỹ')
-Predict ([4], [27], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
 ==================
 ==================
 ==================
@@ -1205,10 +1175,11 @@ Predict ([4], [27], 'LOCATION', 'US', 'Mỹ', 'LOCATION')
 ==================
 --------------
 True ([31], [46], 'PERSON', 'Nixon', 'Nixon')
-Predict ([31], [44, 45, 46], 'PERSON', 'Nixon', 'Tổng thống Nixon', 'PERSON')
+Predict ([31], [44, 45, 46], 'PERSON', 'Nixon', 'Tổng thống Nixon', 'PERSON', 797, 1)
+Score {'translation': 1e-15, 'transliteration': 0.0, 'coocurence': 0.25, 'distortion': 0.8160200250312891}
 ==================
 ==================
-{'R': 0.8201803833145435, 'P': 0.7933478735005453, 'F1': 0.806541019955654}
-{'R': 0.8015783540022547, 'P': 0.7753544165757906, 'F1': 0.7882483370288248}
-Type-insensitive  {'R': 0.8201803833145435, 'P': 0.7933478735005453, 'F1': 0.806541019955654}
-Type-sensitive  {'R': 0.8015783540022547, 'P': 0.7753544165757906, 'F1': 0.7882483370288248}
+{'R': 0.8393461104847801, 'P': 0.812329514457174, 'F1': 0.8256168561131134}
+{'R': 0.8207440811724915, 'P': 0.7943262411347518, 'F1': 0.8073191017466038}
+Type-insensitive  {'R': 0.8393461104847801, 'P': 0.812329514457174, 'F1': 0.8256168561131134}
+Type-sensitive  {'R': 0.8207440811724915, 'P': 0.7943262411347518, 'F1': 0.8073191017466038}

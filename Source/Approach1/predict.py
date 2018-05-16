@@ -25,7 +25,7 @@ def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index,mode, train_mode_InSe
     CombineScore['TypeSens'] = getCombineScore_TypeSens.getCombineScore(CandidateSet,EtoV_sent,VtoE_sent, list_lambda,sent_index,mode,train_mode = train_mode_Sens)
     CombineScore['TypeInSens'] = getCombineScore_InSens.getCombineScore(CandidateSet,EtoV_sent,VtoE_sent, list_lambda,sent_index,train_mode = train_mode_InSens)
     # print('CombineScore TypeSens', CombineScore['TypeSens'])
-    res = getFinalRes.getFinalNEPair(CombineScore,CandidateSet)
+    res = getFinalRes.getFinalNEPair(CombineScore,CandidateSet,sent_index)
     res = utilities.make_unique(res)
     # print('After Reassign', res)
     return res
