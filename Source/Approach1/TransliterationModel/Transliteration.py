@@ -22,3 +22,4 @@ def getTransliterationProb(NEPair,VtoE_sent):
     # res = normalize(res,n)
     return res
 
+

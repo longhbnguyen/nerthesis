@@ -12,6 +12,7 @@ import TrueSet
 import ScoreTable
 import CandidateSet
 import sys
+from AlignmentModel import EtoV_model, VtoE_model
 
 lambda_list_to_update = ['translation', ' transliteration', 'coocurence', 'distortion']
 
@@ -45,7 +46,7 @@ def train_dev(list_lambda):
     """
     #get list
     FinalPredictNEPairList = predict.getFinalPredictNEPairList(dev_list_EtoV,dev_list_VtoE,list_lambda,'dev',train_mode_InSens=True)
-    res = evaluate_TypeInSens.getMetrics(FinalPredictNEPairList,trueSet)
+    res = evaluate_TypeInSens.getMetrics(FinalPredictNEPairList,trueSet,'dev')
     return res
 
 def init_lambda():
@@ -93,7 +94,11 @@ def update_list_lambda(list_lambda,step):
 def getBestLambda(lambda_list_to_update_tmp):
     global lambda_list_to_update 
     lambda_list_to_update = lambda_list_to_update_tmp
-    CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
+    VtoE_model.createEntListTable_Spacy('dev')
+    EtoV_model.createEntListTable_Spacy('dev')
+    EtoV_model.createEntListTable_Stanford('dev')
+    VtoE_model.createEntListTable_Stanford('dev')
+    # CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
     ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE,'dev')
     ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE,'dev')
     list_lambda = init_lambda()
@@ -113,7 +118,7 @@ def getBestLambda(lambda_list_to_update_tmp):
     return best_lambda
 #Main
 def main(lambda_list_to_update_tmp):
-    CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
+    # CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
     ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE,'dev')
     ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE,'dev')
     list_lambda = init_lambda()

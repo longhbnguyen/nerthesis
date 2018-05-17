@@ -11,7 +11,11 @@ data = data.fillna('NaN')
 
 # align_list = read_align_file(align_file)
 
-def getWordTranslationProb(vnword, enword):
+def getWordTranslationProb(enword, vnword):
+    # print('vnWord',vnword)
+    # print('enWord',enword)
+    # print(data[data.VN==vnword])
+    # print(data[data.EN])
     result = data[(data.VN == vnword) & (data.EN == enword)].Prob
     tmp = result.values
     if (len(tmp)) == 0:
@@ -82,7 +86,7 @@ def getNETranslationProb(NEPair,VtoE_sent):
         res *= (sum)
     if len(enNE) == 0:
         return 0.0
-    res = normalize(res,len(enNE))
+    # res = normalize(res,len(enNE))
     return res
 
 

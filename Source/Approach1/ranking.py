@@ -61,7 +61,8 @@ def getFinalNEPair(CombineScore,CandidateSet,sent_index):
     if (not len(CandidateSet)):
         return CandidateSet
     # print('Init', CandidateSet)
-    CandidateSet = list(zip(CandidateSet, CombineScore['TypeSens'], CombineScore['TypeInSens']))
+
+    CandidateSet = list(zip(CandidateSet, CombineScore['TypeSens'], CombineScore['TypeInSens'],list(range(0,len(CandidateSet) ) ) ) )
     CandidateSet = sorted(CandidateSet,key=lambda CandidateSet: CandidateSet[2],reverse=True)
     if len(CandidateSet) == 1:
         # print('LenCandidate=0',tuple(CandidateSet[0][0]) + (sent_index,0))
@@ -77,7 +78,7 @@ def getFinalNEPair(CombineScore,CandidateSet,sent_index):
         # print('CurCandidateSet ', CandidateSet[i])
         # print('=================')
         if (free[i]):
-            tmp = CandidateSet[i] + (sent_index,i)
+            tmp = CandidateSet[i] + (sent_index,CandidateSet[i][-1])
             
             cur = [tmp]
             # print('CurCandidate ', cur)
@@ -93,7 +94,7 @@ def getFinalNEPair(CombineScore,CandidateSet,sent_index):
                     # print(CandidateSet[j][2])
                     # print(cur[0][2])
                     # print('Same Score')
-                    tmp = CandidateSet[j] + (sent_index,j)
+                    tmp = CandidateSet[j] + (sent_index,CandidateSet[j][-1])
                     # print('TMP', tmp)
                     cur.append(tmp)
                 if checkOverLap[i][j] or checkOverLap[j][i]:
@@ -104,7 +105,7 @@ def getFinalNEPair(CombineScore,CandidateSet,sent_index):
             # print('Res', res)
     # print(CandidateSet)
     if free[len(CandidateSet)-1]:
-        res = res + [CandidateSet[-1]+(sent_index,len(CandidateSet)-1)]
+        res = res + [CandidateSet[-1]+(sent_index,CandidateSet[-1][-1])]
     # print('Before Reassign', res)
     res = reassign_type(res)
     # print('After Reassign', res)

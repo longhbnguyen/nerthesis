@@ -9,6 +9,7 @@ import evaluate_TypeSens
 import training_TypeInSens
 import training_TypeSens
 import sys
+from AlignmentModel import VtoE_model, EtoV_model
 
 align_file_EtoV = config.align_file_EtoV_test
 align_file_VtoE = config.align_file_VtoE_test
@@ -35,10 +36,15 @@ test_list_VtoE = read_align_file(align_file_VtoE)
 
 def main(lambda_list_to_update):
     print(lambda_list_to_update)
-    # list_lambda = training_TypeInSens.getBestLambda(lambda_list_to_update)
-    list_lambda = config.getWeight()
-    CandidateSet.createCandidateSet(test_list_EtoV,test_list_VtoE,'test')
-    print("Create Candidate Set")
+    list_lambda = training_TypeInSens.getBestLambda(lambda_list_to_update)
+    VtoE_model.createEntListTable_Spacy('test')
+    EtoV_model.createEntListTable_Spacy('test')
+    EtoV_model.createEntListTable_Stanford('test')
+    VtoE_model.createEntListTable_Stanford('test')
+    
+    # list_lambda = config.getWeight()
+    # CandidateSet.createCandidateSet(test_list_EtoV,test_list_VtoE,'test')
+    # print("Create Candidate Set")
     ScoreTable.createScoreTable_TypeInSens(test_list_EtoV,test_list_VtoE,'test')
     ScoreTable.createScoreTable_TypeSens(test_list_EtoV,test_list_VtoE,'test')
     print("Created Score Table")
@@ -52,7 +58,7 @@ def main(lambda_list_to_update):
     #     print('=============')
     #     print('Predict', i , len(predict_set[i]))
     #     print(predict_set[i])
-    EvaluationRes_type_insen = evaluate_TypeInSens.getMetrics(predict_set,true_set)
+    EvaluationRes_type_insen = evaluate_TypeInSens.getMetrics(predict_set,true_set,'test')
     EvaluationRes_type_sen = evaluate_TypeSens.getMetrics(predict_set,true_set)
     print('Type-insensitive ', EvaluationRes_type_insen)
     print('Type-sensitive ', EvaluationRes_type_sen)

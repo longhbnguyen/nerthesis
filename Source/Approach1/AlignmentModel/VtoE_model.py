@@ -305,6 +305,7 @@ def getTargetEntList(tuple_list, target_sent, source_ent_list):
     # print(source_ent_list)
     # print(tuple_list[8])
     for source_ent in source_ent_list:
+        # print('Source Ent',source_ent)
         res = ''
         target_ent_idx = []
         # print(source_ent)

@@ -90,7 +90,7 @@ def update_list_lambda(list_lambda,step):
 def getBestLambda(lambda_list_to_update_tmp):
     global lambda_list_to_update
     lambda_list_to_update = lambda_list_to_update_tmp
-    CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
+    # CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
     ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE,'dev')
     ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE,'dev')
     list_lambda = init_lambda()
@@ -111,7 +111,7 @@ def getBestLambda(lambda_list_to_update_tmp):
 
 #Main
 def main():
-    CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
+    # CandidateSet.createCandidateSet(dev_list_EtoV,dev_list_VtoE,'dev')
     ScoreTable.createScoreTable_TypeInSens(dev_list_EtoV,dev_list_VtoE,'dev')
     ScoreTable.createScoreTable_TypeSens(dev_list_EtoV,dev_list_VtoE,'dev')
     list_lambda = init_lambda()

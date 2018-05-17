@@ -22,18 +22,25 @@ import utilities
 import json
 import os.path
 import config
+
+
 candidate_set_test_file = config.candidate_set_test_file
 candidate_set_dev_file = config.candidate_set_dev_file
 
-Candidate_Set_Table = None
+Candidate_Set_Table_Dev = None
+Candidate_Set_Table_Test = None
 
+EtoV_Dev = utilities.read_align_file(config.align_file_EtoV_dev)
+VtoE_Dev = utilities.read_align_file(config.align_file_VtoE_dev)
+
+EtoV_Test = utilities.read_align_file(config.align_file_EtoV_test)
+VtoE_Test = utilities.read_align_file(config.align_file_VtoE_test)
 
 
 def createCandidateSet(EtoV_List,VtoE_List, mode):
     '''
     Create CandidateSet file
     '''
-    global Candidate_Set_Table
 
     EtoV_model.createEntListTable_Stanford(mode)
     VtoE_model.createEntListTable_Stanford(mode)
@@ -53,6 +60,8 @@ def createCandidateSet(EtoV_List,VtoE_List, mode):
             Candidate_Set_Table.append(getCandidateSet(EtoV_List[i],VtoE_List[i],i))
         with open(candidate_set_file,'w',encoding='utf-8') as f:
             json.dump(Candidate_Set_Table,f)
+
+    return Candidate_Set_Table
 
     
 def getCandidateSet(EtoV_sent,VtoE_sent, sent_index):
@@ -79,8 +88,11 @@ def getCandidateSet(EtoV_sent,VtoE_sent, sent_index):
     res = utilities.make_unique(res)
     return res
 
-def getCandidateSetFromFile(sent_index):
-    return Candidate_Set_Table[sent_index]
+def getCandidateSetFromFile(sent_index,mode):
+    if mode == 'dev':
+        return Candidate_Set_Table_Dev[sent_index]
+    elif mode == 'test':
+        return Candidate_Set_Table_Test[sent_index]
 
 
 # EtoV_dev_list = utilities.read_align_file('../../Alignment_Split/EtoV_Test.txt')
@@ -92,3 +104,7 @@ def getCandidateSetFromFile(sent_index):
 # print('unique',unique)
 # print(len(tmp))
 # print(len(unique))
+
+
+Candidate_Set_Table_Test =  createCandidateSet(EtoV_Test,VtoE_Test,'test')
+Candidate_Set_Table_Dev = createCandidateSet(EtoV_Dev,VtoE_Dev,'dev')

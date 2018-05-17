@@ -16,7 +16,7 @@ def getNEPair(EtoV_sent, VtoE_sent, list_lambda,sent_index,mode, train_mode_InSe
     '''
     res = []
     if train_mode_InSens or train_mode_Sens:
-        CandidateSet = getCandidateSet.getCandidateSetFromFile(sent_index)
+        CandidateSet = getCandidateSet.getCandidateSetFromFile(sent_index, mode)
     else:
         CandidateSet = getCandidateSet.getCandidateSet(EtoV_sent,VtoE_sent, sent_index)
     
@@ -46,9 +46,9 @@ def getFinalPredictNEPairList(align_list_EtoV, align_list_VtoE,list_lambda,mode,
     return res
 
 def main():
-    EtoV_dev_list = utilities.read_align_file('../../../Alignment_Split/EtoV_Dev.txt')
-    VtoE_dev_list = utilities.read_align_file('../../../Alignment_Split/VtoE_Dev.txt')
-    getCandidateSet.createCandidateSet(EtoV_dev_list,VtoE_dev_list,'dev')
+    # EtoV_dev_list = utilities.read_align_file('../../../Alignment_Split/EtoV_Dev.txt')
+    # VtoE_dev_list = utilities.read_align_file('../../../Alignment_Split/VtoE_Dev.txt')
+    # getCandidateSet.createCandidateSet(EtoV_dev_list,VtoE_dev_list,'dev')
     ScoreTable.createScoreTable_TypeSens(EtoV_dev_list,VtoE_dev_list,'dev')
     ScoreTable.createScoreTable_TypeInSens(EtoV_dev_list,VtoE_dev_list,'dev')
     # k = 0
